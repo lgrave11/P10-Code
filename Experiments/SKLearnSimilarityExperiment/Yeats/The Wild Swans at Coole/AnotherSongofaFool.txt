@@ -1,0 +1,16 @@
+ANOTHER SONG OF A FOOL
+
+THIS great purple butterfly,
+In the prison of my hands,
+Has a learning in his eye
+Not a poor fool understands.
+
+Once he lived a schoolmaster
+With a stark, denying look;
+A string of scholars went in fear
+Of his great birch and his great book.
+
+Like the clangour of a bell,
+Sweet and harsh, harsh and sweet.
+That is how he learnt so well
+To take the roses for his meat.

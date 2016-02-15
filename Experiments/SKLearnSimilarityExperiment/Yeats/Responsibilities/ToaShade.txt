@@ -1,0 +1,29 @@
+TO A SHADE
+
+IF you have revisited the town, thin Shade,
+Whether to look upon your monument
+(I wonder if the builder has been paid)
+Or happier-thoughted when the day is spent
+To drink of that salt breath out of the sea
+When grey gulls flit about instead of men,
+And the gaunt houses put on majesty:
+Let these content you and be gone again;
+For they are at their old tricks yet.
+A man
+Of your own passionate serving kind who had brought
+In his full hands what, had they only known,
+Had given their children's children loftier thought,
+Sweeter emotion, working in their veins
+Like gentle blood, has been driven from the place,
+And insult heaped upon him for his pains,
+And for his open-handedness, disgrace;
+Your enemy, an old foul mouth, had set
+The pack upon him.
+
+Go, unquiet wanderer,
+And gather the Glasnevin coverlet
+About your head till the dust stops your ear,
+The time for you to taste of that Salt breath
+And listen at the corners has not come;
+You had enough of sorrow before death --
+Away, away! You are safer in the tomb.

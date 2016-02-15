@@ -1,0 +1,19 @@
+A NATIVITY
+
+WHAT woman hugs her infant there?
+Another star has shot an ear.
+
+What made the drapery glisten so?
+Not a man but Delacroix.
+
+What made the ceiling waterproof?
+Landor's tarpaulin on the roof
+
+What brushes fly and moth aside?
+Irving and his plume of pride.
+
+What hurries out the knave and dolt?
+Talma and his thunderbolt.
+
+Why is the woman terror-struck?
+Can there be mercy in that look?

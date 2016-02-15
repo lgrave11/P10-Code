@@ -1,0 +1,22 @@
+THE RESULTS OF THOUGHT
+
+ACQUAINTANCE; companion;
+One dear brilliant woman;
+The best-endowed, the elect,
+All by their youth undone,
+All, all, by that inhuman
+Bitter glory wrecked.
+
+But I have straightened out
+Ruin, wreck and wrack;
+I toiled long years and at length
+Came to so deep a thought
+I can summon back
+All their wholesome strength.
+
+What images are these
+That turn dull-eyed away,
+Or Shift Time's filthy load,
+Straighten aged knees,
+Hesitate or stay?
+What heads shake or nod?

@@ -1,0 +1,21 @@
+THE COUNTESS CATHLEEN IN PARADISE
+
+ALL the heavy days are over;
+Leave the body's coloured pride
+Underneath the grass and clover,
+With the feet laid side by side.
+
+Bathed in flaming founts of duty
+She'll not ask a haughty dress;
+Carry all that mournful beauty
+To the scented oaken press.
+
+Did the kiss of Mother Mary
+Put that music in her face?
+Yet she goes with footstep wary,
+Full of earth's old timid grace.
+
+'Mong the feet of angels seven
+What a dancer glimmering!
+All the heavens bow down to Heaven,
+Flame to flame and wing to wing.

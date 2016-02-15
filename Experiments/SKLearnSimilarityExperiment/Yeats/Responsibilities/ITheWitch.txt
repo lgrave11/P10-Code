@@ -1,0 +1,10 @@
+THE WITCH
+
+TOIL and grow rich,
+What's that but to lie
+With a foul witch
+And after, drained dry,
+To be brought
+To the chamber where
+Lies one long sought
+With despair?

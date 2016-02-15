@@ -1,0 +1,12 @@
+THE LIVING BEAUTY
+
+I BADE, because the wick and oil are spent
+And frozen are the channels of the blood,
+My discontented heart to draw content
+From beauty that is cast out of a mould
+In bronze, or that in dazzling marble appears,
+Appears, but when we have gone is gone again,
+Being more indifferent to our solitude
+Than 'twere an apparition.  O heart, we are old;
+The living beauty is for younger men:
+We cannot pay its tribute of wild tears.

@@ -1,0 +1,31 @@
+THE PILGRIM
+
+I FASTED for some forty days on bread and buttermilk,
+For passing round the bottle with girls in rags or silk,
+In country shawl or Paris cloak, had put my wits astray,
+And what's the good of women, for all that they can say
+Is fol de rol de rolly O.
+
+Round Lough Derg's holy island I went upon the stones,
+I prayed at all the Stations upon my marrow bones,
+And there I found an old man, and though, I prayed all day
+And that old man beside me, nothing would he say
+But fol de rol de rolly O.
+
+All know that all the dead in the world about that place are stuck,
+And that should mother seek her son she'd have but little luck
+Because the fires of purgatory have ate their shapes away;
+I swear to God I questioned them, and all they had to say
+Was fol de rol de rolly O.
+
+A great black ragged bird appeared when I was in the boat;
+Some twenty feet from tip to tip had it stretched rightly out,
+With flopping and with flapping it made a great display,
+But I never stopped to question, what could the boatman say
+But fol de rol de rolly O.
+
+Now I am in the public-house and lean upon the wall,
+So come in rags or come in silk, in cloak or country shawl,
+And come with learned lovers or with what men you may,
+For I can put the whole lot down, and all I have to say
+Is fol de rol de rolly O.

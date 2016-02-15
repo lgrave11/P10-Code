@@ -1,0 +1,10 @@
+A POET TO HIS BELOVED
+
+I BRING you with reverent hands
+The books of my numberless dreams,
+White woman that passion has worn
+As the tide wears the dove-grey sands,
+And with heart more old than the horn
+That is brimmed from the pale fire of time:
+White woman with numberless dreams,
+I bring you my passionate rhyme.

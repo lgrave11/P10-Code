@@ -1,0 +1,28 @@
+A MODEL FOR THE LAUREATE
+
+ON thrones from China to Peru
+All sorts of kings have sat
+That men and women of all sorts
+Proclaimed both good and great;
+And what's the odds if such as these
+For reason of the State
+Should keep their lovers waiting,
+Keep their lovers waiting.
+
+Some boast of beggar-kings and kings
+Of rascals black and white
+That rule because a strong right arm
+Puts all men in a fright,
+And drunk or sober live at ease
+Where none gainsay their right,
+And keep their lovers waiting,
+Keep their lovers waiting.
+
+The Muse is mute when public men
+Applaud a modern throne:
+Those cheers that can be bought or sold,
+That office fools have run,
+That waxen seal, that signature.
+For things like these what decent man
+Would keep his lover waiting,
+Keep his lover waiting?

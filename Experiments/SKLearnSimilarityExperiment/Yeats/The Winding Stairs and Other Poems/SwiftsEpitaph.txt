@@ -1,0 +1,8 @@
+SWIFT'S EPITAPH
+
+SWIFT has sailed into his rest;
+Savage indignation there
+Cannot lacerate his breast.
+Imitate him if you dare,
+World-besotted traveller; he
+Served human liberty.

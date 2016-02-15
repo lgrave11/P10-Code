@@ -1,0 +1,6 @@
+THE SPUR
+
+YOU think it horrible that lust and rage
+Should dance attention upon my old age;
+They were not such a plague when I was young;
+What else have I to spur me into song?

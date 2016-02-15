@@ -1,0 +1,10 @@
+THE ARROW
+
+I THOUGHT of your beauty, and this arrow,
+Made out of a wild thought, is in my marrow.
+There's no man may look upon her, no man,
+As when newly grown to be a woman,
+Tall and noble but with face and bosom
+Delicate in colour as apple blossom.
+This beauty's kinder, yet for a reason
+I could weep that the old is out of season.

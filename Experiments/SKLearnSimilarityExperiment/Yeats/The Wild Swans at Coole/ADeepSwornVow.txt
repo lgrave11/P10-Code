@@ -1,0 +1,8 @@
+A DEEP-SWORN VOW
+
+OTHERS because you did not keep
+That deep-sworn vow have been friends of mine;
+Yet always when I look death in the face,
+When I clamber to the heights of sleep,
+Or when I grow excited with wine,
+Suddenly I meet your face.

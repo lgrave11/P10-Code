@@ -1,0 +1,8 @@
+OIL AND BLOOD
+
+IN tombs of gold and lapis lazuli
+Bodies of holy men and women exude
+Miraculous oil, odour of violet.
+But under heavy loads of trampled clay
+Lie bodies of the vampires full of blood;
+Their shrouds are bloody and their lips are wet.

@@ -1,0 +1,10 @@
+PAUDEEN
+
+INDIGNANT at the fumbling wits, the obscure spite
+Of our old paudeen in his shop, I stumbled blind
+Among the stones and thorn-trees, under morning light;
+Until a curlew cried and in the luminous wind
+A curlew answered; and suddenly thereupon I thought
+That on the lonely height where all are in God's eye,
+There cannot be, confusion of our sound forgot,
+A single soul that lacks a sweet crystalline cry.
