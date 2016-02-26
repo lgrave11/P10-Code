@@ -1,0 +1,12 @@
+Document #0 Name: ./reporttest\1.txt:
+topic0 topic1 topic3 
+Document #1 Name: ./reporttest\2.txt:
+topic2 topic0 topic1 
+Document #2 Name: ./reporttest\3.txt:
+topic1 topic0 topic3 
+Document #3 Name: ./reporttest\4.txt:
+topic3 topic0 topic1 
+Document #4 Name: ./reporttest\5.txt:
+topic3 topic0 topic1 
+Document #5 Name: ./reporttest\6.txt:
+topic0 topic3 topic1 
