@@ -38,12 +38,18 @@ def run():
     texts = [[token for token in text if frequency[token] > 3]
               for text in texts]
     dictionary = corpora.Dictionary(texts)
-    dictionary.save('%s.dict' % file) # store the dictionary, for future reference
+    #dictionary.save('%s.dict' % file) # store the dictionary, for future reference
     corpus = [dictionary.doc2bow(text) for text in texts]
-    corpora.MmCorpus.serialize('%s.mm' % file, corpus) # store to disk, for later use
-    lda = models.ldamodel.LdaModel(corpus=corpus, id2word=dictionary, num_topics=20, update_every=1, chunksize=100, passes=20)
-    for i in lda.print_topics(20):
-        print(i)
+    #tfidf = models.TfidfModel(corpus)
+    #tfidf = models.TfidfModel(corpus) # step 1 -- initialize a model
+    #corpus_tfidf = tfidf[corpus]
+    #corpora.MmCorpus.serialize('%s.mm' % file, corpus) # store to disk, for later use
+    lda = models.ldamodel.LdaModel(corpus=corpus, id2word=dictionary, num_topics=20, update_every=1, chunksize=10, passes=5)
+    for i in texts[:10]:
+        print(' '.join(i[:10]))
+        print(lda.get_document_topics(dictionary.doc2bow(i)))
+    #for i in lda.print_topics(20):
+    #    print(i)
 
 
 def main():
