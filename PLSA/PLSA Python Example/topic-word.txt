@@ -1,0 +1,8 @@
+Topic #0:
+procedure healthcaresystem admission 
+Topic #1:
+hospital healthcaresystem admission 
+Topic #2:
+healthcaresystem clinic hospital 
+Topic #3:
+admission procedure healthcaresystem 
