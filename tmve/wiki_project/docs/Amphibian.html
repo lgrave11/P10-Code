@@ -1,0 +1,214 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[264.771811915, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [57.3643779899, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [37.4901311474, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [10.7321255701, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Amphibian</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Amphibian</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Amphibians</b> are <a href="http://www.wikipedia.org/wiki/Ectotherm" title="Ectotherm">ectothermic</a>, <a href="http://www.wikipedia.org/wiki/Tetrapod" title="Tetrapod">tetrapod</a> <a href="http://www.wikipedia.org/wiki/Vertebrate" title="Vertebrate">vertebrates</a> of the <a href="http://www.wikipedia.org/wiki/Class_(biology)" title="Class (biology)">class</a> <b>Amphibia</b>. Modern amphibians are all <a href="http://www.wikipedia.org/wiki/Lissamphibia" title="Lissamphibia">Lissamphibia</a>. They inhabit a wide variety of <a href="http://www.wikipedia.org/wiki/Habitat" title="Habitat">habitats</a> with most species living within <a href="http://www.wikipedia.org/wiki/Terrestrial_animal" title="Terrestrial animal">terrestrial</a>, <a href="http://www.wikipedia.org/wiki/Fossorial" title="Fossorial">fossorial</a>, <a href="http://www.wikipedia.org/wiki/Arboreal" title="Arboreal" class="mw-redirect">arboreal</a> or freshwater <a href="http://www.wikipedia.org/wiki/Aquatic_animal" title="Aquatic animal">aquatic</a> <a href="http://www.wikipedia.org/wiki/Ecosystem" title="Ecosystem">ecosystems</a>. Amphibians typically start out as <a href="http://www.wikipedia.org/wiki/Larva" title="Larva">larvae</a> living in water, but some species have developed behavioural adaptations to bypass this. The young generally undergo <a href="http://www.wikipedia.org/wiki/Metamorphosis" title="Metamorphosis">metamorphosis</a> from larva with gills to an adult air-breathing form with lungs. Amphibians use their skin as a secondary respiratory surface and some small terrestrial <a href="http://www.wikipedia.org/wiki/Salamander" title="Salamander">salamanders</a> and <a href="http://www.wikipedia.org/wiki/Frog" title="Frog">frogs</a> lack lungs and rely entirely on their skin. They are superficially similar to <a href="http://www.wikipedia.org/wiki/Reptile" title="Reptile">reptiles</a> but, along with mammals and birds, reptiles are <a href="http://www.wikipedia.org/wiki/Amniote" title="Amniote">amniotes</a> and do not require water bodies in which to breed. With their complex reproductive needs and permeable skins, amphibians are often <a href="http://www.wikipedia.org/wiki/Ecological_indicator" title="Ecological indicator">ecological indicators</a> and in recent decades there has been a dramatic <a href="http://www.wikipedia.org/wiki/Decline_in_amphibian_populations" title="Decline in amphibian populations">decline in amphibian populations</a> for many species around the globe.</p>
+<p>The earliest amphibians <a href="http://www.wikipedia.org/wiki/Evolution_of_tetrapods" title="Evolution of tetrapods">evolved</a> in the <a href="http://www.wikipedia.org/wiki/Devonian" title="Devonian">Devonian</a> period from <a href="http://www.wikipedia.org/wiki/Sarcopterygian" title="Sarcopterygian" class="mw-redirect">sarcopterygian</a> fish with lungs and bony-limbed fins, features that were helpful in adapting to dry land. They diversified and became dominant during the <a href="http://www.wikipedia.org/wiki/Carboniferous" title="Carboniferous">Carboniferous</a> and <a href="http://www.wikipedia.org/wiki/Permian" title="Permian">Permian</a> periods, but were later displaced by reptiles and other vertebrates. Over time, amphibians shrank in size and decreased in diversity, leaving only the modern subclass <a href="http://www.wikipedia.org/wiki/Lissamphibia" title="Lissamphibia">Lissamphibia</a>. The three modern orders of amphibians are <a href="http://www.wikipedia.org/wiki/Anura_(frog)" title="Anura (frog)" class="mw-redirect">Anura</a> (the frogs and toads), <a href="http://www.wikipedia.org/wiki/Urodela" title="Urodela" class="mw-redirect">Urodela</a> (the salamanders), and <a href="http://www.wikipedia.org/wiki/Caecilian" title="Caecilian">Apoda</a> (the caecilians). The number of known amphibian species is approximately 7,000, of which nearly 90% are frogs. The smallest amphibian (and vertebrate) in the world is a frog from <a href="http://www.wikipedia.org/wiki/New_Guinea" title="New Guinea">New Guinea</a> (<i><a href="http://www.wikipedia.org/wiki/Paedophryne_amauensis" title="Paedophryne amauensis">Paedophryne amauensis</a></i>) with a length of just 7.7&#160;mm (0.30&#160;in). The largest living amphibian is the 1.8&#160;m (5&#160;ft 11&#160;in) <a href="http://www.wikipedia.org/wiki/Chinese_giant_salamander" title="Chinese giant salamander">Chinese giant salamander</a> (<i>Andrias davidianus</i>), but this is dwarfed by the extinct 9&#160;m (30&#160;ft) <i><a href="http://www.wikipedia.org/wiki/Prionosuchus" title="Prionosuchus">Prionosuchus</a></i> from the middle Permian of Brazil. The study of amphibians is called <a href="http://www.wikipedia.org/wiki/Batrachology" title="Batrachology">batrachology</a>, while the study of both reptiles and amphibians is called <a href="http://www.wikipedia.org/wiki/Herpetology" title="Herpetology">herpetology</a>.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Amphibian#Classification"><span class="tocnumber">1</span> <span class="toctext">Classification</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Amphibian#Evolutionary_history"><span class="tocnumber">2</span> <span class="toctext">Evolutionary history</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Amphibian#Characteristics"><span class="tocnumber">3</span> <span class="toctext">Characteristics</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Amphibian#Anura"><span class="tocnumber">3.1</span> <span class="toctext">Anura</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Amphibian#Caudata"><span class="tocnumber">3.2</span> <span class="toctext">Caudata</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Amphibian#Gymnophiona"><span class="tocnumber">3.3</span> <span class="toctext">Gymnophiona</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Amphibian#Anatomy_and_physiology"><span class="tocnumber">4</span> <span class="toctext">Anatomy and physiology</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Amphibian#Skin"><span class="tocnumber">4.1</span> <span class="toctext">Skin</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Amphibian#Skeletal_system_and_locomotion"><span class="tocnumber">4.2</span> <span class="toctext">Skeletal system and locomotion</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Amphibian#Circulatory_system"><span class="tocnumber">4.3</span> <span class="toctext">Circulatory system</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Amphibian#Nervous_and_sensory_systems"><span class="tocnumber">4.4</span> <span class="toctext">Nervous and sensory systems</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Amphibian#Digestive_and_excretory_systems"><span class="tocnumber">4.5</span> <span class="toctext">Digestive and excretory systems</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Amphibian#Respiratory_system"><span class="tocnumber">4.6</span> <span class="toctext">Respiratory system</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Amphibian#Reproduction"><span class="tocnumber">5</span> <span class="toctext">Reproduction</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Amphibian#Life_cycle"><span class="tocnumber">6</span> <span class="toctext">Life cycle</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Amphibian#Eggs"><span class="tocnumber">6.1</span> <span class="toctext">Eggs</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Amphibian#Larvae"><span class="tocnumber">6.2</span> <span class="toctext">Larvae</span></a>
+<ul>
+<li class="toclevel-3 tocsection-18"><a href="http://en.wikipedia.org/wiki/Amphibian#Frogs"><span class="tocnumber">6.2.1</span> <span class="toctext">Frogs</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="http://en.wikipedia.org/wiki/Amphibian#Salamanders"><span class="tocnumber">6.2.2</span> <span class="toctext">Salamanders</span></a></li>
+<li class="toclevel-3 tocsection-20"><a href="http://en.wikipedia.org/wiki/Amphibian#Caecilians"><span class="tocnumber">6.2.3</span> <span class="toctext">Caecilians</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-21"><a href="http://en.wikipedia.org/wiki/Amphibian#Parental_care"><span class="tocnumber">6.3</span> <span class="toctext">Parental care</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="http://en.wikipedia.org/wiki/Amphibian#Feeding_and_diet"><span class="tocnumber">7</span> <span class="toctext">Feeding and diet</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="http://en.wikipedia.org/wiki/Amphibian#Vocalization"><span class="tocnumber">8</span> <span class="toctext">Vocalization</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="http://en.wikipedia.org/wiki/Amphibian#Territorial_behaviour"><span class="tocnumber">9</span> <span class="toctext">Territorial behaviour</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="http://en.wikipedia.org/wiki/Amphibian#Defence_mechanisms"><span class="tocnumber">10</span> <span class="toctext">Defence mechanisms</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="http://en.wikipedia.org/wiki/Amphibian#Cognition"><span class="tocnumber">11</span> <span class="toctext">Cognition</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="http://en.wikipedia.org/wiki/Amphibian#Conservation"><span class="tocnumber">12</span> <span class="toctext">Conservation</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="http://en.wikipedia.org/wiki/Amphibian#See_also"><span class="tocnumber">13</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="http://en.wikipedia.org/wiki/Amphibian#References"><span class="tocnumber">14</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-30"><a href="http://en.wikipedia.org/wiki/Amphibian#Cited_texts"><span class="tocnumber">14.1</span> <span class="toctext">Cited texts</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-31"><a href="http://en.wikipedia.org/wiki/Amphibian#Further_reading"><span class="tocnumber">15</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="http://en.wikipedia.org/wiki/Amphibian#External_links"><span class="tocnumber">16</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Amphibian">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Allele.html'">Allele</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axon.html'">Axon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algae.html'">Algae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Automated_theorem_proving.html'">Automated theorem proving</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Additive_synthesis.html'">Additive synthesis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alpha_compositing.html'">Alpha compositing</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asphalt.html'">Asphalt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytic_geometry.html'">Analytic geometry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antiderivative.html'">Antiderivative</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_14.html'">Apollo 14</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astatine.html'">Astatine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Absolute_magnitude.html'">Absolute magnitude</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aspartame.html'">Aspartame</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom_of_regularity.html'">Axiom of regularity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algebraically_closed_field.html'">Algebraically closed field</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atomic_absorption_spectroscopy.html'">Atomic absorption spectroscopy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ascorbic_acid.html'">Ascorbic acid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anisotropy.html'">Anisotropy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aromatic_hydrocarbon.html'">Aromatic hydrocarbon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_16.html'">Apollo 16</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abscess.html'">Abscess</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advanced_Mobile_Phone_System.html'">Advanced Mobile Phone System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analog_television.html'">Analog television</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Associative_algebra.html'">Associative algebra</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/International_Atomic_Time.html'">International Atomic Time</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Americium.html'">Americium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytical_engine.html'">Analytical engine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronaut.html'">Astronaut</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antigen.html'">Antigen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amplitude_modulation.html'">Amplitude modulation</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

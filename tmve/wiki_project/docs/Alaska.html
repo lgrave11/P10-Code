@@ -1,0 +1,161 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[1807.7225800156, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [90.8825978936, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [12.6636496944, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Alaska</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Alaska</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><span style="font-size: small;"><span id="coordinates"><a href="http://www.wikipedia.org/wiki/Geographic_coordinate_system" title="Geographic coordinate system">Coordinates</a>: <span class="plainlinks nourlexpansion"><a class="external text" href="//tools.wmflabs.org/geohack/geohack.php?pagename=Alaska&amp;params=64_N_150_W_region:US-AK_type:adm1st_scale:10000000"><span class="geo-default"><span class="geo-dms" title="Maps, aerial photos, and other data for this location"><span class="latitude">64°N</span> <span class="longitude">150°W</span></span></span><span class="geo-multi-punct">﻿ / ﻿</span><span class="geo-nondefault"><span class="geo-dec" title="Maps, aerial photos, and other data for this location">64°N 150°W</span><span style="display:none">﻿ / <span class="geo">64; -150</span></span></span></a></span><sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Alaska#cite_note-1"><span>[</span>1<span>]</span></a></sup></span></span></p>
+<p><b>Alaska</b> (<span class="nowrap"><span class="noexcerpt"><a href="//upload.wikimedia.org/wikipedia/commons/3/34/En-us-Alaska.ogg" title="Listen"><img alt="Listen" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/11px-Speakerlink-new.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/17px-Speakerlink-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/22px-Speakerlink-new.svg.png 2x" data-file-width="11" data-file-height="11" /></a><sup><span class="IPA" style="color:#00e;font:bold 80% sans-serif;padding:0 .1em"><a href="http://www.wikipedia.org/wiki/File:En-us-Alaska.ogg" title="File:En-us-Alaska.ogg">i</a></span></sup></span><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ə/ 'a' in 'about'">ə</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'l' in 'lie'">l</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'s' in 'sigh'">s</span><span title="'k' in 'kind'">k</span><span title="/ə/ 'a' in 'about'">ə</span></span>/</a></span></span>) is a <a href="http://www.wikipedia.org/wiki/U.S._state" title="U.S. state">U.S. state</a> situated in the northwest extremity of the <a href="http://www.wikipedia.org/wiki/Americas" title="Americas">Americas</a>. The <a href="http://www.wikipedia.org/wiki/Provinces_and_territories_of_Canada" title="Provinces and territories of Canada">Canadian administrative divisions</a> of <a href="http://www.wikipedia.org/wiki/British_Columbia" title="British Columbia">British Columbia</a> and <a href="http://www.wikipedia.org/wiki/Yukon" title="Yukon">Yukon</a> border the state to the east while <a href="http://www.wikipedia.org/wiki/Russia" title="Russia">Russia</a> has a maritime border with the state to the west across the <a href="http://www.wikipedia.org/wiki/Bering_Strait" title="Bering Strait">Bering Strait</a>. To the north are the <a href="http://www.wikipedia.org/wiki/Chukchi_Sea" title="Chukchi Sea">Chukchi</a> and <a href="http://www.wikipedia.org/wiki/Beaufort_Sea" title="Beaufort Sea">Beaufort Seas</a>, the southern parts of the <a href="http://www.wikipedia.org/wiki/Arctic_Ocean" title="Arctic Ocean">Arctic Ocean</a>. To the south and southwest is the <a href="http://www.wikipedia.org/wiki/Pacific_Ocean" title="Pacific Ocean">Pacific Ocean</a>. Alaska is the <a href="http://www.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_area" title="List of U.S. states and territories by area">largest state</a> in the <a href="http://www.wikipedia.org/wiki/United_States" title="United States">United States</a> by area, the <a href="http://www.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population" title="List of U.S. states and territories by population">3rd least populous</a> and the <a href="http://www.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population_density" title="List of U.S. states and territories by population density" class="mw-redirect">least densely populated</a> of the <a href="http://www.wikipedia.org/wiki/List_of_U.S._states" title="List of U.S. states" class="mw-redirect">50 United States</a>. Approximately half of Alaska's residents (the total estimated at 738,432 by the Census Bureau in 2015<sup id="cite_ref-PopEstUS_3-1" class="reference"><a href="http://en.wikipedia.org/wiki/Alaska#cite_note-PopEstUS-3"><span>[</span>3<span>]</span></a></sup>) live within the <a href="http://www.wikipedia.org/wiki/Anchorage_metropolitan_area" title="Anchorage metropolitan area">Anchorage metropolitan area</a>. Alaska's economy is dominated by the <a href="http://www.wikipedia.org/wiki/Fishing" title="Fishing">fishing</a>, <a href="http://www.wikipedia.org/wiki/Natural_gas" title="Natural gas">natural gas</a>, and <a href="http://www.wikipedia.org/wiki/Petroleum" title="Petroleum">oil</a> industries, resources which it has in abundance. <a href="http://www.wikipedia.org/wiki/United_States_Armed_Forces" title="United States Armed Forces">Military</a> bases and tourism are also a significant part of the <a href="http://www.wikipedia.org/wiki/Economy_of_Alaska" title="Economy of Alaska">economy</a>.</p>
+<p>The United States <a href="http://www.wikipedia.org/wiki/Alaska_Purchase" title="Alaska Purchase">purchased Alaska</a> from the <a href="http://www.wikipedia.org/wiki/Russian_Empire" title="Russian Empire">Russian Empire</a> on March 30, 1867, for 7.2&#160;million U.S. dollars at approximately two cents per acre ($4.74/km<sup>2</sup>). The area went through several administrative changes before becoming organized as a <a href="http://www.wikipedia.org/wiki/Territories_of_the_United_States" title="Territories of the United States">territory</a> on May 11, 1912. It was admitted as the 49th state of the U.S. on January 3, 1959.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Alaska#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Alaska">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/American_Civil_War.html'">American Civil War</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Airline.html'">Airline</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afghanistan.html'">Afghanistan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alabama.html'">Alabama</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Al-Qaeda.html'">Al-Qaeda</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Revolution.html'">American Revolution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adelaide.html'">Adelaide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Labor_Party.html'">Australian Labor Party</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberta.html'">Alberta</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agriculture.html'">Agriculture</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/African_American.html'">African American</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona.html'">Arizona</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Democrats.html'">Australian Democrats</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amsterdam.html'">Amsterdam</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Austin,_Texas.html'">Austin, Texas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Athens.html'">Athens</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Cuisine_of_Argentina.html'">Cuisine of Argentina</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amazon_River.html'">Amazon River</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aruba.html'">Aruba</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Cuisine_of_the_United_States.html'">Cuisine of the United States</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angola.html'">Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albania.html'">Albania</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algiers.html'">Algiers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahmad_Shah_Massoud.html'">Ahmad Shah Massoud</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Jackson.html'">Andrew Jackson</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Airlines.html'">American Airlines</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdeen.html'">Aberdeen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antigua_and_Barbuda.html'">Antigua and Barbuda</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Revolutionary_War.html'">American Revolutionary War</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ann_Arbor,_Michigan.html'">Ann Arbor, Michigan</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

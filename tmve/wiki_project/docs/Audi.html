@@ -1,0 +1,249 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[898.9687368722, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [171.0329841691, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [33.131705182, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [18.2250222306, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Audi</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Audi</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Audi AG</b><sup id="cite_ref-artinc_1-1" class="reference"><a href="http://en.wikipedia.org/wiki/Audi#cite_note-artinc-1"><span>[</span>1<span>]</span></a></sup> (<small>pronounced</small> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_German" title="Help:IPA for German">[ˈʔaʊ̯dɪ ʔaːˈgeː]</a></span><small class="nowrap metadata">&#160;(<a href="http://www.wikipedia.org/wiki/File:Audi_AG.ogg" title="File:Audi AG.ogg"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/13px-Speaker_Icon.svg.png" width="13" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/20px-Speaker_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/26px-Speaker_Icon.svg.png 2x" data-file-width="500" data-file-height="500" /></a> <a href="//upload.wikimedia.org/wikipedia/commons/8/8e/Audi_AG.ogg" class="internal" title="Audi AG.ogg">listen</a>)</small>) is a <a href="http://www.wikipedia.org/wiki/German_automobile_manufacturer" title="German automobile manufacturer" class="mw-redirect">German automobile manufacturer</a> that designs, engineers, produces, markets and distributes <a href="http://www.wikipedia.org/wiki/Luxury_vehicle" title="Luxury vehicle">luxury vehicles</a>. Audi oversees worldwide operations from its headquarters in <a href="http://www.wikipedia.org/wiki/Ingolstadt" title="Ingolstadt">Ingolstadt</a>, <a href="http://www.wikipedia.org/wiki/Bavaria" title="Bavaria">Bavaria</a>, Germany. Audi-branded vehicles are produced in nine production facilities worldwide.</p>
+<p>The origins of the company are complex, going back to the early 20th century and the initial enterprises (<a href="http://www.wikipedia.org/wiki/Horch" title="Horch">Horch</a> and the <i>Audiwerke</i>) founded by engineer <a href="http://www.wikipedia.org/wiki/August_Horch" title="August Horch">August Horch</a>; and two other manufacturers (<a href="http://www.wikipedia.org/wiki/DKW" title="DKW">DKW</a> and <a href="http://www.wikipedia.org/wiki/Wanderer_(car)" title="Wanderer (car)" class="mw-redirect">Wanderer</a>), leading to the foundation of <a href="http://www.wikipedia.org/wiki/Auto_Union" title="Auto Union">Auto Union</a> in 1932. The modern era of Audi essentially began in the 1960s when Auto Union was acquired by <a href="http://www.wikipedia.org/wiki/Volkswagen" title="Volkswagen">Volkswagen</a> from <a href="http://www.wikipedia.org/wiki/Daimler-Benz" title="Daimler-Benz">Daimler-Benz</a>.<sup id="cite_ref-vw-holdings-2009_12-0" class="reference"><a href="http://en.wikipedia.org/wiki/Audi#cite_note-vw-holdings-2009-12"><span>[</span>12<span>]</span></a></sup> After relaunching the Audi brand with the 1965 introduction of the <a href="http://www.wikipedia.org/wiki/Audi_F103" title="Audi F103">Audi F103</a> series, Volkswagen merged Auto Union with <a href="http://www.wikipedia.org/wiki/NSU_Motorenwerke" title="NSU Motorenwerke">NSU Motorenwerke</a> in 1969, thus creating the present day form of the company.</p>
+<p>The company name is based on the <a href="http://www.wikipedia.org/wiki/Latin" title="Latin">Latin</a> translation of the surname of the founder, <a href="http://www.wikipedia.org/wiki/August_Horch" title="August Horch">August Horch</a>. "Horch", meaning "listen" in <a href="http://www.wikipedia.org/wiki/German_(language)" title="German (language)" class="mw-redirect">German</a>, becomes "audi" in Latin. The four rings of the Audi logo each represent one of four car companies that banded together to create Audi's predecessor company, Auto Union. Audi's slogan is <a href="http://www.wikipedia.org/wiki/Vorsprung_durch_Technik" title="Vorsprung durch Technik">Vorsprung durch Technik</a>, meaning "Advancement through Technology". However, since 2007 Audi USA has used the slogan "Truth in Engineering".<sup id="cite_ref-13" class="reference"><a href="http://en.wikipedia.org/wiki/Audi#cite_note-13"><span>[</span>13<span>]</span></a></sup> Audi is among the best-selling luxury automobiles in the world.<sup id="cite_ref-14" class="reference"><a href="http://en.wikipedia.org/wiki/Audi#cite_note-14"><span>[</span>14<span>]</span></a></sup></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Audi#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Audi#Birth_of_the_company_and_its_name"><span class="tocnumber">1.1</span> <span class="toctext">Birth of the company and its name</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Audi#The_merger_of_the_four_companies_under_the_logo_of_four_rings"><span class="tocnumber">1.2</span> <span class="toctext">The merger of the four companies under the logo of four rings</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Audi#Post-World_War_II"><span class="tocnumber">1.3</span> <span class="toctext">Post-World War II</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Audi#New_Auto_Union_unit"><span class="tocnumber">1.4</span> <span class="toctext">New Auto Union unit</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Audi#Modern_era"><span class="tocnumber">1.5</span> <span class="toctext">Modern era</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Audi#Audi_5000_unintended_acceleration_allegations"><span class="tocnumber">1.6</span> <span class="toctext">Audi 5000 unintended acceleration allegations</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Audi#Model_introductions"><span class="tocnumber">1.7</span> <span class="toctext">Model introductions</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Audi#Audi_AG_today"><span class="tocnumber">1.8</span> <span class="toctext">Audi AG today</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Audi#Technology"><span class="tocnumber">2</span> <span class="toctext">Technology</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Audi#Bodyshells"><span class="tocnumber">2.1</span> <span class="toctext">Bodyshells</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Audi#Space_frame"><span class="tocnumber">2.2</span> <span class="toctext">Space frame</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Audi#Drivetrains"><span class="tocnumber">2.3</span> <span class="toctext">Drivetrains</span></a>
+<ul>
+<li class="toclevel-3 tocsection-14"><a href="http://en.wikipedia.org/wiki/Audi#Layout"><span class="tocnumber">2.3.1</span> <span class="toctext">Layout</span></a></li>
+<li class="toclevel-3 tocsection-15"><a href="http://en.wikipedia.org/wiki/Audi#Engines"><span class="tocnumber">2.3.2</span> <span class="toctext">Engines</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="http://en.wikipedia.org/wiki/Audi#Fuel_Stratified_Injection"><span class="tocnumber">2.3.3</span> <span class="toctext">Fuel Stratified Injection</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="http://en.wikipedia.org/wiki/Audi#Direct-Shift_Gearbox"><span class="tocnumber">2.3.4</span> <span class="toctext">Direct-Shift Gearbox</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-18"><a href="http://en.wikipedia.org/wiki/Audi#LED_daytime_running_lights"><span class="tocnumber">2.4</span> <span class="toctext">LED daytime running lights</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Audi#Multi_Media_Interface"><span class="tocnumber">2.5</span> <span class="toctext">Multi Media Interface</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="http://en.wikipedia.org/wiki/Audi#Synthetic_Diesel"><span class="tocnumber">2.6</span> <span class="toctext">Synthetic Diesel</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="http://en.wikipedia.org/wiki/Audi#Models"><span class="tocnumber">3</span> <span class="toctext">Models</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="http://en.wikipedia.org/wiki/Audi#Current_model_range"><span class="tocnumber">3.1</span> <span class="toctext">Current model range</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="http://en.wikipedia.org/wiki/Audi#S_and_RS_models"><span class="tocnumber">3.2</span> <span class="toctext">S and RS models</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="http://en.wikipedia.org/wiki/Audi#Electric_vehicles"><span class="tocnumber">3.3</span> <span class="toctext">Electric vehicles</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-25"><a href="http://en.wikipedia.org/wiki/Audi#Production_figures"><span class="tocnumber">4</span> <span class="toctext">Production figures</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="http://en.wikipedia.org/wiki/Audi#Motorsport"><span class="tocnumber">5</span> <span class="toctext">Motorsport</span></a>
+<ul>
+<li class="toclevel-2 tocsection-27"><a href="http://en.wikipedia.org/wiki/Audi#Rallying"><span class="tocnumber">5.1</span> <span class="toctext">Rallying</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="http://en.wikipedia.org/wiki/Audi#In_the_USA"><span class="tocnumber">5.2</span> <span class="toctext">In the USA</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="http://en.wikipedia.org/wiki/Audi#Touring_cars"><span class="tocnumber">5.3</span> <span class="toctext">Touring cars</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="http://en.wikipedia.org/wiki/Audi#24_Hours_of_Le_Mans"><span class="tocnumber">5.4</span> <span class="toctext">24 Hours of Le Mans</span></a>
+<ul>
+<li class="toclevel-3 tocsection-31"><a href="http://en.wikipedia.org/wiki/Audi#Results"><span class="tocnumber">5.4.1</span> <span class="toctext">Results</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-32"><a href="http://en.wikipedia.org/wiki/Audi#American_Le_Mans_Series"><span class="tocnumber">5.5</span> <span class="toctext">American Le Mans Series</span></a>
+<ul>
+<li class="toclevel-3 tocsection-33"><a href="http://en.wikipedia.org/wiki/Audi#Results_2"><span class="tocnumber">5.5.1</span> <span class="toctext">Results</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-34"><a href="http://en.wikipedia.org/wiki/Audi#European_Le_Mans_Series"><span class="tocnumber">5.6</span> <span class="toctext">European Le Mans Series</span></a>
+<ul>
+<li class="toclevel-3 tocsection-35"><a href="http://en.wikipedia.org/wiki/Audi#Results_3"><span class="tocnumber">5.6.1</span> <span class="toctext">Results</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-36"><a href="http://en.wikipedia.org/wiki/Audi#World_Endurance_Championship"><span class="tocnumber">5.7</span> <span class="toctext">World Endurance Championship</span></a>
+<ul>
+<li class="toclevel-3 tocsection-37"><a href="http://en.wikipedia.org/wiki/Audi#2012"><span class="tocnumber">5.7.1</span> <span class="toctext">2012</span></a></li>
+<li class="toclevel-3 tocsection-38"><a href="http://en.wikipedia.org/wiki/Audi#2013"><span class="tocnumber">5.7.2</span> <span class="toctext">2013</span></a></li>
+<li class="toclevel-3 tocsection-39"><a href="http://en.wikipedia.org/wiki/Audi#2014"><span class="tocnumber">5.7.3</span> <span class="toctext">2014</span></a></li>
+<li class="toclevel-3 tocsection-40"><a href="http://en.wikipedia.org/wiki/Audi#Results_4"><span class="tocnumber">5.7.4</span> <span class="toctext">Results</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-41"><a href="http://en.wikipedia.org/wiki/Audi#Formula_E"><span class="tocnumber">5.8</span> <span class="toctext">Formula E</span></a></li>
+<li class="toclevel-2 tocsection-42"><a href="http://en.wikipedia.org/wiki/Audi#Formula_One"><span class="tocnumber">5.9</span> <span class="toctext">Formula One</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-43"><a href="http://en.wikipedia.org/wiki/Audi#Marketing"><span class="tocnumber">6</span> <span class="toctext">Marketing</span></a>
+<ul>
+<li class="toclevel-2 tocsection-44"><a href="http://en.wikipedia.org/wiki/Audi#Branding"><span class="tocnumber">6.1</span> <span class="toctext">Branding</span></a>
+<ul>
+<li class="toclevel-3 tocsection-45"><a href="http://en.wikipedia.org/wiki/Audi#Slogans"><span class="tocnumber">6.1.1</span> <span class="toctext">Slogans</span></a></li>
+<li class="toclevel-3 tocsection-46"><a href="http://en.wikipedia.org/wiki/Audi#Typography"><span class="tocnumber">6.1.2</span> <span class="toctext">Typography</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-47"><a href="http://en.wikipedia.org/wiki/Audi#Sponsorships"><span class="tocnumber">6.2</span> <span class="toctext">Sponsorships</span></a></li>
+<li class="toclevel-2 tocsection-48"><a href="http://en.wikipedia.org/wiki/Audi#Multitronic_campaign"><span class="tocnumber">6.3</span> <span class="toctext">Multitronic campaign</span></a></li>
+<li class="toclevel-2 tocsection-49"><a href="http://en.wikipedia.org/wiki/Audi#Audi_TDI"><span class="tocnumber">6.4</span> <span class="toctext">Audi TDI</span></a></li>
+<li class="toclevel-2 tocsection-50"><a href="http://en.wikipedia.org/wiki/Audi#Audi_e-tron"><span class="tocnumber">6.5</span> <span class="toctext">Audi e-tron</span></a></li>
+<li class="toclevel-2 tocsection-51"><a href="http://en.wikipedia.org/wiki/Audi#In_video_games"><span class="tocnumber">6.6</span> <span class="toctext">In video games</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Audi">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Atari_2600.html'">Atari 2600</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auto_racing.html'">Auto racing</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona_Cardinals.html'">Arizona Cardinals</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amiga.html'">Amiga</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amitabh_Bachchan.html'">Amitabh Bachchan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arsenal_F.C..html'">Arsenal F.C.</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aaliyah.html'">Aaliyah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andy_Warhol.html'">Andy Warhol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arnold_Schwarzenegger.html'">Arnold Schwarzenegger</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Approval_voting.html'">Approval voting</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona_Diamondbacks.html'">Arizona Diamondbacks</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archery.html'">Archery</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AOL.html'">AOL</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apple_Inc..html'">Apple Inc.</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ASCII.html'">ASCII</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_the_Giant.html'">André the Giant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Telephone_&amp;_Telegraph.html'">American Telephone &amp; Telegraph</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aster_CT-80.html'">Aster CT-80</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_7800.html'">Atari 7800</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AFC_Ajax.html'">AFC Ajax</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthony_Hopkins.html'">Anthony Hopkins</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ASCII_art.html'">ASCII art</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amy_Grant.html'">Amy Grant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advanced_Micro_Devices.html'">Advanced Micro Devices</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Quarter_Horse.html'">American Quarter Horse</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aston_Martin.html'">Aston Martin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Akira_Kurosawa.html'">Akira Kurosawa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adam_Carolla.html'">Adam Carolla</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apple_Newton.html'">Apple Newton</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Amazing_Spider-Man_(comic_book).html'">The Amazing Spider-Man (comic book)</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

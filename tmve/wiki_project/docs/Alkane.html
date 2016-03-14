@@ -1,0 +1,225 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[1472.0895892336, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Alkane</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Alkane</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>In <a href="http://www.wikipedia.org/wiki/Organic_chemistry" title="Organic chemistry">organic chemistry</a>, an <b>alkane</b>, or <b>paraffin</b> (a historical name that also has <a href="http://www.wikipedia.org/wiki/Paraffin_(disambiguation)" title="Paraffin (disambiguation)" class="mw-redirect mw-disambig">other meanings</a>), is a <a href="http://www.wikipedia.org/wiki/Saturation_(chemistry)" title="Saturation (chemistry)">saturated</a> <a href="http://www.wikipedia.org/wiki/Hydrocarbon" title="Hydrocarbon">hydrocarbon</a>. Alkanes consist only of <a href="http://www.wikipedia.org/wiki/Hydrogen" title="Hydrogen">hydrogen</a> and <a href="http://www.wikipedia.org/wiki/Carbon" title="Carbon">carbon</a> atoms and all bonds are <a href="http://www.wikipedia.org/wiki/Single_bond" title="Single bond">single bonds</a>.<sup id="cite_ref-merriam-webster_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alkane#cite_note-merriam-webster-1"><span>[</span>1<span>]</span></a></sup> Alkanes (technically, always <a href="http://www.wikipedia.org/wiki/Open-chain_compound" title="Open-chain compound">acyclic</a> or open-chain compounds) have the general chemical formula <a href="http://www.wikipedia.org/wiki/Carbon" title="Carbon">C</a><sub>n</sub><a href="http://www.wikipedia.org/wiki/Hydrogen" title="Hydrogen">H</a><sub>2n+2</sub>. For example, methane is CH<sub>4</sub>, in which n=1 (n being the number of carbon atoms). Alkanes belong to a <a href="http://www.wikipedia.org/wiki/Homologous_series" title="Homologous series">homologous series</a> of organic compounds in which the members differ by a <a href="http://www.wikipedia.org/wiki/Molecular_mass" title="Molecular mass">molecular mass</a> of 14.03u (mass of a <a href="http://www.wikipedia.org/wiki/Methylene_bridge" title="Methylene bridge">methanediyl group</a>, —CH<sub>2</sub>—, one carbon atom of mass 12.01u, and two hydrogen atoms of mass <span class="Unicode">≈</span>1.01u each). There are two main commercial sources: <a href="http://www.wikipedia.org/wiki/Petroleum" title="Petroleum">petroleum</a> (crude oil)<sup id="cite_ref-google_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alkane#cite_note-google-2"><span>[</span>2<span>]</span></a></sup> and natural gas.</p>
+<p>Each carbon atom has 4 bonds (either <a href="http://www.wikipedia.org/wiki/C-H_bond" title="C-H bond" class="mw-redirect">C-H</a> or <a href="http://www.wikipedia.org/wiki/C-C_bond" title="C-C bond" class="mw-redirect">C-C bonds</a>), and each hydrogen atom is joined to a carbon atom (H-C bonds). A series of linked carbon atoms is known as the <a href="http://www.wikipedia.org/wiki/Skeletal_formula" title="Skeletal formula">carbon skeleton</a> or carbon backbone. The number of carbon atoms is used to define the size of the alkane e.g., C<sub>2</sub>-alkane.</p>
+<p>An <b><a href="http://www.wikipedia.org/wiki/Alkyl" title="Alkyl">alkyl</a> group</b>, generally abbreviated with the symbol R, is a <a href="http://www.wikipedia.org/wiki/Functional_group" title="Functional group">functional group</a> or side-chain that, like an alkane, consists solely of single-bonded carbon and hydrogen atoms, for example a <a href="http://www.wikipedia.org/wiki/Methyl" title="Methyl" class="mw-redirect">methyl</a> or <a href="http://www.wikipedia.org/wiki/Ethyl_group" title="Ethyl group">ethyl group</a>.</p>
+<p>The simplest possible alkane (the parent molecule) is <a href="http://www.wikipedia.org/wiki/Methane" title="Methane">methane</a>, CH<sub>4</sub>. There is no limit to the number of carbon atoms that can be linked together, the only limitation being that the molecule is acyclic, is <a href="http://www.wikipedia.org/wiki/Saturation_(chemistry)" title="Saturation (chemistry)">saturated</a>, and is a <a href="http://www.wikipedia.org/wiki/Hydrocarbon" title="Hydrocarbon">hydrocarbon</a>. <a href="http://www.wikipedia.org/wiki/Waxes" title="Waxes" class="mw-redirect">Waxes</a> include examples of larger alkanes where the number of carbons in the carbon backbone is greater than about 17, above which the compounds are solids at <b>standard <a href="http://www.wikipedia.org/wiki/Ambient_temperature" title="Ambient temperature" class="mw-redirect">ambient temperature</a> and pressure</b> (<b>SATP</b>).</p>
+<p>Alkanes are not very reactive and have little <a href="http://www.wikipedia.org/wiki/Biological_activity" title="Biological activity">biological activity</a>. All alkanes are colourless and odourless. Alkanes can be viewed as a molecular tree upon which can be hung the more biologically active/reactive portions (<a href="http://www.wikipedia.org/wiki/Functional_groups" title="Functional groups" class="mw-redirect">functional groups</a>) of the molecule.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Alkane#Structure_classification"><span class="tocnumber">1</span> <span class="toctext">Structure classification</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Alkane#Isomerism"><span class="tocnumber">2</span> <span class="toctext">Isomerism</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Alkane#Nomenclature"><span class="tocnumber">3</span> <span class="toctext">Nomenclature</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Alkane#Linear_alkanes"><span class="tocnumber">3.1</span> <span class="toctext">Linear alkanes</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Alkane#Branched_alkanes"><span class="tocnumber">3.2</span> <span class="toctext">Branched alkanes</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Alkane#Cyclic_alkanes"><span class="tocnumber">3.3</span> <span class="toctext">Cyclic alkanes</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Alkane#Trivial.2Fcommon_names"><span class="tocnumber">3.4</span> <span class="toctext">Trivial/common names</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Alkane#Physical_properties"><span class="tocnumber">4</span> <span class="toctext">Physical properties</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Alkane#Table_of_alkanes"><span class="tocnumber">4.1</span> <span class="toctext">Table of alkanes</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Alkane#Boiling_point"><span class="tocnumber">4.2</span> <span class="toctext">Boiling point</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Alkane#Melting_points"><span class="tocnumber">4.3</span> <span class="toctext">Melting points</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Alkane#Conductivity_and_solubility"><span class="tocnumber">4.4</span> <span class="toctext">Conductivity and solubility</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Alkane#Molecular_geometry"><span class="tocnumber">4.5</span> <span class="toctext">Molecular geometry</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Alkane#Bond_lengths_and_bond_angles"><span class="tocnumber">4.6</span> <span class="toctext">Bond lengths and bond angles</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Alkane#Conformation"><span class="tocnumber">4.7</span> <span class="toctext">Conformation</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Alkane#Spectroscopic_properties"><span class="tocnumber">4.8</span> <span class="toctext">Spectroscopic properties</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="http://en.wikipedia.org/wiki/Alkane#Infrared_spectroscopy"><span class="tocnumber">4.8.1</span> <span class="toctext">Infrared spectroscopy</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="http://en.wikipedia.org/wiki/Alkane#NMR_spectroscopy"><span class="tocnumber">4.8.2</span> <span class="toctext">NMR spectroscopy</span></a></li>
+<li class="toclevel-3 tocsection-19"><a href="http://en.wikipedia.org/wiki/Alkane#Mass_spectrometry"><span class="tocnumber">4.8.3</span> <span class="toctext">Mass spectrometry</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Alkane#Chemical_properties"><span class="tocnumber">5</span> <span class="toctext">Chemical properties</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a href="http://en.wikipedia.org/wiki/Alkane#Reactions_with_oxygen_.28combustion_reaction.29"><span class="tocnumber">5.1</span> <span class="toctext">Reactions with oxygen (combustion reaction)</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="http://en.wikipedia.org/wiki/Alkane#Reactions_with_halogens"><span class="tocnumber">5.2</span> <span class="toctext">Reactions with halogens</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="http://en.wikipedia.org/wiki/Alkane#Cracking"><span class="tocnumber">5.3</span> <span class="toctext">Cracking</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="http://en.wikipedia.org/wiki/Alkane#Isomerization_and_reformation"><span class="tocnumber">5.4</span> <span class="toctext">Isomerization and reformation</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="http://en.wikipedia.org/wiki/Alkane#Other_reactions"><span class="tocnumber">5.5</span> <span class="toctext">Other reactions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="http://en.wikipedia.org/wiki/Alkane#Occurrence"><span class="tocnumber">6</span> <span class="toctext">Occurrence</span></a>
+<ul>
+<li class="toclevel-2 tocsection-27"><a href="http://en.wikipedia.org/wiki/Alkane#Occurrence_of_alkanes_in_the_Universe"><span class="tocnumber">6.1</span> <span class="toctext">Occurrence of alkanes in the Universe</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="http://en.wikipedia.org/wiki/Alkane#Occurrence_of_alkanes_on_Earth"><span class="tocnumber">6.2</span> <span class="toctext">Occurrence of alkanes on Earth</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="http://en.wikipedia.org/wiki/Alkane#Biological_occurrence"><span class="tocnumber">6.3</span> <span class="toctext">Biological occurrence</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="http://en.wikipedia.org/wiki/Alkane#Ecological_relations"><span class="tocnumber">6.4</span> <span class="toctext">Ecological relations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-31"><a href="http://en.wikipedia.org/wiki/Alkane#Production"><span class="tocnumber">7</span> <span class="toctext">Production</span></a>
+<ul>
+<li class="toclevel-2 tocsection-32"><a href="http://en.wikipedia.org/wiki/Alkane#Petroleum_refining"><span class="tocnumber">7.1</span> <span class="toctext">Petroleum refining</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="http://en.wikipedia.org/wiki/Alkane#Fischer-Tropsch"><span class="tocnumber">7.2</span> <span class="toctext">Fischer-Tropsch</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="http://en.wikipedia.org/wiki/Alkane#Laboratory_preparation"><span class="tocnumber">7.3</span> <span class="toctext">Laboratory preparation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-35"><a href="http://en.wikipedia.org/wiki/Alkane#Applications"><span class="tocnumber">8</span> <span class="toctext">Applications</span></a></li>
+<li class="toclevel-1 tocsection-36"><a href="http://en.wikipedia.org/wiki/Alkane#Environmental_transformations"><span class="tocnumber">9</span> <span class="toctext">Environmental transformations</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="http://en.wikipedia.org/wiki/Alkane#Hazards"><span class="tocnumber">10</span> <span class="toctext">Hazards</span></a></li>
+<li class="toclevel-1 tocsection-38"><a href="http://en.wikipedia.org/wiki/Alkane#See_also"><span class="tocnumber">11</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-39"><a href="http://en.wikipedia.org/wiki/Alkane#References"><span class="tocnumber">12</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-40"><a href="http://en.wikipedia.org/wiki/Alkane#Further_reading"><span class="tocnumber">13</span> <span class="toctext">Further reading</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Alkane">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/AT_Attachment.html'">AT Attachment</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algorithm.html'">Algorithm</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_8.html'">Apollo 8</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammonia.html'">Ammonia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aircraft_carrier.html'">Aircraft carrier</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acupuncture.html'">Acupuncture</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antidepressant.html'">Antidepressant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Assembly_language.html'">Assembly language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/APL_(programming_language).html'">APL (programming language)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atomic_orbital.html'">Atomic orbital</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberration_of_light.html'">Aberration of light</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alpha_Centauri.html'">Alpha Centauri</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asbestos.html'">Asbestos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aerodynamics.html'">Aerodynamics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algebraic_geometry.html'">Algebraic geometry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcohol.html'">Alcohol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asynchronous_Transfer_Mode.html'">Asynchronous Transfer Mode</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anti-ballistic_missile.html'">Anti-ballistic missile</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amateur_astronomy.html'">Amateur astronomy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artificial_intelligence.html'">Artificial intelligence</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aluminium.html'">Aluminium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antibiotic_resistance.html'">Antibiotic resistance</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Addiction.html'">Addiction</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom.html'">Axiom</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archimedes.html'">Archimedes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Kolmogorov_complexity.html'">Kolmogorov complexity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aircraft.html'">Aircraft</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_15.html'">Apollo 15</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_program.html'">Apollo program</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom_of_choice.html'">Axiom of choice</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

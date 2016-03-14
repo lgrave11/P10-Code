@@ -1,0 +1,182 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[97.9962814586, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [95.5565607434, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [7.7159853172, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Abdul Alhazred</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Abdul Alhazred</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Abdul Alhazred</b> is a <a href="http://www.wikipedia.org/wiki/Character_(arts)" title="Character (arts)">fictional character</a> created by American horror writer <a href="http://www.wikipedia.org/wiki/H._P._Lovecraft" title="H. P. Lovecraft">H. P. Lovecraft</a>. He is the so-called "Mad <a href="http://www.wikipedia.org/wiki/Arab" title="Arab" class="mw-redirect">Arab</a>" credited with authoring the fictional book <i>Kitab al-Azif</i> (the <i><a href="http://www.wikipedia.org/wiki/Necronomicon" title="Necronomicon">Necronomicon</a></i>), and as such is an integral part of <a href="http://www.wikipedia.org/wiki/Cthulhu_Mythos" title="Cthulhu Mythos">Cthulhu Mythos</a> lore.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#Name"><span class="tocnumber">1</span> <span class="toctext">Name</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#Biography"><span class="tocnumber">2</span> <span class="toctext">Biography</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#H._P._Lovecraft"><span class="tocnumber">2.1</span> <span class="toctext">H. P. Lovecraft</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#August_Derleth"><span class="tocnumber">2.2</span> <span class="toctext">August Derleth</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#In_non-Mythos_fiction"><span class="tocnumber">3</span> <span class="toctext">In non-Mythos fiction</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#See_also"><span class="tocnumber">4</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#Notes"><span class="tocnumber">5</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Name">Name</span></h3>
+<p><i>Abdul Alhazred</i> was a pseudonym adopted by Lovecraft after reading <i><a href="http://www.wikipedia.org/wiki/1001_Arabian_Nights" title="1001 Arabian Nights" class="mw-redirect">1001 Arabian Nights</a></i> in his early childhood. The name may have been invented by Lovecraft himself or the Phillips' family lawyer Albert Baker.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p><i><a href="http://www.wikipedia.org/wiki/Abdul" title="Abdul">Abdul</a></i> is a common Arabic name component (but never a name by itself). <i>Alhazred</i> may allude to <i>Hazard</i>, a reference to the book's destructive and dangerous nature, or to Lovecraft's ancestors by that name.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#cite_note-3"><span>[</span>3<span>]</span></a></sup> It might also have been a play on "all-has-read", since Lovecraft was an avid reader in youth.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#cite_note-4"><span>[</span>4<span>]</span></a></sup> With Abdul meaning "slave of" Abdul Alhazred could mean a slave of all that has been read, in reference to Lovecraft and his youthful all-consuming pursuit, or to his creation of the Cthulhu mythos and being a slave of it even while its creator; it more aptly applies to the character Abdul Alhazred who truly was enslaved by what he read, and became a servant of unfathomable evil.</p>
+<p>Another possibility, raised in an essay by the Swedish fantasy writer and editor Rickard Berghorn, is that the name <i>Alhazred</i> was influenced by references to two historical authors whose names were Latinized as <i>Alhazen</i>: Alhazen ben Josef, who translated <a href="http://www.wikipedia.org/wiki/Ptolemy" title="Ptolemy">Ptolemy</a> into <a href="http://www.wikipedia.org/wiki/Arabic_language" title="Arabic language" class="mw-redirect">Arabic</a>; and <a href="http://www.wikipedia.org/wiki/Alhazen" title="Alhazen">Abu 'Ali al-Hasan ibn al-Haytham</a>, who wrote about optics, mathematics and physics. Ibn al-Haytham is said to have pretended to be mad to escape the wrath of a ruler.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p><i>Abdul Alhazred</i> is not a real <a href="http://www.wikipedia.org/wiki/Arabic_name" title="Arabic name">Arabic name</a>, and seems to contain the Arabic definite article morpheme <i>al-</i> twice in a row (anomalous in terms of <a href="http://www.wikipedia.org/wiki/Arabic_grammar" title="Arabic grammar">Arabic grammar</a>). The more proper Arabic form might be <i>Abd-al-Hazred</i> or <i>Abdul Hazred</i>. In <a href="http://www.wikipedia.org/wiki/Arabic_language" title="Arabic language" class="mw-redirect">Arabic</a> translations, his name has appeared as <i>Abdullah <span class="Unicode">Al<a href="http://www.wikipedia.org/wiki/Heth" title="Heth">ḥa</a> <a href="http://www.wikipedia.org/wiki/%E1%BA%92" title="Ẓ">ẓred</a></span></i> (عبدالله الحظرد): Arabic <i><span title="Arabic transliteration" class="Unicode" style="white-space:normal; text-decoration: none">ḥaẓara</span></i>حظر = "he fenced in", "he prohibited". Hazred could come from the Arabic word "Hazrat" meaning Great Lord with a twist that makes it sound like "red" and "hazard" both indicative of danger. It is also thought by some to be a corruption of sorts on the phrase "All has read," to imply he has read lots, and has immense amounts of knowledge. However Abdul is a common Arabic prefix meaning "Servant" and "Al" is Arabic for "the", and if "hazra" means "he prohibited", "he fenced in" or "Great Lord", then the name would mean "Servant of the Prohibited", "Servant of the Fenced in", or "Servant of the Great Lord" which would make sense considering his role, even if it is not a proper Arabic name.</p>
+<p><a href="http://en.wikipedia.org/wiki/Abdul_Alhazred">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Articles_of_Faith.html'">Articles of Faith</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abba_Arika.html'">Abba Arika</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbahu.html'">Abbahu</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Book_of_Amos.html'">Book of Amos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adam_of_Bremen.html'">Adam of Bremen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adventism.html'">Adventism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arachnophobia.html'">Arachnophobia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antoine_Thomson_d_Abbadie.html'">Antoine Thomson d'Abbadie</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aelianus_Tacticus.html'">Aelianus Tacticus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ask_and_Embla.html'">Ask and Embla</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aeschylus.html'">Aeschylus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Athanasian_Creed.html'">Athanasian Creed</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Nobel.html'">Alfred Nobel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aristophanes.html'">Aristophanes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antimony.html'">Antimony</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aga_Khan_III.html'">Aga Khan III</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abraxas.html'">Abraxas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aragonese_language.html'">Aragonese language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammianus_Marcellinus.html'">Ammianus Marcellinus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abba_Mari.html'">Abba Mari</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andreas_Schlüter.html'">Andreas Schlüter</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberto_Giacometti.html'">Alberto Giacometti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Achaeans.html'">Achaeans</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alvar_Aalto.html'">Alvar Aalto</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrey_Markov.html'">Andrey Markov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Jarry.html'">Alfred Jarry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André-Marie_Ampère.html'">André-Marie Ampère</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amram.html'">Amram</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambrosia.html'">Ambrosia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affiliation.html'">Affiliation</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

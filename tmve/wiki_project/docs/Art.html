@@ -1,0 +1,199 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[1439.9597831499, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [101.2194197853, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Art</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Art</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Art</b> is a diverse range of <a href="http://www.wikipedia.org/wiki/Human_behavior" title="Human behavior">human activities</a> in creating visual, auditory or performing artifacts – <a href="http://www.wikipedia.org/wiki/Artworks" title="Artworks" class="mw-redirect">artworks</a>, expressing the author's imaginative or technical skill, intended to be appreciated for their beauty or emotional power.<sup id="cite_ref-OD_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Art#cite_note-OD-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-MW_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Art#cite_note-MW-2"><span>[</span>2<span>]</span></a></sup> In their most general form these activities include the production of works of art, the criticism of art, the study of the history of art, and the aesthetic dissemination of art.</p>
+<p>The oldest form of art are <a href="http://www.wikipedia.org/wiki/Visual_arts" title="Visual arts">visual arts</a>, which include creation of images or objects in fields including painting, sculpture, <a href="http://www.wikipedia.org/wiki/Printmaking" title="Printmaking">printmaking</a>, photography, and other visual media. Architecture is often included as one of the visual arts; however, like the <a href="http://www.wikipedia.org/wiki/Decorative_arts" title="Decorative arts">decorative arts</a>, it involves the creation of objects where the practical considerations of use are essential—in a way that they usually are not in a painting, for example. Music, theatre, film, dance, and other <a href="http://www.wikipedia.org/wiki/Performing_arts" title="Performing arts">performing arts</a>, as well as literature and other media such as <a href="http://www.wikipedia.org/wiki/Interactive_media" title="Interactive media">interactive media</a>, are included in a broader definition of art or <a href="http://www.wikipedia.org/wiki/The_arts" title="The arts">the arts</a>.<sup id="cite_ref-OD_1-1" class="reference"><a href="http://en.wikipedia.org/wiki/Art#cite_note-OD-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Art#cite_note-3"><span>[</span>3<span>]</span></a></sup> Until the 17th century, <i>art</i> referred to any skill or mastery and was not differentiated from <a href="http://www.wikipedia.org/wiki/Craft" title="Craft">crafts</a> or <a href="http://www.wikipedia.org/wiki/Sciences" title="Sciences" class="mw-redirect">sciences</a>. In modern usage after the 17th century, where aesthetic considerations are paramount, the fine arts are separated and distinguished from acquired skills in general, such as the decorative or <a href="http://www.wikipedia.org/wiki/Applied_arts" title="Applied arts">applied arts</a>.</p>
+<p>Art may be characterized in terms of <a href="http://www.wikipedia.org/wiki/Mimesis" title="Mimesis">mimesis</a> (its representation of reality), expression, communication of emotion, or other qualities. During the <a href="http://www.wikipedia.org/wiki/Romanticism" title="Romanticism">Romantic period</a>, art came to be seen as "a special faculty of the human mind to be classified with religion and science".<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Art#cite_note-4"><span>[</span>4<span>]</span></a></sup> Though the definition of what constitutes art is disputed<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Art#cite_note-5"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Art#cite_note-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Art#cite_note-7"><span>[</span>7<span>]</span></a></sup> and has changed over time, general descriptions mention an idea of imaginative or technical skill stemming from <a href="http://www.wikipedia.org/wiki/Agency_(philosophy)" title="Agency (philosophy)">human agency</a><sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/Art#cite_note-8"><span>[</span>8<span>]</span></a></sup> and creation.<sup id="cite_ref-britannica.com_9-0" class="reference"><a href="http://en.wikipedia.org/wiki/Art#cite_note-britannica.com-9"><span>[</span>9<span>]</span></a></sup></p>
+<p>The nature of art, and related concepts such as <a href="http://www.wikipedia.org/wiki/Creativity" title="Creativity">creativity</a> and interpretation, are explored in a branch of philosophy known as <a href="http://www.wikipedia.org/wiki/Aesthetics" title="Aesthetics">aesthetics</a>.<sup id="cite_ref-10" class="reference"><a href="http://en.wikipedia.org/wiki/Art#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Art#Creative_art_and_fine_art"><span class="tocnumber">1</span> <span class="toctext">Creative art and fine art</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Art#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Art#Forms.2C_genres.2C_media.2C_and_styles"><span class="tocnumber">3</span> <span class="toctext">Forms, genres, media, and styles</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Art#Skill_and_craft"><span class="tocnumber">3.1</span> <span class="toctext">Skill and craft</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Art#Purpose_of_art"><span class="tocnumber">4</span> <span class="toctext">Purpose of art</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Art#Non-motivated_functions_of_art"><span class="tocnumber">4.1</span> <span class="toctext">Non-motivated functions of art</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Art#Motivated_functions_of_art"><span class="tocnumber">4.2</span> <span class="toctext">Motivated functions of art</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Art#Public_access"><span class="tocnumber">5</span> <span class="toctext">Public access</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Art#Controversies"><span class="tocnumber">6</span> <span class="toctext">Controversies</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Art#Theory"><span class="tocnumber">7</span> <span class="toctext">Theory</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Art#Arrival_of_Modernism"><span class="tocnumber">7.1</span> <span class="toctext">Arrival of Modernism</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Art#New_Criticism_and_the_.22Intentional_Fallacy.22"><span class="tocnumber">7.2</span> <span class="toctext">New Criticism and the "Intentional Fallacy"</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Art#.22Linguistic_turn.22_and_its_debate"><span class="tocnumber">7.3</span> <span class="toctext">"Linguistic turn" and its debate</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Art#Classification_disputes"><span class="tocnumber">8</span> <span class="toctext">Classification disputes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Art#Value_judgment"><span class="tocnumber">8.1</span> <span class="toctext">Value judgment</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="http://en.wikipedia.org/wiki/Art#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="http://en.wikipedia.org/wiki/Art#Notes"><span class="tocnumber">10</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Art#Bibliography"><span class="tocnumber">11</span> <span class="toctext">Bibliography</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="http://en.wikipedia.org/wiki/Art#Further_reading"><span class="tocnumber">12</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Art#External_links"><span class="tocnumber">13</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Art">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Aesthetics.html'">Aesthetics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Russel_Wallace.html'">Alfred Russel Wallace</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aleister_Crowley.html'">Aleister Crowley</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aristotle.html'">Aristotle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acts_of_the_Apostles.html'">Acts of the Apostles</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthropology.html'">Anthropology</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alternate_history.html'">Alternate history</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alternative_medicine.html'">Alternative medicine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anglicanism.html'">Anglicanism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ayn_Rand.html'">Ayn Rand</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Einstein.html'">Albert Einstein</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_Vindication_of_the_Rights_of_Woman.html'">A Vindication of the Rights of Woman</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Austrian_School.html'">Austrian School</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aramaic_language.html'">Aramaic language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antisemitism.html'">Antisemitism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_language.html'">Arabic language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adam_Smith.html'">Adam Smith</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abortion.html'">Abortion</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Altaic_languages.html'">Altaic languages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Avicenna.html'">Avicenna</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_and_British_English_differences.html'">American and British English differences</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ibn_al-Haytham.html'">Ibn al-Haytham</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustine_of_Hippo.html'">Augustine of Hippo</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allen_Ginsberg.html'">Allen Ginsberg</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthroposophy.html'">Anthroposophy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/An_Enquiry_concerning_Human_Understanding.html'">An Enquiry concerning Human Understanding</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afrikaans.html'">Afrikaans</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Hercule_Poirot.html'">Hercule Poirot</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Schweitzer.html'">Albert Schweitzer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afterlife.html'">Afterlife</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

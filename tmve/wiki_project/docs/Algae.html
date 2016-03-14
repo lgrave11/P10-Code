@@ -1,0 +1,161 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[275.4041943802, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [43.8405074261, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [40.0241234211, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Algae</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Algae</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Algae</b> (<span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'l' in 'lie'">l</span><span title="/dʒ/ 'j' in 'jam'">dʒ</span><span title="/iː/ long 'e' in 'seed'">iː</span></span>/</a></span></span> or <span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'l' in 'lie'">l</span><span title="'g' in 'guy'">ɡ</span><span title="/iː/ long 'e' in 'seed'">iː</span></span>/</a></span></span>; singular <i>alga</i> <span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'l' in 'lie'">l</span><span title="'g' in 'guy'">ɡ</span><span title="/ə/ 'a' in 'about'">ə</span></span>/</a></span></span>) is an informal term for a large, diverse group of <a href="http://www.wikipedia.org/wiki/Eukaryotes" title="Eukaryotes" class="mw-redirect">eukaryotes</a> that are not necessarily closely related and are thus <a href="http://www.wikipedia.org/wiki/Polyphyletic" title="Polyphyletic" class="mw-redirect">polyphyletic</a>. Included <a href="http://www.wikipedia.org/wiki/Organism" title="Organism">organisms</a> range from <a href="http://www.wikipedia.org/wiki/Unicellular" title="Unicellular" class="mw-redirect">unicellular</a> genera, such as <i><a href="http://www.wikipedia.org/wiki/Chlorella" title="Chlorella">Chlorella</a></i> and the <a href="http://www.wikipedia.org/wiki/Diatoms" title="Diatoms" class="mw-redirect">diatoms</a>, to <a href="http://www.wikipedia.org/wiki/Multicellular" title="Multicellular" class="mw-redirect">multicellular</a> forms, such as the <a href="http://www.wikipedia.org/wiki/Macrocystis_pyrifera" title="Macrocystis pyrifera">giant kelp</a>, a large <a href="http://www.wikipedia.org/wiki/Brown_algae" title="Brown algae">brown alga</a> that may grow up to 50&#160;meters in length. Most are aquatic and <a href="http://www.wikipedia.org/wiki/Autotrophic" title="Autotrophic" class="mw-redirect">autotrophic</a> and lack many of the distinct cell and tissue types, such as <a href="http://www.wikipedia.org/wiki/Stomata" title="Stomata" class="mw-redirect">stomata</a>, <a href="http://www.wikipedia.org/wiki/Xylem" title="Xylem">xylem</a> and <a href="http://www.wikipedia.org/wiki/Phloem" title="Phloem">phloem</a>, that are found in <a href="http://www.wikipedia.org/wiki/Embryophyte" title="Embryophyte">land plants</a>. The largest and most complex marine algae are called <a href="http://www.wikipedia.org/wiki/Seaweed" title="Seaweed">seaweeds</a>, while the most complex freshwater forms are the <a href="http://www.wikipedia.org/wiki/Charophyta" title="Charophyta">Charophyta</a>, a <a href="http://www.wikipedia.org/wiki/Phylum" title="Phylum">division</a> of green algae that includes, for example, <i><a href="http://www.wikipedia.org/wiki/Spirogyra" title="Spirogyra">Spirogyra</a></i> and the <a href="http://www.wikipedia.org/wiki/Stonewort" title="Stonewort" class="mw-redirect">stoneworts</a>.</p>
+<p>There is no generally accepted definition of algae. One definition is that algae "have <a href="http://www.wikipedia.org/wiki/Chlorophyll" title="Chlorophyll">chlorophyll</a> as their primary photosynthetic pigment and lack a sterile covering of cells around their reproductive cells".<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Algae#cite_note-4"><span>[</span>4<span>]</span></a></sup> Some authors exclude all prokaryotes<sup id="cite_ref-IntroBot_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Algae#cite_note-IntroBot-5"><span>[</span>5<span>]</span></a></sup> and thus do not consider <a href="http://www.wikipedia.org/wiki/Cyanobacteria" title="Cyanobacteria">cyanobacteria</a> (blue-green algae) as algae.<sup id="cite_ref-Allaby_92_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Algae#cite_note-Allaby_92-6"><span>[</span>6<span>]</span></a></sup></p>
+<p>Algae constitute a <a href="http://www.wikipedia.org/wiki/Polyphyletic" title="Polyphyletic" class="mw-redirect">polyphyletic</a> group<sup id="cite_ref-IntroBot_5-1" class="reference"><a href="http://en.wikipedia.org/wiki/Algae#cite_note-IntroBot-5"><span>[</span>5<span>]</span></a></sup> since they do not include a common ancestor, and although their plastids seem to have a single origin, from cyanobacteria,<sup id="cite_ref-keeling_2-1" class="reference"><a href="http://en.wikipedia.org/wiki/Algae#cite_note-keeling-2"><span>[</span>2<span>]</span></a></sup> they were acquired in different ways. <a href="http://www.wikipedia.org/wiki/Green_algae" title="Green algae">Green algae</a> are examples of algae that have primary chloroplasts derived from <a href="http://www.wikipedia.org/wiki/Endosymbiotic_theory" title="Endosymbiotic theory" class="mw-redirect">endosymbiotic</a> cyanobacteria. <a href="http://www.wikipedia.org/wiki/Diatoms" title="Diatoms" class="mw-redirect">Diatoms</a> and brown algae are examples of algae with secondary chloroplasts derived from an <a href="http://www.wikipedia.org/wiki/Endosymbiotic_theory#Secondary_endosymbiosis" title="Endosymbiotic theory" class="mw-redirect">endosymbiotic</a> <a href="http://www.wikipedia.org/wiki/Red_alga" title="Red alga" class="mw-redirect">red alga</a>.<sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Algae#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Algae">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Automated_theorem_proving.html'">Automated theorem proving</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alpha_compositing.html'">Alpha compositing</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asphalt.html'">Asphalt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allele.html'">Allele</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytic_geometry.html'">Analytic geometry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amphibian.html'">Amphibian</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astatine.html'">Astatine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Absolute_magnitude.html'">Absolute magnitude</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axon.html'">Axon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algebraically_closed_field.html'">Algebraically closed field</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anisotropy.html'">Anisotropy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Additive_synthesis.html'">Additive synthesis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antiderivative.html'">Antiderivative</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_14.html'">Apollo 14</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advanced_Mobile_Phone_System.html'">Advanced Mobile Phone System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom_of_regularity.html'">Axiom of regularity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aspartame.html'">Aspartame</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atomic_absorption_spectroscopy.html'">Atomic absorption spectroscopy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amplitude_modulation.html'">Amplitude modulation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algorithms_for_calculating_variance.html'">Algorithms for calculating variance</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ascorbic_acid.html'">Ascorbic acid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aromatic_hydrocarbon.html'">Aromatic hydrocarbon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_16.html'">Apollo 16</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abscess.html'">Abscess</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analog_television.html'">Analog television</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Minute_of_arc.html'">Minute of arc</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Associative_algebra.html'">Associative algebra</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/International_Atomic_Time.html'">International Atomic Time</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Americium.html'">Americium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytical_engine.html'">Analytical engine</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

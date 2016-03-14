@@ -1,0 +1,182 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[108.3226593162, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [33.388881784, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [22.1910618798, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [19.4558446061, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Alvin Toffler</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Alvin Toffler</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Alvin Toffler</b> (born October 4, 1928) is an American writer and <a href="http://www.wikipedia.org/wiki/Futurist" title="Futurist">futurist</a>, known for his works discussing the <a href="http://www.wikipedia.org/wiki/Digital_revolution" title="Digital revolution" class="mw-redirect">digital revolution</a>, <a href="http://www.wikipedia.org/wiki/Telecommunication" title="Telecommunication">communication revolution</a> and <a href="http://www.wikipedia.org/wiki/Technological_singularity" title="Technological singularity">technological singularity</a>.</p>
+<p>Toffler is a former associate editor of <i><a href="http://www.wikipedia.org/wiki/Fortune_(magazine)" title="Fortune (magazine)">Fortune</a></i> magazine. In his early works he focused on technology and its impact through effects like <a href="http://www.wikipedia.org/wiki/Information_overload" title="Information overload">information overload</a>. He moved on to examining the reaction to <a href="http://www.wikipedia.org/wiki/Social_change" title="Social change">changes in society</a>. His later focus has been on the increasing power of 21st-century military hardware, the proliferation of new technologies, and capitalism.</p>
+<p>He founded Toffler Associates, a management consulting company, and was a visiting scholar at the <a href="http://www.wikipedia.org/wiki/Russell_Sage_Foundation" title="Russell Sage Foundation">Russell Sage Foundation</a>, visiting professor at <a href="http://www.wikipedia.org/wiki/Cornell_University" title="Cornell University">Cornell University</a>, faculty member of the <a href="http://www.wikipedia.org/wiki/The_New_School" title="The New School">New School for Social Research</a>, a White House correspondent, an editor of Fortune magazine, and a business consultant.<sup id="cite_ref-MI_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#cite_note-MI-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>Toffler is married to Heidi Toffler, also a writer and futurist. They live in the <a href="http://www.wikipedia.org/wiki/Bel_Air,_Los_Angeles,_California" title="Bel Air, Los Angeles, California" class="mw-redirect">Bel Air</a> section of Los Angeles, California, just north of <a href="http://www.wikipedia.org/wiki/Sunset_Boulevard" title="Sunset Boulevard">Sunset Boulevard</a>.</p>
+<p>The couple’s only child, Karen Toffler, (1954–2000), died at the age of 46 after more than a decade suffering from <a href="http://www.wikipedia.org/wiki/Guillain%E2%80%93Barr%C3%A9_syndrome" title="Guillain–Barré syndrome">Guillain–Barré syndrome</a>.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#cite_note-5"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#Early_life_and_career"><span class="tocnumber">1</span> <span class="toctext">Early life and career</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#His_ideas"><span class="tocnumber">2</span> <span class="toctext">His ideas</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#Critical_assesment"><span class="tocnumber">3</span> <span class="toctext">Critical assesment</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#Selected_awards"><span class="tocnumber">4</span> <span class="toctext">Selected awards</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#Bibliography"><span class="tocnumber">5</span> <span class="toctext">Bibliography</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Early_life_and_career">Early life and career</span></h3>
+<p>Alvin Toffler was born in 1928 in New York City, the son of Rose (Albaum) and Sam Toffler.<sup id="cite_ref-bookref1_2-1" class="reference"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#cite_note-bookref1-2"><span>[</span>2<span>]</span></a></sup> His family was Jewish. He met his future wife, Adelaide Elizabeth Farrell (now known as Heidi Toffler), at <a href="http://www.wikipedia.org/wiki/New_York_University" title="New York University">New York University</a> where he was an English major and she was starting a graduate course in linguistics. Being radical students, they decided against further graduate work, moved to the <a href="http://www.wikipedia.org/wiki/Midwestern_United_States" title="Midwestern United States">Midwestern United States</a>, and married, spending the next five years as blue-collar workers on assembly lines while studying industrial mass production in their daily work. Heidi became a union shop steward in the aluminum foundry where she worked. Alvin became a millwright and welder.<sup id="cite_ref-ATWPARTNERSHIP_7-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#cite_note-ATWPARTNERSHIP-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>Their hands-on practical labor experience got Toffler a position on a union-backed newspaper, a transfer to its Washington bureau, then three years as a <a href="http://www.wikipedia.org/wiki/White_House_Correspondent" title="White House Correspondent" class="mw-redirect">White House Correspondent</a> covering Congress and the White House for a Pennsylvania daily. Meanwhile, his wife worked at a specialized library for business and behavioral science.<sup id="cite_ref-ATWPARTNERSHIP_7-1" class="reference"><a href="http://en.wikipedia.org/wiki/Alvin_Toffler#cite_note-ATWPARTNERSHIP-7"><span>[</span>7<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Alvin_Toffler">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Autism.html'">Autism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allomorph.html'">Allomorph</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artistic_revolution.html'">Artistic revolution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Approximant_consonant.html'">Approximant consonant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Answer.html'">Answer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Garner.html'">Alan Garner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrey_Markov.html'">Andrey Markov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A.html'">A</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abhidharma.html'">Abhidharma</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antimony.html'">Antimony</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André-Marie_Ampère.html'">André-Marie Ampère</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberto_Giacometti.html'">Alberto Giacometti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adventism.html'">Adventism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affirming_the_consequent.html'">Affirming the consequent</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abstract_(law).html'">Abstract (law)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argument_form.html'">Argument form</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affidavit.html'">Affidavit</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatomy.html'">Anatomy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adventure.html'">Adventure</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Athanasian_Creed.html'">Athanasian Creed</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affray.html'">Affray</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Activism.html'">Activism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/August_Derleth.html'">August Derleth</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annals_of_Mathematics.html'">Annals of Mathematics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Religious_denominations_in_Poland.html'">Religious denominations in Poland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abba_Mari.html'">Abba Mari</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ablative_case.html'">Ablative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andreas_Capellanus.html'">Andreas Capellanus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affection.html'">Affection</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acting.html'">Acting</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

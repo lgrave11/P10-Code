@@ -1,0 +1,197 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[270.7676402726, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [103.0130055536, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [62.4881780035, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Animation</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Animation</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Animation</b> is the process of making the <a href="http://www.wikipedia.org/wiki/Illusion" title="Illusion">illusion</a> of <a href="http://www.wikipedia.org/wiki/Motion_(physics)" title="Motion (physics)">motion</a> and change<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Animation#cite_note-1"><span>[</span>Note 1<span>]</span></a></sup> by means of the rapid display of a sequence of static images that minimally differ from each other. The illusion—as in motion pictures in general—is thought to rely on the <a href="http://www.wikipedia.org/wiki/Phi_phenomenon" title="Phi phenomenon">phi phenomenon</a>. <a href="http://www.wikipedia.org/wiki/Animator" title="Animator">Animators</a> are artists who specialize in the creation of animation.</p>
+<p>Animation can be <a href="http://www.wikipedia.org/wiki/Recording" title="Recording">recorded</a> with either analogue media, a <a href="http://www.wikipedia.org/wiki/Flip_book" title="Flip book">flip book</a>, <a href="http://www.wikipedia.org/wiki/Motion_picture_film" title="Motion picture film" class="mw-redirect">motion picture film</a>, video tape, <a href="http://www.wikipedia.org/wiki/Digital_media" title="Digital media">digital media</a>, including formats with <a href="http://www.wikipedia.org/wiki/Animated_GIF" title="Animated GIF" class="mw-redirect">animated GIF</a>, <a href="http://www.wikipedia.org/wiki/Flash_animation" title="Flash animation">Flash animation</a> and digital video. To display animation, a <a href="http://www.wikipedia.org/wiki/Digital_camera" title="Digital camera">digital camera</a>, computer, or <a href="http://www.wikipedia.org/wiki/Image_projector" title="Image projector" class="mw-redirect">projector</a> are used along with new technologies that are produced.</p>
+<p>Animation creation methods include the <a href="http://www.wikipedia.org/wiki/Traditional_animation" title="Traditional animation">traditional animation</a> creation method and those involving <a href="http://www.wikipedia.org/wiki/Stop_motion" title="Stop motion">stop motion</a> animation of two and three-dimensional objects, <a href="http://www.wikipedia.org/wiki/Cutout_animation" title="Cutout animation">paper cutouts</a>, <a href="http://www.wikipedia.org/wiki/Puppet" title="Puppet">puppets</a> and <a href="http://www.wikipedia.org/wiki/Clay_animation" title="Clay animation">clay figures</a>. Images are displayed in a rapid succession, usually 24, 25, 30, or 60 <a href="http://www.wikipedia.org/wiki/Film_frame" title="Film frame">frames</a> per second.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Animation#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Animation#Techniques"><span class="tocnumber">2</span> <span class="toctext">Techniques</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Animation#Traditional_animation"><span class="tocnumber">2.1</span> <span class="toctext">Traditional animation</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Animation#Stop_motion_animation"><span class="tocnumber">2.2</span> <span class="toctext">Stop motion animation</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Animation#Computer_animation"><span class="tocnumber">2.3</span> <span class="toctext">Computer animation</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="http://en.wikipedia.org/wiki/Animation#2D_animation"><span class="tocnumber">2.3.1</span> <span class="toctext">2D animation</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="http://en.wikipedia.org/wiki/Animation#3D_animation"><span class="tocnumber">2.3.2</span> <span class="toctext">3D animation</span></a>
+<ul>
+<li class="toclevel-4 tocsection-8"><a href="http://en.wikipedia.org/wiki/Animation#3D_terms"><span class="tocnumber">2.3.2.1</span> <span class="toctext">3D terms</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Animation#Mechanical_animation"><span class="tocnumber">2.4</span> <span class="toctext">Mechanical animation</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Animation#Other_animation_styles.2C_techniques_and_approaches"><span class="tocnumber">2.5</span> <span class="toctext">Other animation styles, techniques and approaches</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Animation#Production"><span class="tocnumber">3</span> <span class="toctext">Production</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Animation#Criticism"><span class="tocnumber">4</span> <span class="toctext">Criticism</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Animation#Awards"><span class="tocnumber">5</span> <span class="toctext">Awards</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Animation#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Animation#Notes"><span class="tocnumber">7</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="http://en.wikipedia.org/wiki/Animation#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="http://en.wikipedia.org/wiki/Animation#Further_reading"><span class="tocnumber">9</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Animation#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="History">History</span></h3>
+<p>Early examples of attempts to capture the phenomenon of <a href="http://www.wikipedia.org/wiki/Motion_(physics)" title="Motion (physics)">motion</a> into a still drawing can be found in <a href="http://www.wikipedia.org/wiki/Paleolithic" title="Paleolithic">paleolithic</a> <a href="http://www.wikipedia.org/wiki/Cave_painting" title="Cave painting">cave paintings</a>, where animals are often depicted with multiple legs in superimposed positions, clearly attempting to convey the perception of motion.<sup id="cite_ref-Thomas8_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Animation#cite_note-Thomas8-2"><span>[</span>1<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Animation">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Airbus_A300.html'">Airbus A300</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_Lynx.html'">Atari Lynx</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_Jaguar.html'">Atari Jaguar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexis_Korner.html'">Alexis Korner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arrangement.html'">Arrangement</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Miller.html'">Arthur Miller</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apple_III.html'">Apple III</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AmeriKKKa_s_Most_Wanted.html'">AmeriKKKa's Most Wanted</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antonio_Salieri.html'">Antonio Salieri</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ally_McBeal.html'">Ally McBeal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anna_Kournikova.html'">Anna Kournikova</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Rise_and_Fall_of_the_City_of_Mahagonny.html'">Rise and Fall of the City of Mahagonny</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AutoCAD.html'">AutoCAD</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advance_Australia_Fair.html'">Advance Australia Fair</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Steel-string_acoustic_guitar.html'">Steel-string acoustic guitar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Miss_Marple.html'">Miss Marple</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Football_Conference.html'">American Football Conference</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Kay.html'">Alan Kay</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/IBM_AIX_(operating_system).html'">IBM AIX (operating system)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amber_Diceless_Roleplaying_Game.html'">Amber Diceless Roleplaying Game</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adobe_Systems.html'">Adobe Systems</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_Cuarón.html'">Alfonso Cuarón</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actor.html'">Actor</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlanta_Falcons.html'">Atlanta Falcons</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accelerated_Graphics_Port.html'">Accelerated Graphics Port</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrei_Tarkovsky.html'">Andrei Tarkovsky</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apache_HTTP_Server.html'">Apache HTTP Server</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ani_DiFranco.html'">Ani DiFranco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Art_Deco.html'">Art Deco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acquis_communautaire.html'">Acquis communautaire</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

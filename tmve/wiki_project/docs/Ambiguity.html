@@ -1,0 +1,194 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[489.6253450485, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [416.5095000484, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [19.1339812791, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Ambiguity</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Ambiguity</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Ambiguity</b> is a type of <a href="http://www.wikipedia.org/wiki/Uncertainty" title="Uncertainty">uncertainty</a> of <a href="http://www.wikipedia.org/wiki/Meaning_(linguistics)" title="Meaning (linguistics)">meaning</a> in which several interpretations are <a href="//en.wiktionary.org/wiki/plausible#Adjective" class="extiw" title="wikt:plausible">plausible</a>. It is thus an attribute of any idea or statement whose <a href="http://www.wikipedia.org/wiki/Intention" title="Intention">intended</a> meaning cannot be definitively resolved according to a rule or process with a finite number of steps. (The <i><a href="//en.wiktionary.org/wiki/ambi-#Prefix" class="extiw" title="wikt:ambi-">ambi</a>-</i> part of the name reflects an idea of "<a href="http://www.wikipedia.org/wiki/2_(number)" title="2 (number)">two</a>" as in two meanings.)</p>
+<p>The concept of ambiguity is generally contrasted with <a href="http://www.wikipedia.org/wiki/Vagueness" title="Vagueness">vagueness</a>. In ambiguity, specific and distinct interpretations are permitted (although some may not be immediately apparent), whereas with information that is vague, it is difficult to form any interpretation at the desired level of specificity.</p>
+<p>Context may play a role in resolving ambiguity. For example, the same piece of information may be ambiguous in one context and unambiguous in another.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Ambiguity#Linguistic_forms"><span class="tocnumber">1</span> <span class="toctext">Linguistic forms</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Ambiguity#Intentional_application"><span class="tocnumber">2</span> <span class="toctext">Intentional application</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Ambiguity#Psychology_and_management"><span class="tocnumber">2.1</span> <span class="toctext">Psychology and management</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Ambiguity#Music"><span class="tocnumber">3</span> <span class="toctext">Music</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Ambiguity#Visual_art"><span class="tocnumber">4</span> <span class="toctext">Visual art</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Ambiguity#Constructed_language"><span class="tocnumber">5</span> <span class="toctext">Constructed language</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Ambiguity#Computer_science"><span class="tocnumber">6</span> <span class="toctext">Computer science</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Ambiguity#Mathematical_notation"><span class="tocnumber">7</span> <span class="toctext">Mathematical notation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Ambiguity#Names_of_functions"><span class="tocnumber">7.1</span> <span class="toctext">Names of functions</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Ambiguity#Expressions"><span class="tocnumber">7.2</span> <span class="toctext">Expressions</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Ambiguity#Examples_of_potentially_confusing_ambiguous_mathematical_expressions"><span class="tocnumber">7.3</span> <span class="toctext">Examples of potentially confusing ambiguous mathematical expressions</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Ambiguity#Notations_in_quantum_optics_and_quantum_mechanics"><span class="tocnumber">7.4</span> <span class="toctext">Notations in quantum optics and quantum mechanics</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Ambiguity#Ambiguous_terms_in_physics_and_mathematics"><span class="tocnumber">7.5</span> <span class="toctext">Ambiguous terms in physics and mathematics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Ambiguity#Mathematical_interpretation_of_ambiguity"><span class="tocnumber">8</span> <span class="toctext">Mathematical interpretation of ambiguity</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Ambiguity#Pedagogic_use_of_ambiguous_expressions"><span class="tocnumber">9</span> <span class="toctext">Pedagogic use of ambiguous expressions</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="http://en.wikipedia.org/wiki/Ambiguity#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="http://en.wikipedia.org/wiki/Ambiguity#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Ambiguity#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Linguistic_forms">Linguistic forms</span></h3>
+<p>The <a href="http://www.wikipedia.org/wiki/Polysemy" title="Polysemy">lexical ambiguity</a> of a word or phrase pertains to its having more than one meaning in the language to which the word belongs. "Meaning" here refers to whatever should be captured by a good dictionary. For instance, the word "bank" has several distinct lexical definitions, including "<a href="http://www.wikipedia.org/wiki/Bank" title="Bank">financial institution</a>" and "<a href="http://www.wikipedia.org/wiki/Bank_(geography)" title="Bank (geography)">edge of a river</a>". Another example is as in "<a href="http://www.wikipedia.org/wiki/Apothecary" title="Apothecary">apothecary</a>". One could say "I bought herbs from the apothecary". This could mean one actually spoke to the apothecary (<a href="http://www.wikipedia.org/wiki/Pharmacist" title="Pharmacist">pharmacist</a>) or went to the apothecary (<a href="http://www.wikipedia.org/wiki/Pharmacy" title="Pharmacy">pharmacy</a>).</p>
+<p><a href="http://en.wikipedia.org/wiki/Ambiguity">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Arthur_Stanley_Eddington.html'">Arthur Stanley Eddington</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ayahuasca.html'">Ayahuasca</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Android.html'">Android</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Conservation-restoration.html'">Conservation-restoration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbreviation.html'">Abbreviation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anal_sex.html'">Anal sex</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Sign_Language.html'">American Sign Language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldous_Huxley.html'">Aldous Huxley</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Assault.html'">Assault</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Camus.html'">Albert Camus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accountancy.html'">Accountancy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Author.html'">Author</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Altruism.html'">Altruism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albrecht_Dürer.html'">Albrecht Dürer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apocrypha.html'">Apocrypha</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnosticism.html'">Agnosticism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ad_hominem.html'">Ad hominem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aikido.html'">Aikido</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antoine_Lavoisier.html'">Antoine Lavoisier</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Architect.html'">Architect</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accusative_case.html'">Accusative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aromatherapy.html'">Aromatherapy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcoholics_Anonymous.html'">Alcoholics Anonymous</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abjad.html'">Abjad</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Grothendieck.html'">Alexander Grothendieck</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aphasia.html'">Aphasia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Technique.html'">Alexander Technique</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alphabet.html'">Alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AWK.html'">AWK</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anselm_of_Canterbury.html'">Anselm of Canterbury</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

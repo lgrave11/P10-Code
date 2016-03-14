@@ -1,0 +1,180 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[136.0895773668, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Amoeboid</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Amoeboid</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>amoeba</b> (<span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/əˈmiːbə/</a></span>; rarely spelled <i>amœba</i>, US English commonly <i>ameba</i>; plural <i>am(o)ebas</i> or <i>am(o)ebae</i> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/əˈmiːbiː/</a></span>),<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Amoeboid#cite_note-1"><span>[</span>1<span>]</span></a></sup> often called <i><b>amoeboid</b></i>, is a type of <a href="http://www.wikipedia.org/wiki/Cell_(biology)" title="Cell (biology)">cell</a> or <a href="http://www.wikipedia.org/wiki/Organism" title="Organism">organism</a> which has the ability to alter its shape, primarily by extending and retracting <a href="http://www.wikipedia.org/wiki/Pseudopodia" title="Pseudopodia">pseudopods</a>.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Amoeboid#cite_note-2"><span>[</span>2<span>]</span></a></sup> Amoebas do not form a single <a href="http://www.wikipedia.org/wiki/Taxonomy_(biology)" title="Taxonomy (biology)">taxonomic group</a>; instead, they are found in every major <a href="http://www.wikipedia.org/wiki/Lineage_(evolution)" title="Lineage (evolution)">lineage</a> of <a href="http://www.wikipedia.org/wiki/Eukaryote" title="Eukaryote">eukaryotic</a> organisms. Amoeboid cells occur not only among the <a href="http://www.wikipedia.org/wiki/Protozoa" title="Protozoa">protozoa</a>, but also in <a href="http://www.wikipedia.org/wiki/Fungi" title="Fungi" class="mw-redirect">fungi</a>, <a href="http://www.wikipedia.org/wiki/Algae" title="Algae">algae</a>, and <a href="http://www.wikipedia.org/wiki/Animals" title="Animals" class="mw-redirect">animals</a>.<sup id="cite_ref-:1_3-0" class="reference"><a href="http://en.wikipedia.org/wiki/Amoeboid#cite_note-:1-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Amoeboid#cite_note-4"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Amoeboid#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>Microbiologists often use the terms "amoeboid" and "amoeba" interchangeably for any organism that exhibits <a href="http://www.wikipedia.org/wiki/Amoeboid_movement" title="Amoeboid movement">amoeboid movement</a>.<sup id="cite_ref-:0_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Amoeboid#cite_note-:0-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Amoeboid#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>In older classification systems, most amoebas were placed in the <a href="http://www.wikipedia.org/wiki/Class_(biology)" title="Class (biology)">class</a> or <a href="http://www.wikipedia.org/wiki/Subphylum" title="Subphylum">subphylum</a> <a href="http://www.wikipedia.org/wiki/Sarcodina" title="Sarcodina" class="mw-redirect">Sarcodina</a>, a grouping of <a href="http://www.wikipedia.org/wiki/Unicellular_organism" title="Unicellular organism">single-celled organisms</a> that possess pseudopods or move by <a href="http://www.wikipedia.org/wiki/Protoplasm" title="Protoplasm">protoplasmic</a> flow. However, <a href="http://www.wikipedia.org/wiki/Molecular_phylogenetic" title="Molecular phylogenetic" class="mw-redirect">molecular phylogenetic</a> studies have shown that Sarcodina is not a <a href="http://www.wikipedia.org/wiki/Monophyletic" title="Monophyletic" class="mw-redirect">monophyletic</a> group whose members share <a href="http://www.wikipedia.org/wiki/Common_descent" title="Common descent">common descent</a>. Consequently, amoeboid organisms are no longer classified together in one group.<sup id="cite_ref-Pawlowski_8-0" class="reference"><a href="http://en.wikipedia.org/wiki/Amoeboid#cite_note-Pawlowski-8"><span>[</span>8<span>]</span></a></sup></p>
+<p>The best known amoeboid <a href="http://www.wikipedia.org/wiki/Protists" title="Protists" class="mw-redirect">protists</a> are the "Giant Amoebae" <i><a href="http://www.wikipedia.org/wiki/Chaos_carolinense" title="Chaos carolinense" class="mw-redirect">Chaos carolinense</a></i> and <i><a href="http://www.wikipedia.org/wiki/Amoeba_proteus" title="Amoeba proteus">Amoeba proteus</a></i>, both of which are widely cultivated and studied in classrooms and laboratories. Other well known species include the so-called "brain-eating amoeba" <i><a href="http://www.wikipedia.org/wiki/Naegleria_fowleri" title="Naegleria fowleri">Naegleria fowleri</a></i>, the intestinal parasite <i><a href="http://www.wikipedia.org/wiki/Entamoeba_histolytica" title="Entamoeba histolytica">Entamoeba histolytica</a></i>, which causes <a href="http://www.wikipedia.org/wiki/Amoebic_dysentery" title="Amoebic dysentery">amoebic dysentery</a>, and the multicellular "social amoeba" <i><a href="http://www.wikipedia.org/wiki/Dictyostelium_discoideum" title="Dictyostelium discoideum">Dictyostelium discoideum</a></i>.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Amoeboid#Shape.2C_movement_and_nutrition"><span class="tocnumber">1</span> <span class="toctext">Shape, movement and nutrition</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Amoeboid#Amoebae_as_specialized_cells_and_life_cycle_stages"><span class="tocnumber">2</span> <span class="toctext">Amoebae as specialized cells and life cycle stages</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Amoeboid#Amoebae_as_organisms"><span class="tocnumber">3</span> <span class="toctext">Amoebae as organisms</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Amoeboid#Early_history_and_origins_of_Sarcodina"><span class="tocnumber">3.1</span> <span class="toctext">Early history and origins of Sarcodina</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Amoeboid#Dismantling_of_Sarcodina"><span class="tocnumber">3.2</span> <span class="toctext">Dismantling of Sarcodina</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Amoeboid#Classification"><span class="tocnumber">3.3</span> <span class="toctext">Classification</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Amoeboid#Pathogenic_interactions_with_other_organisms"><span class="tocnumber">4</span> <span class="toctext">Pathogenic interactions with other organisms</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Amoeboid#Meiosis"><span class="tocnumber">5</span> <span class="toctext">Meiosis</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Amoeboid#In_popular_culture"><span class="tocnumber">6</span> <span class="toctext">In popular culture</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Amoeboid#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Amoeboid#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Amoeboid">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Algebraic_extension.html'">Algebraic extension</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algebraic_number.html'">Algebraic number</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Au_file_format.html'">Au file format</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auger_effect.html'">Auger effect</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlas_Autocode.html'">Atlas Autocode</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antacid.html'">Antacid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomer.html'">Astronomer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_7.html'">Apollo 7</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ampicillin.html'">Ampicillin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ampere.html'">Ampere</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adrastea_(moon).html'">Adrastea (moon)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinoid.html'">Actinoid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archimedean_solid.html'">Archimedean solid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkaloid.html'">Alkaloid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbe_number.html'">Abbe number</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Addition_of_natural_numbers.html'">Addition of natural numbers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ames_test.html'">Ames test</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_17.html'">Apollo 17</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Automorphism.html'">Automorphism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ataxia.html'">Ataxia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abzyme.html'">Abzyme</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinium.html'">Actinium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asynchronous_communication.html'">Asynchronous communication</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambergris.html'">Ambergris</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Audio_file_format.html'">Audio file format</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinophryid.html'">Actinophryid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkyne.html'">Alkyne</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adenylate_cyclase.html'">Adenylate cyclase</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ansible.html'">Ansible</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amethyst.html'">Amethyst</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

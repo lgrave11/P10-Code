@@ -1,0 +1,160 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[222.3708696288, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [74.8083356463, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Anxiety</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Anxiety</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Anxiety</b> is an <a href="http://www.wikipedia.org/wiki/Emotion" title="Emotion">emotion</a> characterized by an unpleasant state of inner turmoil, often accompanied by nervous behavior, such as pacing back and forth, <a href="http://www.wikipedia.org/wiki/Somatic_anxiety" title="Somatic anxiety">somatic complaints</a> and <a href="http://www.wikipedia.org/wiki/Rumination_(psychology)" title="Rumination (psychology)">rumination</a>.<sup id="cite_ref-Seligman_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anxiety#cite_note-Seligman-2"><span>[</span>2<span>]</span></a></sup> It is the subjectively unpleasant feelings of dread over anticipated events, such as <a href="http://www.wikipedia.org/wiki/Death_anxiety_(psychology)" title="Death anxiety (psychology)">the feeling of imminent death</a>.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Anxiety#cite_note-3"><span>[</span>3<span>]</span></a></sup> Anxiety is not the same as <a href="http://www.wikipedia.org/wiki/Fear" title="Fear">fear</a>, which is a response to a real or perceived immediate threat,<sup id="cite_ref-DSM-5_189_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anxiety#cite_note-DSM-5_189-4"><span>[</span>4<span>]</span></a></sup> whereas anxiety is the expectation of future threat.<sup id="cite_ref-DSM-5_189_4-1" class="reference"><a href="http://en.wikipedia.org/wiki/Anxiety#cite_note-DSM-5_189-4"><span>[</span>4<span>]</span></a></sup> Anxiety is a feeling of fear, uneasiness, and worry, usually generalized and unfocused as an <a href="http://www.wikipedia.org/wiki/Overreaction" title="Overreaction" class="mw-redirect">overreaction</a> to a situation that is only subjectively seen as menacing.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Anxiety#cite_note-5"><span>[</span>5<span>]</span></a></sup> It is often accompanied by muscular tension,<sup id="cite_ref-DSM-5_189_4-2" class="reference"><a href="http://en.wikipedia.org/wiki/Anxiety#cite_note-DSM-5_189-4"><span>[</span>4<span>]</span></a></sup> restlessness, fatigue and problems in concentration. Anxiety can be appropriate, but when experienced regularly the individual may suffer from an <a href="http://www.wikipedia.org/wiki/Anxiety_disorder" title="Anxiety disorder">anxiety disorder</a>.<sup id="cite_ref-DSM-5_189_4-3" class="reference"><a href="http://en.wikipedia.org/wiki/Anxiety#cite_note-DSM-5_189-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>People facing anxiety may withdraw from situations which have provoked anxiety in the past.<sup id="cite_ref-Barker.2C_P._2003_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anxiety#cite_note-Barker.2C_P._2003-6"><span>[</span>6<span>]</span></a></sup> There are various types of anxiety. <a href="http://www.wikipedia.org/wiki/Existential" title="Existential" class="mw-redirect">Existential</a> anxiety can occur when a person faces <a href="http://www.wikipedia.org/wiki/Angst" title="Angst">angst</a>, an <a href="http://www.wikipedia.org/wiki/Existential_crisis" title="Existential crisis">existential crisis</a>, or <a href="http://www.wikipedia.org/wiki/Nihilism" title="Nihilism">nihilistic</a> feelings. People can also face <a href="http://www.wikipedia.org/wiki/Mathematical_anxiety" title="Mathematical anxiety">mathematical anxiety</a>, <a href="http://www.wikipedia.org/wiki/Somatic_anxiety" title="Somatic anxiety">somatic anxiety</a>, <a href="http://www.wikipedia.org/wiki/Stage_fright" title="Stage fright">stage fright</a>, or <a href="http://www.wikipedia.org/wiki/Test_anxiety" title="Test anxiety">test anxiety</a>. <a href="http://www.wikipedia.org/wiki/Social_anxiety" title="Social anxiety">Social anxiety</a> and <a href="http://www.wikipedia.org/wiki/Stranger_anxiety" title="Stranger anxiety">stranger anxiety</a> are caused when people are apprehensive around strangers or other people in general. Furthermore, anxiety has been linked with physical symptoms such as <a href="http://www.wikipedia.org/wiki/Irritable_bowel_syndrome" title="Irritable bowel syndrome">IBS</a> and can heighten other mental health illnesses such as OCD and panic disorder.</p>
+<p>Anxiety can be either a short term "state" or a long term "<a href="http://www.wikipedia.org/wiki/Trait_theory" title="Trait theory">trait</a>". Whereas trait anxiety represents worrying about future events, close to the concept of <a href="http://www.wikipedia.org/wiki/Neuroticism" title="Neuroticism">neuroticism</a>,<sup id="cite_ref-Ormel_7-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anxiety#cite_note-Ormel-7"><span>[</span>7<span>]</span></a></sup> anxiety disorders are a group of <a href="http://www.wikipedia.org/wiki/Mental_disorder" title="Mental disorder">mental disorders</a> characterized by feelings of anxiety and fear.<sup id="cite_ref-DSM5_8-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anxiety#cite_note-DSM5-8"><span>[</span>8<span>]</span></a></sup> Anxiety disorders are partly genetic but may also be due to drug use, including <a href="http://www.wikipedia.org/wiki/Alcohol" title="Alcohol">alcohol</a>, <a href="http://www.wikipedia.org/wiki/Caffeine" title="Caffeine">caffeine</a>, and <a href="http://www.wikipedia.org/wiki/Mood_disorder#Substance-induced" title="Mood disorder">benzodiazepines</a> (which are often prescribed to treat anxiety), as well as withdrawal from <a href="http://www.wikipedia.org/wiki/Substance_abuse" title="Substance abuse">drugs of abuse</a>. They often occur with other mental disorders, particularly <a href="http://www.wikipedia.org/wiki/Bipolar_disorder" title="Bipolar disorder">bipolar disorder</a>, <a href="http://www.wikipedia.org/wiki/Eating_disorder" title="Eating disorder">eating disorders</a>, <a href="http://www.wikipedia.org/wiki/Major_depressive_disorder" title="Major depressive disorder">major depressive disorder</a>, or certain <a href="http://www.wikipedia.org/wiki/Personality_disorder" title="Personality disorder">personality disorders</a>. Common treatment options include lifestyle changes, medication, and <a href="http://www.wikipedia.org/wiki/Psychotherapy" title="Psychotherapy">therapy</a>.</p>
+<p><a href="http://en.wikipedia.org/wiki/Anxiety">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Aeon.html'">Aeon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Ayer.html'">Alfred Ayer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anti-realism.html'">Anti-realism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albertus_Magnus.html'">Albertus Magnus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adamic_language.html'">Adamic language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Austrian_German.html'">Austrian German</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amos_Bronson_Alcott.html'">Amos Bronson Alcott</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrei_Sakharov.html'">Andrei Sakharov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ásatrú.html'">Ásatrú</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_English.html'">Australian English</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Weil.html'">André Weil</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._E._van_Vogt.html'">A. E. van Vogt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afro-Asiatic_languages.html'">Afro-Asiatic languages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anita_Hill.html'">Anita Hill</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allegory.html'">Allegory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aramaic_alphabet.html'">Aramaic alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Appellate_court.html'">Appellate court</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anagram.html'">Anagram</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abugida.html'">Abugida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applied_ethics.html'">Applied ethics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artist.html'">Artist</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allophone.html'">Allophone</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allah.html'">Allah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahimsa.html'">Ahimsa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affix.html'">Affix</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammonius_Saccas.html'">Ammonius Saccas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abd-el-latif.html'">Abd-el-latif</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ada_Lovelace.html'">Ada Lovelace</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Turing.html'">Alan Turing</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Plague.html'">The Plague</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

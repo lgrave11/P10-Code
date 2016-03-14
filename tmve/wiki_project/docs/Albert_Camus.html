@@ -1,0 +1,199 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[511.7286474609, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [113.8715520997, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [74.5241985553, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [50.2340497591, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Albert Camus</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Albert Camus</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Albert Camus</b> (<small>French:&#160;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_French" title="Help:IPA for French">[albɛʁ kamy]</a></span><small class="nowrap metadata">&#160;(<a href="http://www.wikipedia.org/wiki/File:Albert_Camus.ogg" title="File:Albert Camus.ogg"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/13px-Speaker_Icon.svg.png" width="13" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/20px-Speaker_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/26px-Speaker_Icon.svg.png 2x" data-file-width="500" data-file-height="500" /></a> <a href="//upload.wikimedia.org/wikipedia/commons/3/37/Albert_Camus.ogg" class="internal" title="Albert Camus.ogg">listen</a>)</small>; 7 November 1913 – 4 January 1960) was a French philosopher, author, and journalist. His views contributed to the rise of the philosophy known as <a href="http://www.wikipedia.org/wiki/Absurdism" title="Absurdism">absurdism</a>. He wrote in his essay <i><a href="http://www.wikipedia.org/wiki/The_Rebel_(book)" title="The Rebel (book)">The Rebel</a></i> that his whole life was devoted to opposing the philosophy of <a href="http://www.wikipedia.org/wiki/Nihilism" title="Nihilism">nihilism</a> while still delving deeply into individual freedom. He won the <a href="http://www.wikipedia.org/wiki/Nobel_Prize_in_Literature" title="Nobel Prize in Literature">Nobel Prize in Literature</a> in 1957.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Albert_Camus#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>Camus did not consider himself to be an <a href="http://www.wikipedia.org/wiki/Existentialist" title="Existentialist" class="mw-redirect">existentialist</a> despite usually being classified as one, even in his lifetime.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Albert_Camus#cite_note-3"><span>[</span>3<span>]</span></a></sup> In a 1945 interview, Camus rejected any ideological associations: "No, I am not an existentialist. <a href="http://www.wikipedia.org/wiki/Jean-Paul_Sartre" title="Jean-Paul Sartre">Sartre</a> and I are always surprised to see our names linked...".<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Albert_Camus#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>Camus was born in <a href="http://www.wikipedia.org/wiki/Algeria" title="Algeria">Algeria</a> to a <i><a href="http://www.wikipedia.org/wiki/Pied-Noir" title="Pied-Noir">Pied-Noir</a></i> family, and studied at the <a href="http://www.wikipedia.org/wiki/University_of_Algiers" title="University of Algiers">University of Algiers</a> from which he graduated in 1936. In 1949, Camus founded the Group for International Liaisons<sup id="cite_ref-Todd_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Albert_Camus#cite_note-Todd-5"><span>[</span>5<span>]</span></a></sup> to "denounce two ideologies found in both the <a href="http://www.wikipedia.org/wiki/Soviet_Union" title="Soviet Union">USSR</a> and the USA".<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Albert_Camus#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Life"><span class="tocnumber">1</span> <span class="toctext">Life</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Early_years"><span class="tocnumber">1.1</span> <span class="toctext">Early years</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Marriage"><span class="tocnumber">1.2</span> <span class="toctext">Marriage</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Football"><span class="tocnumber">1.3</span> <span class="toctext">Football</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Revolutionary_Union_Movement_and_Europe"><span class="tocnumber">1.4</span> <span class="toctext">Revolutionary Union Movement and Europe</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Death"><span class="tocnumber">1.5</span> <span class="toctext">Death</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Literary_career"><span class="tocnumber">2</span> <span class="toctext">Literary career</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Philosophy"><span class="tocnumber">3</span> <span class="toctext">Philosophy</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Absurdism"><span class="tocnumber">3.1</span> <span class="toctext">Absurdism</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Ideas_on_the_absurd"><span class="tocnumber">3.2</span> <span class="toctext">Ideas on the absurd</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Albert_Camus#The_Myth_of_Sisyphus"><span class="tocnumber">3.3</span> <span class="toctext"><i>The Myth of Sisyphus</i></span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Views_on_totalitarianism"><span class="tocnumber">3.4</span> <span class="toctext">Views on totalitarianism</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Works"><span class="tocnumber">4</span> <span class="toctext">Works</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Novels"><span class="tocnumber">4.1</span> <span class="toctext">Novels</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Short_stories"><span class="tocnumber">4.2</span> <span class="toctext">Short stories</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Non-fiction_books"><span class="tocnumber">4.3</span> <span class="toctext">Non-fiction books</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Plays"><span class="tocnumber">4.4</span> <span class="toctext">Plays</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Essays"><span class="tocnumber">4.5</span> <span class="toctext">Essays</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Collected_essays"><span class="tocnumber">4.6</span> <span class="toctext">Collected essays</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Albert_Camus#Selected_biographies"><span class="tocnumber">5</span> <span class="toctext">Selected biographies</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="http://en.wikipedia.org/wiki/Albert_Camus#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="http://en.wikipedia.org/wiki/Albert_Camus#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Albert_Camus">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/American_Sign_Language.html'">American Sign Language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accountancy.html'">Accountancy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Conservation-restoration.html'">Conservation-restoration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldous_Huxley.html'">Aldous Huxley</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Altruism.html'">Altruism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ayahuasca.html'">Ayahuasca</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anal_sex.html'">Anal sex</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Assault.html'">Assault</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albrecht_Dürer.html'">Albrecht Dürer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Author.html'">Author</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apocrypha.html'">Apocrypha</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbreviation.html'">Abbreviation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnosticism.html'">Agnosticism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Stanley_Eddington.html'">Arthur Stanley Eddington</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aikido.html'">Aikido</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ad_hominem.html'">Ad hominem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Android.html'">Android</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alphabet.html'">Alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annales_School.html'">Annales School</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animal_Farm.html'">Animal Farm</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Architect.html'">Architect</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accusative_case.html'">Accusative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auguste_Rodin.html'">Auguste Rodin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Armenian_language.html'">Armenian language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anselm_of_Canterbury.html'">Anselm of Canterbury</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_numerals.html'">Arabic numerals</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcoholics_Anonymous.html'">Alcoholics Anonymous</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Technique.html'">Alexander Technique</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animism.html'">Animism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Grothendieck.html'">Alexander Grothendieck</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[446.4710396754, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [50.7081671346, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Author</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Author</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>author</b> is broadly defined as "the person who originated or gave existence to anything" and whose authorship determines responsibility for what was created. Narrowly defined, an author is the originator of any written work and can also be described as a <a href="http://www.wikipedia.org/wiki/Writer" title="Writer">writer</a>.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Author#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Author#Author_of_a_written_or_legally_copied_work"><span class="tocnumber">1</span> <span class="toctext">Author of a written or legally copied work</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Author#Legal_significance"><span class="tocnumber">1.1</span> <span class="toctext">Legal significance</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Author#King_significance"><span class="tocnumber">1.2</span> <span class="toctext">King significance</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Author#Relationship_between_author_and_publisher"><span class="tocnumber">2</span> <span class="toctext">Relationship between author and publisher</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Author#Relationship_between_author_and_editor"><span class="tocnumber">3</span> <span class="toctext">Relationship between author and editor</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Author#Compensation"><span class="tocnumber">4</span> <span class="toctext">Compensation</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Author#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Author#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Author_of_a_written_or_legally_copied_work">Author of a written or legally copied work</span></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3><span class="mw-headline" id="Legal_significance">Legal significance</span></h3>
+<p>In <a href="http://www.wikipedia.org/wiki/Copyright_law" title="Copyright law" class="mw-redirect">copyright law</a>, there is a necessity for little flexibility as to what constitutes authorship. The <a href="http://www.wikipedia.org/wiki/United_States_Copyright_Office" title="United States Copyright Office">United States Copyright Office</a> defines copyright as "a form of protection provided by the laws of the United States (title 17, U.S. Code) to authors of "original works of authorship".<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Author#cite_note-2"><span>[</span>2<span>]</span></a></sup> Holding the title of "author" over any "literary, dramatic, musical, artistic, [or] certain other intellectual works" give rights to this person, the owner of the copyright, exclusive right to do or authorize any production or distribution of their work. Any person or entity wishing to use <a href="http://www.wikipedia.org/wiki/Intellectual_property" title="Intellectual property">intellectual property</a> held under copyright must receive permission from the copyright holder to use this work, and often will be asked to pay for the use of copyrighted material. After a fixed amount of time, the copyright expires on intellectual work and it enters the public domain, where it can be used without limit. Copyright law has been amended time and time again since the inception of the law to extend the length of this fixed period where the work is exclusively controlled by the copyright holder. However, copyright is merely the legal reassurance that one owns his/her work. Technically, someone owns their work from the time it's created. An interesting aspect of authorship emerges with copyright in that it can be passed down to another upon one's death. The person who inherits the copyright is not the author, but enjoys the same legal benefits.</p>
+<p>Questions arise as to the application of copyright law. How does it, for example, apply to the complex issue of <a href="http://www.wikipedia.org/wiki/Fan_fiction" title="Fan fiction">fan fiction</a>? If the media agency responsible for the authorized production allows material from fans, what is the limit before legal constraints from actors, music, and other considerations, come into play? As well, how does copyright apply to fan-generated stories for books? What powers do the original authors, as well as the publishers, have in regulating or even stopping the fan fiction?</p>
+<h3><span class="mw-headline" id="King_significance">King significance</span></h3>
+<p>In literary theory, critics find complications in the term <i>author</i> beyond what constitutes authorship in a legal setting. In the wake of <a href="http://www.wikipedia.org/wiki/Postmodern_literature" title="Postmodern literature">postmodern literature</a>, critics such as <a href="http://www.wikipedia.org/wiki/Roland_Barthes" title="Roland Barthes">Roland Barthes</a> and <a href="http://www.wikipedia.org/wiki/Michel_Foucault" title="Michel Foucault">Michel Foucault</a> have examined the role and relevance of authorship to the meaning or interpretation of a text.</p>
+<p><a href="http://en.wikipedia.org/wiki/Author">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Agnosticism.html'">Agnosticism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbreviation.html'">Abbreviation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apocrypha.html'">Apocrypha</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Assault.html'">Assault</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anal_sex.html'">Anal sex</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ad_hominem.html'">Ad hominem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldous_Huxley.html'">Aldous Huxley</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Conservation-restoration.html'">Conservation-restoration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Android.html'">Android</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ayahuasca.html'">Ayahuasca</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albrecht_Dürer.html'">Albrecht Dürer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Sign_Language.html'">American Sign Language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Camus.html'">Albert Camus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animal_Farm.html'">Animal Farm</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Architect.html'">Architect</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_Modest_Proposal.html'">A Modest Proposal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accusative_case.html'">Accusative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abjad.html'">Abjad</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accountancy.html'">Accountancy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anselm_of_Canterbury.html'">Anselm of Canterbury</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_numerals.html'">Arabic numerals</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Stanley_Eddington.html'">Arthur Stanley Eddington</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animism.html'">Animism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Technique.html'">Alexander Technique</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astrology.html'">Astrology</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Grothendieck.html'">Alexander Grothendieck</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anglican_Communion.html'">Anglican Communion</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcoholics_Anonymous.html'">Alcoholics Anonymous</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexis_Carrel.html'">Alexis Carrel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Altruism.html'">Altruism</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

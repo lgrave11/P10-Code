@@ -1,0 +1,162 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[300.281816013, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [134.8060587333, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [126.1809529622, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Agatha Christie</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Agatha Christie</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Dame Agatha Mary Clarissa Christie, Lady Mallowan</b>, <a href="http://www.wikipedia.org/wiki/Dame_Commander_of_the_Order_of_the_British_Empire" title="Dame Commander of the Order of the British Empire" class="mw-redirect">DBE</a> (née <b>Miller</b>; 15 September 1890&#160;– 12 January 1976) was an English <a href="http://www.wikipedia.org/wiki/Crime_fiction" title="Crime fiction">crime</a> <a href="http://www.wikipedia.org/wiki/Novelist" title="Novelist">novelist</a>, <a href="http://www.wikipedia.org/wiki/Short_story_writer" title="Short story writer" class="mw-redirect">short story writer</a> and <a href="http://www.wikipedia.org/wiki/Playwright" title="Playwright">playwright</a>. She also wrote six <a href="http://www.wikipedia.org/wiki/Romance_novel" title="Romance novel">romances</a> under the name <b>Mary Westmacott</b>, but she is best known for the 66 detective novels and 14 short story collections that she wrote under her own name, most of which revolve around the investigative work of such characters as <a href="http://www.wikipedia.org/wiki/Hercule_Poirot" title="Hercule Poirot">Hercule Poirot</a>, <a href="http://www.wikipedia.org/wiki/Jane_Marple" title="Jane Marple" class="mw-redirect">Jane Marple</a>, <a href="http://www.wikipedia.org/wiki/Parker_Pyne" title="Parker Pyne">Parker Pyne</a>, <a href="http://www.wikipedia.org/wiki/Harley_Quin" title="Harley Quin" class="mw-redirect">Harley Quin/Mr Satterthwaite</a> and <a href="http://www.wikipedia.org/wiki/Tommy_and_Tuppence" title="Tommy and Tuppence">Tommy and Tuppence Beresford</a>. She wrote the world's longest-running play, a murder mystery, <i><a href="http://www.wikipedia.org/wiki/The_Mousetrap" title="The Mousetrap">The Mousetrap</a></i>.<sup id="cite_ref-Mousetrap_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agatha_Christie#cite_note-Mousetrap-1"><span>[</span>1<span>]</span></a></sup> In 1971 she was made a <a href="http://www.wikipedia.org/wiki/Dame_Commander_of_the_Order_of_the_British_Empire" title="Dame Commander of the Order of the British Empire" class="mw-redirect">Dame</a> for her contribution to literature.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Agatha_Christie#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>Christie was born into a wealthy upper-middle-class family in <a href="http://www.wikipedia.org/wiki/Torquay" title="Torquay">Torquay</a>, <a href="http://www.wikipedia.org/wiki/Devon" title="Devon">Devon</a>. She served in a hospital during the <a href="http://www.wikipedia.org/wiki/First_World_War" title="First World War" class="mw-redirect">First World War</a> before marrying and starting a family in London. She was initially unsuccessful at getting her work published, but in 1920 <a href="http://www.wikipedia.org/wiki/The_Bodley_Head" title="The Bodley Head">The Bodley Head</a> press published her novel <i><a href="http://www.wikipedia.org/wiki/The_Mysterious_Affair_at_Styles" title="The Mysterious Affair at Styles">The Mysterious Affair at Styles</a></i>, featuring the character of Hercule Poirot. This launched her literary career.</p>
+<p>The <i><a href="http://www.wikipedia.org/wiki/Guinness_World_Records" title="Guinness World Records">Guinness Book of World Records</a></i> lists Christie as the best-selling novelist of all time. Her novels have sold roughly 2 <a href="http://www.wikipedia.org/wiki/1,000,000,000_(number)" title="1,000,000,000 (number)" class="mw-redirect">billion</a> copies, and her <a href="http://www.wikipedia.org/wiki/Estate_(law)" title="Estate (law)">estate</a> claims that her works come third in the rankings of the world's most-widely published books,<sup id="cite_ref-The_Independent_2015_3-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agatha_Christie#cite_note-The_Independent_2015-3"><span>[</span>3<span>]</span></a></sup> behind only <a href="http://www.wikipedia.org/wiki/William_Shakespeare" title="William Shakespeare">Shakespeare's</a> works and the <a href="http://www.wikipedia.org/wiki/Bible" title="Bible">Bible</a>. According to <a href="http://www.wikipedia.org/wiki/Index_Translationum" title="Index Translationum">Index Translationum</a>, she remains the most-translated individual author&#160;– having been translated into at least 103 languages.<sup id="cite_ref-McWhirter_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agatha_Christie#cite_note-McWhirter-4"><span>[</span>4<span>]</span></a></sup> <i><a href="http://www.wikipedia.org/wiki/And_Then_There_Were_None" title="And Then There Were None">And Then There Were None</a></i> is Christie's best-selling novel, with 100 million sales to date, making it the world's best-selling mystery ever, and one of the <a href="http://www.wikipedia.org/wiki/List_of_best-selling_books" title="List of best-selling books">best-selling books</a> of all time.<sup id="cite_ref-BestSeller_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agatha_Christie#cite_note-BestSeller-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>Christie's stage play <i><a href="http://www.wikipedia.org/wiki/The_Mousetrap" title="The Mousetrap">The Mousetrap</a></i> holds the record for the longest initial run: it opened at the <a href="http://www.wikipedia.org/wiki/Ambassadors_Theatre" title="Ambassadors Theatre">Ambassadors Theatre</a> in the <a href="http://www.wikipedia.org/wiki/West_End_theatre" title="West End theatre">West End</a> on 25&#160;November 1952 and as of 2015<sup class="plainlinks noprint asof-tag update" style="display:none;"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Agatha_Christie&amp;action=edit">[update]</a></sup> is still running after more than 25,000 performances.<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Agatha_Christie#cite_note-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Agatha_Christie#cite_note-7"><span>[</span>7<span>]</span></a></sup> In 1955 Christie was the first recipient of the <a href="http://www.wikipedia.org/wiki/Mystery_Writers_of_America" title="Mystery Writers of America">Mystery Writers of America</a>'s highest honour, the <a href="http://www.wikipedia.org/wiki/MWA_Grand_Master_Award" title="MWA Grand Master Award" class="mw-redirect">Grand Master Award</a>. Later the same year, <i><a href="http://www.wikipedia.org/wiki/Witness_for_the_Prosecution_(play)" title="Witness for the Prosecution (play)">Witness for the Prosecution</a></i> received an <a href="http://www.wikipedia.org/wiki/Edgar_Award" title="Edgar Award">Edgar Award</a> by the MWA for Best Play. In 2013, <i><a href="http://www.wikipedia.org/wiki/The_Murder_of_Roger_Ackroyd" title="The Murder of Roger Ackroyd">The Murder of Roger Ackroyd</a></i> was voted the best crime novel ever by 600 fellow writers of the <a href="http://www.wikipedia.org/wiki/Crime_Writers%27_Association" title="Crime Writers' Association">Crime Writers' Association</a>.<sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/Agatha_Christie#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Agatha_Christie">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Adam_Weishaupt.html'">Adam Weishaupt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argument_from_morality.html'">Argument from morality</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anglican_Communion.html'">Anglican Communion</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adversarial_system.html'">Adversarial system</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Autobiography.html'">Autobiography</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_Clockwork_Orange.html'">A Clockwork Orange</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alchemy.html'">Alchemy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexis_Carrel.html'">Alexis Carrel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahimsa.html'">Ahimsa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animism.html'">Animism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astrology.html'">Astrology</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allophone.html'">Allophone</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artist.html'">Artist</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_numerals.html'">Arabic numerals</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Technique.html'">Alexander Technique</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Grothendieck.html'">Alexander Grothendieck</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._E._van_Vogt.html'">A. E. van Vogt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aramaic_alphabet.html'">Aramaic alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afro-Asiatic_languages.html'">Afro-Asiatic languages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anaximander.html'">Anaximander</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anselm_of_Canterbury.html'">Anselm of Canterbury</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aphasia.html'">Aphasia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_English.html'">Australian English</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adamic_language.html'">Adamic language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albertus_Magnus.html'">Albertus Magnus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anti-realism.html'">Anti-realism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abjad.html'">Abjad</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrei_Sakharov.html'">Andrei Sakharov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Ayer.html'">Alfred Ayer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aeon.html'">Aeon</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

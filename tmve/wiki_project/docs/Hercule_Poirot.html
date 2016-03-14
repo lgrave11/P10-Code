@@ -1,0 +1,224 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[694.750901583, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [367.578212507, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [282.9397116845, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Hercule Poirot</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Hercule Poirot</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Hercule Poirot</b> (<span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ɜːr/ 'ir' in 'bird'">ɜːr</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'k' in 'kind'">k</span><span title="/juː/ long 'u' in 'cute'">juː</span><span title="'l' in 'lie'">l</span></span> <span style="border-bottom:1px dotted"><span title="'p' in 'pie'">p</span><span title="'w' in 'wind'">w</span><span title="/ɑːr/ 'ar' in 'bard'">ɑːr</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="/oʊ/ long 'o' in 'code'">oʊ</span></span>/</a></span></span>; <small>French pronunciation:&#160;​</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_French" title="Help:IPA for French">[ɛʁkyl pwaʁo]</a></span>) is a fictional <a href="http://www.wikipedia.org/wiki/Belgians" title="Belgians">Belgian</a> detective, created by <a href="http://www.wikipedia.org/wiki/Agatha_Christie" title="Agatha Christie">Agatha Christie</a>. Poirot is one of Christie's most famous and long-lived characters, appearing in 33 <a href="http://www.wikipedia.org/wiki/Novels" title="Novels" class="mw-redirect">novels</a>, one play (<i><a href="http://www.wikipedia.org/wiki/Black_Coffee_(play)" title="Black Coffee (play)">Black Coffee</a></i>), and more than 50 short stories published between 1920 and 1975.</p>
+<p>Poirot has been portrayed on radio, in film and on television by various actors, including <a href="http://www.wikipedia.org/wiki/John_Moffatt_(actor)" title="John Moffatt (actor)">John Moffatt</a>, <a href="http://www.wikipedia.org/wiki/Albert_Finney" title="Albert Finney">Albert Finney</a>, <a href="http://www.wikipedia.org/wiki/Peter_Ustinov" title="Peter Ustinov">Sir Peter Ustinov</a>, <a href="http://www.wikipedia.org/wiki/Ian_Holm" title="Ian Holm">Sir Ian Holm</a>, <a href="http://www.wikipedia.org/wiki/Tony_Randall" title="Tony Randall">Tony Randall</a>, <a href="http://www.wikipedia.org/wiki/Alfred_Molina" title="Alfred Molina">Alfred Molina</a>, <a href="http://www.wikipedia.org/wiki/Orson_Welles" title="Orson Welles">Orson Welles</a> and, most notably, <a href="http://www.wikipedia.org/wiki/David_Suchet" title="David Suchet">David Suchet</a>.</p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Influences"><span class="tocnumber">1.1</span> <span class="toctext">Influences</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Popularity"><span class="tocnumber">1.2</span> <span class="toctext">Popularity</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Appearance_and_proclivities"><span class="tocnumber">1.3</span> <span class="toctext">Appearance and proclivities</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Methods"><span class="tocnumber">1.4</span> <span class="toctext">Methods</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Life"><span class="tocnumber">2</span> <span class="toctext">Life</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Policeman"><span class="tocnumber">2.1</span> <span class="toctext">Policeman</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Private_detective"><span class="tocnumber">2.2</span> <span class="toctext">Private detective</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Retirement"><span class="tocnumber">2.3</span> <span class="toctext">Retirement</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Post_World_War_II"><span class="tocnumber">2.4</span> <span class="toctext">Post World War II</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Death"><span class="tocnumber">2.5</span> <span class="toctext">Death</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Recurring_characters"><span class="tocnumber">3</span> <span class="toctext">Recurring characters</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Arthur_Hastings"><span class="tocnumber">3.1</span> <span class="toctext">Arthur Hastings</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Ariadne_Oliver"><span class="tocnumber">3.2</span> <span class="toctext">Ariadne Oliver</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Miss_Felicity_Lemon"><span class="tocnumber">3.3</span> <span class="toctext">Miss Felicity Lemon</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Chief_Inspector_James_Harold_Japp"><span class="tocnumber">3.4</span> <span class="toctext">Chief Inspector James Harold Japp</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Major_novels"><span class="tocnumber">4</span> <span class="toctext">Major novels</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Portrayals"><span class="tocnumber">5</span> <span class="toctext">Portrayals</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Stage"><span class="tocnumber">5.1</span> <span class="toctext">Stage</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Film"><span class="tocnumber">5.2</span> <span class="toctext">Film</span></a>
+<ul>
+<li class="toclevel-3 tocsection-21"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Austin_Trevor"><span class="tocnumber">5.2.1</span> <span class="toctext">Austin Trevor</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Tony_Randall"><span class="tocnumber">5.2.2</span> <span class="toctext">Tony Randall</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Albert_Finney"><span class="tocnumber">5.2.3</span> <span class="toctext">Albert Finney</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Peter_Ustinov"><span class="tocnumber">5.2.4</span> <span class="toctext">Peter Ustinov</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Other"><span class="tocnumber">5.2.5</span> <span class="toctext">Other</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-26"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Television"><span class="tocnumber">5.3</span> <span class="toctext">Television</span></a>
+<ul>
+<li class="toclevel-3 tocsection-27"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#David_Suchet"><span class="tocnumber">5.3.1</span> <span class="toctext">David Suchet</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Other_2"><span class="tocnumber">5.3.2</span> <span class="toctext">Other</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-29"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Animated"><span class="tocnumber">5.4</span> <span class="toctext">Animated</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Radio"><span class="tocnumber">5.5</span> <span class="toctext">Radio</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#BBC_Radio_4_Poirot_radio_dramas"><span class="tocnumber">5.6</span> <span class="toctext">BBC Radio 4 Poirot radio dramas</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Parodies_and_references"><span class="tocnumber">5.7</span> <span class="toctext">Parodies and references</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-33"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Literature"><span class="tocnumber">8</span> <span class="toctext">Literature</span></a>
+<ul>
+<li class="toclevel-2 tocsection-36"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Works"><span class="tocnumber">8.1</span> <span class="toctext">Works</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#Reviews"><span class="tocnumber">8.2</span> <span class="toctext">Reviews</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-38"><a href="http://en.wikipedia.org/wiki/Hercule_Poirot#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Hercule_Poirot">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/List_of_characters_in_Atlas_Shrugged.html'">List of characters in Atlas Shrugged</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_alphabet.html'">Arabic alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Schweitzer.html'">Albert Schweitzer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afterlife.html'">Afterlife</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Graham_Bell.html'">Alexander Graham Bell</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afrikaans.html'">Afrikaans</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arbitration_in_the_United_States_of_America.html'">Arbitration in the United States of America</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arminianism.html'">Arminianism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Age_of_consent.html'">Age of consent</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aleksandr_Solzhenitsyn.html'">Aleksandr Solzhenitsyn</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/An_Enquiry_concerning_Human_Understanding.html'">An Enquiry concerning Human Understanding</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthroposophy.html'">Anthroposophy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allen_Ginsberg.html'">Allen Ginsberg</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annales_School.html'">Annales School</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alphabet.html'">Alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aikido.html'">Aikido</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthropic_principle.html'">Anthropic principle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Altruism.html'">Altruism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accountancy.html'">Accountancy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_and_British_English_differences.html'">American and British English differences</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Sign_Language.html'">American Sign Language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albrecht_Dürer.html'">Albrecht Dürer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auguste_Rodin.html'">Auguste Rodin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Stanley_Eddington.html'">Arthur Stanley Eddington</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Avicenna.html'">Avicenna</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Conservation-restoration.html'">Conservation-restoration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ayahuasca.html'">Ayahuasca</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anal_sex.html'">Anal sex</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Assault.html'">Assault</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Altaic_languages.html'">Altaic languages</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

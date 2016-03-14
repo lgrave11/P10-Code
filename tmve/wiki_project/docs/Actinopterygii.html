@@ -1,0 +1,182 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[42.1768372346, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [12.0023693294, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Actinopterygii</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Actinopterygii</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Actinopterygii</b> <span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˌ/ secondary stress follows">ˌ</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'k' in 'kind'">k</span><span title="'t' in 'tie'">t</span><span title="/ɪ/ or /ə/ 'e' in 'roses'">ᵻ</span><span title="'n' in 'no'">n</span><span title="/ˌ/ secondary stress follows">ˌ</span><span title="/ɒ/ short 'o' in 'body'">ɒ</span><span title="'p' in 'pie'">p</span><span title="'t' in 'tie'">t</span><span title="/ə/ 'a' in 'about'">ə</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'r' in 'rye'">r</span><span title="/ɪ/ short 'i' in 'bid'">ɪ</span><span title="/dʒ/ 'j' in 'jam'">dʒ</span><span title="/i/ 'y' in 'happy'">i</span><span title="/./ syllable break">.</span><span title="/aɪ/ long 'i' in 'tide'">aɪ</span></span>/</a></span></span>, or the <b>ray-finned fishes</b>, constitute a <a href="http://www.wikipedia.org/wiki/Class_(biology)" title="Class (biology)">class</a> or subclass of the <a href="http://www.wikipedia.org/wiki/Osteichthyes" title="Osteichthyes">bony fishes</a>.</p>
+<p>The ray-finned <a href="http://www.wikipedia.org/wiki/Fish" title="Fish">fishes</a> are so called because they possess <a href="http://www.wikipedia.org/wiki/Lepidotrichia" title="Lepidotrichia" class="mw-redirect">lepidotrichia</a> or "fin rays", their fins being webs of skin supported by bony or horny spines ("rays"), as opposed to the fleshy, lobed fins that characterize the class <a href="http://www.wikipedia.org/wiki/Sarcopterygii" title="Sarcopterygii">Sarcopterygii</a> which also, however, possess lepidotrichia. These actinopterygian fin rays attach directly to the proximal or basal skeletal elements, the radials, which represent the link or connection between these fins and the internal skeleton (e.g., pelvic and pectoral girdles).</p>
+<p>Numerically, actinopterygians are the dominant class of <a href="http://www.wikipedia.org/wiki/Vertebrate" title="Vertebrate">vertebrates</a>, comprising nearly 99% of the over 30,000 species of fish.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Actinopterygii#cite_note-1"><span>[</span>1<span>]</span></a></sup> They are ubiquitous throughout <a href="http://www.wikipedia.org/wiki/Freshwater" title="Freshwater" class="mw-redirect">freshwater</a> and <a href="http://www.wikipedia.org/wiki/Ocean" title="Ocean">marine</a> environments from the deep sea to the highest mountain streams. Extant species can range in size from <i><a href="http://www.wikipedia.org/wiki/Paedocypris" title="Paedocypris">Paedocypris</a></i>, at 8&#160;mm (0.3&#160;in), to the massive <a href="http://www.wikipedia.org/wiki/Ocean_sunfish" title="Ocean sunfish">ocean sunfish</a>, at 2,300&#160;kg (5,070&#160;lb), and the long-bodied <a href="http://www.wikipedia.org/wiki/Oarfish" title="Oarfish">oarfish</a>, at 11&#160;m (36&#160;ft).</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Actinopterygii#Characteristics"><span class="tocnumber">1</span> <span class="toctext">Characteristics</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Actinopterygii#Reproduction"><span class="tocnumber">2</span> <span class="toctext">Reproduction</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Actinopterygii#Fossil_record"><span class="tocnumber">3</span> <span class="toctext">Fossil record</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Actinopterygii#Classification"><span class="tocnumber">4</span> <span class="toctext">Classification</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Actinopterygii#Notes"><span class="tocnumber">5</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Actinopterygii#External_links"><span class="tocnumber">6</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Characteristics">Characteristics</span></h3>
+<p>Ray-finned fishes occur in many variant forms. The main features of a typical ray-finned fish are shown in the diagram at the left.</p>
+<p><a href="http://www.wikipedia.org/wiki/Tuna" title="Tuna">Tuna</a> are streamlined for straight line speed with a <a href="http://www.wikipedia.org/wiki/Caudal_fin" title="Caudal fin" class="mw-redirect">deeply forked tail</a></p>
+<p>The <a href="http://www.wikipedia.org/wiki/Swordfish" title="Swordfish">swordfish</a> is even faster and more streamlined than the tuna</p>
+<p><a href="http://www.wikipedia.org/wiki/Salmon" title="Salmon">Salmon</a> generate enough thrust with their powerful <a href="http://www.wikipedia.org/wiki/Caudal_fin" title="Caudal fin" class="mw-redirect">tail fin</a> to jump obstacles during river migrations</p>
+<p><a href="http://www.wikipedia.org/wiki/Cod" title="Cod">Cod</a> have three <a href="http://www.wikipedia.org/wiki/Dorsal_fin" title="Dorsal fin">dorsal</a> and two <a href="http://www.wikipedia.org/wiki/Anal_fin" title="Anal fin" class="mw-redirect">anal fins</a>, which give them great maneuverability</p>
+<p><a href="http://www.wikipedia.org/wiki/Catfish" title="Catfish">Catfish</a></p>
+<p><a href="http://www.wikipedia.org/wiki/Flatfish" title="Flatfish">Flatfish</a> have developed partially symmetric <a href="http://www.wikipedia.org/wiki/Dorsal_fin" title="Dorsal fin">dorsal</a> and <a href="http://www.wikipedia.org/wiki/Pelvic_fin" title="Pelvic fin" class="mw-redirect">pelvic fins</a></p>
+<p><a href="http://www.wikipedia.org/wiki/Sturgeon" title="Sturgeon">Sturgeon</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Actinopterygii">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Antianginal.html'">Antianginal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amazonite.html'">Amazonite</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aloe.html'">Aloe</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applet.html'">Applet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asparagales.html'">Asparagales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acantharea.html'">Acantharea</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adrenal_gland.html'">Adrenal gland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alligatoridae.html'">Alligatoridae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arctic_Circle.html'">Arctic Circle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Tridgell.html'">Andrew Tridgell</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antisymmetric_relation.html'">Antisymmetric relation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aliphatic_compound.html'">Aliphatic compound</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthemius_of_Tralles.html'">Anthemius of Tralles</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Mouthwash.html'">Mouthwash</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arecales.html'">Arecales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alismatales.html'">Alismatales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ada_Byron_s_notes_on_the_analytical_engine.html'">Ada Byron's notes on the analytical engine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alessandro_Scarlatti.html'">Alessandro Scarlatti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antlia.html'">Antlia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asterales.html'">Asterales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albrecht_Altdorfer.html'">Albrecht Altdorfer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adrian.html'">Adrian</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abacá.html'">Abacá</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abhorrers.html'">Abhorrers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_of_Mainz.html'">Albert of Mainz</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alain_Connes.html'">Alain Connes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anbar_(town).html'">Anbar (town)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alypius_of_Antioch.html'">Alypius of Antioch</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomer_Royal.html'">Astronomer Royal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apuleius.html'">Apuleius</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

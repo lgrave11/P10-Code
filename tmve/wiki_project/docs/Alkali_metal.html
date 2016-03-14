@@ -1,0 +1,161 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[60.5650138095, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [40.6141977638, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Alkali metal</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Alkali metal</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>The <b>alkali metals</b> are a <a href="http://www.wikipedia.org/wiki/Group_(periodic_table)" title="Group (periodic table)">group</a> (column) in the <a href="http://www.wikipedia.org/wiki/Periodic_table" title="Periodic table">periodic table</a> consisting of the <a href="http://www.wikipedia.org/wiki/Chemical_element" title="Chemical element">chemical elements</a> <a href="http://www.wikipedia.org/wiki/Lithium" title="Lithium">lithium</a> (Li), <a href="http://www.wikipedia.org/wiki/Sodium" title="Sodium">sodium</a> (Na), <a href="http://www.wikipedia.org/wiki/Potassium" title="Potassium">potassium</a> (K),<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Alkali_metal#cite_note-1"><span>[</span>note 1<span>]</span></a></sup> <a href="http://www.wikipedia.org/wiki/Rubidium" title="Rubidium">rubidium</a> (Rb), <a href="http://www.wikipedia.org/wiki/Caesium" title="Caesium">caesium</a> (Cs),<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Alkali_metal#cite_note-5"><span>[</span>note 2<span>]</span></a></sup> and <a href="http://www.wikipedia.org/wiki/Francium" title="Francium">francium</a> (Fr). This group lies in the <a href="http://www.wikipedia.org/wiki/S-block" title="S-block" class="mw-redirect">s-block</a> of the periodic table of elements as all alkali metals have their outermost electron in an <a href="http://www.wikipedia.org/wiki/Atomic_orbital" title="Atomic orbital">s-orbital</a>: this element/electron configuration results in their characteristic properties. The alkali metals provide the best example of <a href="http://www.wikipedia.org/wiki/Periodic_trends" title="Periodic trends">group trends</a> in properties in the periodic table, with elements exhibiting well-characterized <a href="http://www.wikipedia.org/wiki/Homology_(chemistry)" title="Homology (chemistry)">homologous</a> behaviour.</p>
+<p>The alkali metals have very similar properties: they are all shiny, <a href="http://www.wikipedia.org/wiki/Hardness" title="Hardness">soft</a>, highly <a href="http://www.wikipedia.org/wiki/Reactivity_(chemistry)" title="Reactivity (chemistry)">reactive</a> metals at <a href="http://www.wikipedia.org/wiki/Standard_temperature_and_pressure" title="Standard temperature and pressure" class="mw-redirect">standard temperature and pressure</a> and readily lose their <a href="http://www.wikipedia.org/wiki/Valence_electron" title="Valence electron">outermost electron</a> to form <a href="http://www.wikipedia.org/wiki/Cation" title="Cation" class="mw-redirect">cations</a> with <a href="http://www.wikipedia.org/wiki/Electric_charge" title="Electric charge">charge</a> +1. They can all be cut easily with a knife due to their softness, exposing a shiny surface that tarnishes rapidly in air due to <a href="http://www.wikipedia.org/wiki/Redox" title="Redox">oxidation</a> by atmospheric moisture and <a href="http://www.wikipedia.org/wiki/Oxygen" title="Oxygen">oxygen</a>. Because of their high reactivity, they must be stored under oil to prevent reaction with air, and are found naturally only in <a href="http://www.wikipedia.org/wiki/Salt_(chemistry)" title="Salt (chemistry)">salts</a> and never as the free element. In the modern <a href="http://www.wikipedia.org/wiki/International_Union_of_Pure_and_Applied_Chemistry" title="International Union of Pure and Applied Chemistry">IUPAC</a> nomenclature, the alkali metals comprise the <b>group 1 elements</b>,<sup id="cite_ref-group-numbering_7-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alkali_metal#cite_note-group-numbering-7"><span>[</span>note 3<span>]</span></a></sup> excluding <a href="http://www.wikipedia.org/wiki/Hydrogen" title="Hydrogen">hydrogen</a> (H), which is nominally a group 1 element but not normally considered to be an alkali metal as it rarely exhibits behaviour comparable to that of the alkali metals. All the alkali metals react with water, with the heavier alkali metals reacting more vigorously than the lighter ones.</p>
+<p>All of the discovered alkali metals occur in nature: in order of <a href="http://www.wikipedia.org/wiki/Abundance_of_the_chemical_elements" title="Abundance of the chemical elements">abundance</a>, sodium is the most abundant, followed by potassium, lithium, rubidium, caesium, and finally francium, which is very rare due to its extremely high <a href="http://www.wikipedia.org/wiki/Radioactivity" title="Radioactivity" class="mw-redirect">radioactivity</a>; francium occurs only in <a href="http://www.wikipedia.org/wiki/Trace_radioisotope" title="Trace radioisotope">traces</a>, the product of natural <a href="http://www.wikipedia.org/wiki/Decay_chain" title="Decay chain">decay chains</a>. Experiments have been conducted to attempt the synthesis of <a href="http://www.wikipedia.org/wiki/Ununennium" title="Ununennium">ununennium</a> (Uue), which is likely to be the next member of the group, but they have all met with failure. However, ununennium may not be an alkali metal due to <a href="http://www.wikipedia.org/wiki/Relativistic_quantum_chemistry" title="Relativistic quantum chemistry">relativistic effects</a>, which are predicted to have a large influence on the chemical properties of <a href="http://www.wikipedia.org/wiki/Superheavy_element" title="Superheavy element" class="mw-redirect">superheavy elements</a>; even if it does turn out to be an alkali metal, it is predicted to have some differences in physical and chemical properties from its lighter homologues.</p>
+<p>Most alkali metals have many different applications. One of the best-known applications of the pure elements the use of rubidium and caesium in <a href="http://www.wikipedia.org/wiki/Atomic_clock" title="Atomic clock">atomic clocks</a>, of which caesium atomic clocks are the most accurate and precise representation of time. A common application of the compounds of sodium is the <a href="http://www.wikipedia.org/wiki/Sodium-vapour_lamp" title="Sodium-vapour lamp" class="mw-redirect">sodium-vapour lamp</a>, which emits very efficient light. <a href="http://www.wikipedia.org/wiki/Salt" title="Salt">Table salt</a>, or sodium chloride, has been used since antiquity. Sodium and potassium are also <a href="http://www.wikipedia.org/wiki/Essential_element" title="Essential element" class="mw-redirect">essential elements</a>, having major biological roles as <a href="http://www.wikipedia.org/wiki/Electrolyte" title="Electrolyte">electrolytes</a>, and although the other alkali metals are not essential, they also have various effects on the body, both beneficial and harmful.</p>
+<p><a href="http://en.wikipedia.org/wiki/Alkali_metal">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Antiprism.html'">Antiprism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Tridgell.html'">Andrew Tridgell</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aliphatic_compound.html'">Aliphatic compound</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applesoft_BASIC.html'">Applesoft BASIC</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analgesic.html'">Analgesic</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applet.html'">Applet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acantharea.html'">Acantharea</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Mouthwash.html'">Mouthwash</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomical_year_numbering.html'">Astronomical year numbering</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allene.html'">Allene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amazonite.html'">Amazonite</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AVL_tree.html'">AVL tree</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antianginal.html'">Antianginal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Almost_all.html'">Almost all</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthemius_of_Tralles.html'">Anthemius of Tralles</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinopterygii.html'">Actinopterygii</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adaptive_radiation.html'">Adaptive radiation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alligatoridae.html'">Alligatoridae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aloe.html'">Aloe</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AutoCAD_DXF.html'">AutoCAD DXF</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Unit_of_alcohol.html'">Unit of alcohol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alpha_(letter).html'">Alpha (letter)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abatis.html'">Abatis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asparagales.html'">Asparagales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apiaceae.html'">Apiaceae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agricultural_engineering.html'">Agricultural engineering</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ada_Byron_s_notes_on_the_analytical_engine.html'">Ada Byron's notes on the analytical engine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AbiWord.html'">AbiWord</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adrenal_gland.html'">Adrenal gland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adware.html'">Adware</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

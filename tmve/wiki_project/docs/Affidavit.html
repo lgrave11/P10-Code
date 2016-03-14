@@ -1,0 +1,182 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[127.0749776286, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [19.9428726666, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [2.2509791736, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Affidavit</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Affidavit</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>affidavit</b> (<span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˌ/ secondary stress follows">ˌ</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'f' in 'find'">f</span><span title="/ɪ/ or /ə/ 'e' in 'roses'">ᵻ</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'d' in 'dye'">d</span><span title="/eɪ/ long 'a' in 'base'">eɪ</span><span title="'v' in 'vie'">v</span><span title="/ɪ/ or /ə/ 'e' in 'roses'">ᵻ</span><span title="'t' in 'tie'">t</span></span>/</a></span></span> <span title="English pronunciation respelling"><a href="http://www.wikipedia.org/wiki/Wikipedia:Pronunciation_respelling_key" title="Wikipedia:Pronunciation respelling key" class="mw-redirect"><i><b><span class="smallcaps"><span style="FONT-VARIANT: SMALL-CAPS; TEXT-TRANSFORM: LOWERCASE;">A</span></span></b>-fə-<b><span class="smallcaps"><span style="FONT-VARIANT: SMALL-CAPS; TEXT-TRANSFORM: LOWERCASE;">DAY</span></span></b>-vət</i></a></span>) is a written <a href="http://www.wikipedia.org/wiki/Oath" title="Oath">sworn statement of fact</a> voluntarily made by an <i>affiant</i> or <i>deponent</i> under an oath or affirmation administered by a person authorized to do so by law. Such statement is witnessed as to the authenticity of the affiant's <a href="http://www.wikipedia.org/wiki/Signature" title="Signature">signature</a> by a taker of oaths, such as a <a href="http://www.wikipedia.org/wiki/Notary_public" title="Notary public">notary public</a> or commissioner of oaths. The name is <a href="http://www.wikipedia.org/wiki/Medieval_Latin" title="Medieval Latin">Medieval Latin</a> for <i>he/she has declared upon oath</i>. An affidavit is a type of verified statement or showing, or in other words, it contains a verification, meaning it is under oath or penalty of perjury, and this serves as evidence to its veracity and is required for court proceedings. It is done with the help of court, with a stamp paper. Affidavits may be written in the first or third person, depending on who drafted the document. If in the first person, the document's component parts are typically as follows:</p>
+<ul>
+<li>A <i>commencement</i> which identifies the "affiant of truth",<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Affidavit#cite_note-1"><span>[</span>1<span>]</span></a></sup> generally stating that everything is true, under penalty of perjury, fine, or imprisonment</li>
+<li>An <i>attestation</i> clause, usually a <a href="http://www.wikipedia.org/wiki/Jurat_(clause)" title="Jurat (clause)">jurat</a>, at the end certifying the affiant made oath and the date</li>
+<li>Signatures of the author and witness</li>
+</ul>
+<p>If an affidavit is notarized or authenticated, it will also include a caption with a venue and title in reference to judicial proceedings. In some cases, an introductory clause, called a <i>preamble</i>, is added attesting that the affiant personally appeared before the authenticating authority.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Affidavit#India"><span class="tocnumber">1</span> <span class="toctext">India</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Affidavit#Ireland"><span class="tocnumber">2</span> <span class="toctext">Ireland</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Affidavit#United_States"><span class="tocnumber">3</span> <span class="toctext">United States</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Affidavit#Australia"><span class="tocnumber">4</span> <span class="toctext">Australia</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Affidavit#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Affidavit#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="India">India</span></h3>
+<p>In Indian law, although an affidavit may be taken as proof of the facts stated therein, the Courts have no jurisdiction to admit evidence by way of affidavit. Affidavit is treated as "evidence" within the meaning of Section 3 of the Evidence Act.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Affidavit#cite_note-2"><span>[</span>2<span>]</span></a></sup> However, it was held by the Supreme Court that an affidavit can be used as evidence only if the Court so orders for sufficient reasons, namely, the right of the opposite party to have the deponent produced for cross-examination (Khandesh Spg &amp; Wvg Mills CO. Ltd. Vs Rashtriya Girni Kamgar Sangh, citation 1960 AIR571, 1960 SCR(2) 841). Therefore, an affidavit cannot ordinarily be used as evidence in absence of a specific order of the Court.</p>
+<h3><span class="mw-headline" id="Ireland">Ireland</span></h3>
+<p>Affidavits are made in a similar way as to England and Wales, although "make oath" is sometimes omitted. A declaration may be substituted for an affidavit in most cases for those opposed to swearing oaths. The person making the affidavit is known as the deponent but does not sign the affidavit. The affidavit concludes in the standard format "sworn (declared) before me, [name of commissioner for oaths/solicitor], a commissioner for oaths (solicitor), on the [date] at [location] in the county/city of [county/city], and I know the deponent (declarant)", and it is signed and stamped by the commissioner for oaths.</p>
+<p><a href="http://en.wikipedia.org/wiki/Affidavit">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/August_Derleth.html'">August Derleth</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abhidharma.html'">Abhidharma</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A.html'">A</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ablative_case.html'">Ablative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Answer.html'">Answer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Religious_denominations_in_Poland.html'">Religious denominations in Poland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ancient_philosophy.html'">Ancient philosophy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrey_Markov.html'">Andrey Markov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allomorph.html'">Allomorph</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberto_Giacometti.html'">Alberto Giacometti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alvin_Toffler.html'">Alvin Toffler</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adventism.html'">Adventism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Autism.html'">Autism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artistic_revolution.html'">Artistic revolution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allocution.html'">Allocution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Approximant_consonant.html'">Approximant consonant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angst.html'">Angst</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Garner.html'">Alan Garner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Nobel.html'">Alfred Nobel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Activism.html'">Activism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acting.html'">Acting</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antimony.html'">Antimony</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André-Marie_Ampère.html'">André-Marie Ampère</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Gide.html'">André Gide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustin_Louis_Cauchy.html'">Augustin Louis Cauchy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abba_Arika.html'">Abba Arika</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Jarry.html'">Alfred Jarry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abd-el-latif.html'">Abd-el-latif</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Athanasian_Creed.html'">Athanasian Creed</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affix.html'">Affix</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

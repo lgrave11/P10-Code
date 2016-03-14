@@ -1,0 +1,200 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[441.9311051023, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [14.2480955546, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Agnosticism</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Agnosticism</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Agnosticism</b> is the view that, the <a href="http://www.wikipedia.org/wiki/Truth_value" title="Truth value">truth values</a> of certain claims –&#160;especially <a href="http://www.wikipedia.org/wiki/Metaphysics" title="Metaphysics">metaphysical</a> and religious claims such as <a href="http://www.wikipedia.org/wiki/Existence_of_God" title="Existence of God">whether God</a>, the <a href="http://www.wikipedia.org/wiki/Divinity" title="Divinity">divine</a> or the <a href="http://www.wikipedia.org/wiki/Supernatural" title="Supernatural">supernatural</a> exist&#160;– are unknown and perhaps unknowable.<sup id="cite_ref-Hepburn_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-Hepburn-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-RoweRoutledge_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-RoweRoutledge-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>According to the philosopher <a href="http://www.wikipedia.org/wiki/William_L._Rowe" title="William L. Rowe">William L. Rowe</a>: "In the popular sense of the term, an agnostic is someone who neither believes nor disbelieves in God, whereas an <a href="http://www.wikipedia.org/wiki/Atheism" title="Atheism">atheist</a> disbelieves in God." <sup id="cite_ref-RoweRoutledge_2-1" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-RoweRoutledge-2"><span>[</span>2<span>]</span></a></sup> Agnosticism is a <a href="http://www.wikipedia.org/wiki/Doctrine" title="Doctrine">doctrine</a> or set of <a href="//en.wiktionary.org/wiki/tenet" class="extiw" title="wikt:tenet">tenets</a><sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-4"><span>[</span>4<span>]</span></a></sup> rather than a religion as such.</p>
+<p><a href="http://www.wikipedia.org/wiki/Thomas_Henry_Huxley" title="Thomas Henry Huxley">Thomas Henry Huxley</a>, an English biologist, coined the word "agnostic" in 1869.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-5"><span>[</span>5<span>]</span></a></sup> Earlier thinkers, however, had written works that promoted agnostic points of view, such as <a href="http://www.wikipedia.org/wiki/Sanjaya_Belatthaputta" title="Sanjaya Belatthaputta" class="mw-redirect">Sanjaya Belatthaputta</a>, a <a href="http://www.wikipedia.org/wiki/Ancient_Indian_philosophy" title="Ancient Indian philosophy" class="mw-redirect">5th-century BCE Indian philosopher</a> who expressed agnosticism about any <a href="http://www.wikipedia.org/wiki/Afterlife" title="Afterlife">afterlife</a>;<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-Bhaskar_1972_7-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-Bhaskar_1972-7"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-Ridgeon2003_8-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-Ridgeon2003-8"><span>[</span>8<span>]</span></a></sup> and <a href="http://www.wikipedia.org/wiki/Protagoras" title="Protagoras">Protagoras</a>, a <a href="http://www.wikipedia.org/wiki/Ancient_Greek_philosophy" title="Ancient Greek philosophy">5th-century BCE Greek philosopher</a> who expressed agnosticism about "the gods".<sup id="cite_ref-Protagoras_9-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-Protagoras-9"><span>[</span>9<span>]</span></a></sup> The <a href="http://www.wikipedia.org/wiki/Nasadiya_Sukta" title="Nasadiya Sukta">Nasadiya Sukta</a> in the <a href="http://www.wikipedia.org/wiki/Rigveda" title="Rigveda">Rigveda</a> is agnostic about the <a href="http://www.wikipedia.org/wiki/Origin_of_the_universe" title="Origin of the universe" class="mw-redirect">origin of the universe</a>.<sup id="cite_ref-patri_10-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-patri-10"><span>[</span>10<span>]</span></a></sup><sup id="cite_ref-Treharne2012_11-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-Treharne2012-11"><span>[</span>11<span>]</span></a></sup><sup id="cite_ref-Schwab2012_12-0" class="reference"><a href="http://en.wikipedia.org/wiki/Agnosticism#cite_note-Schwab2012-12"><span>[</span>12<span>]</span></a></sup></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Agnosticism#Defining_agnosticism"><span class="tocnumber">1</span> <span class="toctext">Defining agnosticism</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Agnosticism#Etymology"><span class="tocnumber">1.1</span> <span class="toctext">Etymology</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Agnosticism#Qualifying_agnosticism"><span class="tocnumber">1.2</span> <span class="toctext">Qualifying agnosticism</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Agnosticism#Types"><span class="tocnumber">1.3</span> <span class="toctext">Types</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Agnosticism#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Agnosticism#Greek_philosophy"><span class="tocnumber">2.1</span> <span class="toctext">Greek philosophy</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Agnosticism#Hindu_philosophy"><span class="tocnumber">2.2</span> <span class="toctext">Hindu philosophy</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Agnosticism#Hume.2C_Kant.2C_and_Kierkegaard"><span class="tocnumber">2.3</span> <span class="toctext">Hume, Kant, and Kierkegaard</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Agnosticism#Thomas_Henry_Huxley"><span class="tocnumber">2.4</span> <span class="toctext">Thomas Henry Huxley</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Agnosticism#William_Stewart_Ross"><span class="tocnumber">2.5</span> <span class="toctext">William Stewart Ross</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Agnosticism#Robert_G._Ingersoll"><span class="tocnumber">2.6</span> <span class="toctext">Robert G. Ingersoll</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Agnosticism#Bertrand_Russell"><span class="tocnumber">2.7</span> <span class="toctext">Bertrand Russell</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Agnosticism#Leslie_Weatherhead"><span class="tocnumber">2.8</span> <span class="toctext">Leslie Weatherhead</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Agnosticism#Charles_Darwin"><span class="tocnumber">2.9</span> <span class="toctext">Charles Darwin</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Agnosticism#Demographics"><span class="tocnumber">3</span> <span class="toctext">Demographics</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="http://en.wikipedia.org/wiki/Agnosticism#Criticism"><span class="tocnumber">4</span> <span class="toctext">Criticism</span></a>
+<ul>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Agnosticism#Theistic"><span class="tocnumber">4.1</span> <span class="toctext">Theistic</span></a>
+<ul>
+<li class="toclevel-3 tocsection-18"><a href="http://en.wikipedia.org/wiki/Agnosticism#Christian"><span class="tocnumber">4.1.1</span> <span class="toctext">Christian</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Agnosticism#Atheistic"><span class="tocnumber">4.2</span> <span class="toctext">Atheistic</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Agnosticism#Related_concepts"><span class="tocnumber">5</span> <span class="toctext">Related concepts</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="http://en.wikipedia.org/wiki/Agnosticism#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="http://en.wikipedia.org/wiki/Agnosticism#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="http://en.wikipedia.org/wiki/Agnosticism#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Agnosticism">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Author.html'">Author</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbreviation.html'">Abbreviation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apocrypha.html'">Apocrypha</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ad_hominem.html'">Ad hominem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Assault.html'">Assault</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anal_sex.html'">Anal sex</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldous_Huxley.html'">Aldous Huxley</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Conservation-restoration.html'">Conservation-restoration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Android.html'">Android</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ayahuasca.html'">Ayahuasca</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albrecht_Dürer.html'">Albrecht Dürer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animal_Farm.html'">Animal Farm</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Architect.html'">Architect</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_Modest_Proposal.html'">A Modest Proposal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accusative_case.html'">Accusative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Sign_Language.html'">American Sign Language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abjad.html'">Abjad</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Camus.html'">Albert Camus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anselm_of_Canterbury.html'">Anselm of Canterbury</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accountancy.html'">Accountancy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_numerals.html'">Arabic numerals</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animism.html'">Animism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Technique.html'">Alexander Technique</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astrology.html'">Astrology</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Grothendieck.html'">Alexander Grothendieck</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Stanley_Eddington.html'">Arthur Stanley Eddington</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anglican_Communion.html'">Anglican Communion</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexis_Carrel.html'">Alexis Carrel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcoholics_Anonymous.html'">Alcoholics Anonymous</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Autobiography.html'">Autobiography</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

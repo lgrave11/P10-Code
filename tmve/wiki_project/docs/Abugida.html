@@ -1,0 +1,160 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[175.08958866, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Abugida</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Abugida</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>abugida</b> <span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˌ/ secondary stress follows">ˌ</span><span title="/ɑː/ 'a' in 'father'">ɑː</span><span title="'b' in 'buy'">b</span><span title="/uː/ long 'oo' in 'food'">uː</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'g' in 'guy'">ɡ</span><span title="/iː/ long 'e' in 'seed'">iː</span><span title="'d' in 'dye'">d</span><span title="/ə/ 'a' in 'about'">ə</span></span>/</a></span></span> (from <a href="http://www.wikipedia.org/wiki/Ge%27ez_language" title="Ge'ez language">Ge'ez</a> አቡጊዳ <i>’äbugida</i>), and likewise an <b>alphasyllabary</b>, is a <a href="http://www.wikipedia.org/wiki/Writing_systems#Segmental_writing_system" title="Writing systems" class="mw-redirect">segmental writing system</a> in which consonant–vowel sequences are written as a unit: each unit is based on a <a href="http://www.wikipedia.org/wiki/Consonant" title="Consonant">consonant</a> letter, and <a href="http://www.wikipedia.org/wiki/Vowel" title="Vowel">vowel</a> notation is secondary. This contrasts with a full <a href="http://www.wikipedia.org/wiki/Alphabet" title="Alphabet">alphabet</a>, in which vowels have status equal to consonants, and with an <a href="http://www.wikipedia.org/wiki/Abjad" title="Abjad">abjad</a>, in which vowel marking is absent or optional. (In less formal contexts, all three types of script may be termed alphabets.) The terms also contrast them with a <a href="http://www.wikipedia.org/wiki/Syllabary" title="Syllabary">syllabary</a>, in which the symbols cannot be split into separate consonants and vowels. Abugidas include the extensive <a href="http://www.wikipedia.org/wiki/Brahmic_family_of_scripts" title="Brahmic family of scripts" class="mw-redirect">Brahmic family of scripts</a> of South and Southeast Asia.</p>
+<p>As is the case for syllabaries, the units of the writing system may consist of the representations both of syllables and of consonants. For scripts of the Brahmic family, the term <i><a href="http://www.wikipedia.org/wiki/Shiksha#syllable" title="Shiksha">akshara</a></i> is used for the units.</p>
+<p><i>Abugida</i> as a term in linguistics was proposed by <a href="http://www.wikipedia.org/wiki/Peter_T._Daniels" title="Peter T. Daniels">Peter T. Daniels</a> in his 1990 <a href="http://www.wikipedia.org/wiki/Linguistic_typology" title="Linguistic typology">typology</a> of <a href="http://www.wikipedia.org/wiki/Writing_system" title="Writing system">writing systems</a>.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Abugida#cite_note-1"><span>[</span>1<span>]</span></a></sup> <i>’Abugida</i> is an Ethiopian name for the <a href="http://www.wikipedia.org/wiki/Ge%27ez_alphabet" title="Ge'ez alphabet" class="mw-redirect">Ge‘ez script</a>, taken from four letters of that script, <i><span class="nowrap" style="padding-left:0.1em;">'</span>ä bu gi da</i>, in much the same way that <i><a href="http://www.wikipedia.org/wiki/Abecedary" title="Abecedary" class="mw-redirect">abecedary</a></i> is derived from Latin <i>a be ce de</i>, and <i><a href="http://www.wikipedia.org/wiki/Alphabet" title="Alphabet">alphabet</a></i> is derived from the names of the two first letters in the <a href="http://www.wikipedia.org/wiki/Greek_alphabet" title="Greek alphabet">Greek alphabet</a>, <i>alpha</i> and <i>beta</i>. As Daniels used the word, an abugida is in contrast with a <a href="http://www.wikipedia.org/wiki/Syllabary" title="Syllabary">syllabary</a>, where letters with shared consonants or vowels show no particular resemblance to one another, and also with an <a href="http://www.wikipedia.org/wiki/Alphabet" title="Alphabet">alphabet</a> proper, where independent letters are used to denote both consonants and vowels. The term <i>alphasyllabary</i> was suggested for the Indic scripts in 1997 by <a href="http://www.wikipedia.org/wiki/William_Bright" title="William Bright">William Bright</a>, following South Asian linguistic usage, to convey the idea that "they share features of both alphabet and syllabary."<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Abugida#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-Bright_3-0" class="reference"><a href="http://en.wikipedia.org/wiki/Abugida#cite_note-Bright-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>Abugidas were long considered to be syllabaries, or intermediate between syllabaries and alphabets, and the term <i>syllabics</i> is retained in the name of <a href="http://www.wikipedia.org/wiki/Canadian_Aboriginal_Syllabics" title="Canadian Aboriginal Syllabics" class="mw-redirect">Canadian Aboriginal Syllabics</a>. Other terms that have been used include <i>neosyllabary</i> (<a href="/w/index.php?title=James-Germain_F%C3%A9vrier&amp;action=edit&amp;redlink=1" class="new" title="James-Germain Février (page does not exist)">Février</a> 1959), <i>pseudo-alphabet</i> (<a href="http://www.wikipedia.org/wiki/Fred_Householder" title="Fred Householder">Householder</a> 1959), <i>semisyllabary</i> (<a href="http://www.wikipedia.org/wiki/David_Diringer" title="David Diringer">Diringer</a> 1968; a word that has <a href="http://www.wikipedia.org/wiki/Semi-syllabary" title="Semi-syllabary">other uses</a>) and <i>syllabic alphabet</i> (<a href="/w/index.php?title=Florian_Coulmas&amp;action=edit&amp;redlink=1" class="new" title="Florian Coulmas (page does not exist)">Coulmas</a> 1996; this term is also a synonym for <a href="http://www.wikipedia.org/wiki/Syllabary" title="Syllabary">syllabary</a>).<sup id="cite_ref-Bright_3-1" class="reference"><a href="http://en.wikipedia.org/wiki/Abugida#cite_note-Bright-3"><span>[</span>3<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Abugida">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Applied_ethics.html'">Applied ethics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Appellate_court.html'">Appellate court</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anagram.html'">Anagram</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allegory.html'">Allegory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anita_Hill.html'">Anita Hill</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammonius_Saccas.html'">Ammonius Saccas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affix.html'">Affix</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abd-el-latif.html'">Abd-el-latif</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allah.html'">Allah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Weil.html'">André Weil</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allocution.html'">Allocution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ada_Lovelace.html'">Ada Lovelace</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angst.html'">Angst</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustin_Louis_Cauchy.html'">Augustin Louis Cauchy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Gide.html'">André Gide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ancient_philosophy.html'">Ancient philosophy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amos_Bronson_Alcott.html'">Amos Bronson Alcott</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ablative_case.html'">Ablative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/August_Derleth.html'">August Derleth</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Plague.html'">The Plague</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affidavit.html'">Affidavit</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._A._Milne.html'">A. A. Milne</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Religious_denominations_in_Poland.html'">Religious denominations in Poland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abhidharma.html'">Abhidharma</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcuin.html'">Alcuin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Nobel.html'">Alfred Nobel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberto_Giacometti.html'">Alberto Giacometti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ásatrú.html'">Ásatrú</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Austrian_German.html'">Austrian German</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrey_Markov.html'">Andrey Markov</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

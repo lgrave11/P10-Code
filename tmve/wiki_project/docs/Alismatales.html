@@ -1,0 +1,190 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[36.1084195855, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [29.0707875107, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Alismatales</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Alismatales</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><i>See <a href="http://en.wikipedia.org/wiki/Alismatales#Classification">Classification</a></i></p>
+<p><b>Alismatales</b> (<b>alismatids</b>) is an order of <a href="http://www.wikipedia.org/wiki/Flowering_plant" title="Flowering plant">flowering plants</a> including about 4500 species. Plants assigned to this order are mostly tropical or aquatic. Some grow in fresh water, some in marine habitats.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Alismatales#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Alismatales#Taxonomy"><span class="tocnumber">2</span> <span class="toctext">Taxonomy</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Alismatales#Early_systems"><span class="tocnumber">2.1</span> <span class="toctext">Early systems</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Alismatales#Angiosperm_Phylogeny_Group"><span class="tocnumber">2.2</span> <span class="toctext">Angiosperm Phylogeny Group</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Alismatales#Phylogeny"><span class="tocnumber">2.3</span> <span class="toctext">Phylogeny</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Alismatales#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Alismatales#Bibliography"><span class="tocnumber">4</span> <span class="toctext">Bibliography</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Alismatales#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Description">Description</span></h3>
+<p>Alismatales comprise <a href="http://www.wikipedia.org/wiki/Herbaceous" title="Herbaceous" class="mw-redirect">herbaceous</a> flowering plants of aquatic and marshy habitats, and the only monocots known to have green <a href="http://www.wikipedia.org/wiki/Embryo" title="Embryo">embryos</a> other than the <a href="http://www.wikipedia.org/wiki/Amaryllidaceae" title="Amaryllidaceae">Amaryllidaceae</a>. They also include the only marine angiosperms.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Alismatales#cite_note-2"><span>[</span>2<span>]</span></a></sup> The <a href="http://www.wikipedia.org/wiki/Flower" title="Flower">flowers</a> are usually arranged in <a href="http://www.wikipedia.org/wiki/Inflorescence" title="Inflorescence">inflorescences</a>, and the mature seeds lack <a href="http://www.wikipedia.org/wiki/Endosperm" title="Endosperm">endosperm</a>.</p>
+<p>Both marine and freshwater forms include those with staminate flowers that detach from the parent plant and float to the surface where they become pollinated. In others, pollination occurs underwater where pollen may form elongated strands, increasing chance of success. Most aquatic species have a totally submerged juvenile phase, and flowers are either floating or emergent. Vegetation may be totally submersed, have floating leaves, or protrude from the water. Collectively they are commonly known as "water plantain".<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Alismatales#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Taxonomy">Taxonomy</span></h3>
+<p>Alismatales contains about 165 genera in 13 families, with a <a href="http://www.wikipedia.org/wiki/Cosmopolitan_distribution" title="Cosmopolitan distribution">cosmopolitan distribution</a>. <a href="http://www.wikipedia.org/wiki/Phylogenetically" title="Phylogenetically" class="mw-redirect">Phylogenetically</a> it is a <a href="http://www.wikipedia.org/wiki/Basal_monocot" title="Basal monocot" class="mw-redirect">basal monocot</a>, diverging early in evolution relative to the <a href="http://www.wikipedia.org/wiki/Lilioid" title="Lilioid" class="mw-redirect">lilioid</a> and <a href="http://www.wikipedia.org/wiki/Commenelid" title="Commenelid" class="mw-redirect">commenelid</a> <a href="http://www.wikipedia.org/wiki/Monocot" title="Monocot" class="mw-redirect">monocot</a> lineages.<sup id="cite_ref-FOOTNOTEWilkinMayo2013_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alismatales#cite_note-FOOTNOTEWilkinMayo2013-4"><span>[</span>4<span>]</span></a></sup> Together with the <a href="http://www.wikipedia.org/wiki/Acorales" title="Acorales" class="mw-redirect">Acorales</a>, Alismatales are referred to informally as the alismatid monocots.<sup id="cite_ref-FOOTNOTERBG2010_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alismatales#cite_note-FOOTNOTERBG2010-5"><span>[</span>5<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Early_systems">Early systems</span></h3>
+<p>The <a href="http://www.wikipedia.org/wiki/Cronquist_system" title="Cronquist system">Cronquist system</a> (1981) places the Alismatales in subclass <a href="http://www.wikipedia.org/wiki/Alismatidae" title="Alismatidae">Alismatidae</a>, class <a href="http://www.wikipedia.org/wiki/Liliopsida" title="Liliopsida">Liliopsida</a> [= monocotyledons] and includes only three families as shown:</p>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Alismataceae" title="Alismataceae">Alismataceae</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Butomaceae" title="Butomaceae" class="mw-redirect">Butomaceae</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Limnocharitaceae" title="Limnocharitaceae">Limnocharitaceae</a></li>
+</ul>
+<p>Cronquist's subclass <a href="http://www.wikipedia.org/wiki/Alismatidae" title="Alismatidae">Alismatidae</a> conformed fairly closely to the order Alismatales as defined by APG, minus the Araceae.</p>
+<p><a href="http://en.wikipedia.org/wiki/Alismatales">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Asterales.html'">Asterales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antlia.html'">Antlia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adrenal_gland.html'">Adrenal gland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asparagales.html'">Asparagales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alliaceae.html'">Alliaceae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_IV_of_Aragon.html'">Alfonso IV of Aragon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnes_of_Merania.html'">Agnes of Merania</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Casa_Batlló.html'">Casa Batlló</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abaddon.html'">Abaddon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomer_Royal.html'">Astronomer Royal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Alcibiades,_Margrave_of_Brandenburg-Kulmbach.html'">Albert Alcibiades, Margrave of Brandenburg-Kulmbach</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alger_of_Liège.html'">Alger of Liège</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aeclanum.html'">Aeclanum</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aedesius.html'">Aedesius</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argo_Navis.html'">Argo Navis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abjuration.html'">Abjuration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anaxarchus.html'">Anaxarchus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander.html'">Alexander</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbotsford_House.html'">Abbotsford House</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnostida.html'">Agnostida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambrose_the_Camaldulian.html'">Ambrose the Camaldulian</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcamenes.html'">Alcamenes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abdülaziz.html'">Abdülaziz</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldona_of_Lithuania.html'">Aldona of Lithuania</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Aetolus.html'">Alexander Aetolus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ababda.html'">Ababda</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arecales.html'">Arecales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abano_Terme.html'">Abano Terme</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alypius_of_Antioch.html'">Alypius of Antioch</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abijah.html'">Abijah</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

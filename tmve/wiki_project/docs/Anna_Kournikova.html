@@ -1,0 +1,183 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[321.6587126619, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [12.5204930184, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Anna Kournikova</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Anna Kournikova</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Anna Sergeyevna Kournikova</b> (<a href="http://www.wikipedia.org/wiki/Russian_language" title="Russian language">Russian</a>: <span lang="ru" xml:lang="ru">А́нна Серге́евна Ку́рникова</span>; <small>IPA:&#160;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_Russian" title="Help:IPA for Russian">[ˈannə sʲɪrˈɡʲejɪvnə ˈkurnʲɪkəvə]</a></span><small class="nowrap metadata">&#160;(<a href="http://www.wikipedia.org/wiki/File:Anna_kournikova.ogg" title="File:Anna kournikova.ogg"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/13px-Speaker_Icon.svg.png" width="13" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/20px-Speaker_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/26px-Speaker_Icon.svg.png 2x" data-file-width="500" data-file-height="500" /></a> <a href="//upload.wikimedia.org/wikipedia/commons/6/6c/Anna_kournikova.ogg" class="internal" title="Anna kournikova.ogg">listen</a>)</small>; born 7 June 1981) is a <a href="http://www.wikipedia.org/wiki/Russia" title="Russia">Russian</a> former professional tennis player. Her appearance and celebrity status made her one of the best known tennis stars worldwide. At the peak of her fame, fans looking for images of Kournikova made her name one of the most common search strings on <a href="http://www.wikipedia.org/wiki/Google_Search" title="Google Search">Google Search</a>.<sup id="cite_ref-2001EOY_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#cite_note-2001EOY-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-2002EOY_3-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#cite_note-2002EOY-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-2003EOY_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#cite_note-2003EOY-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>Despite never winning a singles title, she reached No.&#160;8 in the world in 2000. She achieved greater success playing doubles, where she was at times the <a href="http://www.wikipedia.org/wiki/List_of_WTA_number_1_ranked_players" title="List of WTA number 1 ranked players">World No.&#160;1</a> player. With <a href="http://www.wikipedia.org/wiki/Martina_Hingis" title="Martina Hingis">Martina Hingis</a> as her partner, she won <a href="http://www.wikipedia.org/wiki/Grand_Slam_(tennis)" title="Grand Slam (tennis)">Grand Slam titles</a> in <a href="http://www.wikipedia.org/wiki/Australian_Open" title="Australian Open">Australia</a> in <a href="http://www.wikipedia.org/wiki/1999_Australian_Open" title="1999 Australian Open">1999</a> and <a href="http://www.wikipedia.org/wiki/2002_Australian_Open" title="2002 Australian Open">2002</a>, and the <a href="http://www.wikipedia.org/wiki/WTA_Championships" title="WTA Championships" class="mw-redirect">WTA Championships</a> in <a href="http://www.wikipedia.org/wiki/1999_WTA_Tour_Championships" title="1999 WTA Tour Championships">1999</a> and <a href="http://www.wikipedia.org/wiki/2000_WTA_Tour_Championships" title="2000 WTA Tour Championships">2000</a>. They referred to themselves as the "<a href="http://www.wikipedia.org/wiki/Spice_Girls" title="Spice Girls">Spice Girls</a> of Tennis".<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>Kournikova's professional tennis career ended prematurely at the age of 21 due to serious back and spinal problems, including a <a href="http://www.wikipedia.org/wiki/Spinal_disc_herniation" title="Spinal disc herniation">herniated disk</a>.<sup id="cite_ref-pre_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#cite_note-pre-6"><span>[</span>6<span>]</span></a></sup> She lives in <a href="http://www.wikipedia.org/wiki/Miami_Beach,_Florida" title="Miami Beach, Florida">Miami Beach</a>, Florida, and plays in occasional exhibitions and in doubles for the <a href="http://www.wikipedia.org/wiki/St._Louis_Aces" title="St. Louis Aces">St.&#160;Louis Aces</a> of <a href="http://www.wikipedia.org/wiki/World_TeamTennis" title="World TeamTennis">World Team Tennis</a>.<sup id="cite_ref-WTA_1-2" class="reference"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#cite_note-WTA-1"><span>[</span>1<span>]</span></a></sup> She was a new trainer for season 12 of the television show <i><a href="http://www.wikipedia.org/wiki/The_Biggest_Loser" title="The Biggest Loser">The Biggest Loser</a></i>, replacing <a href="http://www.wikipedia.org/wiki/Jillian_Michaels_(personal_trainer)" title="Jillian Michaels (personal trainer)" class="mw-redirect">Jillian Michaels</a>, but did not return for season 13. In addition to her tennis and television work, Kournikova serves as a Global Ambassador for <a href="http://www.wikipedia.org/wiki/Population_Services_International" title="Population Services International">Population Services International</a>'s "<a href="http://www.wikipedia.org/wiki/Five_%26_Alive" title="Five &amp; Alive">Five &amp; Alive</a>" program, which addresses health crises facing children under the age of five and their families.<sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#Early_life"><span class="tocnumber">1</span> <span class="toctext">Early life</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#Tennis_career"><span class="tocnumber">2</span> <span class="toctext">Tennis career</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#1989.E2.80.931997:_Early_years_and_breakthrough"><span class="tocnumber">2.1</span> <span class="toctext">1989–1997: Early years and breakthrough</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#1998.E2.80.932000:_Success_and_stardom"><span class="tocnumber">2.2</span> <span class="toctext">1998–2000: Success and stardom</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#2001.E2.80.932003:_Injuries_and_final_years"><span class="tocnumber">2.3</span> <span class="toctext">2001–2003: Injuries and final years</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#2004.E2.80.93present:_Exhibitions_and_World_Team_Tennis"><span class="tocnumber">2.4</span> <span class="toctext">2004–present: Exhibitions and World Team Tennis</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#Playing_style"><span class="tocnumber">3</span> <span class="toctext">Playing style</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#Personal_life"><span class="tocnumber">4</span> <span class="toctext">Personal life</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#Media_publicity"><span class="tocnumber">5</span> <span class="toctext">Media publicity</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#Influences_on_popular_culture"><span class="tocnumber">6</span> <span class="toctext">Influences on popular culture</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#Career_statistics_and_awards"><span class="tocnumber">7</span> <span class="toctext">Career statistics and awards</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#Books"><span class="tocnumber">8</span> <span class="toctext">Books</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Anna_Kournikova#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Anna_Kournikova">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Steel-string_acoustic_guitar.html'">Steel-string acoustic guitar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlanta_Falcons.html'">Atlanta Falcons</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrei_Tarkovsky.html'">Andrei Tarkovsky</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ani_DiFranco.html'">Ani DiFranco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_Lynx.html'">Atari Lynx</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animation.html'">Animation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Airbus_A300.html'">Airbus A300</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexis_Korner.html'">Alexis Korner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asteroids_(video_game).html'">Asteroids (video game)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acquire.html'">Acquire</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arrangement.html'">Arrangement</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A.S._Roma.html'">A.S. Roma</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_Jaguar.html'">Atari Jaguar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Miller.html'">Arthur Miller</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona_State_University.html'">Arizona State University</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antonio_Salieri.html'">Antonio Salieri</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ally_McBeal.html'">Ally McBeal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apple_III.html'">Apple III</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antonio_Vivaldi.html'">Antonio Vivaldi</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Rise_and_Fall_of_the_City_of_Mahagonny.html'">Rise and Fall of the City of Mahagonny</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Miss_Marple.html'">Miss Marple</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advance_Australia_Fair.html'">Advance Australia Fair</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AutoCAD.html'">AutoCAD</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Kay.html'">Alan Kay</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amway.html'">Amway</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/IBM_AIX_(operating_system).html'">IBM AIX (operating system)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amber_Diceless_Roleplaying_Game.html'">Amber Diceless Roleplaying Game</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adobe_Systems.html'">Adobe Systems</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_Cuarón.html'">Alfonso Cuarón</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accordion.html'">Accordion</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

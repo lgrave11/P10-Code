@@ -1,0 +1,166 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[143.3660304997, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [28.8131756259, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Politics of Angola</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Politics of Angola</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><span class="metadata"><a href="http://www.wikipedia.org/wiki/File:A_coloured_voting_box.svg" class="image"><img alt="Portal icon" src="//upload.wikimedia.org/wikipedia/en/thumb/0/01/A_coloured_voting_box.svg/16px-A_coloured_voting_box.svg.png" width="16" height="16" class="thumbborder" srcset="//upload.wikimedia.org/wikipedia/en/thumb/0/01/A_coloured_voting_box.svg/24px-A_coloured_voting_box.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/0/01/A_coloured_voting_box.svg/32px-A_coloured_voting_box.svg.png 2x" data-file-width="160" data-file-height="160" /></a></span> <a href="http://www.wikipedia.org/wiki/Portal:Politics" title="Portal:Politics">Politics portal</a></p>
+<ul>
+<li class="nv-view"><a href="http://www.wikipedia.org/wiki/Template:Politics_of_Angola" title="Template:Politics of Angola"><abbr title="View this template">v</abbr></a></li>
+<li class="nv-talk"><a href="http://www.wikipedia.org/wiki/Template_talk:Politics_of_Angola" title="Template talk:Politics of Angola"><abbr title="Discuss this template">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Politics_of_Angola&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li>
+</ul>
+<p>Since the adoption of a new <a href="http://www.wikipedia.org/wiki/Constitution_of_Angola#2010_constitution" title="Constitution of Angola">constitution in 2010</a>, the <b>politics of Angola</b> takes place in a framework of a <a href="http://www.wikipedia.org/wiki/Presidential_system" title="Presidential system">presidential</a> <a href="http://www.wikipedia.org/wiki/Republic" title="Republic">republic</a>, whereby the <a href="http://www.wikipedia.org/wiki/President_of_Angola" title="President of Angola">President of Angola</a> is both <a href="http://www.wikipedia.org/wiki/Head_of_state" title="Head of state">head of state</a> and <a href="http://www.wikipedia.org/wiki/Head_of_government" title="Head of government">head of government</a>, and of a <a href="http://www.wikipedia.org/wiki/Multi-party_system" title="Multi-party system">multi-party system</a>. <a href="http://www.wikipedia.org/wiki/Executive_power" title="Executive power" class="mw-redirect">Executive power</a> is exercised by the government. <a href="http://www.wikipedia.org/wiki/Legislative_power" title="Legislative power" class="mw-redirect">Legislative power</a> is vested in the President, the <a href="http://www.wikipedia.org/wiki/Government" title="Government">government</a> and parliament.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Politics_of_Angola#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p><a href="http://www.wikipedia.org/wiki/Angola" title="Angola">Angola</a> changed from a <a href="http://www.wikipedia.org/wiki/One-party_state" title="One-party state">one-party</a> <a href="http://www.wikipedia.org/wiki/Marxist" title="Marxist" class="mw-redirect">Marxist</a>-<a href="http://www.wikipedia.org/wiki/Leninist" title="Leninist" class="mw-redirect">Leninist</a> system ruled by the <a href="http://www.wikipedia.org/wiki/Popular_Movement_for_the_Liberation_of_Angola" title="Popular Movement for the Liberation of Angola" class="mw-redirect">Popular Movement for the Liberation of Angola</a> (MPLA), in place since independence in 1975, to a multiparty democracy based on a new constitution adopted in 1992. That same year the first parliamentary and presidential elections were held. The MPLA won an absolute majority in the parliamentary elections. In the presidential elections, President <a href="http://www.wikipedia.org/wiki/Jos%C3%A9_Eduardo_dos_Santos" title="José Eduardo dos Santos">José Eduardo dos Santos</a> won the first round election with more than 49% of the vote to <a href="http://www.wikipedia.org/wiki/Jonas_Savimbi" title="Jonas Savimbi">Jonas Savimbi</a>'s 40%. A runoff election would have been necessary, but never took place. The renewal of civil war immediately after the elections, which were considered as fraudulent by UNITA, and the collapse of the <a href="http://www.wikipedia.org/wiki/Lusaka_Protocol" title="Lusaka Protocol">Lusaka Protocol</a>, created a split situation. To a certain degree the new democratic institutions worked, notably the <a href="http://www.wikipedia.org/wiki/National_Assembly_of_Angola" title="National Assembly of Angola" class="mw-redirect">National Assembly</a>, with the active participation of UNITA's and the FNLA's elected MPs - while José Eduardo dos Santos continued to exercise his functions without democratic legitimation. However the armed forces of the MPLA (now the official armed forces of the Angolan state) and of UNITA fought each other until the leader of UNITA, Jonas Savimbi, was killed in action in 2002.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Politics_of_Angola#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>From 2002 to 2010, the system as defined by the <a href="http://www.wikipedia.org/wiki/Constitution_of_Angola#1992_constitution" title="Constitution of Angola">constitution of 1992</a> functioned in a relatively normal way. The executive branch of the government was composed of the President, the Prime Minister and Council of Ministers. The Council of Ministers, composed of all ministers and vice ministers, met regularly to discuss policy issues. Governors of the 18 provinces were appointed by and served at the pleasure of the president.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Politics_of_Angola#cite_note-3"><span>[</span>3<span>]</span></a></sup> The Constitutional Law of 1992 established the broad outlines of government structure and the rights and duties of citizens. The legal system was based on Portuguese and customary law but was weak and fragmented. Courts operated in only 12 of more than 140 municipalities. A Supreme Court served as the appellate tribunal; a Constitutional Court with powers of judicial review was never constituted despite statutory authorization. In practice, power was more and more concentrated in the hands of the President who, supported by an ever increasing staff, largely controlled parliament, government, and the judiciary.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Politics_of_Angola#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Politics_of_Angola">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Ajmer-Merwara.html'">Ajmer-Merwara</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ashmore_and_Cartier_Islands.html'">Ashmore and Cartier Islands</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdeenshire.html'">Aberdeenshire</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabian_Sea.html'">Arabian Sea</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annapolis_Valley.html'">Annapolis Valley</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afyonkarahisar.html'">Afyonkarahisar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abersychan.html'">Abersychan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Politics_of_American_Samoa.html'">Politics of American Samoa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Demographics_of_Angola.html'">Demographics of Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acre.html'">Acre</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afghan_Hound.html'">Afghan Hound</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdour.html'">Aberdour</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abertillery.html'">Abertillery</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Foreign_relations_of_Angola.html'">Foreign relations of Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexanderplatz.html'">Alexanderplatz</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acadia_University.html'">Acadia University</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_St._Clair.html'">Arthur St. Clair</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ecology_of_Africa.html'">Ecology of Africa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aar.html'">Aar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Geography_of_Antarctica.html'">Geography of Antarctica</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asian_Development_Bank.html'">Asian Development Bank</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aalborg_Municipality.html'">Aalborg Municipality</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arctic_Fox.html'">Arctic Fox</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Economy_of_American_Samoa.html'">Economy of American Samoa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annual_plant.html'">Annual plant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Transport_in_Angola.html'">Transport in Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Pike.html'">Albert Pike</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abdulaziz_al-Omari.html'">Abdulaziz al-Omari</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Stock_Exchange.html'">American Stock Exchange</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Transport_in_Antarctica.html'">Transport in Antarctica</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[53.6878216412, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [41.4913866565, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Aries (constellation)</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Aries (constellation)</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Aries</b> is one of the <a href="http://www.wikipedia.org/wiki/Constellation" title="Constellation">constellations</a> of the <a href="http://www.wikipedia.org/wiki/Zodiac" title="Zodiac">zodiac</a>. It is located in the northern celestial hemisphere between <a href="http://www.wikipedia.org/wiki/Pisces_(constellation)" title="Pisces (constellation)">Pisces</a> to the west and <a href="http://www.wikipedia.org/wiki/Taurus_(constellation)" title="Taurus (constellation)">Taurus</a> to the east. The name Aries is <a href="http://www.wikipedia.org/wiki/Latin" title="Latin">Latin</a> for <a href="http://www.wikipedia.org/wiki/Sheep" title="Sheep">ram</a>, and its symbol is <a href="http://www.wikipedia.org/wiki/File:Aries.svg" class="image"><img alt="Aries.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Aries.svg/20px-Aries.svg.png" width="20" height="19" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Aries.svg/30px-Aries.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Aries.svg/40px-Aries.svg.png 2x" data-file-width="248" data-file-height="235" /></a> (<span class="Unicode">Unicode ♈</span>), representing a ram's horns. It is one of the 48 constellations described by the 2nd century astronomer <a href="http://www.wikipedia.org/wiki/Ptolemy" title="Ptolemy">Ptolemy</a>, and remains one of the 88 modern constellations. It is a mid-sized constellation, ranking 39th overall size, with an area of 441 square degrees (1.1% of the <a href="http://www.wikipedia.org/wiki/Celestial_sphere" title="Celestial sphere">celestial sphere</a>).</p>
+<p>Although Aries came to represent specifically the ram whose fleece became the <a href="http://www.wikipedia.org/wiki/Golden_Fleece" title="Golden Fleece">Golden Fleece</a> of <a href="http://www.wikipedia.org/wiki/Ancient_Greek_mythology" title="Ancient Greek mythology" class="mw-redirect">Ancient Greek mythology</a>, it has represented a ram since late Babylonian times. Before that, the stars of Aries formed a farmhand. Different cultures have incorporated the stars of Aries into different constellations including twin inspectors in China and a porpoise in the Marshall Islands. Aries is a relatively dim constellation, possessing only four bright stars: <a href="http://www.wikipedia.org/wiki/Hamal" title="Hamal">Hamal</a> (Alpha Arietis, second magnitude), <a href="http://www.wikipedia.org/wiki/Sheratan" title="Sheratan" class="mw-redirect">Sheratan</a> (Beta Arietis, third magnitude), <a href="http://www.wikipedia.org/wiki/Mesarthim" title="Mesarthim" class="mw-redirect">Mesarthim</a> (Gamma Arietis, fourth magnitude), and <a href="http://www.wikipedia.org/wiki/41_Arietis" title="41 Arietis">41 Arietis</a> (also fourth magnitude). The few <a href="http://www.wikipedia.org/wiki/Deep-sky_object" title="Deep-sky object">deep-sky objects</a> within the constellation are quite faint and include several pairs of interacting galaxies. Several <a href="http://www.wikipedia.org/wiki/Meteor_shower" title="Meteor shower">meteor showers</a> appear to radiate from Aries, including the <a href="http://www.wikipedia.org/wiki/Daytime_Arietids" title="Daytime Arietids" class="mw-redirect">Daytime Arietids</a> and the <a href="/w/index.php?title=Epsilon_Arietids&amp;action=edit&amp;redlink=1" class="new" title="Epsilon Arietids (page does not exist)">Epsilon Arietids</a>.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#History_and_mythology"><span class="tocnumber">1</span> <span class="toctext">History and mythology</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#In_non-Western_astronomy"><span class="tocnumber">1.1</span> <span class="toctext">In non-Western astronomy</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#Notable_features"><span class="tocnumber">2</span> <span class="toctext">Notable features</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#Stars"><span class="tocnumber">2.1</span> <span class="toctext">Stars</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#Deep-sky_objects"><span class="tocnumber">2.2</span> <span class="toctext">Deep-sky objects</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#Meteor_showers"><span class="tocnumber">2.3</span> <span class="toctext">Meteor showers</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#Planetary_systems"><span class="tocnumber">2.4</span> <span class="toctext">Planetary systems</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#External_links"><span class="tocnumber">4</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="History_and_mythology">History and mythology</span></h3>
+<p>Aries is now recognized as an official constellation, albeit as a specific region of the sky, by the <a href="http://www.wikipedia.org/wiki/International_Astronomical_Union" title="International Astronomical Union">International Astronomical Union</a>. It was originally defined in ancient texts as a specific pattern of stars, and has remained a constellation since ancient times; it now includes the ancient pattern as well as the surrounding stars.<sup id="cite_ref-FOOTNOTEPasachoff2000128.E2.80.93189_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#cite_note-FOOTNOTEPasachoff2000128.E2.80.93189-6"><span>[</span>5<span>]</span></a></sup> In the description of the <a href="http://www.wikipedia.org/wiki/Babylonian_zodiac" title="Babylonian zodiac" class="mw-redirect">Babylonian zodiac</a> given in the clay tablets known as the <a href="http://www.wikipedia.org/wiki/MUL.APIN" title="MUL.APIN">MUL.APIN</a>, the constellation now known as Aries was the final station along the <a href="http://www.wikipedia.org/wiki/Ecliptic" title="Ecliptic">ecliptic</a>. The MUL.APIN was a comprehensive table of the risings and settings of stars, which likely served as an agricultural calendar. Modern-day Aries was known as <span lang="sux-Latn" xml:lang="sux-Latn"><sup>MUL</sup>LÚ.ḪUN.GÁ</span>, "The Agrarian Worker" or "The Hired Man".<sup id="cite_ref-FOOTNOTEEvans19986_7-0" class="reference"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#cite_note-FOOTNOTEEvans19986-7"><span>[</span>6<span>]</span></a></sup> Although likely compiled in the 12th or 11th century BC, the MUL.APIN reflects a tradition which marks the <a href="http://www.wikipedia.org/wiki/Pleiades" title="Pleiades">Pleiades</a> as the <a href="http://www.wikipedia.org/wiki/Vernal_equinox" title="Vernal equinox" class="mw-redirect">vernal equinox</a>, which was the case with some precision at the beginning of the <a href="http://www.wikipedia.org/wiki/Middle_Bronze_Age" title="Middle Bronze Age" class="mw-redirect">Middle Bronze Age</a>. The earliest identifiable reference to Aries as a distinct constellation comes from the <a href="http://www.wikipedia.org/wiki/Boundary_stone" title="Boundary stone" class="mw-redirect">boundary stones</a> that date from 1350 to 1000 BC. On several boundary stones, a zodiacal ram figure is distinct from the other characters present. The shift in identification from the constellation as the Agrarian Worker to the Ram likely occurred in later Babylonian tradition because of its growing association with <a href="http://www.wikipedia.org/wiki/Dumuzi_the_Shepherd" title="Dumuzi the Shepherd" class="mw-redirect">Dumuzi the Shepherd</a>. By the time the MUL.APIN was created—by 1000 BC—modern Aries was identified with both Dumuzi's ram and a hired laborer. The exact timing of this shift is difficult to determine due to the lack of images of Aries or other ram figures.<sup id="cite_ref-FOOTNOTERogers.2C_.27.27Mesopotamian_Traditions.27.271998_8-0" class="reference"><a href="http://en.wikipedia.org/wiki/Aries_(constellation)#cite_note-FOOTNOTERogers.2C_.27.27Mesopotamian_Traditions.27.271998-8"><span>[</span>7<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Aries_(constellation)">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Anus.html'">Anus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abatis.html'">Abatis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnostida.html'">Agnostida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amaryllis.html'">Amaryllis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ara_(constellation).html'">Ara (constellation)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asterales.html'">Asterales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/August.html'">August</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_I_of_Epirus.html'">Alexander I of Epirus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ancus_Marcius.html'">Ancus Marcius</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_II_of_Epirus.html'">Alexander II of Epirus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alphege.html'">Alphege</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actium.html'">Actium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abencerrages.html'">Abencerrages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_II_of_Scotland.html'">Alexander II of Scotland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adalbert_of_Prague.html'">Adalbert of Prague</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antigonid_dynasty.html'">Antigonid dynasty</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Áed_of_Scotland.html'">Áed of Scotland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abae.html'">Abae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_XIII_of_Spain.html'">Alfonso XIII of Spain</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahmed_I.html'">Ahmed I</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abner.html'">Abner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abydos,_Hellespont.html'">Abydos, Hellespont</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alligatoridae.html'">Alligatoridae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alismatales.html'">Alismatales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Titus_(Biblical).html'">Titus (Biblical)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abu_al-Fida.html'">Abu al-Fida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antonio_Agliardi.html'">Antonio Agliardi</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abimelech.html'">Abimelech</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/House_of_Ascania.html'">House of Ascania</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aegisthus.html'">Aegisthus</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

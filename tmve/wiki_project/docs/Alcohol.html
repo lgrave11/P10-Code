@@ -1,0 +1,221 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[868.9800407757, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [24.199163691, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Alcohol</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Alcohol</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>In <a href="http://www.wikipedia.org/wiki/Chemistry" title="Chemistry">chemistry</a>, an <b>alcohol</b> is any <a href="http://www.wikipedia.org/wiki/Organic_compound" title="Organic compound">organic compound</a> in which the <a href="http://www.wikipedia.org/wiki/Hydroxyl" title="Hydroxyl">hydroxyl</a> <a href="http://www.wikipedia.org/wiki/Functional_group" title="Functional group">functional group</a> (–<a href="http://www.wikipedia.org/wiki/Oxygen" title="Oxygen">O</a><a href="http://www.wikipedia.org/wiki/Hydrogen" title="Hydrogen">H</a>) is bound to a <a href="http://www.wikipedia.org/wiki/Saturation_(chemistry)" title="Saturation (chemistry)">saturated</a> <a href="http://www.wikipedia.org/wiki/Carbon" title="Carbon">carbon</a> atom.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Alcohol#cite_note-2"><span>[</span>2<span>]</span></a></sup> The term alcohol originally referred to the primary alcohol <a href="http://www.wikipedia.org/wiki/Ethanol" title="Ethanol">ethanol</a> (ethyl alcohol), the predominant alcohol in <a href="http://www.wikipedia.org/wiki/Alcoholic_beverage" title="Alcoholic beverage">alcoholic beverages</a>.</p>
+<p>The suffix <i>-ol</i> appears in the <a href="http://www.wikipedia.org/wiki/IUPAC_nomenclature_of_organic_chemistry" title="IUPAC nomenclature of organic chemistry">IUPAC chemical name</a> of all substances where the hydroxyl group is the functional group with the highest priority; in substances where a higher priority group is present the prefix <i>hydroxy-</i> will appear in the <a href="http://www.wikipedia.org/wiki/International_Union_of_Pure_and_Applied_Chemistry" title="International Union of Pure and Applied Chemistry">International Union of Pure and Applied Chemistry</a> (IUPAC) name. The suffix <i>-ol</i> in non-systematic names (such as <a href="http://www.wikipedia.org/wiki/Paracetamol" title="Paracetamol">paracetamol</a> or <a href="http://www.wikipedia.org/wiki/Cholesterol" title="Cholesterol">cholesterol</a>) also typically indicates that the substance includes a hydroxyl functional group and, so, can be termed an alcohol. But many substances, particularly sugars (examples <a href="http://www.wikipedia.org/wiki/Glucose" title="Glucose">glucose</a> and <a href="http://www.wikipedia.org/wiki/Sucrose" title="Sucrose">sucrose</a>) contain hydroxyl functional groups without using the suffix. An important class of alcohols, of which <a href="http://www.wikipedia.org/wiki/Methanol" title="Methanol">methanol</a> and ethanol are the simplest members is the <a href="http://www.wikipedia.org/wiki/Aliphatic_compound" title="Aliphatic compound">saturated straight chain</a> alcohols, the general formula for which is C<sub>n</sub>H<sub>2n+1</sub>OH.</p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Alcohol#Occurrence_in_nature"><span class="tocnumber">1</span> <span class="toctext">Occurrence in nature</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Alcohol#Toxicity"><span class="tocnumber">2</span> <span class="toctext">Toxicity</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Alcohol#Treatment"><span class="tocnumber">2.1</span> <span class="toctext">Treatment</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Alcohol#Nomenclature"><span class="tocnumber">3</span> <span class="toctext">Nomenclature</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Alcohol#Systematic_names"><span class="tocnumber">3.1</span> <span class="toctext">Systematic names</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Alcohol#Common_names"><span class="tocnumber">3.2</span> <span class="toctext">Common names</span></a>
+<ul>
+<li class="toclevel-3 tocsection-7"><a href="http://en.wikipedia.org/wiki/Alcohol#Alkyl_chain_variations_in_alcohols"><span class="tocnumber">3.2.1</span> <span class="toctext">Alkyl chain variations in alcohols</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="http://en.wikipedia.org/wiki/Alcohol#Simple_alcohols"><span class="tocnumber">3.2.2</span> <span class="toctext">Simple alcohols</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="http://en.wikipedia.org/wiki/Alcohol#Higher_alcohols"><span class="tocnumber">3.2.3</span> <span class="toctext">Higher alcohols</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Alcohol#Etymology"><span class="tocnumber">3.3</span> <span class="toctext">Etymology</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Alcohol#Physical_and_chemical_properties"><span class="tocnumber">4</span> <span class="toctext">Physical and chemical properties</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Alcohol#Applications"><span class="tocnumber">5</span> <span class="toctext">Applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Alcohol#Alcoholic_beverages"><span class="tocnumber">5.1</span> <span class="toctext">Alcoholic beverages</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Alcohol#Antifreeze"><span class="tocnumber">5.2</span> <span class="toctext">Antifreeze</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Alcohol#Antiseptics"><span class="tocnumber">5.3</span> <span class="toctext">Antiseptics</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Alcohol#Fuels"><span class="tocnumber">5.4</span> <span class="toctext">Fuels</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Alcohol#Preservative"><span class="tocnumber">5.5</span> <span class="toctext">Preservative</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="http://en.wikipedia.org/wiki/Alcohol#Solvents"><span class="tocnumber">5.6</span> <span class="toctext">Solvents</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-19"><a href="http://en.wikipedia.org/wiki/Alcohol#Production"><span class="tocnumber">6</span> <span class="toctext">Production</span></a>
+<ul>
+<li class="toclevel-2 tocsection-20"><a href="http://en.wikipedia.org/wiki/Alcohol#Ziegler_and_oxo_processes"><span class="tocnumber">6.1</span> <span class="toctext">Ziegler and oxo processes</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="http://en.wikipedia.org/wiki/Alcohol#Hydration_reactions"><span class="tocnumber">6.2</span> <span class="toctext">Hydration reactions</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="http://en.wikipedia.org/wiki/Alcohol#Biological_routes"><span class="tocnumber">6.3</span> <span class="toctext">Biological routes</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="http://en.wikipedia.org/wiki/Alcohol#Laboratory_synthesis"><span class="tocnumber">6.4</span> <span class="toctext">Laboratory synthesis</span></a>
+<ul>
+<li class="toclevel-3 tocsection-24"><a href="http://en.wikipedia.org/wiki/Alcohol#Substitution"><span class="tocnumber">6.4.1</span> <span class="toctext">Substitution</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="http://en.wikipedia.org/wiki/Alcohol#Reduction"><span class="tocnumber">6.4.2</span> <span class="toctext">Reduction</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="http://en.wikipedia.org/wiki/Alcohol#Hydrolysis"><span class="tocnumber">6.4.3</span> <span class="toctext">Hydrolysis</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-27"><a href="http://en.wikipedia.org/wiki/Alcohol#Reactions"><span class="tocnumber">7</span> <span class="toctext">Reactions</span></a>
+<ul>
+<li class="toclevel-2 tocsection-28"><a href="http://en.wikipedia.org/wiki/Alcohol#Deprotonation"><span class="tocnumber">7.1</span> <span class="toctext">Deprotonation</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="http://en.wikipedia.org/wiki/Alcohol#Nucleophilic_substitution"><span class="tocnumber">7.2</span> <span class="toctext">Nucleophilic substitution</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="http://en.wikipedia.org/wiki/Alcohol#Dehydration"><span class="tocnumber">7.3</span> <span class="toctext">Dehydration</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="http://en.wikipedia.org/wiki/Alcohol#Esterification"><span class="tocnumber">7.4</span> <span class="toctext">Esterification</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="http://en.wikipedia.org/wiki/Alcohol#Oxidation"><span class="tocnumber">7.5</span> <span class="toctext">Oxidation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-33"><a href="http://en.wikipedia.org/wiki/Alcohol#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-34"><a href="http://en.wikipedia.org/wiki/Alcohol#Notes"><span class="tocnumber">9</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-35"><a href="http://en.wikipedia.org/wiki/Alcohol#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-36"><a href="http://en.wikipedia.org/wiki/Alcohol#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Alcohol">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Algebraic_geometry.html'">Algebraic geometry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aerodynamics.html'">Aerodynamics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asynchronous_Transfer_Mode.html'">Asynchronous Transfer Mode</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amateur_astronomy.html'">Amateur astronomy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anti-ballistic_missile.html'">Anti-ballistic missile</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alpha_Centauri.html'">Alpha Centauri</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberration_of_light.html'">Aberration of light</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aluminium.html'">Aluminium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asbestos.html'">Asbestos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atomic_orbital.html'">Atomic orbital</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antibiotic_resistance.html'">Antibiotic resistance</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom.html'">Axiom</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Kolmogorov_complexity.html'">Kolmogorov complexity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aircraft.html'">Aircraft</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_program.html'">Apollo program</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_15.html'">Apollo 15</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom_of_choice.html'">Axiom of choice</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archimedes.html'">Archimedes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arsenic.html'">Arsenic</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asteroid.html'">Asteroid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Addiction.html'">Addiction</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anchor.html'">Anchor</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/APL_(programming_language).html'">APL (programming language)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Active_Directory.html'">Active Directory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytical_chemistry.html'">Analytical chemistry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthropod.html'">Arthropod</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkene.html'">Alkene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antimatter.html'">Antimatter</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amino_acid.html'">Amino acid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aspirin.html'">Aspirin</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

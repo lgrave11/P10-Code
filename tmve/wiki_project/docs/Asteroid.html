@@ -1,0 +1,225 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[676.4738284279, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [13.7053721595, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Asteroid</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Asteroid</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Asteroids</b> are <a href="http://www.wikipedia.org/wiki/Minor_planet" title="Minor planet">minor planets</a>, especially those of the <a href="http://www.wikipedia.org/wiki/Solar_System#Inner_Solar_System" title="Solar System">inner Solar System</a>. The larger ones have also been called <b>planetoids</b>. These terms have historically been applied to any astronomical object orbiting the <a href="http://www.wikipedia.org/wiki/Sun" title="Sun">Sun</a> that did not show the disc of a planet and was not observed to have the characteristics of an active <a href="http://www.wikipedia.org/wiki/Comet" title="Comet">comet</a>. As <a href="http://www.wikipedia.org/wiki/Distant_minor_planet" title="Distant minor planet">minor planets in the outer Solar System</a> were discovered and found to have volatile-based surfaces that resemble those of comets, they were often distinguished from asteroids of the <a href="http://www.wikipedia.org/wiki/Asteroid_belt" title="Asteroid belt">asteroid belt</a>.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Asteroid#cite_note-1"><span>[</span>1<span>]</span></a></sup> In this article, the term "asteroid" refers to the minor planets of the inner Solar System including those co-orbital with <a href="http://www.wikipedia.org/wiki/Jupiter" title="Jupiter">Jupiter</a>.</p>
+<p>There are millions of asteroids, many thought to be the shattered remnants of <a href="http://www.wikipedia.org/wiki/Planetesimal" title="Planetesimal">planetesimals</a>, bodies within the young Sun's <a href="http://www.wikipedia.org/wiki/Solar_nebula" title="Solar nebula" class="mw-redirect">solar nebula</a> that never grew large enough to become <a href="http://www.wikipedia.org/wiki/Planet" title="Planet">planets</a>.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Asteroid#cite_note-2"><span>[</span>2<span>]</span></a></sup> The large majority of known asteroids orbit in the asteroid belt between the orbits of <a href="http://www.wikipedia.org/wiki/Mars" title="Mars">Mars</a> and Jupiter, or are co-orbital with Jupiter (the <a href="http://www.wikipedia.org/wiki/Jupiter_trojan" title="Jupiter trojan">Jupiter trojans</a>). However, other orbital families exist with significant populations, including the <a href="http://www.wikipedia.org/wiki/Near-Earth_asteroids" title="Near-Earth asteroids" class="mw-redirect">near-Earth asteroids</a>. Individual asteroids are classified by their characteristic <a href="http://www.wikipedia.org/wiki/Emission_spectrum" title="Emission spectrum">spectra</a>, with the majority falling into three main groups: <a href="http://www.wikipedia.org/wiki/C-type_asteroid" title="C-type asteroid">C-type</a>, <a href="http://www.wikipedia.org/wiki/M-type_asteroid" title="M-type asteroid">M-type</a>, and <a href="http://www.wikipedia.org/wiki/S-type_asteroid" title="S-type asteroid">S-type</a>. These were named after and are generally identified with <a href="http://www.wikipedia.org/wiki/Carbon" title="Carbon">carbon-rich</a>, <a href="http://www.wikipedia.org/wiki/Metal" title="Metal">metallic</a>, and <a href="http://www.wikipedia.org/wiki/Silicate" title="Silicate">silicate</a> (stony) compositions, respectively.</p>
+<p>Only one asteroid, <a href="http://www.wikipedia.org/wiki/4_Vesta" title="4 Vesta">4 Vesta</a>, which has a relatively reflective surface, is normally visible to the naked eye, and this only in very dark skies when it is favorably positioned. Rarely, small asteroids passing close to Earth may be visible to the naked eye for a short time.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Asteroid#cite_note-3"><span>[</span>3<span>]</span></a></sup> As of November 2015, the <a href="http://www.wikipedia.org/wiki/Minor_Planet_Center" title="Minor Planet Center">Minor Planet Center</a> had data on more than 1.25 million objects in the inner and outer Solar System, of which 750,000 had enough information to be given numbered designations.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Asteroid#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>On 22 January 2014, <a href="http://www.wikipedia.org/wiki/European_Space_Agency" title="European Space Agency">European Space Agency</a> (ESA) scientists reported the detection, for the first definitive time, of <a href="http://www.wikipedia.org/wiki/Water_vapor" title="Water vapor">water vapor</a> on <a href="http://www.wikipedia.org/wiki/Ceres_(dwarf_planet)" title="Ceres (dwarf planet)">Ceres</a>, the largest object in the asteroid belt.<sup id="cite_ref-K.C3.BCppersO.E2.80.99Rourke2014_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Asteroid#cite_note-K.C3.BCppersO.E2.80.99Rourke2014-5"><span>[</span>5<span>]</span></a></sup> The detection was made by using the <a href="http://www.wikipedia.org/wiki/Far-infrared_astronomy" title="Far-infrared astronomy">far-infrared abilities</a> of the <a href="http://www.wikipedia.org/wiki/Herschel_Space_Observatory" title="Herschel Space Observatory">Herschel Space Observatory</a>.<sup id="cite_ref-NASA-20140122_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Asteroid#cite_note-NASA-20140122-6"><span>[</span>6<span>]</span></a></sup> The finding is unexpected because comets, not asteroids, are typically considered to "sprout jets and plumes". According to one of the scientists, "The lines are becoming more and more blurred between comets and asteroids."<sup id="cite_ref-NASA-20140122_6-1" class="reference"><a href="http://en.wikipedia.org/wiki/Asteroid#cite_note-NASA-20140122-6"><span>[</span>6<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Asteroid#Discovery"><span class="tocnumber">1</span> <span class="toctext">Discovery</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Asteroid#Historical_methods"><span class="tocnumber">1.1</span> <span class="toctext">Historical methods</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Asteroid#Manual_methods_of_the_1900s_and_modern_reporting"><span class="tocnumber">1.2</span> <span class="toctext">Manual methods of the 1900s and modern reporting</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Asteroid#Computerized_methods"><span class="tocnumber">1.3</span> <span class="toctext">Computerized methods</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Asteroid#Terminology"><span class="tocnumber">2</span> <span class="toctext">Terminology</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Asteroid#Formation"><span class="tocnumber">3</span> <span class="toctext">Formation</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Asteroid#Distribution_within_the_Solar_System"><span class="tocnumber">4</span> <span class="toctext">Distribution within the Solar System</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Asteroid#Asteroid_belt"><span class="tocnumber">4.1</span> <span class="toctext">Asteroid belt</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Asteroid#Trojans"><span class="tocnumber">4.2</span> <span class="toctext">Trojans</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Asteroid#Near-Earth_asteroids"><span class="tocnumber">4.3</span> <span class="toctext">Near-Earth asteroids</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Asteroid#Characteristics"><span class="tocnumber">5</span> <span class="toctext">Characteristics</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Asteroid#Size_distribution"><span class="tocnumber">5.1</span> <span class="toctext">Size distribution</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="http://en.wikipedia.org/wiki/Asteroid#Largest_asteroids"><span class="tocnumber">5.1.1</span> <span class="toctext">Largest asteroids</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Asteroid#Rotation"><span class="tocnumber">5.2</span> <span class="toctext">Rotation</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Asteroid#Composition"><span class="tocnumber">5.3</span> <span class="toctext">Composition</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Asteroid#Surface_features"><span class="tocnumber">5.4</span> <span class="toctext">Surface features</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Asteroid#Color"><span class="tocnumber">5.5</span> <span class="toctext">Color</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Asteroid#Classification"><span class="tocnumber">6</span> <span class="toctext">Classification</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Asteroid#Orbital_classification"><span class="tocnumber">6.1</span> <span class="toctext">Orbital classification</span></a>
+<ul>
+<li class="toclevel-3 tocsection-20"><a href="http://en.wikipedia.org/wiki/Asteroid#Quasi-satellites_and_horseshoe_objects"><span class="tocnumber">6.1.1</span> <span class="toctext">Quasi-satellites and horseshoe objects</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-21"><a href="http://en.wikipedia.org/wiki/Asteroid#Spectral_classification"><span class="tocnumber">6.2</span> <span class="toctext">Spectral classification</span></a>
+<ul>
+<li class="toclevel-3 tocsection-22"><a href="http://en.wikipedia.org/wiki/Asteroid#Problems"><span class="tocnumber">6.2.1</span> <span class="toctext">Problems</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a href="http://en.wikipedia.org/wiki/Asteroid#Naming"><span class="tocnumber">7</span> <span class="toctext">Naming</span></a>
+<ul>
+<li class="toclevel-2 tocsection-24"><a href="http://en.wikipedia.org/wiki/Asteroid#Symbols"><span class="tocnumber">7.1</span> <span class="toctext">Symbols</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-25"><a href="http://en.wikipedia.org/wiki/Asteroid#Exploration"><span class="tocnumber">8</span> <span class="toctext">Exploration</span></a>
+<ul>
+<li class="toclevel-2 tocsection-26"><a href="http://en.wikipedia.org/wiki/Asteroid#Planned_and_future_missions"><span class="tocnumber">8.1</span> <span class="toctext">Planned and future missions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-27"><a href="http://en.wikipedia.org/wiki/Asteroid#Fiction"><span class="tocnumber">9</span> <span class="toctext">Fiction</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="http://en.wikipedia.org/wiki/Asteroid#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="http://en.wikipedia.org/wiki/Asteroid#Notes"><span class="tocnumber">11</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="http://en.wikipedia.org/wiki/Asteroid#References"><span class="tocnumber">12</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="http://en.wikipedia.org/wiki/Asteroid#External_links"><span class="tocnumber">13</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Asteroid">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Arsenic.html'">Arsenic</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom_of_choice.html'">Axiom of choice</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_program.html'">Apollo program</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aircraft.html'">Aircraft</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Kolmogorov_complexity.html'">Kolmogorov complexity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anchor.html'">Anchor</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Active_Directory.html'">Active Directory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytical_chemistry.html'">Analytical chemistry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_15.html'">Apollo 15</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antibiotic_resistance.html'">Antibiotic resistance</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom.html'">Axiom</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthropod.html'">Arthropod</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkene.html'">Alkene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antimatter.html'">Antimatter</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aluminium.html'">Aluminium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amino_acid.html'">Amino acid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aspirin.html'">Aspirin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adenosine_triphosphate.html'">Adenosine triphosphate</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Air_conditioner.html'">Air conditioner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Absolute_value.html'">Absolute value</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analysis_of_algorithms.html'">Analysis of algorithms</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advanced_Encryption_Standard.html'">Advanced Encryption Standard</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_1.html'">Apollo 1</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archimedes.html'">Archimedes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agarose_gel_electrophoresis.html'">Agarose gel electrophoresis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analysis_of_variance.html'">Analysis of variance</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antiparticle.html'">Antiparticle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amateur_astronomy.html'">Amateur astronomy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asexual_reproduction.html'">Asexual reproduction</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antibody.html'">Antibody</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

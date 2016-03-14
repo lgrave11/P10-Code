@@ -1,0 +1,186 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[56.0358753704, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [34.3946223883, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [6.8383311472, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Anatole France</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Anatole France</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b><span lang="fr" xml:lang="fr">Anatole France</span></b> (<small>French:&#160;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_French" title="Help:IPA for French">[anatɔl fʁɑ̃s]</a></span>; born <b><span lang="fr" xml:lang="fr">François-Anatole Thibault</span></b>, <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_French" title="Help:IPA for French">[frɑ̃swa anatɔl tibo]</a></span>; 16 April 1844 – 12 October 1924) was a French poet, journalist, and novelist. He was born in <a href="http://www.wikipedia.org/wiki/Paris" title="Paris">Paris</a>, and died in <span lang="fr" xml:lang="fr"><a href="http://www.wikipedia.org/wiki/Saint-Cyr-sur-Loire" title="Saint-Cyr-sur-Loire">Saint-Cyr-sur-Loire</a></span>. He was a successful novelist, with several best-sellers. Ironic and skeptical, he was considered in his day the ideal French man of letters. He was a member of the <i><span lang="fr" xml:lang="fr"><a href="http://www.wikipedia.org/wiki/Acad%C3%A9mie_fran%C3%A7aise" title="Académie française">Académie française</a></span></i>, and won the 1921 <a href="http://www.wikipedia.org/wiki/Nobel_Prize_in_Literature" title="Nobel Prize in Literature">Nobel Prize in Literature</a> "in recognition of his brilliant literary achievements, characterized as they are by a nobility of style, a profound human sympathy, grace, and a true Gallic temperament".</p>
+<p>France is also widely believed to be the model for narrator Marcel's literary idol <span lang="fr" xml:lang="fr">Bergotte</span> in <span lang="fr" xml:lang="fr">Marcel Proust</span>'s <i><a href="http://www.wikipedia.org/wiki/In_Search_of_Lost_Time" title="In Search of Lost Time">In Search of Lost Time</a></i>.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Anatole_France#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Anatole_France#Early_years"><span class="tocnumber">1</span> <span class="toctext">Early years</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Anatole_France#Literary_career"><span class="tocnumber">2</span> <span class="toctext">Literary career</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Anatole_France#Private_life"><span class="tocnumber">3</span> <span class="toctext">Private life</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Anatole_France#Reputation"><span class="tocnumber">4</span> <span class="toctext">Reputation</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Anatole_France#Works"><span class="tocnumber">5</span> <span class="toctext">Works</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Anatole_France#Poetry"><span class="tocnumber">5.1</span> <span class="toctext">Poetry</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Anatole_France#Prose_fiction"><span class="tocnumber">5.2</span> <span class="toctext">Prose fiction</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Anatole_France#Memoirs"><span class="tocnumber">5.3</span> <span class="toctext">Memoirs</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Anatole_France#Plays"><span class="tocnumber">5.4</span> <span class="toctext">Plays</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Anatole_France#Historical_biography"><span class="tocnumber">5.5</span> <span class="toctext">Historical biography</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Anatole_France#Literary_criticism"><span class="tocnumber">5.6</span> <span class="toctext">Literary criticism</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Anatole_France#Social_criticism"><span class="tocnumber">5.7</span> <span class="toctext">Social criticism</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Anatole_France#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Anatole_France#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Early_years">Early years</span></h3>
+<p>The son of a bookseller, France spent most of his life around books. France was a <a href="http://www.wikipedia.org/wiki/Bibliophile" title="Bibliophile" class="mw-redirect">bibliophile</a>.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Anatole_France#cite_note-2"><span>[</span>2<span>]</span></a></sup> His father's bookstore, called the <i><span lang="fr" xml:lang="fr">Librairie France</span></i>, specialized in books and papers on the <a href="http://www.wikipedia.org/wiki/French_Revolution" title="French Revolution">French Revolution</a> and was frequented by many notable writers and scholars of the day. Anatole France studied at the <i><span lang="fr" xml:lang="fr"><a href="http://www.wikipedia.org/wiki/Coll%C3%A8ge_Stanislas_de_Paris" title="Collège Stanislas de Paris">Collège Stanislas</a></span></i>, a private Catholic school, and after graduation he helped his father by working in his bookstore. After several years he secured the position of cataloguer at <span lang="fr" xml:lang="fr">Bacheline-Deflorenne</span> and at <span lang="fr" xml:lang="fr">Lemerre</span>. In 1876 he was appointed librarian for the French Senate.</p>
+<p><a href="http://en.wikipedia.org/wiki/Anatole_France">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Alain_de_Lille.html'">Alain de Lille</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agathon.html'">Agathon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alphorn.html'">Alphorn</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alois_Alzheimer.html'">Alois Alzheimer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexandrists.html'">Alexandrists</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/List_of_anthropologists.html'">List of anthropologists</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atle_Selberg.html'">Atle Selberg</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrea_Alciato.html'">Andrea Alciato</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anaximenes_of_Miletus.html'">Anaximenes of Miletus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aelbert_Cuyp.html'">Aelbert Cuyp</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammonius_Hermiae.html'">Ammonius Hermiae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambroise.html'">Ambroise</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andronicus_of_Rhodes.html'">Andronicus of Rhodes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abatement_of_debts_and_legacies.html'">Abatement of debts and legacies</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amalric_of_Bena.html'">Amalric of Bena</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcidamas.html'">Alcidamas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agrarianism.html'">Agrarianism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aristide_Maillol.html'">Aristide Maillol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alessandro_Allori.html'">Alessandro Allori</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argot.html'">Argot</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambrosiaster.html'">Ambrosiaster</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambrosius_Bosschaert.html'">Ambrosius Bosschaert</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alain_Connes.html'">Alain Connes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amara_Sinha.html'">Amara Sinha</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfons_Maria_Jakob.html'">Alfons Maria Jakob</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agostino_Carracci.html'">Agostino Carracci</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analysis.html'">Analysis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexandrine.html'">Alexandrine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldine_Press.html'">Aldine Press</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alford_plea.html'">Alford plea</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

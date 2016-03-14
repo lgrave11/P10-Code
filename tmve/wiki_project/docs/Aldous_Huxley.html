@@ -1,0 +1,202 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[472.8416889737, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [104.6304993745, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [73.3526827693, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [3.5335762481, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Aldous Huxley</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Aldous Huxley</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Aldous Leonard Huxley</b> <span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/ɔː/ 'au' in 'fraud'">ɔː</span><span title="'l' in 'lie'">l</span><span title="'d' in 'dye'">d</span><span title="/ə/ 'a' in 'about'">ə</span><span title="'s' in 'sigh'">s</span></span> <span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="'h' in 'hi'">h</span><span title="/ʌ/ short 'u' in 'bud'">ʌ</span><span title="'k' in 'kind'">k</span><span title="'s' in 'sigh'">s</span><span title="'l' in 'lie'">l</span><span title="/i/ 'y' in 'happy'">i</span></span>/</a></span></span> (26 July 1894 – 22 November 1963) was an English writer, novelist, philosopher and prominent member of the <a href="http://www.wikipedia.org/wiki/Huxley_family" title="Huxley family">Huxley family</a>. He graduated from <a href="http://www.wikipedia.org/wiki/Balliol_College,_Oxford" title="Balliol College, Oxford">Balliol College, Oxford</a> with a <a href="http://www.wikipedia.org/wiki/British_undergraduate_degree_classification#First_Class_Honours" title="British undergraduate degree classification">first</a> in English literature.</p>
+<p>He was best known for his novels including <i><a href="http://www.wikipedia.org/wiki/Brave_New_World" title="Brave New World">Brave New World</a></i>, set in a <a href="http://www.wikipedia.org/wiki/Dystopia" title="Dystopia">dystopian</a> London, and for non-fiction books, such as <i><a href="http://www.wikipedia.org/wiki/The_Doors_of_Perception" title="The Doors of Perception">The Doors of Perception</a></i>, which recalls experiences when taking a <a href="http://www.wikipedia.org/wiki/Psychedelic_drug" title="Psychedelic drug">psychedelic drug</a>, and a wide-ranging output of essays. Early in his career Huxley edited the magazine <i><a href="http://www.wikipedia.org/wiki/Oxford_Poetry" title="Oxford Poetry">Oxford Poetry</a></i>, and published short stories and poetry. Mid career and later, he published travel writing, film stories, and scripts. He spent the later part of his life in the U.S., living in Los Angeles from 1937 until his death. In 1962, a year before his death, he was elected Companion of Literature by the <a href="http://www.wikipedia.org/wiki/Royal_Society_of_Literature" title="Royal Society of Literature">Royal Society of Literature</a>.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>Huxley was a <a href="http://www.wikipedia.org/wiki/Humanism" title="Humanism">humanist</a>, <a href="http://www.wikipedia.org/wiki/Pacifism" title="Pacifism">pacifist</a>, and <a href="http://www.wikipedia.org/wiki/Satire" title="Satire">satirist</a>. He later became interested in spiritual subjects such as <a href="http://www.wikipedia.org/wiki/Parapsychology" title="Parapsychology">parapsychology</a> and philosophical <a href="http://www.wikipedia.org/wiki/Mysticism" title="Mysticism">mysticism</a>,<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#cite_note-3"><span>[</span>3<span>]</span></a></sup> in particular <a href="http://www.wikipedia.org/wiki/Universalism" title="Universalism">Universalism</a>.<sup id="cite_ref-FOOTNOTERoy2003_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#cite_note-FOOTNOTERoy2003-4"><span>[</span>4<span>]</span></a></sup> By the end of his life, Huxley was widely acknowledged as one of the pre-eminent intellectuals of his time.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#cite_note-5"><span>[</span>5<span>]</span></a></sup> He was nominated for the <a href="http://www.wikipedia.org/wiki/Nobel_Prize_in_Literature" title="Nobel Prize in Literature">Nobel Prize in Literature</a> in seven different years.<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Early_life"><span class="tocnumber">1</span> <span class="toctext">Early life</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Career"><span class="tocnumber">2</span> <span class="toctext">Career</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Bloomsbury_Set"><span class="tocnumber">2.1</span> <span class="toctext">Bloomsbury Set</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#United_States"><span class="tocnumber">2.2</span> <span class="toctext">United States</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Post_World_War_II"><span class="tocnumber">2.3</span> <span class="toctext">Post World War II</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Association_with_Vedanta"><span class="tocnumber">3</span> <span class="toctext">Association with Vedanta</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Eyesight"><span class="tocnumber">4</span> <span class="toctext">Eyesight</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Personal_life"><span class="tocnumber">5</span> <span class="toctext">Personal life</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Death"><span class="tocnumber">6</span> <span class="toctext">Death</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Awards"><span class="tocnumber">7</span> <span class="toctext">Awards</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Film_adaptations_of_Huxley.27s_work"><span class="tocnumber">8</span> <span class="toctext">Film adaptations of Huxley's work</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Selected_works"><span class="tocnumber">9</span> <span class="toctext">Selected works</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Novels"><span class="tocnumber">9.1</span> <span class="toctext">Novels</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Short_story_collections"><span class="tocnumber">9.2</span> <span class="toctext">Short story collections</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Poetry_collections"><span class="tocnumber">9.3</span> <span class="toctext">Poetry collections</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Essay_collections"><span class="tocnumber">9.4</span> <span class="toctext">Essay collections</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Screenplays"><span class="tocnumber">9.5</span> <span class="toctext">Screenplays</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Travel_books"><span class="tocnumber">9.6</span> <span class="toctext">Travel books</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Children.27s_fiction"><span class="tocnumber">9.7</span> <span class="toctext">Children's fiction</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Drama"><span class="tocnumber">9.8</span> <span class="toctext">Drama</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Articles_written_for_Vedanta_and_the_West"><span class="tocnumber">9.9</span> <span class="toctext">Articles written for <i>Vedanta and the West</i></span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Audio_recordings"><span class="tocnumber">9.10</span> <span class="toctext">Audio recordings</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Other"><span class="tocnumber">9.11</span> <span class="toctext">Other</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Sources"><span class="tocnumber">12</span> <span class="toctext">Sources</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#Further_reading"><span class="tocnumber">13</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="http://en.wikipedia.org/wiki/Aldous_Huxley#External_links"><span class="tocnumber">14</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Aldous_Huxley">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Assault.html'">Assault</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anal_sex.html'">Anal sex</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Conservation-restoration.html'">Conservation-restoration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apocrypha.html'">Apocrypha</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Author.html'">Author</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ayahuasca.html'">Ayahuasca</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbreviation.html'">Abbreviation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnosticism.html'">Agnosticism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albrecht_Dürer.html'">Albrecht Dürer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Sign_Language.html'">American Sign Language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Camus.html'">Albert Camus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ad_hominem.html'">Ad hominem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accountancy.html'">Accountancy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Android.html'">Android</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Altruism.html'">Altruism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Stanley_Eddington.html'">Arthur Stanley Eddington</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animal_Farm.html'">Animal Farm</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Architect.html'">Architect</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_Modest_Proposal.html'">A Modest Proposal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accusative_case.html'">Accusative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abjad.html'">Abjad</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anselm_of_Canterbury.html'">Anselm of Canterbury</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Armenian_language.html'">Armenian language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_numerals.html'">Arabic numerals</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animism.html'">Animism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Technique.html'">Alexander Technique</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aikido.html'">Aikido</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astrology.html'">Astrology</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Grothendieck.html'">Alexander Grothendieck</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcoholics_Anonymous.html'">Alcoholics Anonymous</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

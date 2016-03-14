@@ -1,0 +1,201 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[376.7686906562, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [99.4105161561, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Anatolia</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Anatolia</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><span style="font-size: small;"><span id="coordinates"><a href="http://www.wikipedia.org/wiki/Geographic_coordinate_system" title="Geographic coordinate system">Coordinates</a>: <span class="plainlinks nourlexpansion"><a class="external text" href="//tools.wmflabs.org/geohack/geohack.php?pagename=Anatolia&amp;params=80_N_20_E_"><span class="geo-default"><span class="geo-dms" title="Maps, aerial photos, and other data for this location"><span class="latitude">80°N</span> <span class="longitude">20°E</span></span></span><span class="geo-multi-punct">﻿ / ﻿</span><span class="geo-nondefault"><span class="geo-dec" title="Maps, aerial photos, and other data for this location">80°N 20°E</span><span style="display:none">﻿ / <span class="geo">80; 20</span></span></span></a></span></span></span></p>
+<p><b>Anatolia</b> (from <a href="http://www.wikipedia.org/wiki/Ancient_Greek" title="Ancient Greek">Greek</a> <span lang="grc">Ἀνατολή</span>, <i><span lang="gr-Latn">Anatolḗ</span></i> — "east" or "(sun)rise"; in modern <a href="http://www.wikipedia.org/wiki/Turkish_language" title="Turkish language">Turkish</a>: <span lang="tr"><i>Anadolu</i></span>), in geography known as <b>Asia Minor</b> (from <a href="http://www.wikipedia.org/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="el">Μικρὰ Ἀσία</span> <i><span lang="gr-Latn">Mīkrá Asía</span></i> — "small Asia"; in modern <a href="http://www.wikipedia.org/wiki/Turkish_language" title="Turkish language">Turkish</a>: <span lang="tr"><i>Küçük Asya</i></span>), <b>Asian Turkey</b>, <b>Anatolian peninsula</b>, or <b>Anatolian plateau</b>, is the westernmost protrusion of <a href="http://www.wikipedia.org/wiki/Asia" title="Asia">Asia</a>, which makes up the majority of the <a href="http://www.wikipedia.org/wiki/Turkey" title="Turkey">Republic of Turkey</a>. The inhabitants of this region predominantly spoke <a href="http://www.wikipedia.org/wiki/Greek_language" title="Greek language">Greek</a> until the region was conquered first by the <a href="http://www.wikipedia.org/wiki/Seljuq_dynasty" title="Seljuq dynasty">Seljuk Turks</a> and later by the Ottoman Empire.</p>
+<p>The region is bounded by the <a href="http://www.wikipedia.org/wiki/Black_Sea" title="Black Sea">Black Sea</a> to the north, the <a href="http://www.wikipedia.org/wiki/Mediterranean_Sea" title="Mediterranean Sea">Mediterranean Sea</a> to the south, and the <a href="http://www.wikipedia.org/wiki/Aegean_Sea" title="Aegean Sea">Aegean Sea</a> to the west. The <a href="http://www.wikipedia.org/wiki/Sea_of_Marmara" title="Sea of Marmara">Sea of Marmara</a> forms a connection between the Black and Aegean Seas through the <a href="http://www.wikipedia.org/wiki/Bosphorus" title="Bosphorus">Bosphorus</a> and <a href="http://www.wikipedia.org/wiki/Dardanelles" title="Dardanelles">Dardanelles</a> straits and separates Anatolia from <a href="http://www.wikipedia.org/wiki/Thrace" title="Thrace">Thrace</a> on the <a href="http://www.wikipedia.org/wiki/Europe" title="Europe">European</a> mainland.</p>
+<p>Traditionally, Anatolia is considered to extend in the east to a line between the <a href="http://www.wikipedia.org/wiki/Gulf_of_%C4%B0skenderun" title="Gulf of İskenderun">Gulf of İskenderun</a> and the Black Sea to what is historically known as the <a href="http://www.wikipedia.org/wiki/Armenian_Highlands" title="Armenian Highlands">Armenian Highlands</a> (Armenia Major). This region is now named and largely situated in the <a href="http://www.wikipedia.org/wiki/Eastern_Anatolia" title="Eastern Anatolia" class="mw-redirect">Eastern Anatolia</a> region of the far north east of <a href="http://www.wikipedia.org/wiki/Turkey" title="Turkey">Turkey</a> and converges with the <a href="http://www.wikipedia.org/wiki/Lesser_Caucasus" title="Lesser Caucasus">Lesser Caucasus</a> - an area that was incorporated in the <a href="http://www.wikipedia.org/wiki/Russian_Empire" title="Russian Empire">Russian Empire</a> region of <a href="http://www.wikipedia.org/wiki/Transcaucasia" title="Transcaucasia">Transcaucasia</a> in the 19th century.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Anatolia#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Anatolia#cite_note-2"><span>[</span>2<span>]</span></a></sup> Thus, traditionally Anatolia is the territory that comprises approximately the western two-thirds of the Asian part of Turkey. However, since the <a href="http://www.wikipedia.org/wiki/Armenian_Genocide" title="Armenian Genocide">Armenian Genocide</a> and declaration of the Turkish Republic in 1923, the Armenian Highlands had been renamed Eastern Anatolia by the Turkish government<sup id="cite_ref-Sahakyan_3-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anatolia#cite_note-Sahakyan-3"><span>[</span>3<span>]</span></a></sup> and Anatolia is often considered to be synonymous with Asian Turkey, which comprises almost the entire country,<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Anatolia#cite_note-4"><span>[</span>4<span>]</span></a></sup> its eastern and southeastern borders are widely taken to be the <a href="http://www.wikipedia.org/wiki/Turkey" title="Turkey">Turkish</a> borders with neighboring <a href="http://www.wikipedia.org/wiki/Georgia_(country)" title="Georgia (country)">Georgia</a>, <a href="http://www.wikipedia.org/wiki/Armenia" title="Armenia">Armenia</a>, <a href="http://www.wikipedia.org/wiki/Azerbaijan" title="Azerbaijan">Azerbaijan</a>, <a href="http://www.wikipedia.org/wiki/Iran" title="Iran">Iran</a>, <a href="http://www.wikipedia.org/wiki/Iraq" title="Iraq">Iraq</a>, and <a href="http://www.wikipedia.org/wiki/Syria" title="Syria">Syria</a>, in clockwise direction.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Anatolia#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Anatolia#Etymology"><span class="tocnumber">2</span> <span class="toctext">Etymology</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Anatolia#History"><span class="tocnumber">3</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Anatolia#Prehistory"><span class="tocnumber">3.1</span> <span class="toctext">Prehistory</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Anatolia#Ancient_Near_East_.28Bronze_and_Iron_Ages.29"><span class="tocnumber">3.2</span> <span class="toctext">Ancient Near East (Bronze and Iron Ages)</span></a>
+<ul>
+<li class="toclevel-3 tocsection-6"><a href="http://en.wikipedia.org/wiki/Anatolia#Hattians_and_Hurrians"><span class="tocnumber">3.2.1</span> <span class="toctext">Hattians and Hurrians</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="http://en.wikipedia.org/wiki/Anatolia#Assyrian_Empire_.2821st.E2.80.9318th_centuries_BC.29"><span class="tocnumber">3.2.2</span> <span class="toctext">Assyrian Empire (21st–18th centuries BC)</span></a></li>
+<li class="toclevel-3 tocsection-8"><a href="http://en.wikipedia.org/wiki/Anatolia#Hittite_Kingdoms_.2817th.E2.80.9312th_centuries_BC.29"><span class="tocnumber">3.2.3</span> <span class="toctext">Hittite Kingdoms (17th–12th centuries BC)</span></a></li>
+<li class="toclevel-3 tocsection-9"><a href="http://en.wikipedia.org/wiki/Anatolia#Neo-Hittite_kingdoms_.28c._1180.E2.80.93700_BC.29"><span class="tocnumber">3.2.4</span> <span class="toctext">Neo-Hittite kingdoms (c. 1180–700 BC)</span></a></li>
+<li class="toclevel-3 tocsection-10"><a href="http://en.wikipedia.org/wiki/Anatolia#Neo-Assyrian_Empire_.2810th.E2.80.937th_centuries_BC.29"><span class="tocnumber">3.2.5</span> <span class="toctext">Neo-Assyrian Empire (10th–7th centuries BC)</span></a></li>
+<li class="toclevel-3 tocsection-11"><a href="http://en.wikipedia.org/wiki/Anatolia#Cimmerian_and_Scythian_invasions_.288th.E2.80.937th_centuries_BC.29"><span class="tocnumber">3.2.6</span> <span class="toctext">Cimmerian and Scythian invasions (8th–7th centuries BC)</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="http://en.wikipedia.org/wiki/Anatolia#Greek_West"><span class="tocnumber">3.2.7</span> <span class="toctext">Greek West</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Anatolia#Classical_antiquity"><span class="tocnumber">3.3</span> <span class="toctext">Classical antiquity</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Anatolia#Early_Christian_period"><span class="tocnumber">3.4</span> <span class="toctext">Early Christian period</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Anatolia#Islamic_rule_replacing_Byzantium"><span class="tocnumber">3.5</span> <span class="toctext">Islamic rule replacing Byzantium</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Anatolia#Ottoman_Empire"><span class="tocnumber">3.6</span> <span class="toctext">Ottoman Empire</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Anatolia#Modern_times"><span class="tocnumber">3.7</span> <span class="toctext">Modern times</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Anatolia#Geography"><span class="tocnumber">4</span> <span class="toctext">Geography</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Anatolia#Geology"><span class="tocnumber">4.1</span> <span class="toctext">Geology</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="http://en.wikipedia.org/wiki/Anatolia#Climate"><span class="tocnumber">4.2</span> <span class="toctext">Climate</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="http://en.wikipedia.org/wiki/Anatolia#Ecoregions"><span class="tocnumber">4.3</span> <span class="toctext">Ecoregions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="http://en.wikipedia.org/wiki/Anatolia#Demographics"><span class="tocnumber">5</span> <span class="toctext">Demographics</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="http://en.wikipedia.org/wiki/Anatolia#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="http://en.wikipedia.org/wiki/Anatolia#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="http://en.wikipedia.org/wiki/Anatolia#Bibliography"><span class="tocnumber">8</span> <span class="toctext">Bibliography</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Anatolia">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Achill_Island.html'">Achill Island</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Economy_of_Angola.html'">Economy of Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlantic_Ocean.html'">Atlantic Ocean</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Chinese_cuisine.html'">American Chinese cuisine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aleutian_Islands.html'">Aleutian Islands</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acapulco.html'">Acapulco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anguilla.html'">Anguilla</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Capital_Territory.html'">Australian Capital Territory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abdul_Rashid_Dostum.html'">Abdul Rashid Dostum</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arbor_Day.html'">Arbor Day</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andaman_Islands.html'">Andaman Islands</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Azerbaijan.html'">Azerbaijan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abalone.html'">Abalone</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andorra.html'">Andorra</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andalusia.html'">Andalusia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Airlines_Flight_77.html'">American Airlines Flight 77</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aircraft_hijacking.html'">Aircraft hijacking</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Geography_of_Alabama.html'">Geography of Alabama</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Azad_Kashmir.html'">Azad Kashmir</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arab.html'">Arab</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astoria,_Oregon.html'">Astoria, Oregon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aarau.html'">Aarau</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antarctic_Treaty_System.html'">Antarctic Treaty System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Army.html'">Australian Army</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ames,_Iowa.html'">Ames, Iowa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Area_51.html'">Area 51</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albion,_Michigan.html'">Albion, Michigan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Action_Against_Hunger.html'">Action Against Hunger</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_(word).html'">American (word)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auschwitz_concentration_camp.html'">Auschwitz concentration camp</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

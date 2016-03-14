@@ -1,0 +1,210 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[46.0034790475, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [30.0030599341, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [23.2622868767, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Agnostida</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Agnostida</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Suborder <a href="/w/index.php?title=Agnostina&amp;action=edit&amp;redlink=1" class="new" title="Agnostina (page does not exist)">Agnostina</a></b></p>
+<ul>
+<li><b>Superfamily Agnostoidea</b>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Agnostidae" title="Agnostidae">Agnostidae</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Ammagnostidae" title="Ammagnostidae">Ammagnostidae</a></li>
+<li><a href="/w/index.php?title=Clavagnostidae&amp;action=edit&amp;redlink=1" class="new" title="Clavagnostidae (page does not exist)">Clavagnostidae</a></li>
+<li><a href="/w/index.php?title=Diplagnostidae&amp;action=edit&amp;redlink=1" class="new" title="Diplagnostidae (page does not exist)">Diplagnostidae</a></li>
+<li><a href="/w/index.php?title=Doryagnostidae&amp;action=edit&amp;redlink=1" class="new" title="Doryagnostidae (page does not exist)">Doryagnostidae</a></li>
+<li><a href="/w/index.php?title=Glyptagnostidae&amp;action=edit&amp;redlink=1" class="new" title="Glyptagnostidae (page does not exist)">Glyptagnostidae</a></li>
+<li><a href="/w/index.php?title=Metagnostidae&amp;action=edit&amp;redlink=1" class="new" title="Metagnostidae (page does not exist)">Metagnostidae</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Peronopsidae" title="Peronopsidae">Peronopsidae</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Ptychagnostidae" title="Ptychagnostidae">Ptychagnostidae</a></li>
+<li><a href="/w/index.php?title=Spinagnostidae&amp;action=edit&amp;redlink=1" class="new" title="Spinagnostidae (page does not exist)">Spinagnostidae</a></li>
+</ul>
+</li>
+<li><b>Superfamily <a href="http://www.wikipedia.org/wiki/Condylopygoidea" title="Condylopygoidea" class="mw-redirect">Condylopygoidea</a></b>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Condylopygidae" title="Condylopygidae">Condylopygidae</a></li>
+</ul>
+</li>
+</ul>
+<p><b>Suborder <a href="http://www.wikipedia.org/wiki/Eodiscina" title="Eodiscina">Eodiscina</a></b></p>
+<ul>
+<li><b>Superfamily <a href="http://www.wikipedia.org/wiki/Eodiscoidea" title="Eodiscoidea" class="mw-redirect">Eodiscoidea</a></b>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Calodiscidae" title="Calodiscidae">Calodiscidae</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Eodiscidae" title="Eodiscidae">Eodiscidae</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Hebediscidae" title="Hebediscidae">Hebediscidae</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Tsunyidiscidae" title="Tsunyidiscidae" class="mw-redirect">Tsunyidiscidae</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Weymouthiidae" title="Weymouthiidae">Weymouthiidae</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Yukoniidae" title="Yukoniidae">Yukoniidae</a></li>
+</ul>
+</li>
+</ul>
+<p>Isopygia Gürich, 1907<br />
+Miomera Jækel, 1909</p>
+<p><b>Agnostida</b> is an <a href="http://www.wikipedia.org/wiki/Order_(biology)" title="Order (biology)">order</a> of <a href="http://www.wikipedia.org/wiki/Arthropod" title="Arthropod">arthropod</a> which first developed near the end of the <a href="http://www.wikipedia.org/wiki/Cambrian" title="Cambrian">Early Cambrian</a> period and thrived during the Middle Cambrian. They are present in the <a href="http://www.wikipedia.org/wiki/Lower_Cambrian" title="Lower Cambrian" class="mw-redirect">Lower Cambrian</a> fossil record along with <a href="http://www.wikipedia.org/wiki/Trilobites" title="Trilobites" class="mw-redirect">trilobites</a> from the <a href="http://www.wikipedia.org/wiki/Redlichiida" title="Redlichiida">Redlichiida</a>, <a href="http://www.wikipedia.org/wiki/Corynexochida" title="Corynexochida">Corynexochida</a>, and <a href="http://www.wikipedia.org/wiki/Ptychopariida" title="Ptychopariida">Ptychopariida</a> orders. The last agnostids went <a href="http://www.wikipedia.org/wiki/Extinct" title="Extinct" class="mw-redirect">extinct</a> in the Late <a href="http://www.wikipedia.org/wiki/Ordovician" title="Ordovician">Ordovician</a>.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Agnostida#Systematics"><span class="tocnumber">1</span> <span class="toctext">Systematics</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Agnostida#Ecology"><span class="tocnumber">2</span> <span class="toctext">Ecology</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Agnostida#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Agnostida#External_links"><span class="tocnumber">4</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Systematics">Systematics</span></h3>
+<p>The Agnostida are divided into two suborders&#160;— <a href="/w/index.php?title=Agnostina&amp;action=edit&amp;redlink=1" class="new" title="Agnostina (page does not exist)">Agnostina</a> and <a href="http://www.wikipedia.org/wiki/Eodiscina" title="Eodiscina">Eodiscina</a>&#160;— that are then subdivided into a number of <a href="http://www.wikipedia.org/wiki/Family_(biology)" title="Family (biology)">families</a>. As a group, agnostids are isopygous, meaning that their <a href="http://www.wikipedia.org/wiki/Pygidium" title="Pygidium">pygidium</a> is similar in size and shape to their <a href="http://www.wikipedia.org/wiki/Cephalon_(arthropod_anatomy)" title="Cephalon (arthropod anatomy)" class="mw-redirect">cephalon</a>. Most agnostid species were eyeless.</p>
+<p>The systematic position of the order Agnostida within the class Trilobita remains uncertain, and there has been continuing debate whether they are trilobites or a <a href="http://www.wikipedia.org/wiki/Stem_group" title="Stem group" class="mw-redirect">stem group</a>. The challenge to the status has focused on the Agnostina partly because <a href="http://www.wikipedia.org/wiki/Juvenile_(organism)" title="Juvenile (organism)">juveniles</a> of one genus have been found with legs greatly different from those of adult trilobites,<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Agnostida#cite_note-1"><span>[</span>1<span>]</span></a></sup> suggesting they are not members of the <a href="http://www.wikipedia.org/wiki/Lamellipedia" title="Lamellipedia">lamellipedian</a> <a href="http://www.wikipedia.org/wiki/Clade" title="Clade">clade</a>, of which trilobites are a part. Instead, the limbs of agnostids closely resemble those of stem group crustaceans, although they lack the <a href="/w/index.php?title=Proximal_endite&amp;action=edit&amp;redlink=1" class="new" title="Proximal endite (page does not exist)">proximal endite</a>, which defines that group. They are likely the <a href="http://www.wikipedia.org/wiki/Sister_taxon" title="Sister taxon" class="mw-redirect">sister taxon</a> to the crustacean stem lineage, and, as such, part of the clade <a href="http://www.wikipedia.org/wiki/Crustaceomorpha" title="Crustaceomorpha">Crustaceomorpha</a>.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Agnostida#cite_note-2"><span>[</span>2<span>]</span></a></sup> Other researchers have suggested, based on a <a href="http://www.wikipedia.org/wiki/Cladistic" title="Cladistic" class="mw-redirect">cladistic</a> analyses of <a href="http://www.wikipedia.org/wiki/Dorsum_(anatomy)" title="Dorsum (anatomy)" class="mw-redirect">dorsal</a> <a href="http://www.wikipedia.org/wiki/Exoskeleton" title="Exoskeleton">exoskeletal</a> features, that Eodiscina and Agnostida are closely united, and that the Eodiscina descended from the trilobite order <a href="http://www.wikipedia.org/wiki/Ptychopariida" title="Ptychopariida">Ptychopariida</a>.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Agnostida#cite_note-3"><span>[</span>3<span>]</span></a></sup> Still others have argued that Agnostids are related to <a href="http://www.wikipedia.org/wiki/Brachiopods" title="Brachiopods" class="mw-redirect">Brachiopods</a>.</p>
+<p><a href="http://en.wikipedia.org/wiki/Agnostida">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Asterales.html'">Asterales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollos.html'">Apollos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alismatales.html'">Alismatales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anus.html'">Anus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahmed_I.html'">Ahmed I</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abu_al-Fida.html'">Abu al-Fida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antonio_Agliardi.html'">Antonio Agliardi</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander.html'">Alexander</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abijah.html'">Abijah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amaryllis.html'">Amaryllis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abimelech.html'">Abimelech</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Phillip.html'">Arthur Phillip</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Aetolus.html'">Alexander Aetolus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldona_of_Lithuania.html'">Aldona of Lithuania</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ara_(constellation).html'">Ara (constellation)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antigonid_dynasty.html'">Antigonid dynasty</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antlia.html'">Antlia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambrose_the_Camaldulian.html'">Ambrose the Camaldulian</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adalbert_of_Prague.html'">Adalbert of Prague</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_II_of_Scotland.html'">Alexander II of Scotland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actium.html'">Actium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aedesius.html'">Aedesius</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alphege.html'">Alphege</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aries_(constellation).html'">Aries (constellation)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abano_Terme.html'">Abano Terme</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Casa_Batlló.html'">Casa Batlló</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbotsford_House.html'">Abbotsford House</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_IV_of_Aragon.html'">Alfonso IV of Aragon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alger_of_Liège.html'">Alger of Liège</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alliaceae.html'">Alliaceae</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

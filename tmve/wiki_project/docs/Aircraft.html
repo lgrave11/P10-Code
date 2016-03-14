@@ -1,0 +1,232 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[702.9491684498, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [129.6322579792, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [11.6874007787, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Aircraft</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Aircraft</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>aircraft</b> is a <a href="http://www.wikipedia.org/wiki/Machine" title="Machine">machine</a> that is able to <a href="http://www.wikipedia.org/wiki/Flight" title="Flight">fly</a> by gaining support from the <a href="http://www.wikipedia.org/wiki/Air" title="Air" class="mw-redirect">air</a>. It counters the force of gravity by using either <a href="http://www.wikipedia.org/wiki/Buoyancy" title="Buoyancy">static lift</a> or by using the <a href="http://www.wikipedia.org/wiki/Lift_(force)" title="Lift (force)">dynamic lift</a> of an <a href="http://www.wikipedia.org/wiki/Airfoil" title="Airfoil">airfoil</a>,<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Aircraft#cite_note-1"><span>[</span>1<span>]</span></a></sup> or in a few cases the <a href="http://www.wikipedia.org/wiki/Powered_lift" title="Powered lift">downward thrust</a> from <a href="http://www.wikipedia.org/wiki/Jet_engine" title="Jet engine">jet engines</a>.</p>
+<p>The human activity that surrounds aircraft is called <i><a href="http://www.wikipedia.org/wiki/Aviation" title="Aviation">aviation</a></i>. <a href="http://www.wikipedia.org/wiki/Aircrew" title="Aircrew">Crewed</a> aircraft are flown by an onboard <a href="http://www.wikipedia.org/wiki/Aviator" title="Aviator" class="mw-redirect">pilot</a>, but <a href="http://www.wikipedia.org/wiki/Unmanned_aerial_vehicle" title="Unmanned aerial vehicle">unmanned aerial vehicles</a> may be <a href="http://www.wikipedia.org/wiki/Remotely_piloted_vehicle" title="Remotely piloted vehicle" class="mw-redirect">remotely controlled</a> or self-controlled by onboard computers. Aircraft may be classified by different criteria, such as lift type, <a href="http://www.wikipedia.org/wiki/Aircraft_propulsion" title="Aircraft propulsion" class="mw-redirect">aircraft propulsion</a>, usage and others.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Aircraft#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Aircraft#Methods_of_lift"><span class="tocnumber">2</span> <span class="toctext">Methods of lift</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Aircraft#Lighter_than_air_.E2.80.93_aerostats"><span class="tocnumber">2.1</span> <span class="toctext">Lighter than air – aerostats</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Aircraft#Heavier-than-air_.E2.80.93_aerodynes"><span class="tocnumber">2.2</span> <span class="toctext">Heavier-than-air – aerodynes</span></a>
+<ul>
+<li class="toclevel-3 tocsection-5"><a href="http://en.wikipedia.org/wiki/Aircraft#Fixed-wing"><span class="tocnumber">2.2.1</span> <span class="toctext">Fixed-wing</span></a></li>
+<li class="toclevel-3 tocsection-6"><a href="http://en.wikipedia.org/wiki/Aircraft#Rotorcraft"><span class="tocnumber">2.2.2</span> <span class="toctext">Rotorcraft</span></a></li>
+<li class="toclevel-3 tocsection-7"><a href="http://en.wikipedia.org/wiki/Aircraft#Other_methods_of_lift"><span class="tocnumber">2.2.3</span> <span class="toctext">Other methods of lift</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Aircraft#Propulsion"><span class="tocnumber">3</span> <span class="toctext">Propulsion</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Aircraft#Unpowered_aircraft"><span class="tocnumber">3.1</span> <span class="toctext">Unpowered aircraft</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Aircraft#Powered_aircraft"><span class="tocnumber">3.2</span> <span class="toctext">Powered aircraft</span></a>
+<ul>
+<li class="toclevel-3 tocsection-11"><a href="http://en.wikipedia.org/wiki/Aircraft#Propeller_aircraft"><span class="tocnumber">3.2.1</span> <span class="toctext">Propeller aircraft</span></a></li>
+<li class="toclevel-3 tocsection-12"><a href="http://en.wikipedia.org/wiki/Aircraft#Jet_aircraft"><span class="tocnumber">3.2.2</span> <span class="toctext">Jet aircraft</span></a></li>
+<li class="toclevel-3 tocsection-13"><a href="http://en.wikipedia.org/wiki/Aircraft#Rotorcraft_2"><span class="tocnumber">3.2.3</span> <span class="toctext">Rotorcraft</span></a></li>
+<li class="toclevel-3 tocsection-14"><a href="http://en.wikipedia.org/wiki/Aircraft#Other_types_of_powered_aircraft"><span class="tocnumber">3.2.4</span> <span class="toctext">Other types of powered aircraft</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Aircraft#Design_and_construction"><span class="tocnumber">4</span> <span class="toctext">Design and construction</span></a>
+<ul>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Aircraft#Structure"><span class="tocnumber">4.1</span> <span class="toctext">Structure</span></a>
+<ul>
+<li class="toclevel-3 tocsection-17"><a href="http://en.wikipedia.org/wiki/Aircraft#Aerostats"><span class="tocnumber">4.1.1</span> <span class="toctext">Aerostats</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="http://en.wikipedia.org/wiki/Aircraft#Aerodynes"><span class="tocnumber">4.1.2</span> <span class="toctext">Aerodynes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Aircraft#Avionics"><span class="tocnumber">4.2</span> <span class="toctext">Avionics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Aircraft#Flight_characteristics"><span class="tocnumber">5</span> <span class="toctext">Flight characteristics</span></a>
+<ul>
+<li class="toclevel-2 tocsection-21"><a href="http://en.wikipedia.org/wiki/Aircraft#Flight_envelope"><span class="tocnumber">5.1</span> <span class="toctext">Flight envelope</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="http://en.wikipedia.org/wiki/Aircraft#Range"><span class="tocnumber">5.2</span> <span class="toctext">Range</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="http://en.wikipedia.org/wiki/Aircraft#Flight_dynamics"><span class="tocnumber">5.3</span> <span class="toctext">Flight dynamics</span></a>
+<ul>
+<li class="toclevel-3 tocsection-24"><a href="http://en.wikipedia.org/wiki/Aircraft#Stability"><span class="tocnumber">5.3.1</span> <span class="toctext">Stability</span></a></li>
+<li class="toclevel-3 tocsection-25"><a href="http://en.wikipedia.org/wiki/Aircraft#Control"><span class="tocnumber">5.3.2</span> <span class="toctext">Control</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="http://en.wikipedia.org/wiki/Aircraft#Impacts_of_aircraft_use"><span class="tocnumber">6</span> <span class="toctext">Impacts of aircraft use</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="http://en.wikipedia.org/wiki/Aircraft#Uses_for_aircraft"><span class="tocnumber">7</span> <span class="toctext">Uses for aircraft</span></a>
+<ul>
+<li class="toclevel-2 tocsection-28"><a href="http://en.wikipedia.org/wiki/Aircraft#Military"><span class="tocnumber">7.1</span> <span class="toctext">Military</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="http://en.wikipedia.org/wiki/Aircraft#Civil"><span class="tocnumber">7.2</span> <span class="toctext">Civil</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="http://en.wikipedia.org/wiki/Aircraft#Experimental"><span class="tocnumber">7.3</span> <span class="toctext">Experimental</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="http://en.wikipedia.org/wiki/Aircraft#Model"><span class="tocnumber">7.4</span> <span class="toctext">Model</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-32"><a href="http://en.wikipedia.org/wiki/Aircraft#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a>
+<ul>
+<li class="toclevel-2 tocsection-33"><a href="http://en.wikipedia.org/wiki/Aircraft#Lists"><span class="tocnumber">8.1</span> <span class="toctext">Lists</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="http://en.wikipedia.org/wiki/Aircraft#Topics"><span class="tocnumber">8.2</span> <span class="toctext">Topics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-35"><a href="http://en.wikipedia.org/wiki/Aircraft#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-36"><a href="http://en.wikipedia.org/wiki/Aircraft#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Aircraft">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Kolmogorov_complexity.html'">Kolmogorov complexity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom_of_choice.html'">Axiom of choice</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_program.html'">Apollo program</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arsenic.html'">Arsenic</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antibiotic_resistance.html'">Antibiotic resistance</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asteroid.html'">Asteroid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom.html'">Axiom</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aluminium.html'">Aluminium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_15.html'">Apollo 15</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anchor.html'">Anchor</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Active_Directory.html'">Active Directory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytical_chemistry.html'">Analytical chemistry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthropod.html'">Arthropod</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkene.html'">Alkene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antimatter.html'">Antimatter</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amino_acid.html'">Amino acid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aspirin.html'">Aspirin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adenosine_triphosphate.html'">Adenosine triphosphate</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amateur_astronomy.html'">Amateur astronomy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Air_conditioner.html'">Air conditioner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archimedes.html'">Archimedes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anti-ballistic_missile.html'">Anti-ballistic missile</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Absolute_value.html'">Absolute value</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analysis_of_algorithms.html'">Analysis of algorithms</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advanced_Encryption_Standard.html'">Advanced Encryption Standard</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_1.html'">Apollo 1</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agarose_gel_electrophoresis.html'">Agarose gel electrophoresis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analysis_of_variance.html'">Analysis of variance</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antiparticle.html'">Antiparticle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asynchronous_Transfer_Mode.html'">Asynchronous Transfer Mode</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

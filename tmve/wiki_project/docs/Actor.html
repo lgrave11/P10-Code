@@ -1,0 +1,193 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[178.8420295047, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [116.9657000356, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [11.4611002452, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Actor</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Actor</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>actor</b> (or <b>actress</b> for female) is one who portrays a <a href="http://www.wikipedia.org/wiki/Character_(arts)" title="Character (arts)">character</a> in a performance. The actor performs "in the flesh" in the traditional medium of the <a href="http://www.wikipedia.org/wiki/Theatre" title="Theatre">theatre</a>, and/or in modern mediums such as <a href="http://www.wikipedia.org/wiki/Film" title="Film">film</a>, <a href="http://www.wikipedia.org/wiki/Radio" title="Radio">radio</a>, and <a href="http://www.wikipedia.org/wiki/Television" title="Television">television</a>. The analogous Greek term is <span lang="grc" xml:lang="grc"><a href="//en.wiktionary.org/wiki/%E1%BD%91%CF%80%CE%BF%CE%BA%CF%81%CE%B9%CF%84%CE%AE%CF%82" class="extiw" title="wikt:ὑποκριτής">ὑποκριτής</a></span> <i>(hypokrites)</i>, literally "one who interprets".<sup id="cite_ref-hypocrite_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Actor#cite_note-hypocrite-1"><span>[</span>1<span>]</span></a></sup> The actor's interpretation of their role pertains to the role played, whether based on a real person or fictional character. Interpretation occurs even when the actor is "playing themselves", as in some forms of experimental <a href="http://www.wikipedia.org/wiki/Performance_art" title="Performance art">performance art</a>, or, more commonly; to act, is to create, a character in performance.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Actor#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>Formerly, in some societies, only men could become actors, and women's roles were generally played by men or boys.<sup id="cite_ref-Neziroski_2003_3-0" class="reference"><a href="http://en.wikipedia.org/wiki/Actor#cite_note-Neziroski_2003-3"><span>[</span>3<span>]</span></a></sup> In modern times, women occasionally played the roles of <a href="http://www.wikipedia.org/wiki/Prepubescent" title="Prepubescent" class="mw-redirect">prepubescent</a> boys.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="http://www.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2016)">citation needed</span></a></i>]</sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Actor#Terminology"><span class="tocnumber">1</span> <span class="toctext">Terminology</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Actor#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Actor#Techniques"><span class="tocnumber">3</span> <span class="toctext">Techniques</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Actor#As_opposite_sex"><span class="tocnumber">4</span> <span class="toctext">As opposite sex</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Actor#Types"><span class="tocnumber">5</span> <span class="toctext">Types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Actor#In_theatre"><span class="tocnumber">5.1</span> <span class="toctext">In theatre</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Actor#In_film"><span class="tocnumber">5.2</span> <span class="toctext">In film</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="http://en.wikipedia.org/wiki/Actor#Role_of_women"><span class="tocnumber">5.2.1</span> <span class="toctext">Role of women</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Actor#In_television"><span class="tocnumber">5.3</span> <span class="toctext">In television</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Actor#In_radio"><span class="tocnumber">5.4</span> <span class="toctext">In radio</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Actor#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Actor#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Actor#Sources"><span class="tocnumber">7.1</span> <span class="toctext">Sources</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Actor#Further_reading"><span class="tocnumber">8</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Actor#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Terminology">Terminology</span></h3>
+<p>After 1660 in England, when women first started to appear on stage, the terms <i>actor</i> or <i>actress</i> were initially used interchangeably for female performers, but later, influenced by the French <i><a href="//en.wiktionary.org/wiki/actrice" class="extiw" title="wikt:actrice">actrice</a></i>, <i>actress</i> became the commonly used term for women in theatre and film. The etymology is a simple derivation from <i>actor</i> with <i>ess</i> added.<sup id="cite_ref-OED2010_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Actor#cite_note-OED2010-4"><span>[</span>4<span>]</span></a></sup> Within the profession, the re-adoption of the neutral term dates to the 1950–1960s, the <a href="http://www.wikipedia.org/wiki/Post-war" title="Post-war">post-war</a> period when the contributions of women to cultural life in general were being reviewed.<sup id="cite_ref-De_GayGoodman1998_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Actor#cite_note-De_GayGoodman1998-5"><span>[</span>5<span>]</span></a></sup> "When the <i>Observer</i> and the <i>Guardian</i> published their new joint style guide in 2010, it stated "Use ["actor"] for both male and female actors; do not use actress except when in name of award, e.g. Oscar for best actress." <sup id="cite_ref-theguardian.com_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Actor#cite_note-theguardian.com-6"><span>[</span>6<span>]</span></a></sup> The authors of the style guide stated that "actress comes into the same category as authoress, comedienne, manageress, 'lady doctor', 'male nurse' and similar obsolete terms that date from a time when professions were largely the preserve of one sex (usually men). As <a href="http://www.wikipedia.org/wiki/Whoopi_Goldberg" title="Whoopi Goldberg">Whoopi Goldberg</a> put it in an interview with the paper: 'An actress can only play a woman. I'm an actor – I can play anything.'<sup id="cite_ref-theguardian.com_6-1" class="reference"><a href="http://en.wikipedia.org/wiki/Actor#cite_note-theguardian.com-6"><span>[</span>6<span>]</span></a></sup> The U.K. performers' union Equity has no policy on the use of "actor" or "actress". An Equity spokesperson said that the union does not believe that there is a consensus on the matter and stated that the "...subject divides the profession." <sup id="cite_ref-theguardian.com_6-2" class="reference"><a href="http://en.wikipedia.org/wiki/Actor#cite_note-theguardian.com-6"><span>[</span>6<span>]</span></a></sup> In 2009, the <i>Los Angeles Times</i> stated that "Actress" remains the common term used in major <a href="http://www.wikipedia.org/wiki/Acting" title="Acting">acting</a> awards given to female recipients<sup id="cite_ref-latimes_7-0" class="reference"><a href="http://en.wikipedia.org/wiki/Actor#cite_note-latimes-7"><span>[</span>7<span>]</span></a></sup> (e.g., <a href="http://www.wikipedia.org/wiki/Academy_Award_for_Best_Actress" title="Academy Award for Best Actress">Academy Award for Best Actress</a>).</p>
+<p><a href="http://en.wikipedia.org/wiki/Actor">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Amber_Diceless_Roleplaying_Game.html'">Amber Diceless Roleplaying Game</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Kay.html'">Alan Kay</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Art_Deco.html'">Art Deco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Miss_Marple.html'">Miss Marple</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advanced_Chemistry.html'">Advanced Chemistry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_Cuarón.html'">Alfonso Cuarón</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adobe_Systems.html'">Adobe Systems</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advance_Australia_Fair.html'">Advance Australia Fair</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amazing_Grace.html'">Amazing Grace</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aron_Nimzowitsch.html'">Aron Nimzowitsch</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Football_Conference.html'">American Football Conference</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Rise_and_Fall_of_the_City_of_Mahagonny.html'">Rise and Fall of the City of Mahagonny</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Spalding.html'">Albert Spalding</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AmeriKKKa_s_Most_Wanted.html'">AmeriKKKa's Most Wanted</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ally_McBeal.html'">Ally McBeal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/An_American_in_Paris.html'">An American in Paris</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antonio_Salieri.html'">Antonio Salieri</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AutoCAD.html'">AutoCAD</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apple_III.html'">Apple III</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alphabet_song.html'">Alphabet song</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._A._Milne.html'">A. A. Milne</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accelerated_Graphics_Port.html'">Accelerated Graphics Port</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Akio_Morita.html'">Akio Morita</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acting.html'">Acting</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anton_Diabelli.html'">Anton Diabelli</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afro_Celt_Sound_System.html'">Afro Celt Sound System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acquis_communautaire.html'">Acquis communautaire</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ann_Widdecombe.html'">Ann Widdecombe</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aria_Giovanni.html'">Aria Giovanni</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Jarry.html'">Alfred Jarry</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

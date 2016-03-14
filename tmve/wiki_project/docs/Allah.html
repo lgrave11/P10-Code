@@ -1,0 +1,159 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[166.2555894511, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [73.9236243684, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Allah</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Allah</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Allah</b> (<span class="nowrap"><small>English pronunciation:</small> <span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'l' in 'lie'">l</span><span title="/ə/ 'a' in 'about'">ə</span></span>/</a></span></span>, <span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/ɑː/ 'a' in 'father'">ɑː</span><span title="'l' in 'lie'">l</span><span title="/ə/ 'a' in 'about'">ə</span></span>/</a></span></span> or <span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ə/ 'a' in 'about'">ə</span><span title="'l' in 'lie'">l</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'l' in 'lie'">l</span><span title="/ɑː/ 'a' in 'father'">ɑː</span></span>/</a></span></span>;<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-2"><span>[</span>2<span>]</span></a></sup> <a href="http://www.wikipedia.org/wiki/Arabic_language" title="Arabic language" class="mw-redirect">Arabic</a>: <span lang="ar" dir="rtl" xml:lang="ar">الله</span>‎ <span title="ar ALA transliteration" class="Unicode" style="white-space:normal; text-decoration: none"><i>Allāh</i></span>, <small>IPA:&#160;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_Arabic" title="Help:IPA for Arabic">[ʔalˤˈlˤɑːh]</a></span><small class="nowrap metadata">&#160;(<a href="http://www.wikipedia.org/wiki/File:Ar-allah.ogg" title="File:Ar-allah.ogg"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/13px-Speaker_Icon.svg.png" width="13" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/20px-Speaker_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/26px-Speaker_Icon.svg.png 2x" data-file-width="500" data-file-height="500" /></a> <a href="//upload.wikimedia.org/wikipedia/commons/f/f2/Ar-allah.ogg" class="internal" title="Ar-allah.ogg">listen</a>)</small>) is the <a href="http://www.wikipedia.org/wiki/Arabic_language" title="Arabic language" class="mw-redirect">Arabic</a> word for <b><a href="http://www.wikipedia.org/wiki/God" title="God">God</a></b> (<i><a href="http://www.wikipedia.org/wiki/Arabic_definite_article" title="Arabic definite article">al</a> <a href="http://www.wikipedia.org/wiki/Il%C4%81h" title="Ilāh" class="mw-redirect">ilāh</a></i>, literally "the God"), referring to the <a href="http://www.wikipedia.org/wiki/God_in_Abrahamic_religions" title="God in Abrahamic religions">God in Abrahamic religions</a>.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-4"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-gardet-allah_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-gardet-allah-5"><span>[</span>5<span>]</span></a></sup> The word has <a href="http://www.wikipedia.org/wiki/Cognate" title="Cognate">cognates</a> in other <a href="http://www.wikipedia.org/wiki/Semitic_languages" title="Semitic languages">Semitic languages</a>, including <i>Elah</i> in <a href="http://www.wikipedia.org/wiki/Aramaic_language" title="Aramaic language">Aramaic</a>, <a href="http://www.wikipedia.org/wiki/El_(deity)" title="El (deity)"><i>ʾĒl</i></a> in <a href="http://www.wikipedia.org/wiki/Canaanite_languages" title="Canaanite languages">Canaanite</a> and <i><a href="http://www.wikipedia.org/wiki/Elohim" title="Elohim">Elohim</a></i> in <a href="http://www.wikipedia.org/wiki/Hebrew_language" title="Hebrew language">Hebrew</a>.<sup id="cite_ref-Columbia_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-Columbia-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-BDB_7-0" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-BDB-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>It is now mainly used by <a href="http://www.wikipedia.org/wiki/Muslim" title="Muslim">Muslims</a> to refer to <a href="http://www.wikipedia.org/wiki/God_in_Islam" title="God in Islam">God in Islam</a>,<sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-8"><span>[</span>8<span>]</span></a></sup> but has been also used by <a href="http://www.wikipedia.org/wiki/Arab_Christians" title="Arab Christians">Arab Christians</a> since <a href="http://www.wikipedia.org/wiki/Pre-Islamic_Arabia" title="Pre-Islamic Arabia">pre-Islamic</a> times.<sup id="cite_ref-rick_brown_9-0" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-rick_brown-9"><span>[</span>9<span>]</span></a></sup> It is also often, albeit not exclusively, used by <a href="http://www.wikipedia.org/wiki/B%C3%A1bism" title="Bábism">Bábists</a>, <a href="http://www.wikipedia.org/wiki/Bah%C3%A1%27%C3%AD_Faith" title="Bahá'í Faith">Bahá'ís</a>, <a href="http://www.wikipedia.org/wiki/Christianity_in_Indonesia" title="Christianity in Indonesia">Indonesian</a> and <a href="http://www.wikipedia.org/wiki/Maltese_people" title="Maltese people">Maltese</a> Christians, and <a href="http://www.wikipedia.org/wiki/Mizrahi_Jews" title="Mizrahi Jews">Mizrahi Jews</a>.<sup id="cite_ref-Columbia_6-1" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-Columbia-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-Britannica_10-0" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-Britannica-10"><span>[</span>10<span>]</span></a></sup><sup id="cite_ref-EncMMENA_11-0" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-EncMMENA-11"><span>[</span>11<span>]</span></a></sup> Christians and <a href="http://www.wikipedia.org/wiki/Sikhs" title="Sikhs" class="mw-redirect">Sikhs</a> in <a href="http://www.wikipedia.org/wiki/West_Malaysia" title="West Malaysia" class="mw-redirect">West Malaysia</a> also use and have used the word to refer to God. This has caused political and legal controversies there as the law in West Malaysia prohibits non-Islamic uses of the word.<sup id="cite_ref-12" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-12"><span>[</span>12<span>]</span></a></sup><sup id="cite_ref-13" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-13"><span>[</span>13<span>]</span></a></sup><sup id="cite_ref-14" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-14"><span>[</span>14<span>]</span></a></sup><sup id="cite_ref-10_point_15-0" class="reference"><a href="http://en.wikipedia.org/wiki/Allah#cite_note-10_point-15"><span>[</span>15<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Allah">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Abd-el-latif.html'">Abd-el-latif</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ada_Lovelace.html'">Ada Lovelace</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammonius_Saccas.html'">Ammonius Saccas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustin_Louis_Cauchy.html'">Augustin Louis Cauchy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Gide.html'">André Gide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affix.html'">Affix</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applied_ethics.html'">Applied ethics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abugida.html'">Abugida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anagram.html'">Anagram</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Appellate_court.html'">Appellate court</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Plague.html'">The Plague</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allegory.html'">Allegory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allocution.html'">Allocution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anita_Hill.html'">Anita Hill</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angst.html'">Angst</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ancient_philosophy.html'">Ancient philosophy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcuin.html'">Alcuin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Weil.html'">André Weil</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ablative_case.html'">Ablative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Nobel.html'">Alfred Nobel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/August_Derleth.html'">August Derleth</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._A._Milne.html'">A. A. Milne</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affidavit.html'">Affidavit</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Religious_denominations_in_Poland.html'">Religious denominations in Poland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abhidharma.html'">Abhidharma</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberto_Giacometti.html'">Alberto Giacometti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Jarry.html'">Alfred Jarry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adventism.html'">Adventism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrey_Markov.html'">Andrey Markov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antoni_Gaudí.html'">Antoni Gaudí</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

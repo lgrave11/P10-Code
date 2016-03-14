@@ -1,0 +1,204 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[357.0895826173, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Abjad</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Abjad</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>abjad</b> is a type of <a href="http://www.wikipedia.org/wiki/Writing_system" title="Writing system">writing system</a> where each symbol stands for a <a href="http://www.wikipedia.org/wiki/Consonant" title="Consonant">consonant</a>, leaving the reader to supply the appropriate <a href="http://www.wikipedia.org/wiki/Vowel" title="Vowel">vowel</a>. It is a term suggested by <a href="http://www.wikipedia.org/wiki/Peter_T._Daniels" title="Peter T. Daniels">Peter T. Daniels</a><sup id="cite_ref-FOOTNOTEDanielsBright1996_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Abjad#cite_note-FOOTNOTEDanielsBright1996-1"><span>[</span>1<span>]</span></a></sup> to replace the common terms "<b>consonantary</b>", "<b>consonantal alphabet</b>" or "<a href="http://www.wikipedia.org/wiki/Syllabary" title="Syllabary">syllabary</a>" to refer to the family of scripts called <a href="http://www.wikipedia.org/wiki/West_Semitic_languages" title="West Semitic languages">West Semitic</a>.</p>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/History_of_writing" title="History of writing">History</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Grapheme" title="Grapheme">Grapheme</a></li>
+<li><a href="http://www.wikipedia.org/wiki/List_of_writing_systems" title="List of writing systems">List of writing systems</a></li>
+</ul>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Alphabet" title="Alphabet">Alphabet</a></li>
+<li><strong class="selflink">Abjad</strong></li>
+<li><a href="http://www.wikipedia.org/wiki/Abugida" title="Abugida">Abugida</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Syllabary" title="Syllabary">Syllabary</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Logogram" title="Logogram">Logography</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Shorthand" title="Shorthand">Shorthand</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Featural_writing_system" title="Featural writing system">Featural</a></li>
+</ul>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Pictogram" title="Pictogram">Pictogram</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Ideogram" title="Ideogram">Ideogram</a></li>
+</ul>
+<ul>
+<li class="nv-view"><a href="http://www.wikipedia.org/wiki/Template:Writing_systems_sidebar" title="Template:Writing systems sidebar"><abbr title="View this template">v</abbr></a></li>
+<li class="nv-talk"><a href="http://www.wikipedia.org/wiki/Template_talk:Writing_systems_sidebar" title="Template talk:Writing systems sidebar"><abbr title="Discuss this template">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Writing_systems_sidebar&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li>
+</ul>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Abjad#Etymology"><span class="tocnumber">1</span> <span class="toctext">Etymology</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Abjad#Terminology"><span class="tocnumber">2</span> <span class="toctext">Terminology</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Abjad#Origins"><span class="tocnumber">3</span> <span class="toctext">Origins</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Abjad#The_impure_abjads"><span class="tocnumber">4</span> <span class="toctext">The impure abjads</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Abjad#Addition_of_vowels"><span class="tocnumber">4.1</span> <span class="toctext">Addition of vowels</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Abjad#Abjads_and_the_structure_of_Semitic_languages"><span class="tocnumber">5</span> <span class="toctext">Abjads and the structure of Semitic languages</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Abjad#Comparative_chart_of_Abjads.2C_extinct_and_extant"><span class="tocnumber">6</span> <span class="toctext">Comparative chart of Abjads, extinct and extant</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Abjad#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Abjad#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Abjad#Sources"><span class="tocnumber">9</span> <span class="toctext">Sources</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Etymology">Etymology</span></h3>
+<p>The name "abjad" (<i><span title="Arabic transliteration" class="Unicode" style="white-space:normal; text-decoration: none">abjad</span></i> <span lang="ar" xml:lang="ar">أبجد</span>) is derived from pronouncing the first letters of the <i>Arabic</i> alphabet in order. The ordering (<i><span title="Arabic transliteration" class="Unicode" style="white-space:normal; text-decoration: none">abjadī</span></i>) of <a href="http://www.wikipedia.org/wiki/Arabic_letters" title="Arabic letters" class="mw-redirect">Arabic letters</a> used to match that of the older <a href="http://www.wikipedia.org/wiki/Hebrew_alphabet" title="Hebrew alphabet">Hebrew</a>, <a href="http://www.wikipedia.org/wiki/Phoenician_alphabet" title="Phoenician alphabet">Phoenician</a> and <a href="http://www.wikipedia.org/wiki/Semitic_alphabet" title="Semitic alphabet" class="mw-redirect">Semitic</a> alphabets; <i><span title="Semitic transliteration" class="Unicode" style="white-space:normal; text-decoration: none">ʾ b g d</span></i>.</p>
+<h3><span class="mw-headline" id="Terminology">Terminology</span></h3>
+<p>According to the formulations of Daniels,<sup id="cite_ref-FOOTNOTEDanielsBright1996_1-1" class="reference"><a href="http://en.wikipedia.org/wiki/Abjad#cite_note-FOOTNOTEDanielsBright1996-1"><span>[</span>1<span>]</span></a></sup> abjads differ from <a href="http://www.wikipedia.org/wiki/Alphabet" title="Alphabet">alphabets</a> in that only consonants, not vowels, are represented among the basic <a href="http://www.wikipedia.org/wiki/Grapheme" title="Grapheme">graphemes</a>. Abjads differ from <a href="http://www.wikipedia.org/wiki/Abugida" title="Abugida">abugidas</a>, another category defined by Daniels, in that in abjads, the vowel sound is <i>implied</i> by <a href="http://www.wikipedia.org/wiki/Phonology" title="Phonology">phonology</a>, and where <a href="http://www.wikipedia.org/wiki/Diacritic" title="Diacritic">vowel marks</a> exist for the system, such as <a href="http://www.wikipedia.org/wiki/Niqqud" title="Niqqud">nikkud</a> for <a href="http://www.wikipedia.org/wiki/Hebrew" title="Hebrew" class="mw-redirect">Hebrew</a> and <a href="http://www.wikipedia.org/wiki/Harakat" title="Harakat" class="mw-redirect">ḥarakāt</a> for <a href="http://www.wikipedia.org/wiki/Arabic" title="Arabic">Arabic</a>, their use is optional and not the dominant (or literate) form. Abugidas mark the vowels (other than the "inherent" vowel) with a <a href="http://www.wikipedia.org/wiki/Diacritic" title="Diacritic">diacritic</a>, a minor attachment to the letter, or a standalone <a href="http://www.wikipedia.org/wiki/Glyph" title="Glyph">glyph</a>. Some abugidas use a special symbol to <i>suppress</i> the <a href="http://www.wikipedia.org/wiki/Inherent_vowel" title="Inherent vowel">inherent vowel</a> so that the consonant alone can be properly represented. In a <a href="http://www.wikipedia.org/wiki/Syllabary" title="Syllabary">syllabary</a>, a grapheme denotes a complete syllable, that is, either a lone vowel sound or a combination of a vowel sound with one or more consonant sounds.</p>
+<p><a href="http://en.wikipedia.org/wiki/Abjad">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Accusative_case.html'">Accusative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_Modest_Proposal.html'">A Modest Proposal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Architect.html'">Architect</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_numerals.html'">Arabic numerals</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animism.html'">Animism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Technique.html'">Alexander Technique</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astrology.html'">Astrology</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Grothendieck.html'">Alexander Grothendieck</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexis_Carrel.html'">Alexis Carrel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Autobiography.html'">Autobiography</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anselm_of_Canterbury.html'">Anselm of Canterbury</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adversarial_system.html'">Adversarial system</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animal_Farm.html'">Animal Farm</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anglican_Communion.html'">Anglican Communion</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argument_from_morality.html'">Argument from morality</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alchemy.html'">Alchemy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agatha_Christie.html'">Agatha Christie</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adam_Weishaupt.html'">Adam Weishaupt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ad_hominem.html'">Ad hominem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aphasia.html'">Aphasia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcoholics_Anonymous.html'">Alcoholics Anonymous</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Android.html'">Android</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allophone.html'">Allophone</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artist.html'">Artist</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahimsa.html'">Ahimsa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anaximander.html'">Anaximander</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aramaic_alphabet.html'">Aramaic alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._E._van_Vogt.html'">A. E. van Vogt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_Clockwork_Orange.html'">A Clockwork Orange</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnosticism.html'">Agnosticism</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

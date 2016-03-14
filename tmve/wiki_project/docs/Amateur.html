@@ -1,0 +1,198 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[55.0484288221, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [51.1307746581, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Amateur</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Amateur</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>amateur</b> (<a href="http://www.wikipedia.org/wiki/French_language" title="French language">French</a> <i>amateur</i> "lover of", from Old French and ultimately from Latin amatorem nom. amator, "lover") is generally considered a person attached to a particular pursuit, study, or science in a non-<a href="http://www.wikipedia.org/wiki/Professional" title="Professional">professional</a> or unpaid manner. Amateurs often have little or no formal training in their pursuits, and many are <a href="http://www.wikipedia.org/wiki/Autodidacticism" title="Autodidacticism">autodidacts</a> (self-taught).</p>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
+<ul>
+<li><span class="selfreference"><a href="http://www.wikipedia.org/wiki/Special:PrefixIndex/Amateur" title="Special:PrefixIndex/Amateur">All pages beginning with "Amateur"</a></span></li>
+<li><a href="http://www.wikipedia.org/wiki/Amateur_astronomy" title="Amateur astronomy">Amateur astronomy</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Amateur_chemistry" title="Amateur chemistry">Amateur chemistry</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Amateur_film" title="Amateur film">Amateur film</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Amateur_geology" title="Amateur geology">Amateur geology</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Amateur_journalism" title="Amateur journalism">Amateur journalism</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Amateur_radio" title="Amateur radio">Amateur radio</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Amateur_sports" title="Amateur sports">Amateur sports</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Amateur_theatre" title="Amateur theatre">Amateur theatre</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Amateur_pornography" title="Amateur pornography">Amateur pornography</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Community_organizing" title="Community organizing">Community organizing</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Hobby" title="Hobby">Hobby</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Home_movies" title="Home movies">Home movies</a></li>
+<li><a href="http://www.wikipedia.org/wiki/List_of_amateur_mathematicians" title="List of amateur mathematicians">List of amateur mathematicians</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Prosumer" title="Prosumer">Prosumer</a></li>
+<li><a href="http://www.wikipedia.org/wiki/User-generated_content" title="User-generated content">User-generated content</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Volunteering" title="Volunteering">Volunteering</a></li>
+</ul>
+<ul><li><a href="http://www.wikipedia.org/wiki/Category:Occupations" title="Category:Occupations">Occupations</a></li></ul>
+<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="http://www.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="http://www.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Amateur&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Amateur" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="http://www.wikipedia.org/wiki/Amateur"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="http://www.wikipedia.org/wiki/Talk:Amateur"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+<ul>
+															</ul>
+<ul>
+															<li id="ca-view" class="selected"><span><a href="http://www.wikipedia.org/wiki/Amateur" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Amateur&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Amateur&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+<ul>
+															</ul>
+<ul>
+						<li id="n-mainpage-description"><a href="http://www.wikipedia.org/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="http://www.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="http://www.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="http://www.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="http://www.wikipedia.org/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+<ul>
+						<li id="n-help"><a href="http://www.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="http://www.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="http://www.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="http://www.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>					</ul>
+<p><a href="http://en.wikipedia.org/wiki/Amateur">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Artistic_License.html'">Artistic License</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apache_Software_Foundation.html'">Apache Software Foundation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alarums_and_Excursions.html'">Alarums and Excursions</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Avery_Hopwood.html'">Avery Hopwood</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alban_Berg.html'">Alban Berg</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AbiWord.html'">AbiWord</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_Arau.html'">Alfonso Arau</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analog_Brothers.html'">Analog Brothers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Film_Institute.html'">American Film Institute</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/August_Horch.html'">August Horch</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aristide_Maillol.html'">Aristide Maillol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ALF_Tales.html'">ALF Tales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auguste_and_Louis_Lumière.html'">Auguste and Louis Lumière</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ardal_O_Hanlon.html'">Ardal O'Hanlon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aelbert_Cuyp.html'">Aelbert Cuyp</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andronicus_of_Rhodes.html'">Andronicus of Rhodes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrea_Alciato.html'">Andrea Alciato</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anaximenes_of_Miletus.html'">Anaximenes of Miletus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/List_of_anthropologists.html'">List of anthropologists</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amati.html'">Amati</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexandrists.html'">Alexandrists</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alain_de_Lille.html'">Alain de Lille</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alois_Alzheimer.html'">Alois Alzheimer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammonius_Hermiae.html'">Ammonius Hermiae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agathon.html'">Agathon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argot.html'">Argot</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atle_Selberg.html'">Atle Selberg</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcidamas.html'">Alcidamas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alessandro_Scarlatti.html'">Alessandro Scarlatti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/August_Wilhelm_Ambros.html'">August Wilhelm Ambros</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

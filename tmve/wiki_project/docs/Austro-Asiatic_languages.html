@@ -1,0 +1,182 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[73.0218672701, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [11.1573364461, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Austro-Asiatic languages</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Austro-Asiatic languages</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>The <b>Austroasiatic languages</b>,<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#cite_note-2"><span>[</span>2<span>]</span></a></sup> in recent classifications synonymous with <b>Mon–Khmer</b>,<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#cite_note-3"><span>[</span>3<span>]</span></a></sup> are a large <a href="http://www.wikipedia.org/wiki/Language_family" title="Language family">language family</a> of continental <a href="http://www.wikipedia.org/wiki/Southeast_Asia" title="Southeast Asia">Southeast Asia</a>, also scattered throughout <a href="http://www.wikipedia.org/wiki/India" title="India">India</a>, <a href="http://www.wikipedia.org/wiki/Bangladesh" title="Bangladesh">Bangladesh</a>, <a href="http://www.wikipedia.org/wiki/Nepal" title="Nepal">Nepal</a> and the southern border of <a href="http://www.wikipedia.org/wiki/China" title="China">China</a>. The name <i>Austroasiatic</i> comes from the <a href="http://www.wikipedia.org/wiki/Latin" title="Latin">Latin</a> words for "south" and "Asia", hence "South Asia". Of these languages, only <a href="http://www.wikipedia.org/wiki/Vietnamese_language" title="Vietnamese language">Vietnamese</a>, <a href="http://www.wikipedia.org/wiki/Khmer_language" title="Khmer language">Khmer</a>, and <a href="http://www.wikipedia.org/wiki/Mon_language" title="Mon language">Mon</a> have a long-established <a href="http://www.wikipedia.org/wiki/Recorded_history" title="Recorded history">recorded history</a>, and only Vietnamese and Khmer have official status (in <a href="http://www.wikipedia.org/wiki/Vietnam" title="Vietnam">Vietnam</a> and <a href="http://www.wikipedia.org/wiki/Cambodia" title="Cambodia">Cambodia</a>, respectively). The rest of the languages are spoken by minority groups. <i><a href="http://www.wikipedia.org/wiki/Ethnologue" title="Ethnologue">Ethnologue</a></i> identifies 168 Austroasiatic languages. These form thirteen established families (plus perhaps <a href="http://www.wikipedia.org/wiki/Shompen_language" title="Shompen language">Shompen</a>, which is poorly attested, as a fourteenth), which have traditionally been grouped into two, as Mon–Khmer and <a href="http://www.wikipedia.org/wiki/Munda_languages" title="Munda languages">Munda</a>. However, one recent classification posits three groups (Munda, Nuclear Mon-Khmer and <a href="http://www.wikipedia.org/wiki/Khasi%E2%80%93Khmuic_languages" title="Khasi–Khmuic languages">Khasi-Khmuic</a>)<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#cite_note-4"><span>[</span>4<span>]</span></a></sup> while another has abandoned Mon–Khmer as a taxon altogether, making it synonymous with the larger family.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>Austroasiatic languages have a disjunct distribution across India, Bangladesh, Nepal and Southeast Asia, separated by regions where other languages are spoken. They appear to be the <a href="http://www.wikipedia.org/wiki/Autochthonous_language" title="Autochthonous language" class="mw-redirect">autochthonous languages</a> of Southeast Asia, with the neighboring <a href="http://www.wikipedia.org/wiki/Indo-Aryan_languages" title="Indo-Aryan languages">Indo-Aryan</a>, <a href="http://www.wikipedia.org/wiki/Tai%E2%80%93Kadai_languages" title="Tai–Kadai languages">Tai–Kadai</a>, <a href="http://www.wikipedia.org/wiki/Dravidian_languages" title="Dravidian languages">Dravidian</a>, <a href="http://www.wikipedia.org/wiki/Austronesian_languages" title="Austronesian languages">Austronesian</a>, and <a href="http://www.wikipedia.org/wiki/Sino-Tibetan_languages" title="Sino-Tibetan languages">Sino-Tibetan languages</a> being the result of later migrations.<sup id="cite_ref-SidwellBlench2011_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#cite_note-SidwellBlench2011-6"><span>[</span>6<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#Typology"><span class="tocnumber">1</span> <span class="toctext">Typology</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#Proto-language"><span class="tocnumber">2</span> <span class="toctext">Proto-language</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#Internal_classification"><span class="tocnumber">3</span> <span class="toctext">Internal classification</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#Sidwell_.282009.2C_2011.29"><span class="tocnumber">3.1</span> <span class="toctext">Sidwell (2009, 2011)</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#Previously_existent_branches"><span class="tocnumber">3.2</span> <span class="toctext">Previously existent branches</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#G.C3.A9rard_Diffloth_.282005.29"><span class="tocnumber">3.3</span> <span class="toctext">Gérard Diffloth (2005)</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#Ilia_Peiros_.282004.29"><span class="tocnumber">3.4</span> <span class="toctext">Ilia Peiros (2004)</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#Diffloth_.281974.29"><span class="tocnumber">3.5</span> <span class="toctext">Diffloth (1974)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#Writing_systems"><span class="tocnumber">4</span> <span class="toctext">Writing systems</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#Notes"><span class="tocnumber">6</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#Further_reading"><span class="tocnumber">8</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Austro-Asiatic_languages">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Alford_plea.html'">Alford plea</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affection.html'">Affection</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analysis.html'">Analysis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andreas_Capellanus.html'">Andreas Capellanus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arraignment.html'">Arraignment</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alessandro_Allori.html'">Alessandro Allori</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annals_of_Mathematics.html'">Annals of Mathematics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldine_Press.html'">Aldine Press</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affray.html'">Affray</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexandrine.html'">Alexandrine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abatement_of_debts_and_legacies.html'">Abatement of debts and legacies</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adventure.html'">Adventure</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatomy.html'">Anatomy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agrarianism.html'">Agrarianism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agathon.html'">Agathon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argument_form.html'">Argument form</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abba_Mari.html'">Abba Mari</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abstract_(law).html'">Abstract (law)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexandrists.html'">Alexandrists</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/List_of_anthropologists.html'">List of anthropologists</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affirming_the_consequent.html'">Affirming the consequent</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alain_de_Lille.html'">Alain de Lille</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatole_France.html'">Anatole France</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrea_Alciato.html'">Andrea Alciato</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Wiles.html'">Andrew Wiles</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anaximenes_of_Miletus.html'">Anaximenes of Miletus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artistic_License.html'">Artistic License</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André-Marie_Ampère.html'">André-Marie Ampère</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atle_Selberg.html'">Atle Selberg</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andronicus_of_Rhodes.html'">Andronicus of Rhodes</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

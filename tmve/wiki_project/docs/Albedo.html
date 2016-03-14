@@ -1,0 +1,194 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[463.089592637, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Albedo</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Albedo</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Albedo</b> (<span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'l' in 'lie'">l</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'b' in 'buy'">b</span><span title="/iː/ long 'e' in 'seed'">iː</span><span title="'d' in 'dye'">d</span><span title="/oʊ/ long 'o' in 'code'">oʊ</span></span>/</a></span></span>) or <b>reflection coefficient</b>, derived from <a href="http://www.wikipedia.org/wiki/Latin" title="Latin">Latin</a> <i>albedo</i> "whiteness" (or reflected sunlight) in turn from <i>albus</i> "white", is the <a href="http://www.wikipedia.org/wiki/Diffuse_reflection" title="Diffuse reflection">diffuse reflectivity</a> or reflecting power of a surface.</p>
+<p>It is the ratio of reflected radiation from the surface to incident radiation upon it. Its <a href="http://www.wikipedia.org/wiki/Dimensionless_number" title="Dimensionless number" class="mw-redirect">dimensionless</a> nature lets it be expressed as a percentage and is measured on a scale from zero for no reflection of a perfectly black surface to 1 for perfect reflection of a white surface. NOTE: Since it is the ratio of all reflected radiation to incident radiation it will include the diffuse AND the specular radiation reflected. It is, however, common to assume a surface reflects in either a totally specular manner or a totally diffuse manner, as this can simplify calculations.</p>
+<p>Albedo depends on the <a href="http://www.wikipedia.org/wiki/Frequency" title="Frequency">frequency</a> of the radiation. When quoted unqualified, it usually refers to some appropriate average across the spectrum of <a href="http://www.wikipedia.org/wiki/Visible_light" title="Visible light" class="mw-redirect">visible light</a>. In general, the albedo depends on the directional distribution of incident radiation, except for <a href="http://www.wikipedia.org/wiki/Lambertian_reflectance" title="Lambertian reflectance">Lambertian surfaces</a>, which scatter radiation in all directions according to a cosine function and therefore have an albedo that is independent of the incident distribution. In practice, a <a href="http://www.wikipedia.org/wiki/Bidirectional_reflectance_distribution_function" title="Bidirectional reflectance distribution function">bidirectional reflectance distribution function</a> (BRDF) may be required to accurately characterize the scattering properties of a surface, but albedo is very useful as a first approximation.</p>
+<p>The albedo is an important concept in <a href="http://www.wikipedia.org/wiki/Climatology" title="Climatology">climatology</a>, <a href="http://www.wikipedia.org/wiki/Astronomy" title="Astronomy">astronomy</a>, and calculating <a href="http://www.wikipedia.org/wiki/Reflectivity" title="Reflectivity" class="mw-redirect">reflectivity</a> of surfaces in <a href="http://www.wikipedia.org/wiki/Leadership_in_Energy_and_Environmental_Design" title="Leadership in Energy and Environmental Design">LEED</a> sustainable-rating systems for buildings. The average overall albedo of Earth, its <i>planetary albedo</i>, is 30 to 35% because of cloud cover, but widely varies locally across the surface because of different geological and environmental features.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Albedo#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>The term was introduced into optics by <a href="http://www.wikipedia.org/wiki/Johann_Heinrich_Lambert" title="Johann Heinrich Lambert">Johann Heinrich Lambert</a> in his 1760 work <i><a href="http://www.wikipedia.org/wiki/Photometria" title="Photometria">Photometria</a></i>.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Albedo#Terrestrial_albedo"><span class="tocnumber">1</span> <span class="toctext">Terrestrial albedo</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Albedo#White-sky_and_black-sky_albedo"><span class="tocnumber">1.1</span> <span class="toctext">White-sky and black-sky albedo</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Albedo#Astronomical_albedo"><span class="tocnumber">2</span> <span class="toctext">Astronomical albedo</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Albedo#Examples_of_terrestrial_albedo_effects"><span class="tocnumber">3</span> <span class="toctext">Examples of terrestrial albedo effects</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Albedo#Illumination"><span class="tocnumber">3.1</span> <span class="toctext">Illumination</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Albedo#Insolation_effects"><span class="tocnumber">3.2</span> <span class="toctext">Insolation effects</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Albedo#Climate_and_weather"><span class="tocnumber">3.3</span> <span class="toctext">Climate and weather</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Albedo#Albedo.E2.80.93temperature_feedback"><span class="tocnumber">3.4</span> <span class="toctext">Albedo–temperature feedback</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Albedo#Snow"><span class="tocnumber">3.5</span> <span class="toctext">Snow</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Albedo#Small-scale_effects"><span class="tocnumber">3.6</span> <span class="toctext">Small-scale effects</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Albedo#Solar_photovoltaic_effects"><span class="tocnumber">3.7</span> <span class="toctext">Solar photovoltaic effects</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Albedo#Trees"><span class="tocnumber">3.8</span> <span class="toctext">Trees</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Albedo#Water"><span class="tocnumber">3.9</span> <span class="toctext">Water</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Albedo#Clouds"><span class="tocnumber">3.10</span> <span class="toctext">Clouds</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Albedo#Aerosol_effects"><span class="tocnumber">3.11</span> <span class="toctext">Aerosol effects</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Albedo#Black_carbon"><span class="tocnumber">3.12</span> <span class="toctext">Black carbon</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Albedo#Human_activities"><span class="tocnumber">3.13</span> <span class="toctext">Human activities</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Albedo#Other_types_of_albedo"><span class="tocnumber">4</span> <span class="toctext">Other types of albedo</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="http://en.wikipedia.org/wiki/Albedo#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Albedo#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="http://en.wikipedia.org/wiki/Albedo#External_links"><span class="tocnumber">7</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Albedo">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Amine.html'">Amine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ACE_inhibitor.html'">ACE inhibitor</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antibiotic.html'">Antibiotic</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acetylene.html'">Acetylene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apparent_magnitude.html'">Apparent magnitude</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abiotic_stress.html'">Abiotic stress</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apoptosis.html'">Apoptosis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_13.html'">Apollo 13</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adhesive.html'">Adhesive</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Motor_neurone_disease.html'">Motor neurone disease</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antibody.html'">Antibody</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amphetamine.html'">Amphetamine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_11.html'">Apollo 11</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AppleTalk.html'">AppleTalk</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asexual_reproduction.html'">Asexual reproduction</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angle.html'">Angle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abacus.html'">Abacus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atomic_clock.html'">Atomic clock</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AWK.html'">AWK</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argon.html'">Argon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atanasoff–Berry_Computer.html'">Atanasoff–Berry Computer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ALGOL.html'">ALGOL</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Array.html'">Array</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antiparticle.html'">Antiparticle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analysis_of_variance.html'">Analysis of variance</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agarose_gel_electrophoresis.html'">Agarose gel electrophoresis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adiabatic_process.html'">Adiabatic process</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acid.html'">Acid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aromatherapy.html'">Aromatherapy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acoustics.html'">Acoustics</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

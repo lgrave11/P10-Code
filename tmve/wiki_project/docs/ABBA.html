@@ -1,0 +1,161 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[2574.0895863513, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>ABBA</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">ABBA</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>ABBA</b> (stylised <small style="font-size:.90em;"><b>ᗅᗺᗷᗅ</b></small>) were a Swedish pop group who formed in <a href="http://www.wikipedia.org/wiki/Stockholm" title="Stockholm">Stockholm</a> in 1972. With members <a href="http://www.wikipedia.org/wiki/Agnetha_F%C3%A4ltskog" title="Agnetha Fältskog"><b>A</b>gnetha Fältskog</a>, <a href="http://www.wikipedia.org/wiki/Bj%C3%B6rn_Ulvaeus" title="Björn Ulvaeus"><b>B</b>jörn Ulvaeus</a>, <a href="http://www.wikipedia.org/wiki/Benny_Andersson" title="Benny Andersson"><b>B</b>enny Andersson</a>, and <a href="http://www.wikipedia.org/wiki/Anni-Frid_Lyngstad" title="Anni-Frid Lyngstad"><b>A</b>nni-Frid Lyngstad</a>, ABBA became one of the <a href="http://www.wikipedia.org/wiki/List_of_best-selling_music_artists" title="List of best-selling music artists">most commercially successful acts</a> in the history of popular music, topping the charts worldwide from 1974 to 1982. They won the <a href="http://www.wikipedia.org/wiki/Eurovision_Song_Contest_1974" title="Eurovision Song Contest 1974">Eurovision Song Contest 1974</a> at the Dome in Brighton, UK, giving <a href="http://www.wikipedia.org/wiki/Sweden_in_the_Eurovision_Song_Contest" title="Sweden in the Eurovision Song Contest">Sweden</a> its first triumph in the contest, and were the most successful group ever to take part in the competition.</p>
+<p>ABBA's record sales figure is uncertain and various estimates range from over 140 to over 500 million sold records.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/ABBA#cite_note-5"><span>[</span>5<span>]</span></a></sup> This makes them one of the <a href="http://www.wikipedia.org/wiki/List_of_best-selling_music_artists" title="List of best-selling music artists">best-selling music artists</a>, and the second best-selling music group of all time, after <a href="http://www.wikipedia.org/wiki/The_Beatles" title="The Beatles">the Beatles</a>. ABBA was the first group to come from a non-English-speaking country to enjoy consistent success in the charts of English-speaking countries, including the <a href="http://www.wikipedia.org/wiki/UK_Singles_Chart" title="UK Singles Chart">UK</a>, <a href="http://www.wikipedia.org/wiki/Irish_Recorded_Music_Association" title="Irish Recorded Music Association">Ireland</a>, <a href="http://www.wikipedia.org/wiki/Canadian_Hot_100" title="Canadian Hot 100">Canada</a>, <a href="http://www.wikipedia.org/wiki/ARIA_Charts" title="ARIA Charts">Australia</a>, <a href="http://www.wikipedia.org/wiki/Recording_Industry_Association_of_New_Zealand" title="Recording Industry Association of New Zealand" class="mw-redirect">New Zealand</a>, <a href="http://www.wikipedia.org/wiki/Recording_Industry_of_South_Africa" title="Recording Industry of South Africa">South Africa</a>, and on a lesser scale, the <a href="http://www.wikipedia.org/wiki/Hot_100" title="Hot 100" class="mw-redirect">U.S.</a> The group also enjoyed significant success in <a href="http://www.wikipedia.org/wiki/Latin_American" title="Latin American" class="mw-redirect">Latin American</a> markets, and recorded a <a href="http://www.wikipedia.org/wiki/Gracias_Por_La_M%C3%BAsica_(album)" title="Gracias Por La Música (album)" class="mw-redirect">collection</a> of their hit songs in Spanish.</p>
+<p>During the band's active years, Fältskog &amp; Ulvaeus and Lyngstad &amp; Andersson were married. At the height of their popularity, both relationships were suffering strain which ultimately resulted in the collapse of the Ulvaeus–Fältskog marriage in 1979 and the Andersson–Lyngstad marriage in 1981. These relationship changes were reflected in the group's music, with later compositions including more introspective, brooding, dark lyrics.<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/ABBA#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<p>After ABBA disbanded in December 1982, Andersson and Ulvaeus achieved success writing music for the stage, while Lyngstad and Fältskog pursued solo careers with mixed success. ABBA's music declined in popularity until several films, notably <i><a href="http://www.wikipedia.org/wiki/Muriel%27s_Wedding" title="Muriel's Wedding">Muriel's Wedding</a></i> (1994) and <i><a href="http://www.wikipedia.org/wiki/The_Adventures_of_Priscilla,_Queen_of_the_Desert" title="The Adventures of Priscilla, Queen of the Desert">The Adventures of Priscilla, Queen of the Desert</a></i> (1994), revived public interest in the group and the spawning of several <a href="http://www.wikipedia.org/wiki/Tribute_band" title="Tribute band" class="mw-redirect">tribute bands</a>. In 1999, ABBA's music was adapted into the successful musical <i><a href="http://www.wikipedia.org/wiki/Mamma_Mia!" title="Mamma Mia!">Mamma Mia!</a></i> that toured worldwide. <a href="http://www.wikipedia.org/wiki/Mamma_Mia!_(film)" title="Mamma Mia! (film)">A film of the same name</a>, released in 2008, became the highest-grossing film in the United Kingdom that year.</p>
+<p>ABBA were honoured at the 50th anniversary celebration of the <a href="http://www.wikipedia.org/wiki/Eurovision_Song_Contest" title="Eurovision Song Contest">Eurovision Song Contest</a> in 2005, when their hit "<a href="http://www.wikipedia.org/wiki/Waterloo_(ABBA_song)" title="Waterloo (ABBA song)">Waterloo</a>" was chosen as the best song in the competition's history.<sup id="cite_ref-50th_7-0" class="reference"><a href="http://en.wikipedia.org/wiki/ABBA#cite_note-50th-7"><span>[</span>7<span>]</span></a></sup> The group was inducted into the <a href="http://www.wikipedia.org/wiki/Rock_and_Roll_Hall_of_Fame" title="Rock and Roll Hall of Fame">Rock and Roll Hall of Fame</a> on 15 March 2010.<sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/ABBA#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/ABBA">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Atlanta_Braves.html'">Atlanta Braves</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_ST.html'">Atari ST</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apple_II_series.html'">Apple II series</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Football_League.html'">American Football League</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_rules_football.html'">Australian rules football</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Ashes.html'">The Ashes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advanced_Micro_Devices.html'">Advanced Micro Devices</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AFC_Ajax.html'">AFC Ajax</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_7800.html'">Atari 7800</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amitabh_Bachchan.html'">Amitabh Bachchan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amiga.html'">Amiga</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona_Cardinals.html'">Arizona Cardinals</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auto_racing.html'">Auto racing</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_2600.html'">Atari 2600</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arsenal_F.C..html'">Arsenal F.C.</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aaliyah.html'">Aaliyah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arnold_Schwarzenegger.html'">Arnold Schwarzenegger</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Approval_voting.html'">Approval voting</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archery.html'">Archery</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona_Diamondbacks.html'">Arizona Diamondbacks</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AOL.html'">AOL</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Telephone_&amp;_Telegraph.html'">American Telephone &amp; Telegraph</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_the_Giant.html'">André the Giant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aster_CT-80.html'">Aster CT-80</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthony_Hopkins.html'">Anthony Hopkins</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ASCII_art.html'">ASCII art</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amy_Grant.html'">Amy Grant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apple_Newton.html'">Apple Newton</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Quarter_Horse.html'">American Quarter Horse</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aston_Martin.html'">Aston Martin</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

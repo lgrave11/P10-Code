@@ -1,0 +1,181 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[525.6567216631, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [109.5224820441, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Austria</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Austria</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><span style="font-size: small;"><span id="coordinates"><a href="http://www.wikipedia.org/wiki/Geographic_coordinate_system" title="Geographic coordinate system">Coordinates</a>: <span class="plainlinks nourlexpansion"><a class="external text" href="//tools.wmflabs.org/geohack/geohack.php?pagename=Austria&amp;params=47_20_N_13_20_E_"><span class="geo-default"><span class="geo-dms" title="Maps, aerial photos, and other data for this location"><span class="latitude">47°20′N</span> <span class="longitude">13°20′E</span></span></span><span class="geo-multi-punct">﻿ / ﻿</span><span class="geo-nondefault"><span class="geo-dec" title="Maps, aerial photos, and other data for this location">47.333°N 13.333°E</span><span style="display:none">﻿ / <span class="geo">47.333; 13.333</span></span></span></a></span></span></span></p>
+<ul>
+<li><span lang="de"><i><a href="http://www.wikipedia.org/wiki/Land_der_Berge,_Land_am_Strome" title="Land der Berge, Land am Strome">Land der Berge, Land am Strome</a></i></span>&#160;&#160;<span class="languageicon" style="font-size:81%;font-weight:normal;">(<a href="http://www.wikipedia.org/wiki/German_language" title="German language">German</a>)</span></li>
+<li><small style="font-size:85%;"><i>Land of Mountains, Land by the River</i></small></li>
+<li>
+<center>
+<div class="mediaContainer" style="width:220px"><audio id="mwe_player_0" poster="/w/resources/assets/file-type-icons/fileicon-ogg.png" controls="" preload="none" style="width:220px" class="kskin" data-durationhint="89.495510204082" data-startoffset="0" data-mwtitle="Land_der_Berge_Land_am_Strome_instrumental.ogg" data-mwprovider="wikimediacommons">
+<source src="//upload.wikimedia.org/wikipedia/commons/7/7c/Land_der_Berge_Land_am_Strome_instrumental.ogg" type="audio/ogg; codecs=&quot;vorbis&quot;" data-title="Original Ogg file (142 kbps)" data-shorttitle="Ogg source" data-width="0" data-height="0" data-bandwidth="142183" />
+<track kind="subtitles" data-mwtitle="TimedText:Land_der_Berge_Land_am_Strome_instrumental.ogg.de.srt" data-mwprovider="wikimediacommons" type="text/x-srt" src="https://commons.wikimedia.org/w/index.php?title=:Land+der+Berge+Land+am+Strome+instrumental.ogg.de.srt&amp;action=raw&amp;ctype=text%2Fx-srt" srclang="de" data-dir="ltr" label="Deutsch (de) subtitles" />
+<track kind="subtitles" data-mwtitle="TimedText:Land_der_Berge_Land_am_Strome_instrumental.ogg.en.srt" data-mwprovider="wikimediacommons" type="text/x-srt" src="https://commons.wikimedia.org/w/index.php?title=:Land+der+Berge+Land+am+Strome+instrumental.ogg.en.srt&amp;action=raw&amp;ctype=text%2Fx-srt" srclang="en" data-dir="ltr" label="English (en) subtitles" />
+<track kind="subtitles" data-mwtitle="TimedText:Land_der_Berge_Land_am_Strome_instrumental.ogg.hr.srt" data-mwprovider="wikimediacommons" type="text/x-srt" src="https://commons.wikimedia.org/w/index.php?title=:Land+der+Berge+Land+am+Strome+instrumental.ogg.hr.srt&amp;action=raw&amp;ctype=text%2Fx-srt" srclang="hr" data-dir="ltr" label="hrvatski (hr) subtitles" />Sorry, your browser either has JavaScript disabled or does not have any supported player.<br />
+You can <a href="//upload.wikimedia.org/wikipedia/commons/7/7c/Land_der_Berge_Land_am_Strome_instrumental.ogg">download the clip</a> or <a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:TimedMediaHandler/Client_download">download a player</a> to play the clip in your browser.</audio></div>
+</center>
+</li>
+</ul>
+<p style="width:250px;font-size:11px;text-align:left;margin-left:1.2ex;margin-top:0px;margin-bottom:0px;line-height:1.15em;">–&#160;in <a href="http://www.wikipedia.org/wiki/Europe" title="Europe">Europe</a><span style="font-size:8px;"><span class="nowrap">&#160;&#160;</span></span>(<span style="font-size:9px;">green &amp;&#160;dark grey</span>)<br />
+–&#160;in the <a href="http://www.wikipedia.org/wiki/European_Union" title="European Union">European Union</a><span style="font-size:8px;"><span class="nowrap">&#160;&#160;</span></span>(<span style="font-size:9px;">green</span>)&#160; –&#160; [<span style="font-size:10px;"><a href="http://www.wikipedia.org/wiki/File:EU-Austria.svg" title="File:EU-Austria.svg">Legend</a></span>]</p>
+<ul>
+<li>81.1% <a href="http://www.wikipedia.org/wiki/Austrians" title="Austrians">Austrians</a><sup id="cite_ref-medienservicestelle.at_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Austria#cite_note-medienservicestelle.at-1"><span>[</span>1<span>]</span></a></sup></li>
+<li>2.7% <a href="http://www.wikipedia.org/wiki/Germans" title="Germans">Germans</a></li>
+<li>2.2% <a href="http://www.wikipedia.org/wiki/Turks_in_Austria" title="Turks in Austria">Turks</a></li>
+<li><span class="nowrap">14% other&#160;/ unspecified</span></li>
+</ul>
+<p><b>Austria</b> (<span class="nowrap"><span class="noexcerpt"><a href="//upload.wikimedia.org/wikipedia/commons/2/24/En-us-Austria.ogg" title="Listen"><img alt="Listen" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/11px-Speakerlink-new.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/17px-Speakerlink-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/22px-Speakerlink-new.svg.png 2x" data-file-width="11" data-file-height="11" /></a><sup><span class="IPA" style="color:#00e;font:bold 80% sans-serif;padding:0 .1em"><a href="http://www.wikipedia.org/wiki/File:En-us-Austria.ogg" title="File:En-us-Austria.ogg">i</a></span></sup></span><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/ɒ/ short 'o' in 'body'">ɒ</span><span title="'s' in 'sigh'">s</span><span title="'t' in 'tie'">t</span><span title="'r' in 'rye'">r</span><span title="/i/ 'y' in 'happy'">i</span><span title="/ə/ 'a' in 'about'">ə</span></span>, <span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/ɔː/ 'au' in 'fraud'">ɔː</span><span title="/-/ affix">-</span></span>/</a></span></span>;<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Austria#cite_note-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Austria#cite_note-7"><span>[</span>7<span>]</span></a></sup> German: <span lang="de"><i>Österreich</i></span> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_German" title="Help:IPA for German">[ˈøːstɐˌʁaɪç]</a></span><small class="nowrap metadata">&#160;(<a href="http://www.wikipedia.org/wiki/File:%C3%96sterreich.ogg" title="File:Österreich.ogg"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/13px-Speaker_Icon.svg.png" width="13" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/20px-Speaker_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/26px-Speaker_Icon.svg.png 2x" data-file-width="500" data-file-height="500" /></a> <a href="//upload.wikimedia.org/wikipedia/commons/4/4c/%C3%96sterreich.ogg" class="internal" title="Österreich.ogg">listen</a>)</small>), officially the <b>Republic of Austria</b> (German: <span lang="de"><i>Republik Österreich</i></span>, <span class="unicode haudio"><span class="fn"><span style="white-space:nowrap"><a href="http://www.wikipedia.org/wiki/File:Republik_%C3%96sterreich.ogg" title="About this sound"><img alt="About this sound" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/11px-Loudspeaker.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/17px-Loudspeaker.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/22px-Loudspeaker.svg.png 2x" data-file-width="20" data-file-height="20" /></a>&#160;</span><a href="//upload.wikimedia.org/wikipedia/commons/a/aa/Republik_%C3%96sterreich.ogg" class="internal" title="Republik Österreich.ogg">listen</a></span>&#160;<small class="metadata audiolinkinfo" style="cursor:help;">(<a href="http://www.wikipedia.org/wiki/Wikipedia:Media_help" title="Wikipedia:Media help"><span style="cursor:help;">help</span></a>·<a href="http://www.wikipedia.org/wiki/File:Republik_%C3%96sterreich.ogg" title="File:Republik Österreich.ogg"><span style="cursor:help;">info</span></a>)</small></span>), is a <a href="http://www.wikipedia.org/wiki/Federal_republic" title="Federal republic">federal republic</a> and a <a href="http://www.wikipedia.org/wiki/Landlocked_country" title="Landlocked country">landlocked country</a> of over 8.66&#160;million people<sup id="cite_ref-statistik-population_2-1" class="reference"><a href="http://en.wikipedia.org/wiki/Austria#cite_note-statistik-population-2"><span>[</span>2<span>]</span></a></sup> in <a href="http://www.wikipedia.org/wiki/Central_Europe" title="Central Europe">Central Europe</a>. It is bordered by the <a href="http://www.wikipedia.org/wiki/Czech_Republic" title="Czech Republic">Czech Republic</a> and <a href="http://www.wikipedia.org/wiki/Germany" title="Germany">Germany</a> to the north, <a href="http://www.wikipedia.org/wiki/Hungary" title="Hungary">Hungary</a> and <a href="http://www.wikipedia.org/wiki/Slovakia" title="Slovakia">Slovakia</a> to the east, <a href="http://www.wikipedia.org/wiki/Slovenia" title="Slovenia">Slovenia</a> and <a href="http://www.wikipedia.org/wiki/Italy" title="Italy">Italy</a> to the south, and <a href="http://www.wikipedia.org/wiki/Switzerland" title="Switzerland">Switzerland</a> and <a href="http://www.wikipedia.org/wiki/Liechtenstein" title="Liechtenstein">Liechtenstein</a> to the west. The territory of Austria covers 83,879 square kilometres (32,386&#160;sq&#160;mi). Austria's terrain is highly mountainous, lying within the <a href="http://www.wikipedia.org/wiki/Alps" title="Alps">Alps</a>; only 32% of the country is below 500 metres (1,640&#160;ft), and its highest point is 3,798 metres (12,461&#160;ft).<sup id="cite_ref-CIA_8-0" class="reference"><a href="http://en.wikipedia.org/wiki/Austria#cite_note-CIA-8"><span>[</span>8<span>]</span></a></sup> The majority of the population speak local <a href="http://www.wikipedia.org/wiki/Bavarian_language" title="Bavarian language">Bavarian</a> dialects of <a href="http://www.wikipedia.org/wiki/German_language" title="German language">German</a> as their native language,<sup id="cite_ref-Language_9-0" class="reference"><a href="http://en.wikipedia.org/wiki/Austria#cite_note-Language-9"><span>[</span>9<span>]</span></a></sup> and <a href="http://www.wikipedia.org/wiki/Austrian_German" title="Austrian German">Austrian German</a> in its standard form is the country's <a href="http://www.wikipedia.org/wiki/Official_language" title="Official language">official language</a>.<sup id="cite_ref-Britannica_10-0" class="reference"><a href="http://en.wikipedia.org/wiki/Austria#cite_note-Britannica-10"><span>[</span>10<span>]</span></a></sup> Other local official languages are <a href="http://www.wikipedia.org/wiki/Hungarian_language" title="Hungarian language">Hungarian</a>, <a href="http://www.wikipedia.org/wiki/Burgenland_Croatian" title="Burgenland Croatian">Burgenland Croatian</a>, and <a href="http://www.wikipedia.org/wiki/Slovene_language" title="Slovene language">Slovene</a>.<sup id="cite_ref-CIA_8-1" class="reference"><a href="http://en.wikipedia.org/wiki/Austria#cite_note-CIA-8"><span>[</span>8<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Austria">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Alicante.html'">Alicante</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/African_National_Congress.html'">African National Congress</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arkansas.html'">Arkansas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aarhus.html'">Aarhus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andes.html'">Andes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Articles_of_Confederation.html'">Articles of Confederation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aarau.html'">Aarau</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Azad_Kashmir.html'">Azad Kashmir</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Geography_of_Alabama.html'">Geography of Alabama</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Carnegie.html'">Andrew Carnegie</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Johnson.html'">Andrew Johnson</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auschwitz_concentration_camp.html'">Auschwitz concentration camp</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Area_51.html'">Area 51</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Azerbaijan.html'">Azerbaijan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abu_Sayyaf.html'">Abu Sayyaf</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anguilla.html'">Anguilla</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aleutian_Islands.html'">Aleutian Islands</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Athenian_democracy.html'">Athenian democracy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andhra_Pradesh.html'">Andhra Pradesh</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Economy_of_Angola.html'">Economy of Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Economy_of_Alberta.html'">Economy of Alberta</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatolia.html'">Anatolia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antisemitism_in_the_Arab_world.html'">Antisemitism in the Arab world</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Achill_Island.html'">Achill Island</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlantic_Ocean.html'">Atlantic Ocean</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Chinese_cuisine.html'">American Chinese cuisine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Civil_Liberties_Union.html'">American Civil Liberties Union</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Geography_of_Africa.html'">Geography of Africa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ann_Arbor,_Michigan.html'">Ann Arbor, Michigan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acapulco.html'">Acapulco</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

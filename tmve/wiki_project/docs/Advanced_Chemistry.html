@@ -1,0 +1,164 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[138.6022780821, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [105.3810528792, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [57.2854996261, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Advanced Chemistry</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Advanced Chemistry</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Advanced Chemistry</b> is a <a href="http://www.wikipedia.org/wiki/German_hip_hop" title="German hip hop">German hip hop</a> group from <a href="http://www.wikipedia.org/wiki/Heidelberg" title="Heidelberg">Heidelberg</a>, a scenic city in <a href="http://www.wikipedia.org/wiki/Baden-W%C3%BCrttemberg" title="Baden-Württemberg">Baden-Württemberg</a>, South Germany. Advanced Chemistry was founded in 1987 by Toni L, Linguist, Gee-One, DJ Mike MD (Mike Dippon) and MC Torch. Each member of the group holds German citizenship, and Toni L, Linguist, and Torch are of Italian, Ghanaian, and Haitian backgrounds, respectively.<sup id="cite_ref-lqomwy_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-lqomwy-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>Influenced by North American socially <a href="http://www.wikipedia.org/wiki/Conscious_hip_hop" title="Conscious hip hop" class="mw-redirect">conscious rap</a> and the <a href="http://www.wikipedia.org/wiki/Native_Tongues_Posse" title="Native Tongues Posse" class="mw-redirect">Native tongues movement</a>, Advanced Chemistry is regarded as one of the main pioneers in German hip hop. They were one of the first groups to rap in German (although their name is in English). Furthermore, their songs tackled controversial social and political issues, distinguishing them from early German hip hop group "<a href="http://www.wikipedia.org/wiki/Die_Fantastischen_Vier" title="Die Fantastischen Vier">Die Fantastischen Vier</a>" (The Fantastic Four), which had a more light-hearted, playful, party image.<sup id="cite_ref-lqomwy_1-1" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-lqomwy-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>The rivalry between Advanced Chemistry and Die Fantastischen Vier has served to highlight a dichotomy in the routes that hip hop has taken in becoming a part of the German soundscape. While Die Fantastischen Vier may be said to view hip hop primarily as an aesthetic art form, Advanced Chemistry understand hip hop as being inextricably linked to the social and political circumstances under which it is created. For Advanced Chemistry, hip hop is a “vehicle of general human emancipation,”.<sup id="cite_ref-ReferenceA_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-ReferenceA-2"><span>[</span>2<span>]</span></a></sup> In their undertaking of social and political issues, the band introduced the term "Afro-German" into the context of German hip hop, and the theme of race is highlighted in much of their music.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>With the release of the single “Fremd im eigenen Land”, Advanced Chemistry separated itself from the rest of the rap being produced in Germany. This single was the first of its kind to go beyond simply imitating US rap and addressed the current issues of the time. Fremd im eigenen Land which translates to “foreign in my own country” dealt with the widespread racism that non-white German citizens faced. This change from simple imitation to political commentary was the start of German identification with rap.<sup id="cite_ref-lqomwy_1-2" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-lqomwy-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-4"><span>[</span>4<span>]</span></a></sup> The sound of “Fremd im eigenen Land” was influenced by the 'wall of noise' created by Public Enemy's producers, The Bomb Squad.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>After the reunification of Germany, an abundance of anti-immigrant sentiment emerged, as well as attacks on the homes of refugees in the early 90's. Advanced Chemistry came to prominence in the wake of these actions because of their pro-multicultural society stance in their music. Advanced Chemistry's attitudes revolve around their attempts to create a distinct "Germanness" in hip hop, as opposed to imitating American hip hop as other groups had done. Torch has said, "What the Americans do is exotic for us because we don't live like they do. What they do seems to be more interesting and newer. But not for me. For me it's more exciting to experience my fellow Germans in new contexts...For me, it's interesting to see what the kids try to do that's different from what I know." <sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-6"><span>[</span>6<span>]</span></a></sup> Advanced Chemistry were the first to use the term "Afro-German" in a hip hop context. This was part of the pro-immigrant political message they sent via their music.<sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>While Advanced Chemistry's use of the German language in their rap allows them to make claims to authenticity and true German heritage, bolstering pro-immigration sentiment, their style can also be problematic for immigrant notions of any real ethnic roots. Indeed, part of the Turkish ethnic minority of <a href="http://www.wikipedia.org/wiki/Frankfurt" title="Frankfurt">Frankfurt</a> views Advanced Chemistry's appeal to the German image as a "symbolic betrayal of the right of ethnic minorities to 'roots' or to any expression of cultural heritage."<sup id="cite_ref-Bennett_8-0" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-Bennett-8"><span>[</span>8<span>]</span></a></sup> In this sense, their rap represents a complex social discourse internal to the <a href="/w/index.php?title=German_soundscape&amp;action=edit&amp;redlink=1" class="new" title="German soundscape (page does not exist)">German soundscape</a> in which they attempt to negotiate immigrant assimilation into a xenophobic <a href="http://www.wikipedia.org/wiki/Culture_of_Germany" title="Culture of Germany">German culture</a> with the maintenance of their own separate cultural traditions. It is quite possibly the feelings of alienation from the pure-blooded German demographic that drive Advanced Chemistry to attack nationalistic ideologies by asserting their "Germanness" as a group composed primarily of ethnic others. The response to this pseudo-German authenticity can be seen in what <a href="http://www.wikipedia.org/wiki/Andy_Bennett" title="Andy Bennett">Andy Bennett</a> refers to as "alternative forms of local hip hop culture which actively seek to rediscover and, in many cases, reconstruct notions of identity tied to cultural roots."<sup id="cite_ref-Bennett_8-1" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-Bennett-8"><span>[</span>8<span>]</span></a></sup> These alternative local hip hop cultures include <a href="http://www.wikipedia.org/wiki/Oriental_hip_hop" title="Oriental hip hop" class="mw-redirect">Oriental hip hop</a>, the members of which cling to their Turkish heritage and are confused by Advanced Chemistry's elicitation of a German identity politics to which they technically do not belong. This cultural binary illustrates that rap has taken different routes in Germany and that, even among an already isolated immigrant population, there is still disunity and, especially, disagreement on the relative importance of assimilation versus cultural defiance. According to German hip hop enthusiast 9@home, Advanced Chemistry is part of a "hip-hop movement [which] took a clear stance for the minorities and against the [marginalization] of immigrants who...might be German on paper, but not in real life,"<sup id="cite_ref-9" class="reference"><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry#cite_note-9"><span>[</span>9<span>]</span></a></sup> which speaks to the group's hope of actually being recognized as German citizens and not foreigners, despite their various other ethnic and cultural ties.</p>
+<p><a href="http://en.wikipedia.org/wiki/Advanced_Chemistry">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Aron_Nimzowitsch.html'">Aron Nimzowitsch</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amazing_Grace.html'">Amazing Grace</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alphabet_song.html'">Alphabet song</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/An_American_in_Paris.html'">An American in Paris</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/America_the_Beautiful.html'">America the Beautiful</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Art_Deco.html'">Art Deco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Spalding.html'">Albert Spalding</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acting.html'">Acting</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Akio_Morita.html'">Akio Morita</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actor.html'">Actor</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anton_Diabelli.html'">Anton Diabelli</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afro_Celt_Sound_System.html'">Afro Celt Sound System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aria_Giovanni.html'">Aria Giovanni</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._A._Milne.html'">A. A. Milne</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthem.html'">Anthem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Jarry.html'">Alfred Jarry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asterix.html'">Asterix</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Articolo_31.html'">Articolo 31</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amber_Diceless_Roleplaying_Game.html'">Amber Diceless Roleplaying Game</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_Cuarón.html'">Alfonso Cuarón</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alumni_Athletic_Club.html'">Alumni Athletic Club</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AZ_(football_club).html'">AZ (football club)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adobe_Systems.html'">Adobe Systems</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberto_Giacometti.html'">Alberto Giacometti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abraxas.html'">Abraxas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabian_Prince.html'">Arabian Prince</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_5200.html'">Atari 5200</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alvin_Toffler.html'">Alvin Toffler</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ardal_O_Hanlon.html'">Ardal O'Hanlon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amateur.html'">Amateur</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

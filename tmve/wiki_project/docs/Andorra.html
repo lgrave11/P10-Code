@@ -1,0 +1,161 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[312.2015255825, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [61.9776799606, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Andorra</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Andorra</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><span style="font-size: small;"><span id="coordinates"><a href="http://www.wikipedia.org/wiki/Geographic_coordinate_system" title="Geographic coordinate system">Coordinates</a>: <span class="plainlinks nourlexpansion"><a class="external text" href="//tools.wmflabs.org/geohack/geohack.php?pagename=Andorra&amp;params=42_30_N_1_30_E_"><span class="geo-default"><span class="geo-dms" title="Maps, aerial photos, and other data for this location"><span class="latitude">42°30′N</span> <span class="longitude">1°30′E</span></span></span><span class="geo-multi-punct">﻿ / ﻿</span><span class="geo-nondefault"><span class="geo-dec" title="Maps, aerial photos, and other data for this location">42.500°N 1.500°E</span><span style="display:none">﻿ / <span class="geo">42.500; 1.500</span></span></span></a></span></span></span></p>
+<p style="width:250px;font-size:11px;text-align:center;margin-top:0px;margin-bottom:0px;line-height:1.15em;">in <a href="http://www.wikipedia.org/wiki/Europe" title="Europe">Europe</a><span style="font-size:8px;"><span class="nowrap">&#160;&#160;</span></span>(<span style="font-size:9px;">dark grey</span>)&#160; –&#160; [<span style="font-size:10px;"><a href="http://www.wikipedia.org/wiki/File:Location_Andorra_Europe.png" title="File:Location Andorra Europe.png">Legend</a></span>]</p>
+<p><b>Andorra</b> (<span class="nowrap"><span class="noexcerpt"><a href="//upload.wikimedia.org/wikipedia/commons/3/3e/En-us-Andorra.ogg" title="Listen"><img alt="Listen" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/11px-Speakerlink-new.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/17px-Speakerlink-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/22px-Speakerlink-new.svg.png 2x" data-file-width="11" data-file-height="11" /></a><sup><span class="IPA" style="color:#00e;font:bold 80% sans-serif;padding:0 .1em"><a href="http://www.wikipedia.org/wiki/File:En-us-Andorra.ogg" title="File:En-us-Andorra.ogg">i</a></span></sup></span><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'n' in 'no'">n</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'d' in 'dye'">d</span><span title="/ɔː/ 'au' in 'fraud'">ɔː</span><span title="'r' in 'rye'">r</span><span title="/ə/ 'a' in 'about'">ə</span></span>/</a></span></span>; <small>Catalan:&#160;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_Catalan" title="Help:IPA for Catalan">[ənˈdorə]</a></span>, <small>locally:&#160;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_Catalan" title="Help:IPA for Catalan">[anˈdɔra]</a></span>), officially the <b>Principality of Andorra</b> (<a href="http://www.wikipedia.org/wiki/Catalan_language" title="Catalan language">Catalan</a>: <span lang="ca" xml:lang="ca"><i>Principat d'Andorra</i></span>), also called the <b>Principality of the Valleys of Andorra</b><sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Andorra#cite_note-5"><span>[</span>5<span>]</span></a></sup> (Catalan: <span lang="ca" xml:lang="ca"><i>Principat de les Valls d'Andorra</i></span>), is a sovereign <a href="http://www.wikipedia.org/wiki/Landlocked_country" title="Landlocked country">landlocked</a> <a href="http://www.wikipedia.org/wiki/Microstate" title="Microstate">microstate</a> in <a href="http://www.wikipedia.org/wiki/Iberian_Peninsula" title="Iberian Peninsula">Southwestern Europe</a>, located in the eastern <a href="http://www.wikipedia.org/wiki/Pyrenees" title="Pyrenees">Pyrenees</a> mountains and bordered by <a href="http://www.wikipedia.org/wiki/Spain" title="Spain">Spain</a> and <a href="http://www.wikipedia.org/wiki/France" title="France">France</a>. Created under a charter in A.D. 988, the present Principality was formed in A.D. 1278. It is known as a <a href="http://www.wikipedia.org/wiki/Principality" title="Principality">principality</a> as it is a <a href="http://www.wikipedia.org/wiki/Coregency" title="Coregency">monarchy</a> headed by two <a href="http://www.wikipedia.org/wiki/Co-Princes_of_Andorra" title="Co-Princes of Andorra">Co-Princes</a> – the Spanish/Roman Catholic <a href="http://www.wikipedia.org/wiki/Bishop_of_Urgell" title="Bishop of Urgell" class="mw-redirect">Bishop of Urgell</a> and the <a href="http://www.wikipedia.org/wiki/President_of_France" title="President of France">President of France</a>.</p>
+<p>Andorra is the <a href="http://www.wikipedia.org/wiki/European_microstates" title="European microstates">sixth-smallest nation in Europe</a>, having an area of 468&#160;km<sup>2</sup> (181 sq mi) and a population of approximately 85,000.<sup id="cite_ref-cia_1-1" class="reference"><a href="http://en.wikipedia.org/wiki/Andorra#cite_note-cia-1"><span>[</span>1<span>]</span></a></sup> Its capital <a href="http://www.wikipedia.org/wiki/Andorra_la_Vella" title="Andorra la Vella">Andorra la Vella</a> is the highest capital city in Europe, at an elevation of 1,023 metres (3,356&#160;ft) <a href="http://www.wikipedia.org/wiki/Above_mean_sea_level" title="Above mean sea level" class="mw-redirect">above sea level</a>.<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Andorra#cite_note-6"><span>[</span>6<span>]</span></a></sup> The official language is <a href="http://www.wikipedia.org/wiki/Catalan_language" title="Catalan language">Catalan</a>, although Spanish, Portuguese, and French are also commonly spoken.<sup id="cite_ref-cia_1-2" class="reference"><a href="http://en.wikipedia.org/wiki/Andorra#cite_note-cia-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Andorra#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Andorra">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Andalusia.html'">Andalusia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andaman_Islands.html'">Andaman Islands</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aircraft_hijacking.html'">Aircraft hijacking</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arbor_Day.html'">Arbor Day</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abalone.html'">Abalone</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abdul_Rashid_Dostum.html'">Abdul Rashid Dostum</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Capital_Territory.html'">Australian Capital Territory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astoria,_Oregon.html'">Astoria, Oregon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Airlines_Flight_77.html'">American Airlines Flight 77</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antarctic_Treaty_System.html'">Antarctic Treaty System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acapulco.html'">Acapulco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Chinese_cuisine.html'">American Chinese cuisine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ames,_Iowa.html'">Ames, Iowa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albion,_Michigan.html'">Albion, Michigan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Action_Against_Hunger.html'">Action Against Hunger</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlantic_Ocean.html'">Atlantic Ocean</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Achill_Island.html'">Achill Island</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Army.html'">Australian Army</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aon_Corporation.html'">Aon Corporation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agent_Orange.html'">Agent Orange</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Kerensky.html'">Alexander Kerensky</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatolia.html'">Anatolia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alps.html'">Alps</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abadan.html'">Abadan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asia.html'">Asia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Economy_of_Angola.html'">Economy of Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/List_of_Governors_of_Alabama.html'">List of Governors of Alabama</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdare.html'">Aberdare</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ancient_Pueblo_Peoples.html'">Ancient Pueblo Peoples</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aargau.html'">Aargau</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

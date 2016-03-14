@@ -1,0 +1,194 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[73.3976874998, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [10.0881543162, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [8.7829805524, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Aardvark</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Aardvark</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>See Text</p>
+<p>The <b>aardvark</b> (<span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/ɑːr/ 'ar' in 'bard'">ɑːr</span><span title="'d' in 'dye'">d</span><span title="/./ syllable break">.</span><span title="'v' in 'vie'">v</span><span title="/ɑːr/ 'ar' in 'bard'">ɑːr</span><span title="'k' in 'kind'">k</span></span>/</a></span></span> <span title="English pronunciation respelling"><a href="http://www.wikipedia.org/wiki/Wikipedia:Pronunciation_respelling_key" title="Wikipedia:Pronunciation respelling key" class="mw-redirect"><i><b><span class="smallcaps"><span style="FONT-VARIANT: SMALL-CAPS; TEXT-TRANSFORM: LOWERCASE;">ARD</span></span></b>-vark</i></a></span>; <i>Orycteropus afer</i>) is a medium-sized, burrowing, <a href="http://www.wikipedia.org/wiki/Nocturnal" title="Nocturnal" class="mw-redirect">nocturnal</a> mammal native to <a href="http://www.wikipedia.org/wiki/Africa" title="Africa">Africa</a>.<sup id="cite_ref-EB_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Aardvark#cite_note-EB-2"><span>[</span>2<span>]</span></a></sup> It is the only living species of the order <a href="http://www.wikipedia.org/wiki/Tubulidentata" title="Tubulidentata" class="mw-redirect">Tubulidentata</a>,<sup id="cite_ref-MSW3_3-0" class="reference"><a href="http://en.wikipedia.org/wiki/Aardvark#cite_note-MSW3-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-EoM_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Aardvark#cite_note-EoM-4"><span>[</span>4<span>]</span></a></sup> although other prehistoric species and genera of Tubulidentata are known. Unlike other <a href="http://www.wikipedia.org/wiki/Insectivore" title="Insectivore">insectivores</a>, it has a long pig-like snout, which is used to sniff out food. It roams over most of the southern two-thirds of the African continent, avoiding mainly rocky areas. A nocturnal feeder, it subsists on ants and termites, which it will dig out of their hills using its sharp claws and powerful legs. It also digs to create burrows in which to live and rear its young. It receives a "least concern" rating from the <a href="http://www.wikipedia.org/wiki/IUCN" title="IUCN" class="mw-redirect">IUCN</a>, although its numbers seem to be decreasing.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Aardvark#Naming_and_taxonomy"><span class="tocnumber">1</span> <span class="toctext">Naming and taxonomy</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Aardvark#Naming"><span class="tocnumber">1.1</span> <span class="toctext">Naming</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Aardvark#Taxonomy"><span class="tocnumber">1.2</span> <span class="toctext">Taxonomy</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Aardvark#Evolutionary_history"><span class="tocnumber">1.3</span> <span class="toctext">Evolutionary history</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Aardvark#Subspecies"><span class="tocnumber">1.4</span> <span class="toctext">Subspecies</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Aardvark#Description"><span class="tocnumber">2</span> <span class="toctext">Description</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Aardvark#Head"><span class="tocnumber">2.1</span> <span class="toctext">Head</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Aardvark#Digestive_system"><span class="tocnumber">2.2</span> <span class="toctext">Digestive system</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Aardvark#Habitat_and_range"><span class="tocnumber">3</span> <span class="toctext">Habitat and range</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Aardvark#Ecology_and_behavior"><span class="tocnumber">4</span> <span class="toctext">Ecology and behavior</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Aardvark#Feeding"><span class="tocnumber">4.1</span> <span class="toctext">Feeding</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Aardvark#Vocalization"><span class="tocnumber">4.2</span> <span class="toctext">Vocalization</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Aardvark#Movement"><span class="tocnumber">4.3</span> <span class="toctext">Movement</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Aardvark#Reproduction"><span class="tocnumber">4.4</span> <span class="toctext">Reproduction</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Aardvark#Conservation"><span class="tocnumber">5</span> <span class="toctext">Conservation</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="http://en.wikipedia.org/wiki/Aardvark#Mythology_and_popular_culture"><span class="tocnumber">6</span> <span class="toctext">Mythology and popular culture</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="http://en.wikipedia.org/wiki/Aardvark#Footnotes"><span class="tocnumber">7</span> <span class="toctext">Footnotes</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Aardvark#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="http://en.wikipedia.org/wiki/Aardvark#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Aardvark">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Alexios_II_Komnenos.html'">Alexios II Komnenos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/April.html'">April</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anah.html'">Anah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_III_of_Aragon.html'">Alfonso III of Aragon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abiathar.html'">Abiathar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Armored_car_(military).html'">Armored car (military)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aedicula.html'">Aedicula</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ajax_(mythology).html'">Ajax (mythology)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ardipithecus.html'">Ardipithecus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adhemar_of_Le_Puy.html'">Adhemar of Le Puy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ægir.html'">Ægir</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alaric_II.html'">Alaric II</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aegisthus.html'">Aegisthus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/House_of_Ascania.html'">House of Ascania</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abydos,_Hellespont.html'">Abydos, Hellespont</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Almoravid_dynasty.html'">Almoravid dynasty</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abner.html'">Abner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aedui.html'">Aedui</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abae.html'">Abae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Áed_of_Scotland.html'">Áed of Scotland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Titus_(Biblical).html'">Titus (Biblical)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_XIII_of_Spain.html'">Alfonso XIII of Spain</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abencerrages.html'">Abencerrages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andreas_Schlüter.html'">Andreas Schlüter</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_II_of_Epirus.html'">Alexander II of Epirus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ancus_Marcius.html'">Ancus Marcius</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anacharsis.html'">Anacharsis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anazarbus.html'">Anazarbus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_I_of_Epirus.html'">Alexander I of Epirus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/August.html'">August</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[187.0895892591, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Analog signal</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Analog signal</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>analog</b> or <b>analogue signal</b> is any <a href="http://www.wikipedia.org/wiki/Continuous_function" title="Continuous function">continuous</a> <a href="http://www.wikipedia.org/wiki/Signal_(circuit_theory)" title="Signal (circuit theory)" class="mw-redirect">signal</a> for which the time varying feature (variable) of the signal is a representation of some other time varying quantity, i.e., analogous to another time varying signal. For example, in an analog <a href="http://www.wikipedia.org/wiki/Audio_signal" title="Audio signal">audio signal</a>, the instantaneous <a href="http://www.wikipedia.org/wiki/Voltage" title="Voltage">voltage</a> of the signal varies continuously with the <a href="http://www.wikipedia.org/wiki/Sound_pressure" title="Sound pressure">pressure</a> of the sound waves. It differs from a <a href="http://www.wikipedia.org/wiki/Digital_signal_(signal_processing)" title="Digital signal (signal processing)">digital signal</a>, in which the continuous quantity is a representation of a sequence of <a href="http://www.wikipedia.org/wiki/Discrete_space" title="Discrete space">discrete values</a> which can only take on one of a finite number of values.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Analog_signal#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Analog_signal#cite_note-2"><span>[</span>2<span>]</span></a></sup> The term analog signal usually refers to <a href="http://www.wikipedia.org/wiki/Electrical_signal" title="Electrical signal" class="mw-redirect">electrical signals</a>; however, <a href="http://www.wikipedia.org/wiki/Classical_mechanics" title="Classical mechanics">mechanical</a>, <a href="http://www.wikipedia.org/wiki/Pneumatic" title="Pneumatic" class="mw-redirect">pneumatic</a>, <a href="http://www.wikipedia.org/wiki/Hydraulic" title="Hydraulic" class="mw-redirect">hydraulic</a>, human speech, and other systems may also convey or be considered analog signals.</p>
+<p>An analog signal uses some property of the medium to convey the signal's information. For example, an <a href="http://www.wikipedia.org/wiki/Aneroid_barometer" title="Aneroid barometer" class="mw-redirect">aneroid barometer</a> uses rotary position as the signal to convey pressure information. In an electrical signal, the <a href="http://www.wikipedia.org/wiki/Voltage" title="Voltage">voltage</a>, <a href="http://www.wikipedia.org/wiki/Electric_current" title="Electric current">current</a>, or <a href="http://www.wikipedia.org/wiki/Frequency" title="Frequency">frequency</a> of the signal may be varied to represent the information.</p>
+<p>Any information may be conveyed by an analog signal; often such a signal is a measured response to changes in physical phenomena, such as <a href="http://www.wikipedia.org/wiki/Sound" title="Sound">sound</a>, <a href="http://www.wikipedia.org/wiki/Light" title="Light">light</a>, <a href="http://www.wikipedia.org/wiki/Temperature" title="Temperature">temperature</a>, position, or <a href="http://www.wikipedia.org/wiki/Pressure" title="Pressure">pressure</a>. The physical variable is converted to an analog signal by a <a href="http://www.wikipedia.org/wiki/Transducer" title="Transducer">transducer</a>. For example, in sound recording, fluctuations in air pressure (that is to say, <a href="http://www.wikipedia.org/wiki/Sound" title="Sound">sound</a>) strike the diaphragm of a <a href="http://www.wikipedia.org/wiki/Microphone" title="Microphone">microphone</a> which induces corresponding fluctuations in the current produced by a coil in an electromagnetic microphone, or the voltage produced by a condensor microphone. The voltage or the current is said to be an "analog" of the sound.</p>
+<p>An analog signal has a theoretically infinite resolution. In practice an analog signal is subject to <a href="http://www.wikipedia.org/wiki/Noise_(electronic)" title="Noise (electronic)" class="mw-redirect">electronic noise</a> and <a href="http://www.wikipedia.org/wiki/Distortion" title="Distortion">distortion</a> introduced by <a href="http://www.wikipedia.org/wiki/Communication_channel" title="Communication channel" class="mw-redirect">communication channels</a> and <a href="http://www.wikipedia.org/wiki/Signal_processing" title="Signal processing">signal processing</a> operations, which can progressively degrade the <a href="http://www.wikipedia.org/wiki/Signal-to-noise_ratio" title="Signal-to-noise ratio">signal-to-noise ratio (SNR)</a>. In contrast, digital signals have a finite resolution. Converting an analog signal to digital form introduces a constant low-level noise called <a href="http://www.wikipedia.org/wiki/Quantization_noise" title="Quantization noise" class="mw-redirect">quantization noise</a> into the signal which determines the noise floor, but once in digital form the signal can in general be processed or transmitted without introducing additional noise or distortion. Therefore, as analog signal processing systems become more complex, they may ultimately degrade signal resolution to such an extent that their performance is surpassed by digital systems. This explains the widespread use of digital signals in preference to analog in modern technology. In analog systems, it is difficult to detect when such degradation occurs. However, in digital systems, degradation can not only be detected but corrected as well.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Analog_signal#Advantages_and_disadvantages"><span class="tocnumber">1</span> <span class="toctext">Advantages and disadvantages</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Analog_signal#Modulation"><span class="tocnumber">2</span> <span class="toctext">Modulation</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Analog_signal#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Analog_signal#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Analog_signal">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Atomic_number.html'">Atomic number</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amide.html'">Amide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alloy.html'">Alloy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apicomplexa.html'">Apicomplexa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomical_unit.html'">Astronomical unit</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Audio_signal_processing.html'">Audio signal processing</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_10.html'">Apollo 10</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algol.html'">Algol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asteraceae.html'">Asteraceae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allotropy.html'">Allotropy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Associativity.html'">Associativity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthritis.html'">Arthritis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Human_abdomen.html'">Human abdomen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acute_disseminated_encephalomyelitis.html'">Acute disseminated encephalomyelitis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arithmetic_mean.html'">Arithmetic mean</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alessandro_Volta.html'">Alessandro Volta</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Audio_file_format.html'">Audio file format</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asynchronous_communication.html'">Asynchronous communication</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinium.html'">Actinium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambergris.html'">Ambergris</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antigen.html'">Antigen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Americium.html'">Americium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytical_engine.html'">Analytical engine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinoid.html'">Actinoid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adrastea_(moon).html'">Adrastea (moon)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ampere.html'">Ampere</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_17.html'">Apollo 17</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/International_Atomic_Time.html'">International Atomic Time</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_7.html'">Apollo 7</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Associative_algebra.html'">Associative algebra</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

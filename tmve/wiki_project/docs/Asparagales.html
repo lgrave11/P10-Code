@@ -1,0 +1,164 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[36.8245340349, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [29.3705782973, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [3.0737169769, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Asparagales</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Asparagales</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Asparagales</b> (<b>asparagoid lilies</b>) is an <a href="http://www.wikipedia.org/wiki/Order_(biology)" title="Order (biology)">order</a> of plants in modern classification systems such as the <a href="http://www.wikipedia.org/wiki/Angiosperm_Phylogeny_Group" title="Angiosperm Phylogeny Group">Angiosperm Phylogeny Group</a> (APG) and the <a href="http://www.wikipedia.org/wiki/Angiosperm_Phylogeny_Web" title="Angiosperm Phylogeny Web" class="mw-redirect">Angiosperm Phylogeny Web</a>. The order takes its name from the <a href="http://www.wikipedia.org/wiki/Type_(biology)" title="Type (biology)">type</a> <a href="http://www.wikipedia.org/wiki/Family_(biology)" title="Family (biology)">family</a> <a href="http://www.wikipedia.org/wiki/Asparagaceae" title="Asparagaceae">Asparagaceae</a> and is placed in the <a href="http://www.wikipedia.org/wiki/Monocots" title="Monocots" class="mw-redirect">monocots</a> amongst the <a href="http://www.wikipedia.org/wiki/Lilioid_monocots" title="Lilioid monocots">lilioid monocots</a>. The order has only recently been recognized in classification systems. It was first put forward by <a href="http://www.wikipedia.org/wiki/Herbert_Huber" title="Herbert Huber">Huber</a> in 1977 and later taken up in the <a href="http://www.wikipedia.org/wiki/Dahlgren_system" title="Dahlgren system">Dahlgren system</a> of 1985 and then the APG in 1998, 2003 and 2009. Before this, many of its families were assigned to the old order <a href="http://www.wikipedia.org/wiki/Liliales" title="Liliales">Liliales</a>, a very large order containing almost all monocots with colourful <a href="http://www.wikipedia.org/wiki/Tepal" title="Tepal">tepals</a> and lacking <a href="http://www.wikipedia.org/wiki/Starch" title="Starch">starch</a> in their <a href="http://www.wikipedia.org/wiki/Endosperm" title="Endosperm">endosperm</a>. <a href="http://www.wikipedia.org/wiki/DNA_sequencing" title="DNA sequencing">DNA sequence analysis</a> indicated that many of the taxa previously included in Liliales should actually be redistributed over three orders, Liliales, Asparagales and <a href="http://www.wikipedia.org/wiki/Dioscoreales" title="Dioscoreales">Dioscoreales</a>. The boundaries of the Asparagales and of its families have undergone a series of changes in recent years; future research may lead to further changes and ultimately greater stability. In the APG <a href="http://www.wikipedia.org/wiki/Circumscription_(taxonomy)" title="Circumscription (taxonomy)">circumscription</a>, Asparagales is the largest order of monocots with 14 families, 1,122 <a href="http://www.wikipedia.org/wiki/Genera" title="Genera" class="mw-redirect">genera</a>, and about 36,000 <a href="http://www.wikipedia.org/wiki/Species" title="Species">species</a>.</p>
+<p>The order is clearly <a href="http://www.wikipedia.org/wiki/Circumscribed" title="Circumscribed" class="mw-redirect">circumscribed</a> on the basis of <a href="http://www.wikipedia.org/wiki/Molecular_phylogenetics" title="Molecular phylogenetics">molecular phylogenetics</a>, but is difficult to define <a href="http://www.wikipedia.org/wiki/Plant_morphology" title="Plant morphology">morphologically</a>, since its members are structurally diverse. Most species of Asparagales are <a href="http://www.wikipedia.org/wiki/Herbaceous" title="Herbaceous" class="mw-redirect">herbaceous</a> <a href="http://www.wikipedia.org/wiki/Perennial" title="Perennial" class="mw-redirect">perennials</a>, although some are <a href="http://www.wikipedia.org/wiki/Vines" title="Vines" class="mw-redirect">climbers</a> and some are tree-like. The order also contains many <a href="http://www.wikipedia.org/wiki/Geophyte" title="Geophyte" class="mw-redirect">geophytes</a> (bulbs, corms and various kinds of tuber).</p>
+<p>One of the defining characteristics (<a href="http://www.wikipedia.org/wiki/Synapomorphies" title="Synapomorphies" class="mw-redirect">synapomorphies</a>) of the order is the presence of <a href="http://www.wikipedia.org/wiki/Phytomelanin" title="Phytomelanin">phytomelanin</a>, a black pigment present in the seed coat, creating a dark crust. Phytomelanin is found in most families of the Asparagales (although not in <a href="http://www.wikipedia.org/wiki/Orchidaceae" title="Orchidaceae">Orchidaceae</a>, thought to be a sister to the rest of the group).</p>
+<p>Almost all species have a tight <a href="http://www.wikipedia.org/wiki/Rosette_(botany)" title="Rosette (botany)">rosette</a> <a href="http://www.wikipedia.org/wiki/Leaves" title="Leaves" class="mw-redirect">leaves</a> either at the base of the plant or the end of the <a href="http://www.wikipedia.org/wiki/Plant_stem" title="Plant stem">stem</a>, but occasionally along the stem. The <a href="http://www.wikipedia.org/wiki/Flowers" title="Flowers" class="mw-redirect">flowers</a> are not particularly distinctive, being 'lily type', with six <a href="http://www.wikipedia.org/wiki/Tepal" title="Tepal">tepals</a> and up to six <a href="http://www.wikipedia.org/wiki/Stamen" title="Stamen">stamina</a>.</p>
+<p>The order is thought to have first <a href="http://www.wikipedia.org/wiki/Genetic_divergence" title="Genetic divergence">diverged</a> from other related monocots some 120–130 million years ago (early in the <a href="http://www.wikipedia.org/wiki/Cretaceous_period" title="Cretaceous period" class="mw-redirect">Cretaceous period</a>), although given the difficulty in classifying the families involved, estimates are likely to be uncertain.</p>
+<p>From an economic point of view, the order Asparagales is second in importance within the monocots to the order <a href="http://www.wikipedia.org/wiki/Poales" title="Poales">Poales</a> (which includes <a href="http://www.wikipedia.org/wiki/Grasses" title="Grasses" class="mw-redirect">grasses</a> and <a href="http://www.wikipedia.org/wiki/Cereals" title="Cereals" class="mw-redirect">cereals</a>). Species are used as food and flavourings (e.g. <a href="http://www.wikipedia.org/wiki/Onion" title="Onion">onion</a>, <a href="http://www.wikipedia.org/wiki/Garlic" title="Garlic">garlic</a>, <a href="http://www.wikipedia.org/wiki/Leek" title="Leek">leek</a>, <a href="http://www.wikipedia.org/wiki/Asparagus" title="Asparagus">asparagus</a>, <a href="http://www.wikipedia.org/wiki/Vanilla" title="Vanilla">vanilla</a>), as <a href="http://www.wikipedia.org/wiki/Cut_flowers" title="Cut flowers">cut flowers</a> (e.g. <a href="http://www.wikipedia.org/wiki/Freesia" title="Freesia">freesia</a>, <a href="http://www.wikipedia.org/wiki/Gladiolus" title="Gladiolus">gladiolus</a>, <a href="http://www.wikipedia.org/wiki/Iris_(plant)" title="Iris (plant)">iris</a>, <a href="http://www.wikipedia.org/wiki/Orchid" title="Orchid" class="mw-redirect">orchids</a>), and as garden <a href="http://www.wikipedia.org/wiki/Ornamentals" title="Ornamentals" class="mw-redirect">ornamentals</a> (e.g. <a href="http://www.wikipedia.org/wiki/Hemerocallis" title="Hemerocallis" class="mw-redirect">day lilies</a>, <a href="http://www.wikipedia.org/wiki/Convallaria" title="Convallaria">lily of the valley</a>, <i><a href="http://www.wikipedia.org/wiki/Agapanthus" title="Agapanthus">Agapanthus</a></i>).</p>
+<p><a href="http://en.wikipedia.org/wiki/Asparagales">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Adrenal_gland.html'">Adrenal gland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alismatales.html'">Alismatales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aloe.html'">Aloe</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asterales.html'">Asterales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alligatoridae.html'">Alligatoridae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antlia.html'">Antlia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinopterygii.html'">Actinopterygii</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amazonite.html'">Amazonite</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antianginal.html'">Antianginal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arecales.html'">Arecales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomer_Royal.html'">Astronomer Royal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argo_Navis.html'">Argo Navis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alliaceae.html'">Alliaceae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anaxarchus.html'">Anaxarchus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abjuration.html'">Abjuration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arctic_Circle.html'">Arctic Circle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antisymmetric_relation.html'">Antisymmetric relation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alypius_of_Antioch.html'">Alypius of Antioch</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Alcibiades,_Margrave_of_Brandenburg-Kulmbach.html'">Albert Alcibiades, Margrave of Brandenburg-Kulmbach</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnes_of_Merania.html'">Agnes of Merania</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abaddon.html'">Abaddon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_of_Mainz.html'">Albert of Mainz</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aeclanum.html'">Aeclanum</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alger_of_Liège.html'">Alger of Liège</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnostida.html'">Agnostida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abdülaziz.html'">Abdülaziz</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apuleius.html'">Apuleius</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applet.html'">Applet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_IV_of_Aragon.html'">Alfonso IV of Aragon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ababda.html'">Ababda</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

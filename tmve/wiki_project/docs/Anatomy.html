@@ -1,0 +1,206 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[83.6705166062, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [18.508690871, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Anatomy</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Anatomy</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Anatomy</b> is the branch of <a href="http://www.wikipedia.org/wiki/Biology" title="Biology">biology</a> concerned with the study of the structure of organisms and their parts.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Anatomy#cite_note-1"><span>[</span>1<span>]</span></a></sup> In some of its facets, anatomy is related to <a href="http://www.wikipedia.org/wiki/Embryology" title="Embryology">embryology</a> and <a href="http://www.wikipedia.org/wiki/Comparative_anatomy" title="Comparative anatomy">comparative anatomy</a>, which itself is closely related to <a href="http://www.wikipedia.org/wiki/Evolutionary_biology" title="Evolutionary biology">evolutionary biology</a> and <a href="http://www.wikipedia.org/wiki/Phylogeny" title="Phylogeny" class="mw-redirect">phylogeny</a>.<sup id="cite_ref-intro_HGray_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anatomy#cite_note-intro_HGray-2"><span>[</span>2<span>]</span></a></sup> <a href="http://www.wikipedia.org/wiki/Human_anatomy" title="Human anatomy" class="mw-redirect">Human anatomy</a> is one of the basic essential sciences of <a href="http://www.wikipedia.org/wiki/Medicine" title="Medicine">medicine</a>.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Anatomy#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>The discipline of anatomy is divided into <a href="http://www.wikipedia.org/wiki/Macroscopic_scale" title="Macroscopic scale">macroscopic</a> and <a href="http://www.wikipedia.org/wiki/Microscopic_scale" title="Microscopic scale">microscopic anatomy</a>. Macroscopic anatomy, or <a href="http://www.wikipedia.org/wiki/Gross_anatomy" title="Gross anatomy">gross anatomy</a>, is the examination of an animal's body parts using unaided <a href="http://www.wikipedia.org/wiki/Eyesight" title="Eyesight" class="mw-redirect">eyesight</a>. Gross anatomy also includes the branch of <a href="http://www.wikipedia.org/wiki/Superficial_anatomy" title="Superficial anatomy" class="mw-redirect">superficial anatomy</a>. Microscopic anatomy involves the use of optical instruments in the study of the <a href="http://www.wikipedia.org/wiki/Tissue_(biology)" title="Tissue (biology)">tissues</a> of various structures, known as <a href="http://www.wikipedia.org/wiki/Histology" title="Histology">histology</a>, and also in the study of <a href="http://www.wikipedia.org/wiki/Cell_biology" title="Cell biology">cells</a>.</p>
+<p>The <a href="http://www.wikipedia.org/wiki/History_of_anatomy" title="History of anatomy">history of anatomy</a> is characterized by a progressive understanding of the functions of the <a href="http://www.wikipedia.org/wiki/Organ_(anatomy)" title="Organ (anatomy)">organs</a> and structures of the <a href="http://www.wikipedia.org/wiki/Human_body" title="Human body">human body</a>. Methods have also improved dramatically, advancing from the examination of animals by dissection of carcasses and <a href="http://www.wikipedia.org/wiki/Cadaver" title="Cadaver">cadavers</a> (corpses) to 20th century <a href="http://www.wikipedia.org/wiki/Medical_imaging" title="Medical imaging">medical imaging</a> techniques including <a href="http://www.wikipedia.org/wiki/Radiography" title="Radiography">X-ray</a>, <a href="http://www.wikipedia.org/wiki/Ultrasound_imaging" title="Ultrasound imaging" class="mw-redirect">ultrasound</a>, and <a href="http://www.wikipedia.org/wiki/MRI" title="MRI" class="mw-redirect">magnetic resonance imaging</a>.</p>
+<p>Anatomy and <a href="http://www.wikipedia.org/wiki/Physiology" title="Physiology">physiology</a>, which study (respectively) the structure and <a href="http://www.wikipedia.org/wiki/Function_(biology)" title="Function (biology)">function</a> of organisms and their parts, make a natural pair of <a href="http://www.wikipedia.org/wiki/Multidisciplinary_approach" title="Multidisciplinary approach">related disciplines</a>, and they are often studied together.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Anatomy#Definition"><span class="tocnumber">1</span> <span class="toctext">Definition</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Anatomy#Animal_tissues"><span class="tocnumber">2</span> <span class="toctext">Animal tissues</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Anatomy#Connective_tissue"><span class="tocnumber">2.1</span> <span class="toctext">Connective tissue</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Anatomy#Epithelium"><span class="tocnumber">2.2</span> <span class="toctext">Epithelium</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Anatomy#Muscle_tissue"><span class="tocnumber">2.3</span> <span class="toctext">Muscle tissue</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Anatomy#Nervous_tissue"><span class="tocnumber">2.4</span> <span class="toctext">Nervous tissue</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Anatomy#Vertebrate_anatomy"><span class="tocnumber">3</span> <span class="toctext">Vertebrate anatomy</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Anatomy#Fish_anatomy"><span class="tocnumber">3.1</span> <span class="toctext">Fish anatomy</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Anatomy#Amphibian_anatomy"><span class="tocnumber">3.2</span> <span class="toctext">Amphibian anatomy</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Anatomy#Reptile_anatomy"><span class="tocnumber">3.3</span> <span class="toctext">Reptile anatomy</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Anatomy#Bird_anatomy"><span class="tocnumber">3.4</span> <span class="toctext">Bird anatomy</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Anatomy#Mammal_anatomy"><span class="tocnumber">3.5</span> <span class="toctext">Mammal anatomy</span></a>
+<ul>
+<li class="toclevel-3 tocsection-13"><a href="http://en.wikipedia.org/wiki/Anatomy#Human_anatomy"><span class="tocnumber">3.5.1</span> <span class="toctext">Human anatomy</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Anatomy#Invertebrate_anatomy"><span class="tocnumber">4</span> <span class="toctext">Invertebrate anatomy</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Anatomy#Arthropod_anatomy"><span class="tocnumber">4.1</span> <span class="toctext">Arthropod anatomy</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-16"><a href="http://en.wikipedia.org/wiki/Anatomy#Other_branches_of_anatomy"><span class="tocnumber">5</span> <span class="toctext">Other branches of anatomy</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="http://en.wikipedia.org/wiki/Anatomy#History"><span class="tocnumber">6</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="http://en.wikipedia.org/wiki/Anatomy#Ancient"><span class="tocnumber">6.1</span> <span class="toctext">Ancient</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Anatomy#Medieval_to_early_modern"><span class="tocnumber">6.2</span> <span class="toctext">Medieval to early modern</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="http://en.wikipedia.org/wiki/Anatomy#Late_modern"><span class="tocnumber">6.3</span> <span class="toctext">Late modern</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="http://en.wikipedia.org/wiki/Anatomy#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="http://en.wikipedia.org/wiki/Anatomy#Notes"><span class="tocnumber">8</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="http://en.wikipedia.org/wiki/Anatomy#Bibliography"><span class="tocnumber">9</span> <span class="toctext">Bibliography</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="http://en.wikipedia.org/wiki/Anatomy#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Anatomy">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Adventure.html'">Adventure</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argument_form.html'">Argument form</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affray.html'">Affray</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annals_of_Mathematics.html'">Annals of Mathematics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affirming_the_consequent.html'">Affirming the consequent</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abstract_(law).html'">Abstract (law)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André-Marie_Ampère.html'">André-Marie Ampère</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arraignment.html'">Arraignment</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andreas_Capellanus.html'">Andreas Capellanus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affection.html'">Affection</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Austro-Asiatic_languages.html'">Austro-Asiatic languages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alford_plea.html'">Alford plea</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldine_Press.html'">Aldine Press</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analysis.html'">Analysis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexandrine.html'">Alexandrine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abba_Mari.html'">Abba Mari</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alessandro_Allori.html'">Alessandro Allori</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Garner.html'">Alan Garner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Athanasian_Creed.html'">Athanasian Creed</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abatement_of_debts_and_legacies.html'">Abatement of debts and legacies</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Wiles.html'">Andrew Wiles</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antimony.html'">Antimony</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustin-Jean_Fresnel.html'">Augustin-Jean Fresnel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agrarianism.html'">Agrarianism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agathon.html'">Agathon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alvar_Aalto.html'">Alvar Aalto</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Approximant_consonant.html'">Approximant consonant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artistic_revolution.html'">Artistic revolution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artistic_License.html'">Artistic License</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexandrists.html'">Alexandrists</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

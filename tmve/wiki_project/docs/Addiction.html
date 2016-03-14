@@ -1,0 +1,159 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[739.6580398741, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [501.521166034, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Addiction</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Addiction</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Addiction</b> is a <a href="http://www.wikipedia.org/wiki/Medical_condition" title="Medical condition" class="mw-redirect">medical condition</a> that is characterized by compulsive engagement in <a href="http://www.wikipedia.org/wiki/Reward_system" title="Reward system">rewarding</a> stimuli, despite adverse consequences.<sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-7"><span>[</span>7<span>]</span></a></sup> It can be thought of as a disease or biological process leading to such behaviors.<sup id="cite_ref-Cellular_basis_1-2" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Cellular_basis-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-8"><span>[</span>8<span>]</span></a></sup> The two properties that characterize all addictive stimuli are that they are <a href="http://www.wikipedia.org/wiki/Positive_reinforcement" title="Positive reinforcement" class="mw-redirect">reinforcing</a> (i.e., they increase the likelihood that a person will seek repeated exposure to them) and intrinsically rewarding (i.e., something perceived as being positive or desirable).<sup id="cite_ref-Cellular_basis_1-3" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Cellular_basis-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-Nestler_Labs_Glossary_3-2" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Nestler_Labs_Glossary-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-Reward_system_and_psychostimulants_6-1" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Reward_system_and_psychostimulants-6"><span>[</span>6<span>]</span></a></sup></p>
+<p>Addiction is a disorder of the brain's <a href="http://www.wikipedia.org/wiki/Reward_system" title="Reward system">reward system</a> which arises through <a href="http://www.wikipedia.org/wiki/Transcriptional" title="Transcriptional" class="mw-redirect">transcriptional</a> and <a href="http://www.wikipedia.org/wiki/Epigenetic" title="Epigenetic" class="mw-redirect">epigenetic</a> mechanisms and occurs over time from chronically high levels of exposure to an addictive stimulus (e.g., morphine, cocaine, sexual intercourse, gambling, etc.).<sup id="cite_ref-Cellular_basis_1-4" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Cellular_basis-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-What_the_.CE.94FosB.3F_9-0" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-What_the_.CE.94FosB.3F-9"><span>[</span>9<span>]</span></a></sup><sup id="cite_ref-Natural_and_drug_addictions_10-0" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Natural_and_drug_addictions-10"><span>[</span>10<span>]</span></a></sup> <a href="http://www.wikipedia.org/wiki/%CE%94FosB" title="ΔFosB" class="mw-redirect">ΔFosB</a>, a <a href="http://www.wikipedia.org/wiki/Gene_transcription" title="Gene transcription" class="mw-redirect">gene transcription</a> factor, is a critical component and common factor in the development of virtually all forms of behavioral and drug addictions;<sup id="cite_ref-What_the_.CE.94FosB.3F_9-1" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-What_the_.CE.94FosB.3F-9"><span>[</span>9<span>]</span></a></sup><sup id="cite_ref-Natural_and_drug_addictions_10-1" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Natural_and_drug_addictions-10"><span>[</span>10<span>]</span></a></sup><sup id="cite_ref-G9a_reverses_.CE.94FosB_plasticity_11-0" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-G9a_reverses_.CE.94FosB_plasticity-11"><span>[</span>11<span>]</span></a></sup><sup id="cite_ref-Nestler_12-0" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Nestler-12"><span>[</span>12<span>]</span></a></sup> two decades of research into ΔFosB's role in addiction have demonstrated that addiction arises, and the associated compulsive behavior intensifies or attenuates, along with the <a href="http://www.wikipedia.org/wiki/Gene_expression" title="Gene expression">genetic overexpression</a> of ΔFosB in the <a href="http://www.wikipedia.org/wiki/D1-type" title="D1-type" class="mw-redirect">D1-type</a> <a href="http://www.wikipedia.org/wiki/Medium_spiny_neuron" title="Medium spiny neuron">medium spiny neurons</a> of the <a href="http://www.wikipedia.org/wiki/Nucleus_accumbens" title="Nucleus accumbens">nucleus accumbens</a>;<sup id="cite_ref-Cellular_basis_1-5" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Cellular_basis-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-What_the_.CE.94FosB.3F_9-2" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-What_the_.CE.94FosB.3F-9"><span>[</span>9<span>]</span></a></sup><sup id="cite_ref-Natural_and_drug_addictions_10-2" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Natural_and_drug_addictions-10"><span>[</span>10<span>]</span></a></sup><sup id="cite_ref-G9a_reverses_.CE.94FosB_plasticity_11-1" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-G9a_reverses_.CE.94FosB_plasticity-11"><span>[</span>11<span>]</span></a></sup> due to the causal relationship between ΔFosB expression and addictions, it is used <a href="http://www.wikipedia.org/wiki/Preclinical_research" title="Preclinical research" class="mw-redirect">preclinically</a> as an addiction <a href="http://www.wikipedia.org/wiki/Biomarker_(medicine)" title="Biomarker (medicine)">biomarker</a>.<sup id="cite_ref-Cellular_basis_1-6" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Cellular_basis-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-What_the_.CE.94FosB.3F_9-3" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-What_the_.CE.94FosB.3F-9"><span>[</span>9<span>]</span></a></sup><sup id="cite_ref-G9a_reverses_.CE.94FosB_plasticity_11-2" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-G9a_reverses_.CE.94FosB_plasticity-11"><span>[</span>11<span>]</span></a></sup> ΔFosB expression in these neurons directly and positively regulates drug <a href="http://www.wikipedia.org/wiki/Self-administration" title="Self-administration">self-administration</a> and <a href="http://en.wikipedia.org/wiki/Addiction#Sensitization">reward sensitization</a> through <a href="http://www.wikipedia.org/wiki/Positive_reinforcement" title="Positive reinforcement" class="mw-redirect">positive reinforcement</a>, while decreasing sensitivity to <a href="//en.wiktionary.org/wiki/aversion" class="extiw" title="wikt:aversion">aversion</a>.<sup id="cite_ref-.CE.94FosB_behaviors_13-0" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-.CE.94FosB_behaviors-13"><span>[</span>note 1<span>]</span></a></sup><sup id="cite_ref-Cellular_basis_1-7" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-Cellular_basis-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-What_the_.CE.94FosB.3F_9-4" class="reference"><a href="http://en.wikipedia.org/wiki/Addiction#cite_note-What_the_.CE.94FosB.3F-9"><span>[</span>9<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Addiction">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Archimedes.html'">Archimedes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom.html'">Axiom</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aluminium.html'">Aluminium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antibiotic_resistance.html'">Antibiotic resistance</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Kolmogorov_complexity.html'">Kolmogorov complexity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom_of_choice.html'">Axiom of choice</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aircraft.html'">Aircraft</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_program.html'">Apollo program</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arsenic.html'">Arsenic</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amateur_astronomy.html'">Amateur astronomy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_15.html'">Apollo 15</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asteroid.html'">Asteroid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anti-ballistic_missile.html'">Anti-ballistic missile</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anchor.html'">Anchor</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Active_Directory.html'">Active Directory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytical_chemistry.html'">Analytical chemistry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthropod.html'">Arthropod</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkene.html'">Alkene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antimatter.html'">Antimatter</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amino_acid.html'">Amino acid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aspirin.html'">Aspirin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adenosine_triphosphate.html'">Adenosine triphosphate</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asynchronous_Transfer_Mode.html'">Asynchronous Transfer Mode</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcohol.html'">Alcohol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algebraic_geometry.html'">Algebraic geometry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Air_conditioner.html'">Air conditioner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aerodynamics.html'">Aerodynamics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Absolute_value.html'">Absolute value</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analysis_of_algorithms.html'">Analysis of algorithms</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advanced_Encryption_Standard.html'">Advanced Encryption Standard</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[417.0895871433, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Argon</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Argon</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Argon</b> is a <a href="http://www.wikipedia.org/wiki/Chemical_element" title="Chemical element">chemical element</a> with symbol&#160;<b>Ar</b> and <a href="http://www.wikipedia.org/wiki/Atomic_number" title="Atomic number">atomic number</a>&#160;18. It is in group 18 of the <a href="http://www.wikipedia.org/wiki/Periodic_table" title="Periodic table">periodic table</a> and is a <a href="http://www.wikipedia.org/wiki/Noble_gas" title="Noble gas">noble gas</a>.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Argon#cite_note-5"><span>[</span>5<span>]</span></a></sup> Argon is the third most common gas in the <a href="http://www.wikipedia.org/wiki/Earth%27s_atmosphere" title="Earth's atmosphere" class="mw-redirect">Earth's atmosphere</a>, at 0.934% (9340 <a href="http://www.wikipedia.org/wiki/Argon#Occurrence" title="Argon">ppmv</a>), making it over twice as abundant as the next most common atmospheric gas, <a href="http://www.wikipedia.org/wiki/Water_vapor" title="Water vapor">water vapor</a> (which averages about 4000 ppmv, but varies greatly), and 23 times as abundant as the next most common non-condensing atmospheric gas, <a href="http://www.wikipedia.org/wiki/Carbon_dioxide" title="Carbon dioxide">carbon dioxide</a> (400 ppmv), and more than 500 times as abundant as the next most common noble gas, <a href="http://www.wikipedia.org/wiki/Neon" title="Neon">neon</a> (18 ppmv).</p>
+<p>Nearly all of this argon is <a href="http://www.wikipedia.org/wiki/Radiogenic" title="Radiogenic" class="mw-redirect">radiogenic</a> <a href="http://www.wikipedia.org/wiki/Argon-40" title="Argon-40" class="mw-redirect">argon-40</a> derived from the <a href="http://www.wikipedia.org/wiki/Radioactive_decay" title="Radioactive decay">decay</a> of <a href="http://www.wikipedia.org/wiki/Potassium-40" title="Potassium-40">potassium-40</a> in the Earth's crust. In the universe, <a href="http://www.wikipedia.org/wiki/Argon-36" title="Argon-36" class="mw-redirect">argon-36</a> is by far the most common argon <a href="http://www.wikipedia.org/wiki/Isotope" title="Isotope">isotope</a>, being the preferred argon isotope produced by stellar <a href="http://www.wikipedia.org/wiki/Nucleosynthesis" title="Nucleosynthesis">nucleosynthesis</a> in <a href="http://www.wikipedia.org/wiki/Supernova" title="Supernova">supernovas</a>. In addition, argon is the most prevalent of the noble gases in Earth's crust, with the element composing 0.00015% of this crust.<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Argon#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<p>The name "argon" is derived from the <a href="http://www.wikipedia.org/wiki/Greek_language" title="Greek language">Greek</a> word <i>αργον</i>, neuter singular form of <i>αργος</i> meaning "lazy" or "inactive", as a reference to the fact that the element undergoes almost no chemical reactions. The complete <a href="http://www.wikipedia.org/wiki/Octet_rule" title="Octet rule">octet</a> (eight electrons) in the outer atomic shell makes argon stable and resistant to bonding with other elements. Its <a href="http://www.wikipedia.org/wiki/Triple_point" title="Triple point">triple point</a> temperature of 83.8058&#160;<a href="http://www.wikipedia.org/wiki/Kelvin" title="Kelvin">K</a> is a defining fixed point in the <a href="http://www.wikipedia.org/wiki/International_Temperature_Scale_of_1990" title="International Temperature Scale of 1990">International Temperature Scale of 1990</a>.</p>
+<p>Argon is produced industrially by the <a href="http://www.wikipedia.org/wiki/Fractional_distillation" title="Fractional distillation">fractional distillation</a> of <a href="http://www.wikipedia.org/wiki/Liquid_air" title="Liquid air">liquid air</a>. Argon is mostly used as an <a href="http://www.wikipedia.org/wiki/Inert" title="Inert">inert</a> <a href="http://www.wikipedia.org/wiki/Shielding_gas" title="Shielding gas">shielding gas</a> in welding and other high-temperature industrial processes where ordinarily unreactive substances become reactive; for example, an argon atmosphere is used in <a href="http://www.wikipedia.org/wiki/Graphite" title="Graphite">graphite</a> electric furnaces to prevent the graphite from burning. Argon gas also has uses in <a href="http://www.wikipedia.org/wiki/Incandescent_light_bulb" title="Incandescent light bulb">incandescent</a> and <a href="http://www.wikipedia.org/wiki/Fluorescent_lighting" title="Fluorescent lighting" class="mw-redirect">fluorescent lighting</a>, and other types of gas discharge tubes. Argon makes a distinctive <a href="http://www.wikipedia.org/wiki/Ion_laser#Argon_laser" title="Ion laser">blue-green gas laser</a>. Argon is also used in fluorescent glow starters.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Argon#Characteristics"><span class="tocnumber">1</span> <span class="toctext">Characteristics</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Argon#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Argon#Occurrence"><span class="tocnumber">3</span> <span class="toctext">Occurrence</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Argon#Isotopes"><span class="tocnumber">4</span> <span class="toctext">Isotopes</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Argon#Compounds"><span class="tocnumber">5</span> <span class="toctext">Compounds</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Argon#Production"><span class="tocnumber">6</span> <span class="toctext">Production</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Argon#Industrial"><span class="tocnumber">6.1</span> <span class="toctext">Industrial</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Argon#In_radioactive_decays"><span class="tocnumber">6.2</span> <span class="toctext">In radioactive decays</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Argon#Applications"><span class="tocnumber">7</span> <span class="toctext">Applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Argon#Industrial_processes"><span class="tocnumber">7.1</span> <span class="toctext">Industrial processes</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Argon#Scientific_research"><span class="tocnumber">7.2</span> <span class="toctext">Scientific research</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Argon#Preservative"><span class="tocnumber">7.3</span> <span class="toctext">Preservative</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Argon#Laboratory_equipment"><span class="tocnumber">7.4</span> <span class="toctext">Laboratory equipment</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Argon#Medical_use"><span class="tocnumber">7.5</span> <span class="toctext">Medical use</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Argon#Lighting"><span class="tocnumber">7.6</span> <span class="toctext">Lighting</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Argon#Miscellaneous_uses"><span class="tocnumber">7.7</span> <span class="toctext">Miscellaneous uses</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="http://en.wikipedia.org/wiki/Argon#Safety"><span class="tocnumber">8</span> <span class="toctext">Safety</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Argon#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="http://en.wikipedia.org/wiki/Argon#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Argon#Further_reading"><span class="tocnumber">11</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="http://en.wikipedia.org/wiki/Argon#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Argon">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Atanasoff–Berry_Computer.html'">Atanasoff–Berry Computer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atomic_clock.html'">Atomic clock</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Array.html'">Array</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angle.html'">Angle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adhesive.html'">Adhesive</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ALGOL.html'">ALGOL</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adiabatic_process.html'">Adiabatic process</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acid.html'">Acid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acetylene.html'">Acetylene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antibiotic.html'">Antibiotic</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abiotic_stress.html'">Abiotic stress</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astrometry.html'">Astrometry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acoustics.html'">Acoustics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amdahl_s_law.html'">Amdahl's law</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AWK.html'">AWK</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aromatherapy.html'">Aromatherapy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albedo.html'">Albedo</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abacus.html'">Abacus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Area.html'">Area</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amine.html'">Amine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_11.html'">Apollo 11</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Absolute_zero.html'">Absolute zero</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anode.html'">Anode</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Avionics.html'">Avionics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ACE_inhibitor.html'">ACE inhibitor</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apparent_magnitude.html'">Apparent magnitude</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_13.html'">Apollo 13</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Autocorrelation.html'">Autocorrelation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AppleTalk.html'">AppleTalk</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atomic_physics.html'">Atomic physics</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

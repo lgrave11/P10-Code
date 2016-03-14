@@ -1,0 +1,170 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[291.1899917441, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [240.729166292, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [50.24413162, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [35.1951605839, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Ancient Pueblo Peoples</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Ancient Pueblo Peoples</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>Immense complexes known as "Great Houses" embodied worship at Chaco. As architectural forms evolved and centuries passed, the houses kept several core traits. Most apparent is their sheer bulk; complexes averaged more than 200 rooms each, and some enclosed up to 700 rooms.<sup id="cite_ref-Sofaer_1997_12-1" class="reference"><a href="http://en.wikipedia.org/wiki/Ancient_Pueblo_Peoples#cite_note-Sofaer_1997-12"><span>[</span>12<span>]</span></a></sup> Individual rooms were substantial in size, with higher ceilings than Ancestral Pueblo works of preceding periods. They were well-planned: vast sections or wings erected were finished in a single stage, rather than in increments.</p>
+<p>Houses generally faced the south. Plaza areas were almost always girt with edifices of sealed-off rooms or high walls. Houses often stood four or five stories tall, with single-story rooms facing the plaza; room blocks were terraced to allow the tallest sections to compose the pueblo's rear edifice. Rooms were often organized into suites, with front rooms larger than rear, interior, and storage rooms or areas.</p>
+<p>Ceremonial structures known as <a href="http://www.wikipedia.org/wiki/Kiva" title="Kiva">kivas</a> were built in proportion to the number of rooms in a pueblo. One small kiva was built for roughly every 29 rooms. Nine complexes each hosted an oversized Great Kiva, each up to 63 feet (19&#160;m) in diameter. T-shaped doorways and stone <a href="http://www.wikipedia.org/wiki/Lintel" title="Lintel">lintels</a> marked all Chacoan kivas.</p>
+<p>Though simple and compound walls were often used, Great Houses were primarily constructed of <a href="http://www.wikipedia.org/wiki/Core-and-veneer" title="Core-and-veneer">core-and-veneer</a> walls: two parallel load-bearing walls comprising dressed, flat <a href="http://www.wikipedia.org/wiki/Sandstone" title="Sandstone">sandstone</a> blocks bound in <a href="http://www.wikipedia.org/wiki/Clay" title="Clay">clay</a> mortar were erected.<sup id="cite_ref-Fagan_2005_119-121_14-0" class="reference"><a href="http://en.wikipedia.org/wiki/Ancient_Pueblo_Peoples#cite_note-Fagan_2005_119-121-14"><span>[</span>14<span>]</span></a></sup> Gaps between walls were packed with <a href="http://www.wikipedia.org/wiki/Rubble" title="Rubble">rubble</a>, forming the wall's core. Walls were then covered in a veneer of small sandstone pieces, which were pressed into a layer of binding <a href="http://www.wikipedia.org/wiki/Mud" title="Mud">mud</a>.<sup id="cite_ref-Fagan_2005_119-121_14-1" class="reference"><a href="http://en.wikipedia.org/wiki/Ancient_Pueblo_Peoples#cite_note-Fagan_2005_119-121-14"><span>[</span>14<span>]</span></a></sup> These surfacing stones were often placed in distinctive patterns.</p>
+<p>The Chacoan structures altogether required the wood of 200,000 coniferous trees, mostly hauled—on foot—from mountain ranges up to 70 miles (110&#160;km) away.<sup id="cite_ref-Sofaer_1999_15-0" class="reference"><a href="http://en.wikipedia.org/wiki/Ancient_Pueblo_Peoples#cite_note-Sofaer_1999-15"><span>[</span>15<span>]</span></a></sup><sup id="cite_ref-kantner_16-0" class="reference"><a href="http://en.wikipedia.org/wiki/Ancient_Pueblo_Peoples#cite_note-kantner-16"><span>[</span>16<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="Ceremonial_infrastructure.C2.A0.E2.80.93_Great_North_Road:_the_thirty-foot_wide_highway">Ceremonial infrastructure&#160;– Great North Road: the thirty-foot wide highway</span></h3>
+<p>One of the most notable aspects of Ancestral Puebloan infrastructure is at Chaco Canyon and is the Chaco Road, a system of roads radiating out from many great house sites such as Pueblo Bonito, Chetro Ketl and Una Vida. They led toward small outlier sites and natural features within and beyond the canyon limits.</p>
+<p>Through satellite images and ground investigations, archaeologists have detected at least 8 main roads that together run for more than 180 miles (ca 300&#160;km), and are more than 30 feet (10 m) wide. These were excavated into a smooth leveled surface in the bedrock or created through the removal of vegetation and soil. The Ancestral Pueblo residents of Chaco Canyon cut large ramps and stairways into the cliff rock to connect the roadways on the ridgetops of the canyon to the sites on the valley bottoms.</p>
+<p>The largest roads, constructed at the same time as many of the great house sites (between 1000 and 1125 CE), are: the Great North Road, the South Road, the <a href="http://www.wikipedia.org/wiki/Coyote_Canyon_Road" title="Coyote Canyon Road">Coyote Canyon Road</a>, the <a href="http://www.wikipedia.org/wiki/Chacra_Face_Road" title="Chacra Face Road">Chacra Face Road</a>, Ahshislepah Road, <a href="http://www.wikipedia.org/wiki/Mexican_Springs_Road" title="Mexican Springs Road">Mexican Springs Road</a>, the West Road and the shorter Pintado-Chaco Road. Simple structures like berms and walls are found sometimes aligned along the courses of the roads. Also, some tracts of the roads lead to natural features such as springs, lakes, mountain tops and pinnacles.<sup id="cite_ref-road_17-0" class="reference"><a href="http://en.wikipedia.org/wiki/Ancient_Pueblo_Peoples#cite_note-road-17"><span>[</span>17<span>]</span></a></sup></p>
+<h3><span class="mw-headline" id="The_Great_North_Road">The Great North Road</span></h3>
+<p>The longest and most well-known of these roads is the Great North Road. The Great North Road originates from different routes close to Pueblo Bonito and Chetro Ketl. These roads converge at Pueblo Alto and from there lead north beyond the Canyon limits. There are no communities along the road's course, apart from small, isolated structures.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="http://www.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (April 2015)">citation needed</span></a></i>]</sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Ancient_Pueblo_Peoples">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Ainu_people.html'">Ainu people</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_(word).html'">American (word)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Administrative_law.html'">Administrative law</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_English.html'">American English</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antarctic_Treaty_System.html'">Antarctic Treaty System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agent_Orange.html'">Agent Orange</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aircraft_hijacking.html'">Aircraft hijacking</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andalusia.html'">Andalusia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astoria,_Oregon.html'">Astoria, Oregon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arbor_Day.html'">Arbor Day</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andorra.html'">Andorra</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Action_Against_Hunger.html'">Action Against Hunger</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andaman_Islands.html'">Andaman Islands</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abalone.html'">Abalone</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ames,_Iowa.html'">Ames, Iowa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albion,_Michigan.html'">Albion, Michigan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abdul_Rashid_Dostum.html'">Abdul Rashid Dostum</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Airlines_Flight_77.html'">American Airlines Flight 77</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Capital_Territory.html'">Australian Capital Territory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aon_Corporation.html'">Aon Corporation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Army.html'">Australian Army</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Kerensky.html'">Alexander Kerensky</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abadan.html'">Abadan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acapulco.html'">Acapulco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcoholics_Anonymous.html'">Alcoholics Anonymous</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/List_of_Governors_of_Alabama.html'">List of Governors of Alabama</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Chinese_cuisine.html'">American Chinese cuisine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdare.html'">Aberdare</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aargau.html'">Aargau</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Azawakh.html'">Azawakh</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[1350.7022153588, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [379.9426009922, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [94.6240080801, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Alfred Hitchcock</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Alfred Hitchcock</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Sir Alfred Joseph Hitchcock</b>, <a href="http://www.wikipedia.org/wiki/Knight_Commander_of_the_Most_Excellent_Order_of_the_British_Empire" title="Knight Commander of the Most Excellent Order of the British Empire" class="mw-redirect">KBE</a> (13 August 1899 – 29 April 1980)<sup id="cite_ref-senses_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-senses-2"><span>[</span>2<span>]</span></a></sup> was an English film director and producer,<sup id="cite_ref-Variety_obituary_3-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-Variety_obituary-3"><span>[</span>3<span>]</span></a></sup> often nicknamed "The Master of Suspense".<sup id="cite_ref-Moerbeek2006_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-Moerbeek2006-4"><span>[</span>4<span>]</span></a></sup> He pioneered many elements of the <a href="http://www.wikipedia.org/wiki/Thriller_(genre)" title="Thriller (genre)">suspense</a> and <a href="http://www.wikipedia.org/wiki/Psychological_thriller" title="Psychological thriller">psychological thriller</a> genres. He had a successful career in <a href="http://www.wikipedia.org/wiki/Cinema_of_the_United_Kingdom" title="Cinema of the United Kingdom">British cinema</a> with both <a href="http://www.wikipedia.org/wiki/Silent_film" title="Silent film">silent films</a> and early <a href="http://www.wikipedia.org/wiki/Sound_film" title="Sound film">talkies</a> and became renowned as England's best director. Hitchcock moved to <a href="http://www.wikipedia.org/wiki/Cinema_of_the_United_States" title="Cinema of the United States">Hollywood</a> in 1939<sup id="cite_ref-Life_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-Life-5"><span>[</span>5<span>]</span></a></sup> and became a US citizen in 1955.<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<p>Over a career spanning over half a century, Hitchcock fashioned for himself a recognisable directorial style.<sup id="cite_ref-Heritage02-28-07_7-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-Heritage02-28-07-7"><span>[</span>7<span>]</span></a></sup> His stylistic trademarks include the use of camera movement that mimics a person's gaze,<sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-8"><span>[</span>8<span>]</span></a></sup> forcing viewers to engage in a form of <a href="http://www.wikipedia.org/wiki/Voyeurism" title="Voyeurism">voyeurism</a>.<sup id="cite_ref-techniques_9-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-techniques-9"><span>[</span>9<span>]</span></a></sup> In addition, he framed shots to maximise anxiety, fear, or empathy, and used innovative forms of film editing.<sup id="cite_ref-techniques_9-1" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-techniques-9"><span>[</span>9<span>]</span></a></sup> His work often features fugitives on the run alongside "icy blonde" female characters.<sup id="cite_ref-whitington_10-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-whitington-10"><span>[</span>10<span>]</span></a></sup><sup id="cite_ref-dowd_11-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-dowd-11"><span>[</span>11<span>]</span></a></sup> Many of Hitchcock's films have <a href="http://www.wikipedia.org/wiki/Twist_ending" title="Twist ending" class="mw-redirect">twist endings</a> and thrilling plots featuring depictions of murder and other violence. Many of the mysteries, however, are used as decoys or "<a href="http://www.wikipedia.org/wiki/MacGuffin" title="MacGuffin">MacGuffins</a>" that serve the films' themes and the psychological examinations of their characters. Hitchcock's films also borrow many themes from <a href="http://www.wikipedia.org/wiki/Psychoanalysis" title="Psychoanalysis">psychoanalysis</a> and sometimes feature strong sexual overtones. He became a highly visible public figure through interviews, movie trailers, <a href="http://www.wikipedia.org/wiki/List_of_Hitchcock_cameo_appearances" title="List of Hitchcock cameo appearances" class="mw-redirect">cameo appearances</a> in his own films, and the ten years in which he hosted the television program <i><a href="http://www.wikipedia.org/wiki/Alfred_Hitchcock_Presents" title="Alfred Hitchcock Presents">Alfred Hitchcock Presents</a></i>. In 1978, film critic John Russell Taylor described Hitchcock as "the most universally recognizable person in the world", and "a straightforward middle-class Englishman who just happened to be an artistic genius."<sup id="cite_ref-Ebert_12-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-Ebert-12"><span>[</span>12<span>]</span></a></sup></p>
+<p>Hitchcock directed more than fifty feature films in a career spanning six decades and is often regarded as the greatest British filmmaker.<sup id="cite_ref-13" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-13"><span>[</span>13<span>]</span></a></sup> He came first in a 2007 poll of film critics in Britain's <i><a href="http://www.wikipedia.org/wiki/The_Daily_Telegraph" title="The Daily Telegraph">Daily Telegraph</a></i>, which said: "Unquestionably the greatest filmmaker to emerge from these islands, Hitchcock did more than any director to shape modern cinema, which would be utterly different without him. His flair was for narrative, cruelly withholding crucial information (from his characters and from viewers) and engaging the emotions of the audience like no one else."<sup id="cite_ref-14" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-14"><span>[</span>14<span>]</span></a></sup><sup id="cite_ref-15" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-15"><span>[</span>15<span>]</span></a></sup> Prior to 1980, there had long been talk of Hitchcock being <a href="http://www.wikipedia.org/wiki/Orders,_decorations,_and_medals_of_the_United_Kingdom" title="Orders, decorations, and medals of the United Kingdom">knighted</a> for his contribution to film, with film critic <a href="http://www.wikipedia.org/wiki/Roger_Ebert" title="Roger Ebert">Roger Ebert</a> writing: "Other British directors like Sir <a href="http://www.wikipedia.org/wiki/Carol_Reed" title="Carol Reed">Carol Reed</a> and Sir <a href="http://www.wikipedia.org/wiki/Charlie_Chaplin" title="Charlie Chaplin">Charlie Chaplin</a> were knighted years ago, while Hitchcock, universally considered by film students to be one of the greatest filmmakers of all time, was passed over", before he received his knighthood from Queen <a href="http://www.wikipedia.org/wiki/Elizabeth_II" title="Elizabeth II">Elizabeth II</a> in the <a href="http://www.wikipedia.org/wiki/1980_New_Year_Honours" title="1980 New Year Honours">1980 New Year Honours</a>.<sup id="cite_ref-Ebert_12-1" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-Ebert-12"><span>[</span>12<span>]</span></a></sup> In 2002, the magazine <i><a href="http://www.wikipedia.org/wiki/MovieMaker_Magazine" title="MovieMaker Magazine" class="mw-redirect">MovieMaker</a></i> named Hitchcock the most influential filmmaker of all time.<sup id="cite_ref-16" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock#cite_note-16"><span>[</span>16<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Alfred_Hitchcock">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/American_Football_League.html'">American Football League</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_ST.html'">Atari ST</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apple_II_series.html'">Apple II series</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andre_Agassi.html'">Andre Agassi</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_rules_football.html'">Australian rules football</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Ashes.html'">The Ashes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlanta_Braves.html'">Atlanta Braves</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advanced_Micro_Devices.html'">Advanced Micro Devices</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AFC_Ajax.html'">AFC Ajax</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_7800.html'">Atari 7800</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apple_Inc..html'">Apple Inc.</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amitabh_Bachchan.html'">Amitabh Bachchan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amiga.html'">Amiga</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona_Cardinals.html'">Arizona Cardinals</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auto_racing.html'">Auto racing</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Audi.html'">Audi</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_2600.html'">Atari 2600</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andy_Warhol.html'">Andy Warhol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arsenal_F.C..html'">Arsenal F.C.</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aaliyah.html'">Aaliyah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arnold_Schwarzenegger.html'">Arnold Schwarzenegger</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Approval_voting.html'">Approval voting</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archery.html'">Archery</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona_Diamondbacks.html'">Arizona Diamondbacks</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AOL.html'">AOL</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_the_Giant.html'">André the Giant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Telephone_&amp;_Telegraph.html'">American Telephone &amp; Telegraph</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aster_CT-80.html'">Aster CT-80</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthony_Hopkins.html'">Anthony Hopkins</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ASCII_art.html'">ASCII art</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

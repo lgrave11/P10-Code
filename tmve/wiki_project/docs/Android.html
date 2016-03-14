@@ -1,0 +1,205 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[419.5929480558, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [162.4929395986, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [122.1829410126, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Android</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Android</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Android</b> commonly refers to:</p>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Android_(robot)" title="Android (robot)">Android (robot)</a>, a robot or synthetic organism designed to look and act like a human</li>
+<li><a href="http://www.wikipedia.org/wiki/Android_(operating_system)" title="Android (operating system)">Android (operating system)</a>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Android_TV" title="Android TV">Android TV</a>, Android OS customized for television</li>
+<li><a href="http://www.wikipedia.org/wiki/Android_Wear" title="Android Wear">Android Wear</a>, Android OS customized for wristwatches</li>
+<li><a href="http://www.wikipedia.org/wiki/Android_Auto" title="Android Auto">Android Auto</a>, Android OS customized for vehicles</li>
+</ul>
+</li>
+</ul>
+<p><b>Android</b> may also refer to:</p>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Android_(board_game)" title="Android (board game)"><i>Android</i> (board game)</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Android_(film)" title="Android (film)"><i>Android</i> (film)</a>, 1982</li>
+<li><i>Android</i>, the Russian title for the 2013 film <a href="http://www.wikipedia.org/wiki/App_(film)" title="App (film)"><i>App</i></a></li>
+<li>"Android", a song on The Prodigy's <i><a href="http://www.wikipedia.org/wiki/What_Evil_Lurks" title="What Evil Lurks">What Evil Lurks</a></i> EP</li>
+<li><a href="http://www.wikipedia.org/wiki/Android_(TVXQ_song)" title="Android (TVXQ song)">"Android" (TVXQ song)</a></li>
+<li>"Android", a song by Green Day from the album <i><a href="http://www.wikipedia.org/wiki/Kerplunk_(album)" title="Kerplunk (album)">Kerplunk</a></i></li>
+<li><a href="http://www.wikipedia.org/wiki/Methyltestosterone" title="Methyltestosterone">Methyltestosterone</a>, brand name Android</li>
+<li><a href="http://www.wikipedia.org/wiki/The_Androids" title="The Androids">The Androids</a>, an Australian rock band</li>
+</ul>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Droid_(disambiguation)" title="Droid (disambiguation)" class="mw-redirect mw-disambig">Droid (disambiguation)</a></li>
+<li><span class="selfreference"><a href="http://www.wikipedia.org/wiki/Special:PrefixIndex/Android" title="Special:PrefixIndex/Android">All pages beginning with "Android"</a></span></li>
+<li><span class="selfreference"><a href="http://www.wikipedia.org/wiki/Special:Search/intitle:%22Android%22" title="Special:Search/intitle:&quot;Android&quot;">All pages with titles containing <i>Android</i></a></span></li>
+</ul>
+<ul><li><a href="http://www.wikipedia.org/wiki/Category:Disambiguation_pages" title="Category:Disambiguation pages">Disambiguation pages</a></li></ul>
+<ul><li><a href="http://www.wikipedia.org/wiki/Category:All_article_disambiguation_pages" title="Category:All article disambiguation pages">All article disambiguation pages</a></li><li><a href="http://www.wikipedia.org/wiki/Category:All_disambiguation_pages" title="Category:All disambiguation pages">All disambiguation pages</a></li></ul>
+<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="http://www.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="http://www.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Android&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Android" title="You're encouraged to log in; however, it's not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="http://www.wikipedia.org/wiki/Android"  title="View the content page [c]" accesskey="c">Article</a></span></li>
+															<li  id="ca-talk"><span><a href="http://www.wikipedia.org/wiki/Talk:Android"  title="Discussion about the content page [t]" accesskey="t" rel="discussion">Talk</a></span></li>
+													</ul>
+<ul>
+															</ul>
+<ul>
+															<li id="ca-view" class="selected"><span><a href="http://www.wikipedia.org/wiki/Android" >Read</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=Android&amp;action=edit"  title="Edit this page [e]" accesskey="e">Edit</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Android&amp;action=history"  title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>
+													</ul>
+<ul>
+															</ul>
+<ul>
+						<li id="n-mainpage-description"><a href="http://www.wikipedia.org/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="http://www.wikipedia.org/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="http://www.wikipedia.org/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="http://www.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="http://www.wikipedia.org/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>					</ul>
+<p><a href="http://en.wikipedia.org/wiki/Android">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Ad_hominem.html'">Ad hominem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbreviation.html'">Abbreviation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnosticism.html'">Agnosticism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Author.html'">Author</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apocrypha.html'">Apocrypha</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Architect.html'">Architect</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Assault.html'">Assault</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_Modest_Proposal.html'">A Modest Proposal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anal_sex.html'">Anal sex</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accusative_case.html'">Accusative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animal_Farm.html'">Animal Farm</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldous_Huxley.html'">Aldous Huxley</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ayahuasca.html'">Ayahuasca</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abjad.html'">Abjad</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Conservation-restoration.html'">Conservation-restoration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anselm_of_Canterbury.html'">Anselm of Canterbury</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Technique.html'">Alexander Technique</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Grothendieck.html'">Alexander Grothendieck</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_numerals.html'">Arabic numerals</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animism.html'">Animism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astrology.html'">Astrology</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albrecht_Dürer.html'">Albrecht Dürer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexis_Carrel.html'">Alexis Carrel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcoholics_Anonymous.html'">Alcoholics Anonymous</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anglican_Communion.html'">Anglican Communion</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Autobiography.html'">Autobiography</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adversarial_system.html'">Adversarial system</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Stanley_Eddington.html'">Arthur Stanley Eddington</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Sign_Language.html'">American Sign Language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argument_from_morality.html'">Argument from morality</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

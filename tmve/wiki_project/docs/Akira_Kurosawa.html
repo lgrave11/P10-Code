@@ -1,0 +1,241 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[529.8078250242, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [104.4811095813, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [67.669335826, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [17.4001756269, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Akira Kurosawa</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Akira Kurosawa</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Akira Kurosawa</b> <span style="font-weight: normal">(<a href="http://www.wikipedia.org/wiki/Japanese_language" title="Japanese language">Japanese</a>: <span class="t_nihongo_kanji" lang="ja" xml:lang="ja">黒澤 明<span lang="en" xml:lang="en"><sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#cite_note-1"><span>[</span>note 1<span>]</span></a></sup></span></span><span class="t_nihongo_comma" style="display:none">,</span> <a href="http://www.wikipedia.org/wiki/Hepburn_romanization" title="Hepburn romanization">Hepburn</a>: <i>Kurosawa Akira</i><sup class="t_nihongo_help noprint"><a href="http://www.wikipedia.org/wiki/Help:Installing_Japanese_character_sets" title="Help:Installing Japanese character sets"><span class="t_nihongo_icon" style="color: #00e; font: bold 80% sans-serif; text-decoration: none; padding: 0 .1em;">?</span></a></sup>, March 23, 1910&#160;– September 6, 1998)</span> was a Japanese filmmaker. Regarded as one of the most important and influential filmmakers in the history of cinema, Kurosawa directed 30 films<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#cite_note-4"><span>[</span>note 2<span>]</span></a></sup> in a career spanning 57 years.</p>
+<p>Kurosawa entered the <a href="http://www.wikipedia.org/wiki/Japanese_film" title="Japanese film" class="mw-redirect">Japanese film</a> industry in 1936, following a brief stint as a painter. After years of working on numerous films as an <a href="http://www.wikipedia.org/wiki/Assistant_director" title="Assistant director">assistant director</a> and scriptwriter, he made his debut as a director in 1943, during World War II, with the popular <a href="http://www.wikipedia.org/wiki/Action_film" title="Action film">action film</a> <i><a href="http://www.wikipedia.org/wiki/Sanshiro_Sugata" title="Sanshiro Sugata">Sanshiro Sugata</a></i> (a.k.a. <i>Judo Saga</i>). After the war, the critically acclaimed <i><a href="http://www.wikipedia.org/wiki/Drunken_Angel" title="Drunken Angel">Drunken Angel</a></i> (1948), in which Kurosawa cast then-unknown actor <a href="http://www.wikipedia.org/wiki/Toshiro_Mifune" title="Toshiro Mifune">Toshiro Mifune</a> in a starring role, cemented the director's reputation as one of the most important young filmmakers in Japan. The two men would go on to collaborate on another 15 films. His wife <a href="http://www.wikipedia.org/wiki/Y%C5%8Dko_Yaguchi" title="Yōko Yaguchi">Yōko Yaguchi</a> was also an actress in one of his films.</p>
+<p><i><a href="http://www.wikipedia.org/wiki/Rashomon" title="Rashomon">Rashomon</a></i>, which premiered in Tokyo in August 1950, and which also starred Mifune, became, on September 10, 1951, the surprise winner of the <a href="http://www.wikipedia.org/wiki/Golden_Lion" title="Golden Lion">Golden Lion</a> at the <a href="http://www.wikipedia.org/wiki/Venice_Film_Festival" title="Venice Film Festival">Venice Film Festival</a> and was subsequently released in Europe and North America. The commercial and critical success of this film opened up Western film markets for the first time to the products of the Japanese film industry, which in turn led to international recognition for other Japanese filmmakers. Throughout the 1950s and early 1960s, Kurosawa directed approximately a film a year, including a number of highly regarded films such as <i><a href="http://www.wikipedia.org/wiki/Ikiru" title="Ikiru">Ikiru</a></i> (1952), <i><a href="http://www.wikipedia.org/wiki/Seven_Samurai" title="Seven Samurai">Seven Samurai</a></i> (1954) and <i><a href="http://www.wikipedia.org/wiki/Yojimbo_(film)" title="Yojimbo (film)">Yojimbo</a></i> (1961). After the mid-1960s, he became much less prolific, but his later work—including his final two epics, <i><a href="http://www.wikipedia.org/wiki/Kagemusha" title="Kagemusha">Kagemusha</a></i> (1980) and <i><a href="http://www.wikipedia.org/wiki/Ran_(film)" title="Ran (film)">Ran</a></i> (1985)—continued to win awards, including the <a href="http://www.wikipedia.org/wiki/Palme_d%27Or" title="Palme d'Or">Palme d'Or</a> for <i>Kagemusha</i>, though more often abroad than in Japan.</p>
+<p>In 1990, he accepted the <a href="http://www.wikipedia.org/wiki/Academy_Award" title="Academy Award" class="mw-redirect">Academy Award</a> for <a href="http://www.wikipedia.org/wiki/Academy_Honorary_Award" title="Academy Honorary Award">Lifetime Achievement</a>.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#cite_note-5"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#cite_note-6"><span>[</span>4<span>]</span></a></sup> Posthumously, he was named "<a href="http://www.wikipedia.org/wiki/Asian_of_the_Century" title="Asian of the Century">Asian of the Century</a>" in the "Arts, Literature, and Culture" category by <i><a href="http://www.wikipedia.org/wiki/AsianWeek" title="AsianWeek">AsianWeek</a></i> magazine and <a href="http://www.wikipedia.org/wiki/CNN" title="CNN">CNN</a>, cited as "one of the [five] people who contributed most to the betterment of Asia in the past 100 years".<sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#cite_note-7"><span>[</span>5<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Life_and_career"><span class="tocnumber">1</span> <span class="toctext">Life and career</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Childhood_and_youth_.281910.E2.80.9335.29"><span class="tocnumber">1.1</span> <span class="toctext">Childhood and youth (1910–35)</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Director_in_training_.281935.E2.80.9341.29"><span class="tocnumber">1.2</span> <span class="toctext">Director in training (1935–41)</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Wartime_films_and_marriage_.281942.E2.80.9345.29"><span class="tocnumber">1.3</span> <span class="toctext">Wartime films and marriage (1942–45)</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#First_postwar_works_.281946.E2.80.9350.29"><span class="tocnumber">1.4</span> <span class="toctext">First postwar works (1946–50)</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#International_recognition_.281950.E2.80.9358.29"><span class="tocnumber">1.5</span> <span class="toctext">International recognition (1950–58)</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Birth_of_a_company_and_the_end_of_an_era_.281959.E2.80.9365.29"><span class="tocnumber">1.6</span> <span class="toctext">Birth of a company and the end of an era (1959–65)</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Hollywood_detour_.281966.E2.80.9368.29"><span class="tocnumber">1.7</span> <span class="toctext">Hollywood detour (1966–68)</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#A_difficult_decade_.281969.E2.80.9377.29"><span class="tocnumber">1.8</span> <span class="toctext">A difficult decade (1969–77)</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Two_epics_.281978.E2.80.9386.29"><span class="tocnumber">1.9</span> <span class="toctext">Two epics (1978–86)</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Final_works_and_last_years_.281987.E2.80.9398.29"><span class="tocnumber">1.10</span> <span class="toctext">Final works and last years (1987–98)</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Posthumous_works"><span class="tocnumber">1.11</span> <span class="toctext">Posthumous works</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Working_methods.2C_style_and_themes"><span class="tocnumber">2</span> <span class="toctext">Working methods, style and themes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Working_methods"><span class="tocnumber">2.1</span> <span class="toctext">Working methods</span></a>
+<ul>
+<li class="toclevel-3 tocsection-15"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Script"><span class="tocnumber">2.1.1</span> <span class="toctext">Script</span></a></li>
+<li class="toclevel-3 tocsection-16"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Shooting"><span class="tocnumber">2.1.2</span> <span class="toctext">Shooting</span></a></li>
+<li class="toclevel-3 tocsection-17"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Editing"><span class="tocnumber">2.1.3</span> <span class="toctext">Editing</span></a></li>
+<li class="toclevel-3 tocsection-18"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#.22Kurosawa-gumi.22"><span class="tocnumber">2.1.4</span> <span class="toctext">"Kurosawa-gumi"</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Style"><span class="tocnumber">2.2</span> <span class="toctext">Style</span></a>
+<ul>
+<li class="toclevel-3 tocsection-20"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Axial_cut"><span class="tocnumber">2.2.1</span> <span class="toctext">Axial cut</span></a></li>
+<li class="toclevel-3 tocsection-21"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Cutting_on_motion"><span class="tocnumber">2.2.2</span> <span class="toctext">Cutting on motion</span></a></li>
+<li class="toclevel-3 tocsection-22"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Wipe"><span class="tocnumber">2.2.3</span> <span class="toctext">Wipe</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Image-sound_counterpoint"><span class="tocnumber">2.2.4</span> <span class="toctext">Image-sound counterpoint</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-24"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Recurring_themes"><span class="tocnumber">2.3</span> <span class="toctext">Recurring themes</span></a>
+<ul>
+<li class="toclevel-3 tocsection-25"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Master.E2.80.93disciple_relationship"><span class="tocnumber">2.3.1</span> <span class="toctext">Master–disciple relationship</span></a></li>
+<li class="toclevel-3 tocsection-26"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Heroic_champion"><span class="tocnumber">2.3.2</span> <span class="toctext">Heroic champion</span></a></li>
+<li class="toclevel-3 tocsection-27"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Nature_and_weather"><span class="tocnumber">2.3.3</span> <span class="toctext">Nature and weather</span></a></li>
+<li class="toclevel-3 tocsection-28"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Cycles_of_violence"><span class="tocnumber">2.3.4</span> <span class="toctext">Cycles of violence</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-29"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Criticisms"><span class="tocnumber">3</span> <span class="toctext">Criticisms</span></a>
+<ul>
+<li class="toclevel-2 tocsection-30"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#In_general"><span class="tocnumber">3.1</span> <span class="toctext">In general</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#In_Japan"><span class="tocnumber">3.2</span> <span class="toctext">In Japan</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-32"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Worldwide_impact"><span class="tocnumber">4</span> <span class="toctext">Worldwide impact</span></a>
+<ul>
+<li class="toclevel-2 tocsection-33"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Reputation_among_filmmakers"><span class="tocnumber">4.1</span> <span class="toctext">Reputation among filmmakers</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Remakes"><span class="tocnumber">4.2</span> <span class="toctext">Remakes</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Awards_and_honors"><span class="tocnumber">4.3</span> <span class="toctext">Awards and honors</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-36"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Legacy"><span class="tocnumber">5</span> <span class="toctext">Legacy</span></a></li>
+<li class="toclevel-1 tocsection-37"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Filmography"><span class="tocnumber">6</span> <span class="toctext">Filmography</span></a>
+<ul>
+<li class="toclevel-2 tocsection-38"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#As_writer"><span class="tocnumber">6.1</span> <span class="toctext">As writer</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-39"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-40"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-41"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Notes"><span class="tocnumber">8.1</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-2 tocsection-42"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Citations"><span class="tocnumber">8.2</span> <span class="toctext">Citations</span></a></li>
+<li class="toclevel-2 tocsection-43"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Sources"><span class="tocnumber">8.3</span> <span class="toctext">Sources</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-44"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#Further_reading"><span class="tocnumber">9</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-45"><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Akira_Kurosawa">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Aston_Martin.html'">Aston Martin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adam_Carolla.html'">Adam Carolla</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Quarter_Horse.html'">American Quarter Horse</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Amazing_Spider-Man_(comic_book).html'">The Amazing Spider-Man (comic book)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatoly_Karpov.html'">Anatoly Karpov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Academy_Award.html'">Academy Award</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animaniacs.html'">Animaniacs</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Alan_Parsons_Project.html'">The Alan Parsons Project</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amy_Grant.html'">Amy Grant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_cappella.html'">A cappella</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari.html'">Atari</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Ayckbourn.html'">Alan Ayckbourn</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthony_Hopkins.html'">Anthony Hopkins</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aster_CT-80.html'">Aster CT-80</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accordion.html'">Accordion</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_the_Giant.html'">André the Giant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ASCII_art.html'">ASCII art</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antonio_Vivaldi.html'">Antonio Vivaldi</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A.S._Roma.html'">A.S. Roma</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acquire.html'">Acquire</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acorn_Electron.html'">Acorn Electron</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ani_DiFranco.html'">Ani DiFranco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AOL.html'">AOL</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Telephone_&amp;_Telegraph.html'">American Telephone &amp; Telegraph</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona_State_University.html'">Arizona State University</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlanta_Falcons.html'">Atlanta Falcons</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Steel-string_acoustic_guitar.html'">Steel-string acoustic guitar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anna_Kournikova.html'">Anna Kournikova</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amstrad_CPC.html'">Amstrad CPC</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anime.html'">Anime</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+    <script type="text/JavaScript">
+    <!--
+    function init() {
+        browser_adjust();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Wikipedia Topics</title>
+<link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+  <body onload="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+<div id="top"></div>
+<div id="header">
+<h1>Wikipedia Topics</h1>
+<h2>Term Distributions Per Topic</h2>
+<hr noshade>
+</div>
+<div id="graph">
+<table width="100.0%">
+<tr><td>
+
+<table width="250px"><tr><td class="dark-hover" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr></table>
+<table width="250px"><tr><td class="dark-hover" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr></table>
+<table width="250px"><tr><td class="dark-hover" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr></table>
+<table width="250px"><tr><td class="dark-hover" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr></table>
+<table width="250px"><tr><td class="dark-hover" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr></table>
+
+</td><td class="bars">
+<table width="100%" class="high-contrast-table"><tr>
+<td class="clickable" width="1.156214744907329%" title="language" onclick="window.location.href='../terms/language.html'"></td>
+<td class="clickable" width="1.111561149817025%" title="work" onclick="window.location.href='../terms/work.html'"></td>
+<td class="clickable" width="0.8642487335022603%" title="write" onclick="window.location.href='../terms/write.html'"></td>
+<td class="clickable" width="0.6653673673793715%" title="book" onclick="window.location.href='../terms/book.html'"></td>
+<td class="clickable" width="0.6041311787233996%" title="word" onclick="window.location.href='../terms/word.html'"></td>
+<td class="clickable" width="0.5587928020251007%" title="form" onclick="window.location.href='../terms/form.html'"></td>
+<td class="clickable" width="0.503129662479968%" title="art" onclick="window.location.href='../terms/art.html'"></td>
+<td width="94.53655436116554%" title="make, case, life, time, term, law, theory, century, publish, human, study, world, influence, early, history, letter, call, state, view, system, describe...">&nbsp;</td>
+</tr></table>
+<table width="100%" class="high-contrast-table"><tr>
+<td class="clickable" width="0.8907342648169275%" title="system" onclick="window.location.href='../terms/system.html'"></td>
+<td class="clickable" width="0.7666939275840148%" title="number" onclick="window.location.href='../terms/number.html'"></td>
+<td class="clickable" width="0.7408538217442264%" title="math" onclick="window.location.href='../terms/math.html'"></td>
+<td class="clickable" width="0.5668352307862148%" title="form" onclick="window.location.href='../terms/form.html'"></td>
+<td width="97.03488275506862%" title="time, call, acid, set, code, make, give, function, group, small, large, atom, computer, element, produce, high, effect, field, process, cell, type, result...">&nbsp;</td>
+</tr></table>
+<table width="100%" class="high-contrast-table"><tr>
+<td class="clickable" width="1.1983010933067344%" title="state" onclick="window.location.href='../terms/state.html'"></td>
+<td class="clickable" width="0.9809917339367245%" title="states" onclick="window.location.href='../terms/states.html'"></td>
+<td class="clickable" width="0.9527256740454648%" title="city" onclick="window.location.href='../terms/city.html'"></td>
+<td class="clickable" width="0.777311392062756%" title="government" onclick="window.location.href='../terms/government.html'"></td>
+<td class="clickable" width="0.750119137765925%" title="area" onclick="window.location.href='../terms/area.html'"></td>
+<td class="clickable" width="0.7241518614463881%" title="large" onclick="window.location.href='../terms/large.html'"></td>
+<td class="clickable" width="0.5871805396156101%" title="country" onclick="window.location.href='../terms/country.html'"></td>
+<td class="clickable" width="0.5778034827216093%" title="style" onclick="window.location.href='../terms/style.html'"></td>
+<td class="clickable" width="0.5710398441790178%" title="population" onclick="window.location.href='../terms/population.html'"></td>
+<td class="clickable" width="0.5517081848563541%" title="people" onclick="window.location.href='../terms/people.html'"></td>
+<td class="clickable" width="0.547072065075842%" title="year" onclick="window.location.href='../terms/year.html'"></td>
+<td width="91.78159499098757%" title="part, region, high, american, land, small, century, member, party, make, election, war, group, island, force, service, national, major, world, number, south...">&nbsp;</td>
+</tr></table>
+<table width="100%" class="high-contrast-table"><tr>
+<td class="clickable" width="0.9077296057899137%" title="year" onclick="window.location.href='../terms/year.html'"></td>
+<td class="clickable" width="0.7322135514533469%" title="time" onclick="window.location.href='../terms/time.html'"></td>
+<td class="clickable" width="0.7285759835525869%" title="son" onclick="window.location.href='../terms/son.html'"></td>
+<td class="clickable" width="0.7041571964697891%" title="make" onclick="window.location.href='../terms/make.html'"></td>
+<td class="clickable" width="0.6237705268940894%" title="death" onclick="window.location.href='../terms/death.html'"></td>
+<td class="clickable" width="0.5527987710822022%" title="king" onclick="window.location.href='../terms/king.html'"></td>
+<td class="clickable" width="0.546074667180276%" title="give" onclick="window.location.href='../terms/give.html'"></td>
+<td class="clickable" width="0.5189222976114329%" title="die" onclick="window.location.href='../terms/die.html'"></td>
+<td class="clickable" width="0.5160117661162621%" title="century" onclick="window.location.href='../terms/century.html'"></td>
+<td class="clickable" width="0.5047713803906027%" title="father" onclick="window.location.href='../terms/father.html'"></td>
+<td width="93.6649742534595%" title="call, church, man, city, place, great, order, army, early, war, find, bear, ancient, family, part, lead, day, force, leave, follow, late, daughter, language...">&nbsp;</td>
+</tr></table>
+<table width="100%" class="high-contrast-table"><tr>
+<td class="clickable" width="1.50527506145597%" title="film" onclick="window.location.href='../terms/film.html'"></td>
+<td class="clickable" width="1.0053605588431915%" title="game" onclick="window.location.href='../terms/game.html'"></td>
+<td class="clickable" width="0.8897718372066491%" title="year" onclick="window.location.href='../terms/year.html'"></td>
+<td class="clickable" width="0.837944726327669%" title="play" onclick="window.location.href='../terms/play.html'"></td>
+<td class="clickable" width="0.6844829917840541%" title="release" onclick="window.location.href='../terms/release.html'"></td>
+<td class="clickable" width="0.6817544425325406%" title="time" onclick="window.location.href='../terms/time.html'"></td>
+<td class="clickable" width="0.6758961491141042%" title="team" onclick="window.location.href='../terms/team.html'"></td>
+<td class="clickable" width="0.6406118388428922%" title="win" onclick="window.location.href='../terms/win.html'"></td>
+<td class="clickable" width="0.6261773452942146%" title="style" onclick="window.location.href='../terms/style.html'"></td>
+<td class="clickable" width="0.6205967779501117%" title="make" onclick="window.location.href='../terms/make.html'"></td>
+<td class="clickable" width="0.5751140868161504%" title="series" onclick="window.location.href='../terms/series.html'"></td>
+<td class="clickable" width="0.5077189212233397%" title="music" onclick="window.location.href='../terms/music.html'"></td>
+<td class="clickable" width="0.5051855716405681%" title="season" onclick="window.location.href='../terms/season.html'"></td>
+<td class="clickable" width="0.5047990771979185%" title="company" onclick="window.location.href='../terms/company.html'"></td>
+<td width="89.73931061377063%" title="character, player, computer, album, football, song, feature, early, run, design, record, work, bgcolor, begin, title, software, version, sell, end, produce...">&nbsp;</td>
+</tr></table>
+
+</td></tr>
+</table>
+</div>
+<div id="footer">
+<br>
+<hr noshade>
+</div>
+  </body>
+</html>

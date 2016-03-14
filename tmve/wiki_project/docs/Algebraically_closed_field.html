@@ -1,0 +1,186 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[292.089593696, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Algebraically closed field</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Algebraically closed field</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>In <a href="http://www.wikipedia.org/wiki/Abstract_algebra" title="Abstract algebra">abstract algebra</a>, an <b>algebraically closed field</b> <i>F</i> contains a <a href="http://www.wikipedia.org/wiki/Zero_of_a_function" title="Zero of a function">root</a> for every <a href="http://www.wikipedia.org/wiki/Degree_of_a_polynomial" title="Degree of a polynomial">non-constant polynomial</a> in <i>F</i>[<i>x</i>], the <a href="http://www.wikipedia.org/wiki/Ring_of_polynomials" title="Ring of polynomials" class="mw-redirect">ring of polynomials</a> in the variable <i>x</i> with coefficients in <i>F</i>.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#Examples"><span class="tocnumber">1</span> <span class="toctext">Examples</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#Equivalent_properties"><span class="tocnumber">2</span> <span class="toctext">Equivalent properties</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#The_only_irreducible_polynomials_are_those_of_degree_one"><span class="tocnumber">2.1</span> <span class="toctext">The only irreducible polynomials are those of degree one</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#Every_polynomial_is_a_product_of_first_degree_polynomials"><span class="tocnumber">2.2</span> <span class="toctext">Every polynomial is a product of first degree polynomials</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#Polynomials_of_prime_degree_have_roots"><span class="tocnumber">2.3</span> <span class="toctext">Polynomials of prime degree have roots</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#The_field_has_no_proper_algebraic_extension"><span class="tocnumber">2.4</span> <span class="toctext">The field has no proper algebraic extension</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#The_field_has_no_proper_finite_extension"><span class="tocnumber">2.5</span> <span class="toctext">The field has no proper finite extension</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#Every_endomorphism_of_Fn_has_some_eigenvector"><span class="tocnumber">2.6</span> <span class="toctext">Every endomorphism of <i>F<sup>n</sup></i> has some eigenvector</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#Decomposition_of_rational_expressions"><span class="tocnumber">2.7</span> <span class="toctext">Decomposition of rational expressions</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#Relatively_prime_polynomials_and_roots"><span class="tocnumber">2.8</span> <span class="toctext">Relatively prime polynomials and roots</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#Other_properties"><span class="tocnumber">3</span> <span class="toctext">Other properties</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#Notes"><span class="tocnumber">4</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Examples">Examples</span></h3>
+<p>As an example, the <a href="http://www.wikipedia.org/wiki/Field_(mathematics)" title="Field (mathematics)">field</a> of <a href="http://www.wikipedia.org/wiki/Real_number" title="Real number">real numbers</a> is not algebraically closed, because the polynomial equation <i>x</i><sup>2</sup>&#160;+&#160;1&#160;=&#160;0&#160; has no solution in real numbers, even though all its coefficients (1 and 0) are real. The same argument proves that no subfield of the real field is algebraically closed; in particular, the field of <a href="http://www.wikipedia.org/wiki/Rational_number" title="Rational number">rational numbers</a> is not algebraically closed. Also, no <a href="http://www.wikipedia.org/wiki/Finite_field" title="Finite field">finite field</a> <i>F</i> is algebraically closed, because if <i>a</i><sub>1</sub>, <i>a</i><sub>2</sub>, …, <i>a<sub>n</sub></i> are the elements of <i>F</i>, then the polynomial (<i>x</i>&#160;−&#160;<i>a</i><sub>1</sub>)(<i>x</i>&#160;−&#160;<i>a</i><sub>2</sub>)&#160;···&#160;(<i>x</i>&#160;−&#160;<i>a</i><sub><i>n</i></sub>)&#160;+&#160;1 has no zero in <i>F</i>. By contrast, the <a href="http://www.wikipedia.org/wiki/Fundamental_theorem_of_algebra" title="Fundamental theorem of algebra">fundamental theorem of algebra</a> states that the field of <a href="http://www.wikipedia.org/wiki/Complex_number" title="Complex number">complex numbers</a> is algebraically closed. Another example of an algebraically closed field is the field of (complex) <a href="http://www.wikipedia.org/wiki/Algebraic_number" title="Algebraic number">algebraic numbers</a>.</p>
+<h3><span class="mw-headline" id="Equivalent_properties">Equivalent properties</span></h3>
+<p>Given a field <i>F</i>, the assertion "<i>F</i> is algebraically closed" is equivalent to other assertions:</p>
+<h3><span class="mw-headline" id="The_only_irreducible_polynomials_are_those_of_degree_one">The only irreducible polynomials are those of degree one</span></h3>
+<p>The field <i>F</i> is algebraically closed if and only if the only <a href="http://www.wikipedia.org/wiki/Irreducible_polynomial" title="Irreducible polynomial">irreducible polynomials</a> in the <a href="http://www.wikipedia.org/wiki/Polynomial_ring" title="Polynomial ring">polynomial ring</a> <i>F</i>[<i>x</i>] are those of degree one.</p>
+<p><a href="http://en.wikipedia.org/wiki/Algebraically_closed_field">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Absolute_magnitude.html'">Absolute magnitude</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astatine.html'">Astatine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anisotropy.html'">Anisotropy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytic_geometry.html'">Analytic geometry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alpha_compositing.html'">Alpha compositing</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asphalt.html'">Asphalt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Automated_theorem_proving.html'">Automated theorem proving</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algae.html'">Algae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amplitude_modulation.html'">Amplitude modulation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algorithms_for_calculating_variance.html'">Algorithms for calculating variance</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allele.html'">Allele</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amphibian.html'">Amphibian</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Minute_of_arc.html'">Minute of arc</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advanced_Mobile_Phone_System.html'">Advanced Mobile Phone System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axon.html'">Axon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Optical_aberration.html'">Optical aberration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analog_computer.html'">Analog computer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Additive_synthesis.html'">Additive synthesis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astrobiology.html'">Astrobiology</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antiderivative.html'">Antiderivative</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_14.html'">Apollo 14</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_12.html'">Apollo 12</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_9.html'">Apollo 9</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alpha_decay.html'">Alpha decay</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atomic_physics.html'">Atomic physics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom_of_regularity.html'">Axiom of regularity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Autocorrelation.html'">Autocorrelation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aspartame.html'">Aspartame</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atomic_absorption_spectroscopy.html'">Atomic absorption spectroscopy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ascorbic_acid.html'">Ascorbic acid</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

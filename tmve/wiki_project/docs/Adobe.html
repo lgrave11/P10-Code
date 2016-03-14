@@ -1,0 +1,186 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[373.8274382884, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [292.7085143229, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [8.7328746534, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Adobe</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Adobe</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Adobe</b> (<span class="nowrap"><span class="noexcerpt"><a href="//upload.wikimedia.org/wikipedia/commons/3/32/En-us-adobe.ogg" title="Listen"><img alt="Listen" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/11px-Speakerlink-new.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/17px-Speakerlink-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/22px-Speakerlink-new.svg.png 2x" data-file-width="11" data-file-height="11" /></a><sup><span class="IPA" style="color:#00e;font:bold 80% sans-serif;padding:0 .1em"><a href="http://www.wikipedia.org/wiki/File:En-us-adobe.ogg" title="File:En-us-adobe.ogg">i</a></span></sup></span><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ə/ 'a' in 'about'">ə</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'d' in 'dye'">d</span><span title="/oʊ/ long 'o' in 'code'">oʊ</span><span title="'b' in 'buy'">b</span><span title="/i/ 'y' in 'happy'">i</span></span>/</a></span></span>, <span class="nowrap"><small><a href="http://www.wikipedia.org/wiki/British_English" title="British English">UK</a></small> <span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ə/ 'a' in 'about'">ə</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'d' in 'dye'">d</span><span title="/oʊ/ long 'o' in 'code'">oʊ</span><span title="'b' in 'buy'">b</span></span>/</a></span></span>,<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Adobe#cite_note-1"><span>[</span>1<span>]</span></a></sup> <small>Spanish pronunciation:&#160;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_Spanish" title="Help:IPA for Spanish">[aˈðoβe]</a></span>, from <a href="http://www.wikipedia.org/wiki/Spanish_language" title="Spanish language">Spanish</a>: <a href="http://www.wikipedia.org/wiki/Mudbrick" title="Mudbrick">mud brick</a>, from <a href="http://www.wikipedia.org/wiki/Arabic_language" title="Arabic language" class="mw-redirect">Arabic</a>) is a building material made from earth and often organic material. Most adobe buildings are similar to <a href="http://www.wikipedia.org/wiki/Cob_(building)" title="Cob (building)" class="mw-redirect">cob</a> and <a href="http://www.wikipedia.org/wiki/Rammed_earth" title="Rammed earth">rammed earth</a> buildings. Adobe is among the earliest building materials, and is used throughout the world.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Adobe#Description"><span class="tocnumber">1</span> <span class="toctext">Description</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Adobe#Strength"><span class="tocnumber">2</span> <span class="toctext">Strength</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Adobe#Distribution"><span class="tocnumber">3</span> <span class="toctext">Distribution</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Adobe#Etymology"><span class="tocnumber">4</span> <span class="toctext">Etymology</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Adobe#Composition"><span class="tocnumber">5</span> <span class="toctext">Composition</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Adobe#Material_properties"><span class="tocnumber">6</span> <span class="toctext">Material properties</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Adobe#Uses"><span class="tocnumber">7</span> <span class="toctext">Uses</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Adobe#Poured_and_puddled_adobe_walls"><span class="tocnumber">7.1</span> <span class="toctext">Poured and puddled adobe walls</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Adobe#Adobe_bricks"><span class="tocnumber">7.2</span> <span class="toctext">Adobe bricks</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Adobe#Adobe_wall_construction"><span class="tocnumber">7.3</span> <span class="toctext">Adobe wall construction</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Adobe#Adobe_roof"><span class="tocnumber">7.4</span> <span class="toctext">Adobe roof</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Adobe#Adobe_around_the_world"><span class="tocnumber">8</span> <span class="toctext">Adobe around the world</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Adobe#See_also"><span class="tocnumber">9</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Adobe#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Adobe#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Description">Description</span></h3>
+<p>Adobe bricks are most often made into units weighing less than 100 pounds and small enough that they can quickly air dry individually without cracking and subsequently assembled, with the application of adobe mud, to bond the individual bricks into a structure. Modern methods of construction allow the pouring of whole adobe walls that are reinforced with steel.</p>
+<p><a href="http://en.wikipedia.org/wiki/Adobe">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Armoured_fighting_vehicle.html'">Armoured fighting vehicle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amber.html'">Amber</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ajanta_Caves.html'">Ajanta Caves</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/List_of_architecture_topics.html'">List of architecture topics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acropolis_of_Athens.html'">Acropolis of Athens</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambrosius_Aurelianus.html'">Ambrosius Aurelianus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acacia.html'">Acacia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustus.html'">Augustus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexei_Petrovich,_Tsarevich_of_Russia.html'">Alexei Petrovich, Tsarevich of Russia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ares.html'">Ares</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_II_of_Russia.html'">Alexander II of Russia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambush.html'">Ambush</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbot.html'">Abbot</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ashoka_the_Great.html'">Ashoka the Great</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ark_of_the_Covenant.html'">Ark of the Covenant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afonso_I_of_Portugal.html'">Afonso I of Portugal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Tank_destroyer.html'">Tank destroyer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asgard.html'">Asgard</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antipope.html'">Antipope</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aurangzeb.html'">Aurangzeb</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Álfheimr.html'">Álfheimr</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alboin.html'">Alboin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afonso_V_of_Portugal.html'">Afonso V of Portugal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antonio_Canova.html'">Antonio Canova</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahmad_Shah_Durrani.html'">Ahmad Shah Durrani</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andronikos_I_Komnenos.html'">Andronikos I Komnenos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abdur_Rahman_Khan.html'">Abdur Rahman Khan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_the_Battler.html'">Alfonso the Battler</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allosaurus.html'">Allosaurus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albertosaurus.html'">Albertosaurus</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

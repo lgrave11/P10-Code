@@ -1,0 +1,215 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[1192.853880535, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [419.4558865486, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [373.2339851763, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [73.8146955555, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Abraham Lincoln</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Abraham Lincoln</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>President of the United States</b></p>
+<p><b>First Term</b></p>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/1860_Republican_National_Convention" title="1860 Republican National Convention">Campaign for the Presidency</a>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/United_States_presidential_election,_1860" title="United States presidential election, 1860">1860</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/First_inauguration_of_Abraham_Lincoln" title="First inauguration of Abraham Lincoln">1st Inauguration</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Presidency_of_Abraham_Lincoln" title="Presidency of Abraham Lincoln">Presidency</a></li>
+</ul>
+<ul>
+<li><small><a href="http://www.wikipedia.org/wiki/American_Civil_War" title="American Civil War"><span style="color:#000;"><b>American Civil War</b></span></a></small></li>
+</ul>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Union_(American_Civil_War)" title="Union (American Civil War)">The Union</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Presidency_of_Abraham_Lincoln#Conducting_the_war_effort" title="Presidency of Abraham Lincoln">Waging War</a></li>
+</ul>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Emancipation_Proclamation" title="Emancipation Proclamation">Emancipation Proclamation</a></li>
+</ul>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Gettysburg_Address" title="Gettysburg Address">"Gettysburg Address"</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Thirteenth_Amendment_to_the_United_States_Constitution" title="Thirteenth Amendment to the United States Constitution">13th Amendment</a></li>
+</ul>
+<p><b>Second Term</b></p>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/1864_National_Union_National_Convention" title="1864 National Union National Convention">Reelection</a>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/United_States_presidential_election,_1864" title="United States presidential election, 1864">1864</a></li>
+</ul>
+</li>
+<li><a href="http://www.wikipedia.org/wiki/Second_inauguration_of_Abraham_Lincoln" title="Second inauguration of Abraham Lincoln">2nd Inauguration</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Abraham_Lincoln%27s_second_inaugural_address" title="Abraham Lincoln's second inaugural address">"Second Inaugural Address"</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Reconstruction_Era" title="Reconstruction Era">Reconstruction</a></li>
+</ul>
+<p><b>Assassination and legacy</b></p>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Assassination_of_Abraham_Lincoln" title="Assassination of Abraham Lincoln">April 14, 1865</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Funeral_and_burial_of_Abraham_Lincoln" title="Funeral and burial of Abraham Lincoln">Funeral</a></li>
+</ul>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Abraham_Lincoln#Historical_reputation" title="Abraham Lincoln">Legacy</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Memorials_to_Abraham_Lincoln" title="Memorials to Abraham Lincoln">Memorials</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Abraham_Lincoln_cultural_depictions" title="Abraham Lincoln cultural depictions" class="mw-redirect">Depictions</a></li>
+</ul>
+<p><a href="http://www.wikipedia.org/wiki/File:Abraham_Lincoln_1862_signature.svg" class="image"><img alt="Abraham Lincoln 1862 signature.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Abraham_Lincoln_1862_signature.svg/160px-Abraham_Lincoln_1862_signature.svg.png" width="160" height="26" data-file-width="585" data-file-height="95" /></a><br /></p>
+<p><a href="http://www.wikipedia.org/wiki/President_of_the_United_States" title="President of the United States"><img alt="President of the United States" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/44/Seal_of_the_President_of_the_United_States_%281850%29.png/40px-Seal_of_the_President_of_the_United_States_%281850%29.png" width="40" height="40" data-file-width="2000" data-file-height="2001" /></a></p>
+<ul>
+<li class="nv-view"><b><a href="http://www.wikipedia.org/wiki/Template:LincolnSeries" title="Template:LincolnSeries"><abbr title="View this template">v</abbr></a></b></li>
+<li class="nv-talk"><b><a href="/w/index.php?title=Template_talk:LincolnSeries&amp;action=edit&amp;redlink=1" class="new" title="Template talk:LincolnSeries (page does not exist)"><abbr title="Discuss this template">t</abbr></a></b></li>
+<li class="nv-edit"><b><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:LincolnSeries&amp;action=edit"><abbr title="Edit this template">e</abbr></a></b></li>
+</ul>
+<p><b>Abraham Lincoln</b> (<span class="nowrap"><span class="noexcerpt"><a href="//upload.wikimedia.org/wikipedia/commons/3/3e/Lincoln.ogg" title="Listen"><img alt="Listen" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/11px-Speakerlink-new.svg.png" width="11" height="11" data-file-width="11" data-file-height="11" /></a><sup><span class="IPA" style="color:#00e;font:bold 80% sans-serif;padding:0 .1em"><a href="http://www.wikipedia.org/wiki/File:Lincoln.ogg" title="File:Lincoln.ogg">i</a></span></sup></span><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/eɪ/ long 'a' in 'base'">eɪ</span><span title="'b' in 'buy'">b</span><span title="'r' in 'rye'">r</span><span title="/ə/ 'a' in 'about'">ə</span><span title="'h' in 'hi'">h</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'m' in 'my'">m</span></span> <span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="'l' in 'lie'">l</span><span title="/ɪ/ short 'i' in 'bid'">ɪ</span><span title="/ŋ/ 'ng' in 'sing'">ŋ</span><span title="'k' in 'kind'">k</span><span title="/ən/ 'on' in 'button'">ən</span></span>/</a></span></span>; February 12, 1809 – April 15, 1865) was the <a href="http://www.wikipedia.org/wiki/List_of_Presidents_of_the_United_States" title="List of Presidents of the United States">16th President of the United States</a>, serving from March 1861 until <a href="http://www.wikipedia.org/wiki/Assassination_of_Abraham_Lincoln" title="Assassination of Abraham Lincoln">his assassination in April 1865</a>. Lincoln led the United States through its <a href="http://www.wikipedia.org/wiki/American_Civil_War" title="American Civil War">Civil War</a>—its bloodiest war and its greatest moral, constitutional, and political crisis.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Abraham_Lincoln#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Abraham_Lincoln#cite_note-2"><span>[</span>2<span>]</span></a></sup> In doing so, he preserved the <a href="http://www.wikipedia.org/wiki/Union_(American_Civil_War)" title="Union (American Civil War)">Union</a>, abolished slavery, strengthened the federal government, and modernized the economy.</p>
+<p><a href="http://en.wikipedia.org/wiki/Abraham_Lincoln">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/African_American.html'">African American</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona.html'">Arizona</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Democrats.html'">Australian Democrats</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberta.html'">Alberta</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Labor_Party.html'">Australian Labor Party</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adelaide.html'">Adelaide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Revolution.html'">American Revolution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agriculture.html'">Agriculture</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amsterdam.html'">Amsterdam</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Al-Qaeda.html'">Al-Qaeda</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Austin,_Texas.html'">Austin, Texas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Athens.html'">Athens</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Cuisine_of_Argentina.html'">Cuisine of Argentina</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amazon_River.html'">Amazon River</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aruba.html'">Aruba</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Cuisine_of_the_United_States.html'">Cuisine of the United States</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angola.html'">Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albania.html'">Albania</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algeria.html'">Algeria</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algiers.html'">Algiers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alabama.html'">Alabama</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahmad_Shah_Massoud.html'">Ahmad Shah Massoud</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Jackson.html'">Andrew Jackson</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Airlines.html'">American Airlines</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Revolutionary_War.html'">American Revolutionary War</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antigua_and_Barbuda.html'">Antigua and Barbuda</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdeen.html'">Aberdeen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ann_Arbor,_Michigan.html'">Ann Arbor, Michigan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Geography_of_Africa.html'">Geography of Africa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Economy_of_Alberta.html'">Economy of Alberta</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

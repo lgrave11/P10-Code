@@ -1,0 +1,162 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[1594.5925119855, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [531.5267856831, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [480.1589024517, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [155.0802471082, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Ancient Egypt</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Ancient Egypt</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Ancient Egypt</b> was a <a href="http://www.wikipedia.org/wiki/Civilization" title="Civilization">civilization</a> of <a href="http://www.wikipedia.org/wiki/Ancient_history" title="Ancient history">ancient</a> <a href="http://www.wikipedia.org/wiki/Northeast_Africa" title="Northeast Africa">Northeastern Africa</a>, concentrated along the lower reaches of the <a href="http://www.wikipedia.org/wiki/Nile" title="Nile">Nile River</a> in what is now the modern country of <a href="http://www.wikipedia.org/wiki/Egypt" title="Egypt">Egypt</a>. It is one of <a href="http://www.wikipedia.org/wiki/Cradle_of_civilization" title="Cradle of civilization">six civilizations</a> globally to arise independently. Egyptian civilization followed <a href="http://www.wikipedia.org/wiki/Prehistoric_Egypt" title="Prehistoric Egypt">prehistoric Egypt</a> and coalesced around 3150&#160;BC (according to <a href="http://www.wikipedia.org/wiki/Conventional_Egyptian_chronology" title="Conventional Egyptian chronology" class="mw-redirect">conventional Egyptian chronology</a>)<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Ancient_Egypt#cite_note-1"><span>[</span>1<span>]</span></a></sup> with the political unification of <a href="http://www.wikipedia.org/wiki/Upper_and_Lower_Egypt" title="Upper and Lower Egypt">Upper and Lower Egypt</a> under the first <a href="http://www.wikipedia.org/wiki/Pharaoh" title="Pharaoh">pharaoh</a> <a href="http://www.wikipedia.org/wiki/Narmer" title="Narmer">Narmer</a> (commonly referred to as Menes).<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Ancient_Egypt#cite_note-2"><span>[</span>2<span>]</span></a></sup> The <a href="http://www.wikipedia.org/wiki/History_of_ancient_Egypt" title="History of ancient Egypt">history of ancient Egypt</a> occurred in a series of stable Kingdoms, separated by periods of relative instability known as Intermediate Periods: the <a href="http://www.wikipedia.org/wiki/Old_Kingdom_of_Egypt" title="Old Kingdom of Egypt">Old Kingdom</a> of the <a href="http://www.wikipedia.org/wiki/Early_Bronze_Age" title="Early Bronze Age" class="mw-redirect">Early Bronze Age</a>, the <a href="http://www.wikipedia.org/wiki/Middle_Kingdom_of_Egypt" title="Middle Kingdom of Egypt">Middle Kingdom</a> of the <a href="http://www.wikipedia.org/wiki/Middle_Bronze_Age" title="Middle Bronze Age" class="mw-redirect">Middle Bronze Age</a> and the <a href="http://www.wikipedia.org/wiki/New_Kingdom" title="New Kingdom" class="mw-redirect">New Kingdom</a> of the <a href="http://www.wikipedia.org/wiki/Late_Bronze_Age" title="Late Bronze Age" class="mw-redirect">Late Bronze Age</a>.</p>
+<p>Egypt reached the pinnacle of its power during the <a href="http://www.wikipedia.org/wiki/New_Kingdom_of_Egypt" title="New Kingdom of Egypt">New Kingdom</a>, in the Ramesside period where it rivalled the <a href="http://www.wikipedia.org/wiki/Hittite_Empire" title="Hittite Empire" class="mw-redirect">Hittite Empire</a>, <a href="http://www.wikipedia.org/wiki/Assyrian_Empire" title="Assyrian Empire" class="mw-redirect">Assyrian Empire</a> and <a href="http://www.wikipedia.org/wiki/Mitanni" title="Mitanni">Mitanni</a> <a href="http://www.wikipedia.org/wiki/Empire" title="Empire">Empire</a>, after which it entered a period of slow decline. Egypt was invaded or conquered by a succession of foreign powers, such as the <a href="http://www.wikipedia.org/wiki/Canaanites" title="Canaanites" class="mw-redirect">Canaanites</a>/<a href="http://www.wikipedia.org/wiki/Hyksos" title="Hyksos">Hyksos</a>, <a href="http://www.wikipedia.org/wiki/Ancient_Libya" title="Ancient Libya">Libyans</a>, the <a href="http://www.wikipedia.org/wiki/Nubians" title="Nubians">Nubians</a>, the <a href="http://www.wikipedia.org/wiki/Assyria" title="Assyria">Assyrians</a>, <a href="http://www.wikipedia.org/wiki/Babylonia" title="Babylonia">Babylonians</a>, the <a href="http://www.wikipedia.org/wiki/History_of_Achaemenid_Egypt" title="History of Achaemenid Egypt">Achaemenid Persians</a>, and the <a href="http://www.wikipedia.org/wiki/Macedon" title="Macedon" class="mw-redirect">Macedonians</a> in the <a href="http://www.wikipedia.org/wiki/Third_Intermediate_Period_of_Egypt" title="Third Intermediate Period of Egypt">Third Intermediate Period</a> and the <a href="http://www.wikipedia.org/wiki/Late_Period_of_Egypt" title="Late Period of Egypt" class="mw-redirect">Late Period of Egypt</a>. In the aftermath of <a href="http://www.wikipedia.org/wiki/Alexander_the_Great" title="Alexander the Great">Alexander the Great</a>'s death, one of his generals, <a href="http://www.wikipedia.org/wiki/Ptolemy_Soter" title="Ptolemy Soter" class="mw-redirect">Ptolemy Soter</a>, established himself as the new ruler of Egypt. This <a href="http://www.wikipedia.org/wiki/Greece" title="Greece">Greek</a> <a href="http://www.wikipedia.org/wiki/Ptolemaic_Kingdom" title="Ptolemaic Kingdom">Ptolemaic Kingdom</a> ruled Egypt until 30&#160;BC, when, under <a href="http://www.wikipedia.org/wiki/Cleopatra" title="Cleopatra">Cleopatra</a>, it fell to the <a href="http://www.wikipedia.org/wiki/Roman_Empire" title="Roman Empire">Roman Empire</a> and became <a href="http://www.wikipedia.org/wiki/Egypt_(Roman_province)" title="Egypt (Roman province)">a Roman province</a>.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Ancient_Egypt#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>The success of ancient Egyptian civilization came partly from its ability to adapt to the conditions of the Nile River valley for agriculture. The predictable <a href="http://www.wikipedia.org/wiki/Flooding" title="Flooding" class="mw-redirect">flooding</a> and controlled <a href="http://www.wikipedia.org/wiki/Irrigation" title="Irrigation">irrigation</a> of the fertile valley produced surplus crops, which supported a more dense population, and <a href="http://www.wikipedia.org/wiki/Social_development" title="Social development" class="mw-redirect">social development</a> and culture. With resources to spare, the <a href="http://www.wikipedia.org/wiki/Administration_(government)" title="Administration (government)">administration</a> sponsored mineral exploitation of the valley and surrounding desert regions, the early development of an independent <a href="http://www.wikipedia.org/wiki/Egyptian_hieroglyphs" title="Egyptian hieroglyphs">writing system</a>, the organization of collective construction and agricultural projects, trade with surrounding regions, and a military intended to <a href="http://www.wikipedia.org/wiki/Military_of_ancient_Egypt" title="Military of ancient Egypt">defeat foreign enemies</a> and assert Egyptian dominance. Motivating and organizing these activities was a bureaucracy of elite <a href="http://www.wikipedia.org/wiki/Egyptian_writing" title="Egyptian writing" class="mw-redirect">scribes</a>, religious leaders, and administrators under the control of a pharaoh, who ensured the cooperation and unity of the Egyptian people in the context of an elaborate system of <a href="http://www.wikipedia.org/wiki/Ancient_Egyptian_religion" title="Ancient Egyptian religion">religious beliefs</a>.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Ancient_Egypt#cite_note-4"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Ancient_Egypt#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Ancient_Egypt">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Apostolic_Succession.html'">Apostolic Succession</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_the_Great.html'">Alexander the Great</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abraham.html'">Abraham</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abu_Bakr.html'">Abu Bakr</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Athena.html'">Athena</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_the_Great.html'">Alfred the Great</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Armour.html'">Armour</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbey.html'">Abbey</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ant.html'">Ant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Akkadian_Empire.html'">Akkadian Empire</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artillery.html'">Artillery</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aegina.html'">Aegina</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anglicanism.html'">Anglicanism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Assyria.html'">Assyria</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alamanni.html'">Alamanni</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_I_of_Russia.html'">Alexander I of Russia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agrippina_the_Younger.html'">Agrippina the Younger</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abd_ar-Rahman_I.html'">Abd ar-Rahman I</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aphrodite.html'">Aphrodite</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anointing_of_the_Sick.html'">Anointing of the Sick</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abydos,_Egypt.html'">Abydos, Egypt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aslan.html'">Aslan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustine_of_Hippo.html'">Augustine of Hippo</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amazons.html'">Amazons</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anne_Brontë.html'">Anne Brontë</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexios_I_Komnenos.html'">Alexios I Komnenos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arianism.html'">Arianism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Tank_destroyer.html'">Tank destroyer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aurangzeb.html'">Aurangzeb</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acacia.html'">Acacia</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

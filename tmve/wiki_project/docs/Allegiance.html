@@ -1,0 +1,188 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[154.9992546054, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [95.0259334247, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [69.2436442147, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Allegiance</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Allegiance</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>allegiance</b> is a duty of fidelity said to be owed, or freely committed, by the people, <a href="http://www.wikipedia.org/wiki/British_subject" title="British subject">subjects</a> or <a href="http://www.wikipedia.org/wiki/Citizen" title="Citizen" class="mw-redirect">citizens</a> to their <a href="http://www.wikipedia.org/wiki/State_(polity)" title="State (polity)">state</a> or <a href="http://www.wikipedia.org/wiki/Monarch" title="Monarch">sovereign</a>.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Allegiance#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Allegiance#Etymology"><span class="tocnumber">1</span> <span class="toctext">Etymology</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Allegiance#Usage"><span class="tocnumber">2</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Allegiance#Types"><span class="tocnumber">3</span> <span class="toctext">Types</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Allegiance#United_Kingdom"><span class="tocnumber">4</span> <span class="toctext">United Kingdom</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Allegiance#United_States"><span class="tocnumber">5</span> <span class="toctext">United States</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Allegiance#Oath_of_allegiance"><span class="tocnumber">6</span> <span class="toctext">Oath of allegiance</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Allegiance#In_Islam"><span class="tocnumber">7</span> <span class="toctext">In Islam</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Allegiance#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Allegiance#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Etymology">Etymology</span></h3>
+<p>From Middle English <i>ligeaunce</i> (see medieval Latin <i>ligeantia</i>, "a liegance"). The <i>al-</i> prefix was probably added through confusion with another legal term, <i>allegeance</i>, an "allegation" (the French <i>allegeance</i> comes from the English). <i>Allegiance</i> is formed from "liege," from <a href="http://www.wikipedia.org/wiki/Old_French" title="Old French">Old French</a> <i>liege</i>, "liege, free", of Germanic origin. The connection with <a href="http://www.wikipedia.org/wiki/Latin" title="Latin">Latin</a> <i>ligare</i>, "to bind," is erroneous.</p>
+<h3><span class="mw-headline" id="Usage">Usage</span></h3>
+<p>The term <i>allegiance</i> was traditionally often used by English legal commentators in a larger sense, divided by them into natural and local, the latter applying to the deference which even a foreigner must pay to the institutions of the country in which he happens to live. However it is in its proper sense, in which it indicates national character and the subjection due to that character, that the word is more important.</p>
+<p>In that sense it represents the <a href="http://www.wikipedia.org/wiki/Feudal" title="Feudal" class="mw-redirect">feudal</a> <a href="http://www.wikipedia.org/wiki/Liege_homage" title="Liege homage" class="mw-redirect">liege homage</a>, which could be due only to one lord, while simple <a href="http://www.wikipedia.org/wiki/Homage_(feudal)" title="Homage (feudal)">homage</a> might be due to every lord under whom the person in question held land. KING&gt;&gt;NOBLE&gt;&gt;KNIGHTS&gt;&gt;PEASANTS</p>
+<h3><span class="mw-headline" id="Types">Types</span></h3>
+<ul>
+<li>local allegiance<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Allegiance#cite_note-2"><span>[</span>2<span>]</span></a></sup></li>
+<li>natural allegiance<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Allegiance#cite_note-3"><span>[</span>3<span>]</span></a></sup></li>
+</ul>
+<h3><span class="mw-headline" id="United_Kingdom">United Kingdom</span></h3>
+<p>The English doctrine, which was at one time adopted in the United States, asserted that allegiance was indelible: "Nemo potest exuere patriam". Accordingly, as the law stood before 1870, every person who by birth or <a href="http://www.wikipedia.org/wiki/Naturalisation" title="Naturalisation" class="mw-redirect">naturalisation</a> satisfied the conditions set forth, though he should be removed in infancy to another country where his family resided, owed an allegiance to the British crown which he could never resign or lose, except by act of parliament or by the recognition of the independence or the cession of the portion of British territory in which he resided.</p>
+<p>This refusal to accept any <a href="http://www.wikipedia.org/wiki/Renunciation_of_citizenship" title="Renunciation of citizenship">renunciation</a> of allegiance to the Crown led to conflict with the United States over <a href="http://www.wikipedia.org/wiki/Impressment" title="Impressment">impressment</a>, and then led to further conflicts even during the <a href="http://www.wikipedia.org/wiki/War_of_1812" title="War of 1812">War of 1812</a>, when thirteen Irish American <a href="http://www.wikipedia.org/wiki/Prisoner_of_war" title="Prisoner of war">prisoners of war</a> were executed as <a href="http://www.wikipedia.org/wiki/Traitor" title="Traitor" class="mw-redirect">traitors</a> after the <a href="http://www.wikipedia.org/wiki/Battle_of_Queenston_Heights" title="Battle of Queenston Heights">Battle of Queenston Heights</a>; <a href="http://www.wikipedia.org/wiki/Winfield_Scott" title="Winfield Scott">Winfield Scott</a> urged American <a href="http://www.wikipedia.org/wiki/Reprisal" title="Reprisal">reprisal</a>, but none was carried out.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Allegiance#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Allegiance">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Aegean_civilization.html'">Aegean civilization</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amerigo_Vespucci.html'">Amerigo Vespucci</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affiliation.html'">Affiliation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ansgar.html'">Ansgar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arbroath_Abbey.html'">Arbroath Abbey</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Selkirk.html'">Alexander Selkirk</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambiorix.html'">Ambiorix</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agrippina_the_Elder.html'">Agrippina the Elder</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_I_of_Serbia.html'">Alexander I of Serbia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andronikos_II_Palaiologos.html'">Andronikos II Palaiologos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_XII_of_Spain.html'">Alfonso XII of Spain</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_of_Pherae.html'">Alexander of Pherae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahab.html'">Ahab</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aeacus.html'">Aeacus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ab_urbe_condita.html'">Ab urbe condita</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amathus.html'">Amathus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcmene.html'">Alcmene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcaeus_of_Mytilene.html'">Alcaeus of Mytilene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexios_III_Angelos.html'">Alexios III Angelos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Absalom.html'">Absalom</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexios_V_Doukas.html'">Alexios V Doukas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/George_Abbot_(archbishop).html'">George Abbot (archbishop)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aegeus.html'">Aegeus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alp_Arslan.html'">Alp Arslan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arc_de_Triomphe.html'">Arc de Triomphe</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_I_of_Scotland.html'">Alexander I of Scotland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Severus.html'">Alexander Severus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_II_of_Hungary.html'">Andrew II of Hungary</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Self-propelled_anti-aircraft_weapon.html'">Self-propelled anti-aircraft weapon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambrosians.html'">Ambrosians</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

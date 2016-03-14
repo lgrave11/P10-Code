@@ -1,0 +1,192 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[218.2425373232, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [56.9366748881, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Austrian German</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Austrian German</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Austrian German</b><sup id="cite_ref-eurotopics_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Austrian_German#cite_note-eurotopics-2"><span>[</span>2<span>]</span></a></sup> (<a href="http://www.wikipedia.org/wiki/German_language" title="German language">German</a>: <span lang="de" xml:lang="de"><i>Österreichisches Deutsch</i></span>), <b>Austrian Standard German</b>,<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Austrian_German#cite_note-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Austrian_German#cite_note-4"><span>[</span>4<span>]</span></a></sup> <b>Standard Austrian German</b><sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Austrian_German#cite_note-5"><span>[</span>5<span>]</span></a></sup> (<a href="http://www.wikipedia.org/wiki/German_language" title="German language">German</a>: <span lang="de" xml:lang="de"><i>Österreichisches Standarddeutsch</i></span>) or <b>Austrian High German</b><sup id="cite_ref-eurotopics_2-1" class="reference"><a href="http://en.wikipedia.org/wiki/Austrian_German#cite_note-eurotopics-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Austrian_German#cite_note-6"><span>[</span>6<span>]</span></a></sup> (<a href="http://www.wikipedia.org/wiki/German_language" title="German language">German</a>: <span lang="de" xml:lang="de"><i>Österreichisches Hochdeutsch</i></span>), is the variety of <a href="http://www.wikipedia.org/wiki/Standard_German" title="Standard German">Standard German</a> written and spoken in <a href="http://www.wikipedia.org/wiki/Austria" title="Austria">Austria</a> and North Italy.<sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Austrian_German#cite_note-7"><span>[</span>7<span>]</span></a></sup> It has the highest <a href="http://www.wikipedia.org/wiki/Prestige_(sociolinguistics)" title="Prestige (sociolinguistics)">sociolinguistic prestige</a> locally, as it is the variation used in the media and for other formal situations.</p>
+<p>In less formal situations, Austrians tend to use forms closer to or identical with the <a href="http://www.wikipedia.org/wiki/Bavarian_German" title="Bavarian German" class="mw-redirect">Bavarian</a> and <a href="http://www.wikipedia.org/wiki/Alemannic_dialects" title="Alemannic dialects" class="mw-redirect">Alemannic dialects</a>, traditionally spoken – but rarely written – in Austria.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Austrian_German#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Austrian_German#General_situation_of_German"><span class="tocnumber">2</span> <span class="toctext">General situation of German</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Austrian_German#Standard_German_in_Austria"><span class="tocnumber">3</span> <span class="toctext">Standard German in Austria</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Austrian_German#Former_spoken_standard"><span class="tocnumber">3.1</span> <span class="toctext">Former spoken standard</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Austrian_German#Special_written_forms"><span class="tocnumber">3.2</span> <span class="toctext">Special written forms</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Austrian_German#European_Union"><span class="tocnumber">3.3</span> <span class="toctext">European Union</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Austrian_German#Grammar"><span class="tocnumber">3.4</span> <span class="toctext">Grammar</span></a>
+<ul>
+<li class="toclevel-3 tocsection-8"><a href="http://en.wikipedia.org/wiki/Austrian_German#Verbs"><span class="tocnumber">3.4.1</span> <span class="toctext">Verbs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Austrian_German#Vocabulary"><span class="tocnumber">3.5</span> <span class="toctext">Vocabulary</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Austrian_German#Dialects"><span class="tocnumber">4</span> <span class="toctext">Dialects</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Austrian_German#Classification"><span class="tocnumber">4.1</span> <span class="toctext">Classification</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Austrian_German#Regional_accents"><span class="tocnumber">4.2</span> <span class="toctext">Regional accents</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Austrian_German#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Austrian_German#Sources"><span class="tocnumber">6</span> <span class="toctext">Sources</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Austrian_German#References_and_further_reading"><span class="tocnumber">7</span> <span class="toctext">References and further reading</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="History">History</span></h3>
+<p>Austrian German has its beginning in the mid-18th century, when empress <a href="http://www.wikipedia.org/wiki/Maria_Theresa" title="Maria Theresa">Maria Theresa</a> and her son <a href="http://www.wikipedia.org/wiki/Joseph_II,_Holy_Roman_Emperor" title="Joseph II, Holy Roman Emperor">Joseph II</a> introduced <a href="http://www.wikipedia.org/wiki/Compulsory_education" title="Compulsory education">compulsory schooling</a> (in 1774) and several reforms of administration in their multilingual <a href="http://www.wikipedia.org/wiki/Habsburg_empire" title="Habsburg empire" class="mw-redirect">Habsburg empire</a>. At the time, the written standard was <i>Oberdeutsche Schreibsprache</i>, which was highly influenced by the <a href="http://www.wikipedia.org/wiki/Bavarian_language" title="Bavarian language">Bavarian</a> and <a href="http://www.wikipedia.org/wiki/Alemannic_dialects" title="Alemannic dialects" class="mw-redirect">Alemannic dialects</a> of Austria. Another option was to create a new standard based on the Southern German dialects, as proposed by the linguist Janez Žiga Popovič (Johann Siegmund Popowitsch). Instead they decided for pragmatic reasons to adopt the already standardized Chancellery language of Saxony (<i>Sächsische Kanzleisprache</i> or <i>Meißner Kanzleideutsch</i>), which was based on the administrative language of the non-Austrian area of <a href="http://www.wikipedia.org/wiki/Mei%C3%9Fen" title="Meißen" class="mw-redirect">Meißen</a> and <a href="http://www.wikipedia.org/wiki/Dresden" title="Dresden">Dresden</a>. Thus Standard Austrian German has the same geographic origin as the <a href="http://www.wikipedia.org/wiki/Standard_German" title="Standard German">Standard German</a> of Germany (<i>Bundesdeutsches Hochdeutsch</i>, also <i>Deutschländisches Deutsch</i>) and <a href="http://www.wikipedia.org/wiki/Swiss_High_German" title="Swiss High German" class="mw-redirect">Swiss High German</a> (<i>Schweizer Hochdeutsch</i>, not to be confused with the Alemannic <a href="http://www.wikipedia.org/wiki/Swiss_German" title="Swiss German">Swiss German</a> dialects).</p>
+<p><a href="http://en.wikipedia.org/wiki/Austrian_German">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Aeon.html'">Aeon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Ayer.html'">Alfred Ayer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amos_Bronson_Alcott.html'">Amos Bronson Alcott</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albertus_Magnus.html'">Albertus Magnus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adamic_language.html'">Adamic language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anti-realism.html'">Anti-realism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anxiety.html'">Anxiety</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ásatrú.html'">Ásatrú</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_English.html'">Australian English</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anita_Hill.html'">Anita Hill</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Weil.html'">André Weil</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allegory.html'">Allegory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrei_Sakharov.html'">Andrei Sakharov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Appellate_court.html'">Appellate court</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afro-Asiatic_languages.html'">Afro-Asiatic languages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._E._van_Vogt.html'">A. E. van Vogt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anagram.html'">Anagram</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abugida.html'">Abugida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applied_ethics.html'">Applied ethics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aramaic_alphabet.html'">Aramaic alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allah.html'">Allah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammonius_Saccas.html'">Ammonius Saccas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artist.html'">Artist</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affix.html'">Affix</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allophone.html'">Allophone</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abd-el-latif.html'">Abd-el-latif</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ada_Lovelace.html'">Ada Lovelace</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Plague.html'">The Plague</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahimsa.html'">Ahimsa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustin_Louis_Cauchy.html'">Augustin Louis Cauchy</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

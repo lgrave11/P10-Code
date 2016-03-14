@@ -1,0 +1,192 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[76.0895856313, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Arraignment</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Arraignment</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Arraignment</b> is a formal reading of a <a href="http://www.wikipedia.org/wiki/Crime" title="Crime">criminal</a> charging document in the presence of the <a href="http://www.wikipedia.org/wiki/Defendant" title="Defendant">defendant</a> to inform the defendant of the charges against them. In response to arraignment, the accused is expected to enter a <a href="http://www.wikipedia.org/wiki/Plea" title="Plea">plea</a>. Acceptable pleas vary among jurisdictions, but they generally include "guilty", "not guilty", and the <a href="http://www.wikipedia.org/wiki/Peremptory_pleas" title="Peremptory pleas" class="mw-redirect">peremptory pleas</a> (or pleas in bar) setting out reasons why a trial cannot proceed. Pleas of "<a href="http://www.wikipedia.org/wiki/Nolo_contendere" title="Nolo contendere">nolo contendere</a>" (no contest) and the "<a href="http://www.wikipedia.org/wiki/Alford_plea" title="Alford plea"><i>Alford</i> plea</a>" are allowed in some circumstances.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Arraignment#By_country"><span class="tocnumber">1</span> <span class="toctext">By country</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Arraignment#Australia"><span class="tocnumber">1.1</span> <span class="toctext">Australia</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Arraignment#Canada"><span class="tocnumber">1.2</span> <span class="toctext">Canada</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Arraignment#France"><span class="tocnumber">1.3</span> <span class="toctext">France</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Arraignment#Germany"><span class="tocnumber">1.4</span> <span class="toctext">Germany</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Arraignment#New_Zealand"><span class="tocnumber">1.5</span> <span class="toctext">New Zealand</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Arraignment#South_Africa"><span class="tocnumber">1.6</span> <span class="toctext">South Africa</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Arraignment#United_Kingdom"><span class="tocnumber">1.7</span> <span class="toctext">United Kingdom</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Arraignment#United_States"><span class="tocnumber">1.8</span> <span class="toctext">United States</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Arraignment#Form_of_the_arraignment"><span class="tocnumber">2</span> <span class="toctext">Form of the arraignment</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Arraignment#Video_arraignment"><span class="tocnumber">3</span> <span class="toctext">Video arraignment</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Arraignment#Guilty_and_not-guilty_pleas"><span class="tocnumber">4</span> <span class="toctext">Guilty and not-guilty pleas</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Arraignment#Pre-trial_release"><span class="tocnumber">5</span> <span class="toctext">Pre-trial release</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Arraignment#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Arraignment#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="By_country">By country</span></h3>
+<h3></h3>
+<h3></h3>
+<h3></h3>
+<h3><span class="mw-headline" id="Australia">Australia</span></h3>
+<p>In Australia, arraignment is the first of eleven stages in a criminal trial, and involves the <a href="http://www.wikipedia.org/wiki/Court_clerk" title="Court clerk">clerk</a> of the <a href="http://www.wikipedia.org/wiki/Court" title="Court">court</a> reading out the <a href="http://www.wikipedia.org/wiki/Indictment" title="Indictment">indictment</a>. The judge will testify during the indictment process.</p>
+<h3><span class="mw-headline" id="Canada">Canada</span></h3>
+<p>In every province in Canada except British Columbia, a defendant is arraigned on the day of their trial. In British Columbia, arraignment takes places in one of the first few court appearances by the defendant or their lawyer. The defendant is asked whether he or she pleads guilty or not guilty to each charge.</p>
+<h3><span class="mw-headline" id="France">France</span></h3>
+<p>In France, the general rule is that one cannot remain in police custody for more than 24 hours from the time of the arrest.<sup id="cite_ref-fti-france_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Arraignment#cite_note-fti-france-1"><span>[</span>1<span>]</span></a></sup> However, police custody can last another 24 hours in specific circumstances, especially if the offence is punishable by at least one year's imprisonment, or if the investigation is deemed to require the extra time, and can last up to 96 hours in certain cases involving terrorism, drug trafficking or organised crime.<sup id="cite_ref-fti-france_1-1" class="reference"><a href="http://en.wikipedia.org/wiki/Arraignment#cite_note-fti-france-1"><span>[</span>1<span>]</span></a></sup> The police needs to have the consent of the prosecutor (in the vast majority of cases, the prosecutor will consent).<sup id="cite_ref-fti-france_1-2" class="reference"><a href="http://en.wikipedia.org/wiki/Arraignment#cite_note-fti-france-1"><span>[</span>1<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Arraignment">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Andreas_Capellanus.html'">Andreas Capellanus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affection.html'">Affection</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Austro-Asiatic_languages.html'">Austro-Asiatic languages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annals_of_Mathematics.html'">Annals of Mathematics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alford_plea.html'">Alford plea</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affray.html'">Affray</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analysis.html'">Analysis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alessandro_Allori.html'">Alessandro Allori</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldine_Press.html'">Aldine Press</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adventure.html'">Adventure</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexandrine.html'">Alexandrine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatomy.html'">Anatomy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abatement_of_debts_and_legacies.html'">Abatement of debts and legacies</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argument_form.html'">Argument form</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abstract_(law).html'">Abstract (law)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abba_Mari.html'">Abba Mari</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affirming_the_consequent.html'">Affirming the consequent</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André-Marie_Ampère.html'">André-Marie Ampère</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agrarianism.html'">Agrarianism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agathon.html'">Agathon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Wiles.html'">Andrew Wiles</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexandrists.html'">Alexandrists</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/List_of_anthropologists.html'">List of anthropologists</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alain_de_Lille.html'">Alain de Lille</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Athanasian_Creed.html'">Athanasian Creed</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatole_France.html'">Anatole France</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrea_Alciato.html'">Andrea Alciato</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artistic_License.html'">Artistic License</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anaximenes_of_Miletus.html'">Anaximenes of Miletus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atle_Selberg.html'">Atle Selberg</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[86.9192057039, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [49.1084289395, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [45.2411937013, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Aristophanes</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Aristophanes</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Aristophanes</b> (<span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˌ/ secondary stress follows">ˌ</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'r' in 'rye'">r</span><span title="/ɪ/ or /ə/ 'e' in 'roses'">ᵻ</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'s' in 'sigh'">s</span><span title="'t' in 'tie'">t</span><span title="/ɒ/ short 'o' in 'body'">ɒ</span><span title="'f' in 'find'">f</span><span title="/ə/ 'a' in 'about'">ə</span><span title="'n' in 'no'">n</span><span title="/iː/ long 'e' in 'seed'">iː</span><span title="'z' in 'Zion'">z</span></span>/</a></span></span> or <span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˌ/ secondary stress follows">ˌ</span><span title="/ɛ/ short 'e' in 'bed'">ɛ</span><span title="'r' in 'rye'">r</span><span title="/ɪ/ or /ə/ 'e' in 'roses'">ᵻ</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'s' in 'sigh'">s</span><span title="'t' in 'tie'">t</span><span title="/ɒ/ short 'o' in 'body'">ɒ</span><span title="'f' in 'find'">f</span><span title="/ə/ 'a' in 'about'">ə</span><span title="'n' in 'no'">n</span><span title="/iː/ long 'e' in 'seed'">iː</span><span title="'z' in 'Zion'">z</span></span>/</a></span></span>;<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Aristophanes#cite_note-2"><span>[</span>2<span>]</span></a></sup> <a href="http://www.wikipedia.org/wiki/Greek_language" title="Greek language">Greek</a>: <span lang="grc" xml:lang="grc">Ἀριστοφάνης</span>, <small>pronounced&#160;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_Greek" title="Help:IPA for Greek">[aristopʰánɛːs]</a></span>; c. 446 – c. 386 BC), son of Philippus, of the <a href="http://www.wikipedia.org/wiki/Deme" title="Deme">deme</a> <a href="http://www.wikipedia.org/wiki/Kydathenaion" title="Kydathenaion">Kydathenaion</a> (<a href="http://www.wikipedia.org/wiki/Latin_language" title="Latin language" class="mw-redirect">Latin</a>: <span lang="la" xml:lang="la"><i>Cydathenaeum</i></span>),<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Aristophanes#cite_note-3"><span>[</span>3<span>]</span></a></sup> was a <a href="http://www.wikipedia.org/wiki/Comedy" title="Comedy">comic</a> <a href="http://www.wikipedia.org/wiki/Playwright" title="Playwright">playwright</a> of <a href="http://www.wikipedia.org/wiki/Classical_Athens" title="Classical Athens">ancient Athens</a>. Eleven of his thirty plays survive virtually complete. These, together with fragments of some of his other plays, provide the only real examples of a genre of comic drama known as <a href="http://www.wikipedia.org/wiki/Ancient_Greek_comedy" title="Ancient Greek comedy">Old Comedy</a>, and they are used to define the genre.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Aristophanes#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>Also known as <i>the Father of Comedy</i><sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Aristophanes#cite_note-5"><span>[</span>5<span>]</span></a></sup> and <i>the Prince of Ancient Comedy</i>,<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Aristophanes#cite_note-6"><span>[</span>6<span>]</span></a></sup> Aristophanes has been said to recreate the life of ancient Athens more convincingly than any other author.<sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Aristophanes#cite_note-7"><span>[</span>7<span>]</span></a></sup> His powers of ridicule were feared and acknowledged by influential contemporaries; <a href="http://www.wikipedia.org/wiki/Plato" title="Plato">Plato</a><sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/Aristophanes#cite_note-8"><span>[</span>8<span>]</span></a></sup><sup id="cite_ref-9" class="reference"><a href="http://en.wikipedia.org/wiki/Aristophanes#cite_note-9"><span>[</span>9<span>]</span></a></sup> singled out Aristophanes' play <i><a href="http://www.wikipedia.org/wiki/The_Clouds" title="The Clouds">The Clouds</a></i> as <a href="http://www.wikipedia.org/wiki/Slander" title="Slander" class="mw-redirect">slander</a> that contributed to the trial and subsequent condemning to death of <a href="http://www.wikipedia.org/wiki/Socrates" title="Socrates">Socrates</a> although other <a href="http://www.wikipedia.org/wiki/Socrates#Satirical_playwrights" title="Socrates">satirical playwrights</a><sup id="cite_ref-10" class="reference"><a href="http://en.wikipedia.org/wiki/Aristophanes#cite_note-10"><span>[</span>10<span>]</span></a></sup> had also caricatured the philosopher.</p>
+<p>His second play, <i>The Babylonians</i> (now lost), was denounced by the demagogue <a href="http://www.wikipedia.org/wiki/Cleon" title="Cleon">Cleon</a> as a slander against the Athenian <a href="http://www.wikipedia.org/wiki/Polis" title="Polis">polis</a>. It is possible that the case was argued in court but details of the trial are not recorded and Aristophanes caricatured Cleon mercilessly in his subsequent plays, especially <i><a href="http://www.wikipedia.org/wiki/The_Knights" title="The Knights">The Knights</a></i>, the first of many plays that he directed himself. "In my opinion," he says through the Chorus in that play, "the author-director of comedies has the hardest job of all." (<span lang="grc" xml:lang="grc">κωμῳδοδιδασκαλίαν εἶναι χαλεπώτατον ἔργον ἁπάντων</span>)<sup id="cite_ref-11" class="reference"><a href="http://en.wikipedia.org/wiki/Aristophanes#cite_note-11"><span>[</span>11<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Aristophanes">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Achaeans.html'">Achaeans</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andreas_Schlüter.html'">Andreas Schlüter</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammianus_Marcellinus.html'">Ammianus Marcellinus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ananda.html'">Ananda</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antoine_Thomson_d_Abbadie.html'">Antoine Thomson d'Abbadie</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amalasuntha.html'">Amalasuntha</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actaeon.html'">Actaeon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alaric_II.html'">Alaric II</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adhemar_of_Le_Puy.html'">Adhemar of Le Puy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anazarbus.html'">Anazarbus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afonso_III_of_Portugal.html'">Afonso III of Portugal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agathocles.html'">Agathocles</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amalric_I_of_Jerusalem.html'">Amalric I of Jerusalem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Jagiellon.html'">Alexander Jagiellon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adam_of_Bremen.html'">Adam of Bremen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Armored_car_(military).html'">Armored car (military)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abiathar.html'">Abiathar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ajax_the_Lesser.html'">Ajax the Lesser</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aga_Khan_III.html'">Aga Khan III</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agni.html'">Agni</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aelianus_Tacticus.html'">Aelianus Tacticus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_III_of_Aragon.html'">Alfonso III of Aragon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aisha.html'">Aisha</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/April.html'">April</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amalric_II_of_Jerusalem.html'">Amalric II of Jerusalem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aardvark.html'">Aardvark</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arachnophobia.html'">Arachnophobia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ardipithecus.html'">Ardipithecus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexios_II_Komnenos.html'">Alexios II Komnenos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anah.html'">Anah</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

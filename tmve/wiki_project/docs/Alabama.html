@@ -1,0 +1,165 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[1528.9728648198, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [19.2063426889, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Alabama</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Alabama</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><small>As of 2010</small></p>
+<ul>
+<li>English 95.1%</li>
+<li>Spanish 3.1%</li>
+</ul>
+<p><b>Alabama</b> (<span class="nowrap"><span class="noexcerpt"><a href="//upload.wikimedia.org/wikipedia/commons/9/97/En-us-Alabama.ogg" title="Listen"><img alt="Listen" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/11px-Speakerlink-new.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/17px-Speakerlink-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/22px-Speakerlink-new.svg.png 2x" data-file-width="11" data-file-height="11" /></a><sup><span class="IPA" style="color:#00e;font:bold 80% sans-serif;padding:0 .1em"><a href="http://www.wikipedia.org/wiki/File:En-us-Alabama.ogg" title="File:En-us-Alabama.ogg">i</a></span></sup></span><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˌ/ secondary stress follows">ˌ</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'l' in 'lie'">l</span><span title="/ə/ 'a' in 'about'">ə</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'b' in 'buy'">b</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'m' in 'my'">m</span><span title="/ə/ 'a' in 'about'">ə</span></span>/</a></span></span>) is a <a href="http://www.wikipedia.org/wiki/U.S._state" title="U.S. state">state</a> located in the <a href="http://www.wikipedia.org/wiki/Southern_United_States" title="Southern United States">southeastern region</a> of the <a href="http://www.wikipedia.org/wiki/United_States" title="United States">United States</a>. It is bordered by <a href="http://www.wikipedia.org/wiki/Tennessee" title="Tennessee">Tennessee</a> to the north, <a href="http://www.wikipedia.org/wiki/Georgia_(U.S._state)" title="Georgia (U.S. state)">Georgia</a> to the east, <a href="http://www.wikipedia.org/wiki/Florida" title="Florida">Florida</a> and the <a href="http://www.wikipedia.org/wiki/Gulf_of_Mexico" title="Gulf of Mexico">Gulf of Mexico</a> to the south, and <a href="http://www.wikipedia.org/wiki/Mississippi" title="Mississippi">Mississippi</a> to the west. Alabama is the <a href="http://www.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_area" title="List of U.S. states and territories by area">30th-most extensive</a> and the <a href="http://www.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_population" title="List of U.S. states and territories by population">24th-most populous</a> of the <a href="http://www.wikipedia.org/wiki/List_of_U.S._states" title="List of U.S. states" class="mw-redirect">50 United States</a>. At 1,300 miles (2,100&#160;km), Alabama has one of the longest navigable inland waterways in the nation.<sup id="cite_ref-navwater_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alabama#cite_note-navwater-6"><span>[</span>6<span>]</span></a></sup></p>
+<p>From the <a href="http://www.wikipedia.org/wiki/American_Civil_War" title="American Civil War">American Civil War</a> until <a href="http://www.wikipedia.org/wiki/World_War_II" title="World War II">World War II</a>, Alabama, like many states in the <a href="http://www.wikipedia.org/wiki/Southern_United_States" title="Southern United States">South</a>, suffered economic hardship, in part because of continued dependence on agriculture. Despite the growth of major industries and urban centers, <a href="http://www.wikipedia.org/wiki/White_American" title="White American" class="mw-redirect">White</a> rural interests dominated the state legislature from 1901 to the 1960s, as it did not regularly reapportion the legislature from 1901 to 1961; urban interests and <a href="http://www.wikipedia.org/wiki/African_Americans" title="African Americans">African Americans</a> were markedly under-represented.<sup id="cite_ref-pjhwpa_7-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alabama#cite_note-pjhwpa-7"><span>[</span>7<span>]</span></a></sup> African Americans and <a href="http://www.wikipedia.org/wiki/Poor_Whites" title="Poor Whites" class="mw-redirect">poor whites</a> were essentially <a href="http://www.wikipedia.org/wiki/Disfranchisement_after_Reconstruction_era" title="Disfranchisement after Reconstruction era" class="mw-redirect">disenfranchised</a> altogether by the state constitution of 1901, a status that continued into the mid-1960s before being alleviated by federal legislation. Exclusion of minorities continued under <a href="http://www.wikipedia.org/wiki/At-large" title="At-large">at-large</a> voting systems in most counties; some changes were made through a series of omnibus court cases in the late 1980s to establish different electoral systems.</p>
+<p>Following World War II, Alabama experienced growth as the economy of the state changed from one primarily based on agriculture to one with diversified interests. The power of the <a href="http://www.wikipedia.org/wiki/Solid_South" title="Solid South">Solid South</a> in Congress gained the establishment or expansion of multiple <a href="http://www.wikipedia.org/wiki/United_States_Armed_Forces" title="United States Armed Forces">United States Armed Forces</a> installations, which helped to bridge the gap between an agricultural and industrial economy during the mid-20th century. The state economy in the 21st century is based on management, automotive, finance, manufacturing, aerospace, mineral extraction, healthcare, education, retail, and technology.<sup id="cite_ref-alaindustrial_8-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alabama#cite_note-alaindustrial-8"><span>[</span>8<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Alabama">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Airline.html'">Airline</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afghanistan.html'">Afghanistan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Civil_War.html'">American Civil War</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Al-Qaeda.html'">Al-Qaeda</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Revolution.html'">American Revolution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adelaide.html'">Adelaide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Labor_Party.html'">Australian Labor Party</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberta.html'">Alberta</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agriculture.html'">Agriculture</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/African_American.html'">African American</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona.html'">Arizona</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alaska.html'">Alaska</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abraham_Lincoln.html'">Abraham Lincoln</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Democrats.html'">Australian Democrats</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amsterdam.html'">Amsterdam</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Austin,_Texas.html'">Austin, Texas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Athens.html'">Athens</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Cuisine_of_Argentina.html'">Cuisine of Argentina</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amazon_River.html'">Amazon River</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aruba.html'">Aruba</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Cuisine_of_the_United_States.html'">Cuisine of the United States</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angola.html'">Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albania.html'">Albania</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algeria.html'">Algeria</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algiers.html'">Algiers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahmad_Shah_Massoud.html'">Ahmad Shah Massoud</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Jackson.html'">Andrew Jackson</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Airlines.html'">American Airlines</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antigua_and_Barbuda.html'">Antigua and Barbuda</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdeen.html'">Aberdeen</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

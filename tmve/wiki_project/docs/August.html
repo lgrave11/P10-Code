@@ -1,0 +1,193 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[54.0895874465, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>August</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">August</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>August</b> (<span class="nowrap"><span class="noexcerpt"><a href="//upload.wikimedia.org/wikipedia/commons/0/0d/En-us-August.ogg" title="Listen"><img alt="Listen" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/11px-Speakerlink-new.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/17px-Speakerlink-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/22px-Speakerlink-new.svg.png 2x" data-file-width="11" data-file-height="11" /></a><sup><span class="IPA" style="color:#00e;font:bold 80% sans-serif;padding:0 .1em"><a href="http://www.wikipedia.org/wiki/File:En-us-August.ogg" title="File:En-us-August.ogg">i</a></span></sup></span><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/ɔː/ 'au' in 'fraud'">ɔː</span><span title="'g' in 'guy'">ɡ</span><span title="/ə/ 'a' in 'about'">ə</span><span title="'s' in 'sigh'">s</span><span title="'t' in 'tie'">t</span></span>/</a></span></span> <span title="English pronunciation respelling"><a href="http://www.wikipedia.org/wiki/Wikipedia:Pronunciation_respelling_key" title="Wikipedia:Pronunciation respelling key" class="mw-redirect"><i><b><span class="smallcaps"><span style="FONT-VARIANT: SMALL-CAPS; TEXT-TRANSFORM: LOWERCASE;">AW</span></span></b>-gəst</i></a></span>) is the eighth <a href="http://www.wikipedia.org/wiki/Month" title="Month">month</a> of the <a href="http://www.wikipedia.org/wiki/Year" title="Year">year</a> (between <a href="http://www.wikipedia.org/wiki/July" title="July">July</a> and <a href="http://www.wikipedia.org/wiki/September" title="September">September</a>) in the <a href="http://www.wikipedia.org/wiki/Julian_calendar" title="Julian calendar">Julian</a> and <a href="http://www.wikipedia.org/wiki/Gregorian_calendar" title="Gregorian calendar">Gregorian calendars</a> and one of seven months with a length of 31 days.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/August#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>In the <a href="http://www.wikipedia.org/wiki/Southern_Hemisphere" title="Southern Hemisphere">Southern Hemisphere</a>, August is the seasonal equivalent of <a href="http://www.wikipedia.org/wiki/February" title="February">February</a> in the <a href="http://www.wikipedia.org/wiki/Northern_Hemisphere" title="Northern Hemisphere">Northern Hemisphere</a>. In many European countries, August is the <a href="http://www.wikipedia.org/wiki/Annual_leave" title="Annual leave">holiday</a> month for most workers. The <a href="http://www.wikipedia.org/wiki/Perseids" title="Perseids">Perseid meteor shower</a> peaks during July and August.</p>
+<p>This month was originally named <i><a href="http://www.wikipedia.org/wiki/Sextilis" title="Sextilis">Sextilis</a></i> in <a href="http://www.wikipedia.org/wiki/Latin" title="Latin">Latin</a>, because it was the sixth month in the original ten-month <a href="http://www.wikipedia.org/wiki/Roman_calendar" title="Roman calendar">Roman calendar</a> under <a href="http://www.wikipedia.org/wiki/Romulus_and_Remus" title="Romulus and Remus">Romulus</a> in 753 BC, when <a href="http://www.wikipedia.org/wiki/March" title="March">March</a> was the first month of the year. About 700&#160;BC it became the eighth month when <a href="http://www.wikipedia.org/wiki/January" title="January">January</a> and <a href="http://www.wikipedia.org/wiki/February" title="February">February</a> were added to the year before March by King <a href="http://www.wikipedia.org/wiki/Numa_Pompilius" title="Numa Pompilius">Numa Pompilius</a>, who also gave it 29 days. <a href="http://www.wikipedia.org/wiki/Julius_Caesar" title="Julius Caesar">Julius Caesar</a> added two days when he created the <a href="http://www.wikipedia.org/wiki/Julian_calendar" title="Julian calendar">Julian calendar</a> in 45 BC giving it its modern length of 31 days. In 8 BC it was <a href="http://www.wikipedia.org/wiki/Augustus#Month_of_August" title="Augustus">renamed</a> in honor of <a href="http://www.wikipedia.org/wiki/Augustus" title="Augustus">Augustus</a> (despite common belief, he did not take a day from February; see the <a href="http://www.wikipedia.org/wiki/Julian_calendar#Sacrobosco.27s_theory_on_month_lengths" title="Julian calendar">debunked theory on month lengths</a>). According to a <a href="http://www.wikipedia.org/wiki/Senatus_consultum" title="Senatus consultum">Senatus consultum</a> quoted by <a href="http://www.wikipedia.org/wiki/Macrobius" title="Macrobius">Macrobius</a>, he chose this month because it was the time of several of his great triumphs, including the conquest of Egypt.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/August#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>August is the month with highest birth rate in the USA.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/August#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/August#Month-long_observances"><span class="tocnumber">1</span> <span class="toctext">Month-long observances</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/August#Other_events_in_August"><span class="tocnumber">2</span> <span class="toctext">Other events in August</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/August#Movable_observances"><span class="tocnumber">3</span> <span class="toctext">Movable observances</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/August#1st_Saturday_2015_date_-_August_1"><span class="tocnumber">3.1</span> <span class="toctext">1st Saturday 2015 date - August 1</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/August#1st_Sunday_2015_date_-_August_2"><span class="tocnumber">3.2</span> <span class="toctext">1st Sunday 2015 date - August 2</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/August#1st_Monday_2015_date_-_August_3"><span class="tocnumber">3.3</span> <span class="toctext">1st Monday 2015 date - August 3</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/August#1st_Tuesday_2015_date_-_August_4"><span class="tocnumber">3.4</span> <span class="toctext">1st Tuesday 2015 date - August 4</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/August#1st_Friday_2015_date_-_August_7"><span class="tocnumber">3.5</span> <span class="toctext">1st Friday 2015 date - August 7</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/August#Sunday_on_or_closest_to_August_9.2C_2015_date:_August_9"><span class="tocnumber">3.6</span> <span class="toctext">Sunday on or closest to August 9, 2015 date: August 9</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/August#2nd_Sunday_2015_date_-_August_9"><span class="tocnumber">3.7</span> <span class="toctext">2nd Sunday 2015 date - August 9</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/August#2nd_Monday_2015_date_-_August_10"><span class="tocnumber">3.8</span> <span class="toctext">2nd Monday 2015 date - August 10</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/August#2nd_Tuesday_2015_date_-_August_11"><span class="tocnumber">3.9</span> <span class="toctext">2nd Tuesday 2015 date - August 11</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/August#3rd_Saturday_2015_date_-_August_15"><span class="tocnumber">3.10</span> <span class="toctext">3rd Saturday 2015 date - August 15</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/August#3rd_Sunday_-_August_16"><span class="tocnumber">3.11</span> <span class="toctext">3rd Sunday - August 16</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/August#3rd_Monday_-_August_17"><span class="tocnumber">3.12</span> <span class="toctext">3rd Monday - August 17</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/August#3rd_Friday_-_August_21"><span class="tocnumber">3.13</span> <span class="toctext">3rd Friday - August 21</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/August#Sunday_Nearest_August_26_-_August_23"><span class="tocnumber">3.14</span> <span class="toctext">Sunday Nearest August 26 - August 23</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="http://en.wikipedia.org/wiki/August#Last_Sunday_August_30"><span class="tocnumber">3.15</span> <span class="toctext">Last Sunday August 30</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/August#Last_Monday_-_August_31"><span class="tocnumber">3.16</span> <span class="toctext">Last Monday - August 31</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="http://en.wikipedia.org/wiki/August#Non-Gregorian_observances"><span class="tocnumber">3.17</span> <span class="toctext">Non-Gregorian observances</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="http://en.wikipedia.org/wiki/August#Fixed_Observances"><span class="tocnumber">3.18</span> <span class="toctext">Fixed Observances</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-22"><a href="http://en.wikipedia.org/wiki/August#August_symbols"><span class="tocnumber">4</span> <span class="toctext">August symbols</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="http://en.wikipedia.org/wiki/August#References"><span class="tocnumber">5</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="http://en.wikipedia.org/wiki/August#Further_reading"><span class="tocnumber">6</span> <span class="toctext">Further reading</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/August">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Alexander_I_of_Epirus.html'">Alexander I of Epirus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ancus_Marcius.html'">Ancus Marcius</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_II_of_Epirus.html'">Alexander II of Epirus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alphege.html'">Alphege</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abencerrages.html'">Abencerrages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actium.html'">Actium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ara_(constellation).html'">Ara (constellation)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_II_of_Scotland.html'">Alexander II of Scotland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adalbert_of_Prague.html'">Adalbert of Prague</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Áed_of_Scotland.html'">Áed of Scotland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abae.html'">Abae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_XIII_of_Spain.html'">Alfonso XIII of Spain</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antigonid_dynasty.html'">Antigonid dynasty</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abner.html'">Abner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abydos,_Hellespont.html'">Abydos, Hellespont</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahmed_I.html'">Ahmed I</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Titus_(Biblical).html'">Titus (Biblical)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/House_of_Ascania.html'">House of Ascania</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abu_al-Fida.html'">Abu al-Fida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aegisthus.html'">Aegisthus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antonio_Agliardi.html'">Antonio Agliardi</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abimelech.html'">Abimelech</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aedui.html'">Aedui</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abijah.html'">Abijah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amaryllis.html'">Amaryllis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Phillip.html'">Arthur Phillip</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Aetolus.html'">Alexander Aetolus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambracia.html'">Ambracia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollos.html'">Apollos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ægir.html'">Ægir</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

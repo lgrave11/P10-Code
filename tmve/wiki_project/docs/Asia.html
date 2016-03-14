@@ -1,0 +1,160 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[215.6382543114, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [95.4542536424, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [24.1763197086, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Asia</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Asia</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Asia</b> (<span class="nowrap"><span class="noexcerpt"><a href="//upload.wikimedia.org/wikipedia/commons/2/2e/En-us-Asia.ogg" title="Listen"><img alt="Listen" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Speakerlink-new.svg/11px-Speakerlink-new.svg.png" width="11" height="11" data-file-width="11" data-file-height="11" /></a><sup><span class="IPA" style="color:#00e;font:bold 80% sans-serif;padding:0 .1em"><a href="http://www.wikipedia.org/wiki/File:En-us-Asia.ogg" title="File:En-us-Asia.ogg">i</a></span></sup></span><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/eɪ/ long 'a' in 'base'">eɪ</span><span title="/ʒ/ 's' in 'pleasure'">ʒ</span><span title="/ə/ 'a' in 'about'">ə</span></span>/</a></span></span> or <span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="/eɪ/ long 'a' in 'base'">eɪ</span><span title="/ʃ/ 'sh' in 'shy'">ʃ</span><span title="/ə/ 'a' in 'about'">ə</span></span>/</a></span></span>) is the <a href="http://www.wikipedia.org/wiki/Earth" title="Earth">Earth's</a> largest and most populous <a href="http://www.wikipedia.org/wiki/Continent" title="Continent">continent</a>, located primarily in the <a href="http://www.wikipedia.org/wiki/Eastern_Hemisphere" title="Eastern Hemisphere">eastern</a> and <a href="http://www.wikipedia.org/wiki/Northern_hemisphere" title="Northern hemisphere" class="mw-redirect">northern hemispheres</a>. Asia covers an area of 44,579,000 square kilometers, about 30% of Earth's total land area and 8.7% of the Earth's total surface area. It has historically been home to the world's first modern civilizations and has always hosted the bulk of the planet's <a href="http://www.wikipedia.org/wiki/Human_population" title="Human population" class="mw-redirect">human population</a>.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Asia#cite_note-4"><span>[</span>4<span>]</span></a></sup> Asia is notable for not only its overall large size and population, but unusually dense and large settlements as well as vast barely populated regions within the continent of 4.4 billion people. The boundaries of Asia are traditionally determined as that of <a href="http://www.wikipedia.org/wiki/Eurasia" title="Eurasia">Eurasia</a>, as there is no significant geographical separation between Asia and Europe. The most commonly accepted boundaries place Asia to the east of the <a href="http://www.wikipedia.org/wiki/Suez_Canal" title="Suez Canal">Suez Canal</a>, the <a href="http://www.wikipedia.org/wiki/Ural_River" title="Ural River">Ural River</a>, and the <a href="http://www.wikipedia.org/wiki/Ural_Mountains" title="Ural Mountains">Ural Mountains</a>, and south of the <a href="http://www.wikipedia.org/wiki/Caucasus_Mountains" title="Caucasus Mountains">Caucasus Mountains</a> and the <a href="http://www.wikipedia.org/wiki/Caspian_Sea" title="Caspian Sea">Caspian</a> and <a href="http://www.wikipedia.org/wiki/Black_Sea" title="Black Sea">Black Seas</a>.<sup id="cite_ref-ReferenceA_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Asia#cite_note-ReferenceA-5"><span>[</span>5<span>]</span></a></sup> It is bounded on the east by the <a href="http://www.wikipedia.org/wiki/Pacific_Ocean" title="Pacific Ocean">Pacific Ocean</a>, on the south by the <a href="http://www.wikipedia.org/wiki/Indian_Ocean" title="Indian Ocean">Indian Ocean</a> and on the north by the <a href="http://www.wikipedia.org/wiki/Arctic_Ocean" title="Arctic Ocean">Arctic Ocean</a>.</p>
+<p><a href="http://www.wikipedia.org/wiki/China" title="China">China</a> and <a href="http://www.wikipedia.org/wiki/India" title="India">India</a> alternated in being the <a href="http://www.wikipedia.org/wiki/List_of_regions_by_past_GDP_(PPP)" title="List of regions by past GDP (PPP)">largest economies in the world</a> from 1 to 1800 A.D. China was a major economic power and attracted many to the east,<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Asia#cite_note-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Asia#cite_note-7"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/Asia#cite_note-8"><span>[</span>8<span>]</span></a></sup><sup id="cite_ref-9" class="reference"><a href="http://en.wikipedia.org/wiki/Asia#cite_note-9"><span>[</span>9<span>]</span></a></sup> and for many the legendary wealth and prosperity of the ancient culture of India personified Asia,<sup id="cite_ref-10" class="reference"><a href="http://en.wikipedia.org/wiki/Asia#cite_note-10"><span>[</span>10<span>]</span></a></sup> attracting European commerce, exploration and colonialism. The accidental discovery of America by Columbus in search for India demonstrates this deep fascination. The <a href="http://www.wikipedia.org/wiki/Silk_Road" title="Silk Road">Silk Road</a> became the main East-West trading route in the Asian hitherland while the <a href="http://www.wikipedia.org/wiki/Straits_of_Malacca" title="Straits of Malacca" class="mw-redirect">Straits of Malacca</a> stood as a major sea route. Asia has exhibited economic dynamism (particularly East Asia) as well as robust population growth during the 20th century, but overall population growth has since fallen to world average levels.<sup id="cite_ref-11" class="reference"><a href="http://en.wikipedia.org/wiki/Asia#cite_note-11"><span>[</span>11<span>]</span></a></sup> Asia was the birthplace of most of the world's mainstream <a href="http://www.wikipedia.org/wiki/Religion" title="Religion">religions</a> including <a href="http://www.wikipedia.org/wiki/Christianity" title="Christianity">Christianity</a>, <a href="http://www.wikipedia.org/wiki/Islam" title="Islam">Islam</a>, <a href="http://www.wikipedia.org/wiki/Judaism" title="Judaism">Judaism</a>, <a href="http://www.wikipedia.org/wiki/Hinduism" title="Hinduism">Hinduism</a>, <a href="http://www.wikipedia.org/wiki/Buddhism" title="Buddhism">Buddhism</a>, <a href="http://www.wikipedia.org/wiki/Confucianism" title="Confucianism">Confucianism</a>, <a href="http://www.wikipedia.org/wiki/Taoism" title="Taoism">Taoism</a> (or Daoism), <a href="http://www.wikipedia.org/wiki/Jainism" title="Jainism">Jainism</a>, <a href="http://www.wikipedia.org/wiki/Sikhism" title="Sikhism">Sikhism</a>, <a href="http://www.wikipedia.org/wiki/Zoroastranism" title="Zoroastranism" class="mw-redirect">Zoroastranism</a>, as well as many other religions.</p>
+<p><a href="http://en.wikipedia.org/wiki/Asia">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Alps.html'">Alps</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abadan.html'">Abadan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/List_of_Governors_of_Alabama.html'">List of Governors of Alabama</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdare.html'">Aberdare</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aargau.html'">Aargau</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Registry_for_Internet_Numbers.html'">American Registry for Internet Numbers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asian_Development_Bank.html'">Asian Development Bank</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annual_plant.html'">Annual plant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Azawakh.html'">Azawakh</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Action_Against_Hunger.html'">Action Against Hunger</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albion,_Michigan.html'">Albion, Michigan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aachen.html'">Aachen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ames,_Iowa.html'">Ames, Iowa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Kerensky.html'">Alexander Kerensky</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aon_Corporation.html'">Aon Corporation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agent_Orange.html'">Agent Orange</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aquaculture.html'">Aquaculture</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annapolis_Valley.html'">Annapolis Valley</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdeenshire.html'">Aberdeenshire</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acadia_University.html'">Acadia University</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Sidney_Johnston.html'">Albert Sidney Johnston</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdour.html'">Aberdour</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afghan_Hound.html'">Afghan Hound</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ajaccio.html'">Ajaccio</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antarctic_Treaty_System.html'">Antarctic Treaty System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Politics_of_Angola.html'">Politics of Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ajmer-Merwara.html'">Ajmer-Merwara</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ashmore_and_Cartier_Islands.html'">Ashmore and Cartier Islands</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afyonkarahisar.html'">Afyonkarahisar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabian_Sea.html'">Arabian Sea</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

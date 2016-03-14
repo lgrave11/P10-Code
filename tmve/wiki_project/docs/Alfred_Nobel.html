@@ -1,0 +1,180 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[127.889171322, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [85.0897482265, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [37.0730477273, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [29.3064807791, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Alfred Nobel</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Alfred Nobel</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Alfred Bernhard Nobel</b> (<span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="'n' in 'no'">n</span><span title="/oʊ/ long 'o' in 'code'">oʊ</span><span title="/ˈ/ primary stress follows">ˈ</span><span title="'b' in 'buy'">b</span><span title="/ɛ/ short 'e' in 'bed'">ɛ</span><span title="'l' in 'lie'">l</span></span>/</a></span></span>; <small>Swedish:&#160;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_Swedish" title="Help:IPA for Swedish">[ˈalfrɛd nʊˈbɛl]</a></span> <span class="unicode haudio"><span class="fn"><span style="white-space:nowrap"><a href="http://www.wikipedia.org/wiki/File:Sv-Alfred_Nobel.ogg" title="About this sound"><img alt="About this sound" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/11px-Loudspeaker.svg.png" width="11" height="11" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/17px-Loudspeaker.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Loudspeaker.svg/22px-Loudspeaker.svg.png 2x" data-file-width="20" data-file-height="20" /></a>&#160;</span><a href="//upload.wikimedia.org/wikipedia/commons/0/00/Sv-Alfred_Nobel.ogg" class="internal" title="Sv-Alfred Nobel.ogg">listen</a></span>&#160;<small class="metadata audiolinkinfo" style="cursor:help;">(<a href="http://www.wikipedia.org/wiki/Wikipedia:Media_help" title="Wikipedia:Media help"><span style="cursor:help;">help</span></a>·<a href="http://www.wikipedia.org/wiki/File:Sv-Alfred_Nobel.ogg" title="File:Sv-Alfred Nobel.ogg"><span style="cursor:help;">info</span></a>)</small></span>; 21 October 1833 – 10 December 1896) was a Swedish chemist, engineer, innovator, and armaments manufacturer.</p>
+<p>He was the inventor of <a href="http://www.wikipedia.org/wiki/Dynamite" title="Dynamite">dynamite</a>. Nobel also owned <a href="http://www.wikipedia.org/wiki/Bofors" title="Bofors">Bofors</a>, which he had redirected from its previous role as primarily an iron and steel producer to a major manufacturer of cannon and other armaments. Nobel held 355 different patents, dynamite being the most famous. After reading a <a href="http://www.wikipedia.org/wiki/Premature_obituary" title="Premature obituary" class="mw-redirect">premature obituary</a> which condemned him for profiting from the sales of arms, he bequeathed his fortune to institute the <a href="http://www.wikipedia.org/wiki/Nobel_Prize" title="Nobel Prize">Nobel Prizes</a>.<sup id="cite_ref-fin-assets_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#cite_note-fin-assets-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-alfwill_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#cite_note-alfwill-2"><span>[</span>2<span>]</span></a></sup> The synthetic element <a href="http://www.wikipedia.org/wiki/Nobelium" title="Nobelium">nobelium</a> was named after him.<sup id="cite_ref-nobelium1_3-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#cite_note-nobelium1-3"><span>[</span>3<span>]</span></a></sup> His name also survives in modern-day companies such as <a href="http://www.wikipedia.org/wiki/Dynamit_Nobel" title="Dynamit Nobel">Dynamit Nobel</a> and <a href="http://www.wikipedia.org/wiki/AkzoNobel" title="AkzoNobel">AkzoNobel</a>, which are descendants of mergers with companies Nobel himself established.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#Life_and_career"><span class="tocnumber">1</span> <span class="toctext">Life and career</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#Death"><span class="tocnumber">2</span> <span class="toctext">Death</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#Personal_life"><span class="tocnumber">3</span> <span class="toctext">Personal life</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#Inventions"><span class="tocnumber">4</span> <span class="toctext">Inventions</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#Nobel_Prizes"><span class="tocnumber">5</span> <span class="toctext">Nobel Prizes</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#Monuments"><span class="tocnumber">6</span> <span class="toctext">Monuments</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#Criticism"><span class="tocnumber">7</span> <span class="toctext">Criticism</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#Further_reading"><span class="tocnumber">9</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Life_and_career">Life and career</span></h3>
+<p>Born in <a href="http://www.wikipedia.org/wiki/Stockholm" title="Stockholm">Stockholm</a>, Alfred Nobel was the third son of <a href="http://www.wikipedia.org/wiki/Immanuel_Nobel" title="Immanuel Nobel">Immanuel Nobel</a> (1801–1872), an inventor and engineer, and Carolina Andriette (Ahlsell) Nobel (1805–1889).<sup id="cite_ref-Brit1_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#cite_note-Brit1-4"><span>[</span>4<span>]</span></a></sup> The couple married in 1827 and had eight children. The family was impoverished, and only Alfred and his three brothers survived past childhood.<sup id="cite_ref-Brit1_4-1" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#cite_note-Brit1-4"><span>[</span>4<span>]</span></a></sup><sup id="cite_ref-Gale_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#cite_note-Gale-5"><span>[</span>5<span>]</span></a></sup> Through his father, Alfred Nobel was a descendant of the Swedish scientist <a href="http://www.wikipedia.org/wiki/Olaus_Rudbeck" title="Olaus Rudbeck">Olaus Rudbeck</a> (1630–1702),<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#cite_note-6"><span>[</span>6<span>]</span></a></sup> and in his turn the boy was interested in engineering, particularly explosives, learning the basic principles from his father at a young age. Alfred Nobel's interest in technology was inherited from his father, an alumnus of <a href="http://www.wikipedia.org/wiki/Royal_Institute_of_Technology" title="Royal Institute of Technology">Royal Institute of Technology</a> in <a href="http://www.wikipedia.org/wiki/Stockholm" title="Stockholm">Stockholm</a>.<sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Alfred_Nobel#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Alfred_Nobel">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Adventism.html'">Adventism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberto_Giacometti.html'">Alberto Giacometti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Jarry.html'">Alfred Jarry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Gide.html'">André Gide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ablative_case.html'">Ablative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustin_Louis_Cauchy.html'">Augustin Louis Cauchy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Book_of_Amos.html'">Book of Amos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrey_Markov.html'">Andrey Markov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abhidharma.html'">Abhidharma</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbahu.html'">Abbahu</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Articles_of_Faith.html'">Articles of Faith</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abba_Arika.html'">Abba Arika</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abdul_Alhazred.html'">Abdul Alhazred</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcuin.html'">Alcuin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A.html'">A</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/August_Derleth.html'">August Derleth</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affidavit.html'">Affidavit</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Answer.html'">Answer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ancient_philosophy.html'">Ancient philosophy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Religious_denominations_in_Poland.html'">Religious denominations in Poland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allomorph.html'">Allomorph</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alvin_Toffler.html'">Alvin Toffler</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Autism.html'">Autism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allocution.html'">Allocution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angst.html'">Angst</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ada_Lovelace.html'">Ada Lovelace</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artistic_revolution.html'">Artistic revolution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Approximant_consonant.html'">Approximant consonant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antimony.html'">Antimony</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abd-el-latif.html'">Abd-el-latif</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

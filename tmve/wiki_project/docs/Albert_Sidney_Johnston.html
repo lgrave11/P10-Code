@@ -1,0 +1,198 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[161.388217496, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [108.7909881617, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Albert Sidney Johnston</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Albert Sidney Johnston</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><a href="http://www.wikipedia.org/wiki/Black_Hawk_War" title="Black Hawk War">Black Hawk War</a><br />
+<a href="http://www.wikipedia.org/wiki/Texas_Revolution" title="Texas Revolution">Texas Revolution</a><br />
+<a href="http://www.wikipedia.org/wiki/Mexican%E2%80%93American_War" title="Mexican–American War">Mexican–American War</a></p>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Battle_of_Monterrey" title="Battle of Monterrey">Battle of Monterrey</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Battle_of_Buena_Vista" title="Battle of Buena Vista">Battle of Buena Vista</a></li>
+</ul>
+<p><a href="http://www.wikipedia.org/wiki/Utah_War" title="Utah War">Utah War</a><br />
+<a href="http://www.wikipedia.org/wiki/American_Civil_War" title="American Civil War">American Civil War</a></p>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Battle_of_Shiloh" title="Battle of Shiloh">Battle of Shiloh</a>&#160;<a href="http://www.wikipedia.org/wiki/Killed_in_action" title="Killed in action"><span style="font-family:'Times New Roman','Old English Text MT',serif"><b>†</b></span></a></li>
+</ul>
+<p><b>Albert Sidney Johnston</b> (February 2, 1803 – April 6, 1862) served as a <a href="http://www.wikipedia.org/wiki/General_officer" title="General officer">general</a> in three different armies: the <a href="http://www.wikipedia.org/wiki/Texian_Army" title="Texian Army">Texian (<i>i.e.</i>, Republic of Texas) Army</a>, the <a href="http://www.wikipedia.org/wiki/United_States_Army" title="United States Army">United States Army</a>, and the <a href="http://www.wikipedia.org/wiki/Confederate_States_Army" title="Confederate States Army">Confederate States Army</a>. He saw extensive combat during his military career, fighting actions in the <a href="http://www.wikipedia.org/wiki/Texas_War_of_Independence" title="Texas War of Independence" class="mw-redirect">Texas War of Independence</a>, the <a href="http://www.wikipedia.org/wiki/Mexican%E2%80%93American_War" title="Mexican–American War">Mexican–American War</a>, the <a href="http://www.wikipedia.org/wiki/Utah_War" title="Utah War">Utah War</a>, and the <a href="http://www.wikipedia.org/wiki/American_Civil_War" title="American Civil War">American Civil War</a>.</p>
+<p>Considered by <a href="http://www.wikipedia.org/wiki/President_of_the_Confederate_States_of_America" title="President of the Confederate States of America">Confederate President</a> <a href="http://www.wikipedia.org/wiki/Jefferson_Davis" title="Jefferson Davis">Jefferson Davis</a> to be the finest general officer in the Confederacy before the emergence of <a href="http://www.wikipedia.org/wiki/Robert_E._Lee" title="Robert E. Lee">Robert E. Lee</a>, he was killed early in the Civil War at the <a href="http://www.wikipedia.org/wiki/Battle_of_Shiloh" title="Battle of Shiloh">Battle of Shiloh</a>. Johnston was the highest-ranking officer, Union or Confederate, killed during the entire war. Davis believed the loss of Johnston "was the turning point of our fate".</p>
+<p>Johnston was unrelated to Confederate general <a href="http://www.wikipedia.org/wiki/Joseph_E._Johnston" title="Joseph E. Johnston">Joseph E. Johnston</a>.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Early_life_and_education"><span class="tocnumber">1</span> <span class="toctext">Early life and education</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Marriage_and_family"><span class="tocnumber">2</span> <span class="toctext">Marriage and family</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Texas_Army"><span class="tocnumber">3</span> <span class="toctext">Texas Army</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#U.S._Army"><span class="tocnumber">4</span> <span class="toctext">U.S. Army</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Utah_War"><span class="tocnumber">5</span> <span class="toctext">Utah War</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Civil_War"><span class="tocnumber">6</span> <span class="toctext">Civil War</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Confederate_command_in_Western_Theater"><span class="tocnumber">6.1</span> <span class="toctext">Confederate command in Western Theater</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Battle_of_Mill_Springs"><span class="tocnumber">6.2</span> <span class="toctext">Battle of Mill Springs</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Fort_Henry.2C_Fort_Donelson.2C_Nashville"><span class="tocnumber">6.3</span> <span class="toctext">Fort Henry, Fort Donelson, Nashville</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Concentration_at_Corinth"><span class="tocnumber">6.4</span> <span class="toctext">Concentration at Corinth</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Battle_of_Shiloh_and_death"><span class="tocnumber">6.5</span> <span class="toctext">Battle of Shiloh and death</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Legacy_and_honors"><span class="tocnumber">7</span> <span class="toctext">Legacy and honors</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Notes"><span class="tocnumber">9</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#Further_reading"><span class="tocnumber">11</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Albert_Sidney_Johnston">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Aberdour.html'">Aberdour</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_St._Clair.html'">Arthur St. Clair</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aachen.html'">Aachen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Pike.html'">Albert Pike</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afghan_Hound.html'">Afghan Hound</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arctic_Fox.html'">Arctic Fox</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afyonkarahisar.html'">Afyonkarahisar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amaranth.html'">Amaranth</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annapolis_Valley.html'">Annapolis Valley</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdeenshire.html'">Aberdeenshire</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Politics_of_Angola.html'">Politics of Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annual_plant.html'">Annual plant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ajaccio.html'">Ajaccio</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Demographics_of_Angola.html'">Demographics of Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asian_Development_Bank.html'">Asian Development Bank</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ajmer-Merwara.html'">Ajmer-Merwara</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabian_Sea.html'">Arabian Sea</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ashmore_and_Cartier_Islands.html'">Ashmore and Cartier Islands</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ajmer.html'">Ajmer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Registry_for_Internet_Numbers.html'">American Registry for Internet Numbers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abersychan.html'">Abersychan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Politics_of_American_Samoa.html'">Politics of American Samoa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acre.html'">Acre</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abel_Tasman.html'">Abel Tasman</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acadia_University.html'">Acadia University</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdare.html'">Aberdare</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aquaculture.html'">Aquaculture</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aargau.html'">Aargau</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberfoyle,_Stirling.html'">Aberfoyle, Stirling</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abertillery.html'">Abertillery</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

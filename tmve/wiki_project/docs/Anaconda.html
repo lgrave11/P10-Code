@@ -1,0 +1,174 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[117.163151113, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [79.07693864, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [59.0287354548, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Anaconda</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Anaconda</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>anaconda</b> is a large <a href="http://www.wikipedia.org/wiki/Snake" title="Snake">snake</a> found in tropical <a href="http://www.wikipedia.org/wiki/South_America" title="South America">South America</a>. Although the name applies to a group of snakes, it is often used to refer only to one species in particular, the common or green anaconda, <i><a href="http://www.wikipedia.org/wiki/Eunectes_murinus" title="Eunectes murinus" class="mw-redirect">Eunectes murinus</a></i>, which is the largest snake in the world by weight, and the second longest.</p>
+<p><b>Anaconda</b> may refer to:</p>
+<ul>
+<li>Any member of the genus <i><a href="http://www.wikipedia.org/wiki/Eunectes" title="Eunectes">Eunectes</a></i>, a group of large, aquatic snakes found in South America
+<ul>
+<li><i><a href="http://www.wikipedia.org/wiki/Eunectes_murinus" title="Eunectes murinus" class="mw-redirect">Eunectes murinus</a></i>, the green anaconda, the largest species, is found east of the Andes in Colombia, Venezuela, the Guianas, Ecuador, Peru, Bolivia, Brazil and <a href="http://www.wikipedia.org/wiki/Trinidad_and_Tobago" title="Trinidad and Tobago">Trinidad and Tobago</a>.</li>
+<li><i><a href="http://www.wikipedia.org/wiki/Eunectes_notaeus" title="Eunectes notaeus" class="mw-redirect">Eunectes notaeus</a></i>, the yellow anaconda, a small species, is found in eastern Bolivia, southern Brazil, Paraguay and northeastern Argentina.</li>
+<li><i><a href="http://www.wikipedia.org/wiki/Eunectes_deschauenseei" title="Eunectes deschauenseei">Eunectes deschauenseei</a></i>, the darkly-spotted anaconda, is a rare species found in northeastern Brazil and coastal French Guiana.</li>
+<li><i><a href="http://www.wikipedia.org/wiki/Eunectes_beniensis" title="Eunectes beniensis">Eunectes beniensis</a></i>, the Bolivian anaconda, the most recently defined species, is found in the Departments of Beni and Pando in <a href="http://www.wikipedia.org/wiki/Bolivia" title="Bolivia">Bolivia</a>.</li>
+</ul>
+</li>
+<li>The <a href="http://www.wikipedia.org/wiki/Giant_anaconda" title="Giant anaconda">giant anaconda</a> is a mythical snake of enormous proportions said to be found in South America.</li>
+<li>Any large snake that "constricts" its prey (see <a href="http://www.wikipedia.org/wiki/Constriction" title="Constriction">Constriction</a>), if applied loosely, was called anaconda,<sup id="cite_ref-COED_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Anaconda#cite_note-COED-1"><span>[</span>1<span>]</span></a></sup> though this usage is now archaic.</li>
+</ul>
+<h3><span class="mw-headline" id="Etymology">Etymology</span></h3>
+<p>The South American names <i>anacauchoa</i> and <i>anacaona</i> were suggested in an account by <a href="http://www.wikipedia.org/wiki/Peter_Martyr_d%27Anghiera" title="Peter Martyr d'Anghiera">Peter Martyr d'Anghiera</a> but the idea of a South American origin was questioned by <a href="http://www.wikipedia.org/wiki/Henry_Walter_Bates" title="Henry Walter Bates">Henry Walter Bates</a> who, in his travels in South America, failed to find any similar name in use. The word anaconda is derived from the name of a snake from Ceylon (Sri Lanka) that <a href="http://www.wikipedia.org/wiki/John_Ray" title="John Ray">John Ray</a> described in Latin in his <i>Synopsis Methodica Animalium</i> (1693) as <i>serpens indicus bubalinus anacandaia zeylonibus, ides bubalorum aliorumque jumentorum membra conterens</i>.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Anaconda#cite_note-2"><span>[</span>2<span>]</span></a></sup> Ray used a catalogue of snakes from the Leyden museum supplied by Dr. <a href="http://www.wikipedia.org/wiki/Tancred_Robinson" title="Tancred Robinson">Tancred Robinson</a>, but the description of its habit was based on <a href="http://www.wikipedia.org/wiki/Andreas_Cleyer" title="Andreas Cleyer">Andreas Cleyer</a> who in 1684 described a gigantic snake that crushed large animals by coiling and crushing their bones.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Anaconda#cite_note-3"><span>[</span>3<span>]</span></a></sup> <a href="http://www.wikipedia.org/wiki/Henry_Yule" title="Henry Yule">Henry Yule</a> in his <a href="http://www.wikipedia.org/wiki/Hobson-Jobson" title="Hobson-Jobson">Hobson-Jobson</a> notes that the word became more popular due to a piece of fiction published in 1768 in the Scots Magazine by a certain R. Edwin. Edwin described a <i>tiger</i> being crushed and killed by an anaconda when in fact tigers never occurred in Sri Lanka. Yule and <a href="http://www.wikipedia.org/wiki/Frank_Wall" title="Frank Wall">Frank Wall</a> noted that the snake was in fact a python and suggested a <a href="http://www.wikipedia.org/wiki/Tamil_language" title="Tamil language">Tamil</a> origin <i>anai-kondra</i> meaning elephant killer.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Anaconda#cite_note-4"><span>[</span>4<span>]</span></a></sup> A <a href="http://www.wikipedia.org/wiki/Sinhala_language" title="Sinhala language" class="mw-redirect">Sinhalese</a> origin was also suggested by Donald Ferguson who pointed out that the word <i>Henakandaya</i> (<i>hena</i> lightning/large and <i>kanda</i> stem/trunk) was used in Sri Lanka for the small whip snake (<i><a href="http://www.wikipedia.org/wiki/Ahaetulla_pulverulenta" title="Ahaetulla pulverulenta">Ahaetulla pulverulenta</a></i>)<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Anaconda#cite_note-5"><span>[</span>5<span>]</span></a></sup> and somehow got misapplied to the python before myths were created.<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Anaconda#cite_note-6"><span>[</span>6<span>]</span></a></sup><sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Anaconda#cite_note-7"><span>[</span>7<span>]</span></a></sup><sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/Anaconda#cite_note-8"><span>[</span>8<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Anaconda">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Park_Güell.html'">Park Güell</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbas_II_of_Egypt.html'">Abbas II of Egypt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Mackenzie.html'">Alexander Mackenzie</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberfoyle,_Stirling.html'">Aberfoyle, Stirling</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abel_Tasman.html'">Abel Tasman</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aardwolf.html'">Aardwolf</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso,_Count_of_Poitou.html'">Alfonso, Count of Poitou</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afonso_II_of_Portugal.html'">Afonso II of Portugal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbess.html'">Abbess</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andronikos_III_Palaiologos.html'">Andronikos III Palaiologos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angilbert.html'">Angilbert</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alyattes_II.html'">Alyattes II</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abdul_Hamid_I.html'">Abdul Hamid I</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Folklore_of_the_United_States.html'">Folklore of the United States</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amyntas_III_of_Macedon.html'">Amyntas III of Macedon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antipope_Felix_II.html'">Antipope Felix II</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aaron.html'">Aaron</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambrosia.html'">Ambrosia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_II_of_Asturias.html'">Alfonso II of Asturias</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arcadius.html'">Arcadius</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afonso_VI_of_Portugal.html'">Afonso VI of Portugal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldred.html'">Aldred</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_the_Bear.html'">Albert the Bear</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_de_Longjumeau.html'">André de Longjumeau</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amram.html'">Amram</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abipones.html'">Abipones</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/George_Abbot_(archbishop).html'">George Abbot (archbishop)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbas_Mirza.html'">Abbas Mirza</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Absalon.html'">Absalon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aisha.html'">Aisha</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

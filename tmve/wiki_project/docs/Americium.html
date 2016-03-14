@@ -1,0 +1,203 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[216.0895779957, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Americium</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Americium</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Americium</b> is a <a href="http://www.wikipedia.org/wiki/Radioactive_decay" title="Radioactive decay">radioactive</a> <a href="http://www.wikipedia.org/wiki/Transuranic_element" title="Transuranic element" class="mw-redirect">transuranic</a> <a href="http://www.wikipedia.org/wiki/Chemical_element" title="Chemical element">chemical element</a> with symbol <b>Am</b> and <a href="http://www.wikipedia.org/wiki/Atomic_number" title="Atomic number">atomic number</a> 95. This member of the <a href="http://www.wikipedia.org/wiki/Actinide" title="Actinide">actinide</a> series is located in the <a href="http://www.wikipedia.org/wiki/Periodic_table" title="Periodic table">periodic table</a> under the <a href="http://www.wikipedia.org/wiki/Lanthanide" title="Lanthanide">lanthanide</a> element <a href="http://www.wikipedia.org/wiki/Europium" title="Europium">europium</a>, and thus by analogy was named after the <a href="http://www.wikipedia.org/wiki/Americas" title="Americas">Americas</a>.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Americium#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>Americium was first produced in 1944 by the group of <a href="http://www.wikipedia.org/wiki/Glenn_T._Seaborg" title="Glenn T. Seaborg">Glenn T. Seaborg</a> from Berkeley, California, at the metallurgical laboratory of <a href="http://www.wikipedia.org/wiki/University_of_Chicago" title="University of Chicago">University of Chicago</a>. Although it is the third element in the <a href="http://www.wikipedia.org/wiki/Transuranic_element" title="Transuranic element" class="mw-redirect">transuranic series</a>, it was discovered fourth, after the heavier <a href="http://www.wikipedia.org/wiki/Curium" title="Curium">curium</a>. The discovery was kept secret and only released to the public in November 1945. Most americium is produced by <a href="http://www.wikipedia.org/wiki/Uranium" title="Uranium">uranium</a> or <a href="http://www.wikipedia.org/wiki/Plutonium" title="Plutonium">plutonium</a> being bombarded with <a href="http://www.wikipedia.org/wiki/Neutron" title="Neutron">neutrons</a> in <a href="http://www.wikipedia.org/wiki/Nuclear_reactor" title="Nuclear reactor">nuclear reactors</a> – one <a href="http://www.wikipedia.org/wiki/Tonne" title="Tonne">tonne</a> of spent <a href="http://www.wikipedia.org/wiki/Nuclear_fuel" title="Nuclear fuel">nuclear fuel</a> contains about 100&#160;grams of americium. It is widely used in commercial <a href="http://www.wikipedia.org/wiki/Ionization_chamber" title="Ionization chamber">ionization chamber</a> <a href="http://www.wikipedia.org/wiki/Smoke_detectors" title="Smoke detectors" class="mw-redirect">smoke detectors</a>, as well as in <a href="http://www.wikipedia.org/wiki/Neutron_source" title="Neutron source">neutron sources</a> and industrial gauges. Several unusual applications, such as a nuclear battery or fuel for space ships with nuclear propulsion, have been proposed for the <a href="http://www.wikipedia.org/wiki/Isotope" title="Isotope">isotope</a> <sup>242m</sup>Am, but they are as yet hindered by the scarcity and high price of this <a href="http://www.wikipedia.org/wiki/Nuclear_isomer" title="Nuclear isomer">nuclear isomer</a>.</p>
+<p>Americium is a relatively soft <a href="http://www.wikipedia.org/wiki/Radioactive_decay" title="Radioactive decay">radioactive</a> metal with silvery appearance. Its <a href="http://www.wikipedia.org/wiki/Isotopes_of_americium" title="Isotopes of americium">common isotopes</a> are <sup>241</sup>Am and <sup>243</sup>Am. In chemical compounds, they usually assume the <a href="http://www.wikipedia.org/wiki/Oxidation_state" title="Oxidation state">oxidation state</a> +3, especially in solutions. Several other oxidation states are known, which range from +2 to +7 and can be identified by their characteristic <a href="http://www.wikipedia.org/wiki/Optical_absorption" title="Optical absorption" class="mw-redirect">optical absorption</a> spectra. The crystal lattice of solid americium and its compounds contain small instrinsic radiogenic defects, due to <a href="http://www.wikipedia.org/wiki/Metamictization" title="Metamictization">metamicitization</a> via the induced by self-irradiation with alpha particles and accumulate with time; this can cause a drift of some material properties over time, more noticeable in older samples.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Americium#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Americium#Occurrence"><span class="tocnumber">2</span> <span class="toctext">Occurrence</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Americium#Synthesis_and_extraction"><span class="tocnumber">3</span> <span class="toctext">Synthesis and extraction</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Americium#Isotope_Nucleosyntheses"><span class="tocnumber">3.1</span> <span class="toctext">Isotope Nucleosyntheses</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Americium#Metal_generation"><span class="tocnumber">3.2</span> <span class="toctext">Metal generation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Americium#Physical_properties"><span class="tocnumber">4</span> <span class="toctext">Physical properties</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Americium#Chemical_properties"><span class="tocnumber">5</span> <span class="toctext">Chemical properties</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Americium#Chemical_compounds"><span class="tocnumber">6</span> <span class="toctext">Chemical compounds</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Americium#Oxygen_compounds"><span class="tocnumber">6.1</span> <span class="toctext">Oxygen compounds</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Americium#Halides"><span class="tocnumber">6.2</span> <span class="toctext">Halides</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Americium#Chalcogenides_and_pnictides"><span class="tocnumber">6.3</span> <span class="toctext">Chalcogenides and pnictides</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Americium#Silicides_and_borides"><span class="tocnumber">6.4</span> <span class="toctext">Silicides and borides</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Americium#Organoamericium_compounds"><span class="tocnumber">6.5</span> <span class="toctext">Organoamericium compounds</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Americium#Biological_aspects"><span class="tocnumber">7</span> <span class="toctext">Biological aspects</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Americium#Fission"><span class="tocnumber">8</span> <span class="toctext">Fission</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="http://en.wikipedia.org/wiki/Americium#Isotopes"><span class="tocnumber">9</span> <span class="toctext">Isotopes</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="http://en.wikipedia.org/wiki/Americium#Applications"><span class="tocnumber">10</span> <span class="toctext">Applications</span></a>
+<ul>
+<li class="toclevel-2 tocsection-18"><a href="http://en.wikipedia.org/wiki/Americium#Ionization-type_smoke_detector"><span class="tocnumber">10.1</span> <span class="toctext">Ionization-type smoke detector</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Americium#Radionuclide"><span class="tocnumber">10.2</span> <span class="toctext">Radionuclide</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="http://en.wikipedia.org/wiki/Americium#Neutron_source"><span class="tocnumber">10.3</span> <span class="toctext">Neutron source</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="http://en.wikipedia.org/wiki/Americium#Production_of_other_elements"><span class="tocnumber">10.4</span> <span class="toctext">Production of other elements</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="http://en.wikipedia.org/wiki/Americium#Spectrometer"><span class="tocnumber">10.5</span> <span class="toctext">Spectrometer</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a href="http://en.wikipedia.org/wiki/Americium#Health_concerns"><span class="tocnumber">11</span> <span class="toctext">Health concerns</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="http://en.wikipedia.org/wiki/Americium#See_also"><span class="tocnumber">12</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="http://en.wikipedia.org/wiki/Americium#Notes"><span class="tocnumber">13</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-26"><a href="http://en.wikipedia.org/wiki/Americium#References"><span class="tocnumber">14</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="http://en.wikipedia.org/wiki/Americium#Bibliography"><span class="tocnumber">15</span> <span class="toctext">Bibliography</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="http://en.wikipedia.org/wiki/Americium#Further_reading"><span class="tocnumber">16</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="http://en.wikipedia.org/wiki/Americium#External_links"><span class="tocnumber">17</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Americium">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/International_Atomic_Time.html'">International Atomic Time</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytical_engine.html'">Analytical engine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antigen.html'">Antigen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Associative_algebra.html'">Associative algebra</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_16.html'">Apollo 16</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aromatic_hydrocarbon.html'">Aromatic hydrocarbon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alessandro_Volta.html'">Alessandro Volta</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Human_abdomen.html'">Human abdomen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ascorbic_acid.html'">Ascorbic acid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algol.html'">Algol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Audio_signal_processing.html'">Audio signal processing</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_10.html'">Apollo 10</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abscess.html'">Abscess</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atomic_absorption_spectroscopy.html'">Atomic absorption spectroscopy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomical_unit.html'">Astronomical unit</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom_of_regularity.html'">Axiom of regularity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aspartame.html'">Aspartame</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apicomplexa.html'">Apicomplexa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asteraceae.html'">Asteraceae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alloy.html'">Alloy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amide.html'">Amide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arithmetic_mean.html'">Arithmetic mean</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analog_signal.html'">Analog signal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atomic_number.html'">Atomic number</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_14.html'">Apollo 14</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antiderivative.html'">Antiderivative</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analog_television.html'">Analog television</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Additive_synthesis.html'">Additive synthesis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronaut.html'">Astronaut</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acute_disseminated_encephalomyelitis.html'">Acute disseminated encephalomyelitis</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

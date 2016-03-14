@@ -1,0 +1,179 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[138.0895793305, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>An American in Paris</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">An American in Paris</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><i><b>An American in Paris</b></i> is a <a href="http://www.wikipedia.org/wiki/Jazz" title="Jazz">jazz</a>-influenced <a href="http://www.wikipedia.org/wiki/Symphonic_poem" title="Symphonic poem">symphonic poem</a> by the American composer <a href="http://www.wikipedia.org/wiki/George_Gershwin" title="George Gershwin">George Gershwin</a>, written in 1928. Inspired by the time Gershwin had spent in <a href="http://www.wikipedia.org/wiki/Paris" title="Paris">Paris</a>, it evokes the sights and energy of the French capital in the 1920s and is one of his best-known compositions.</p>
+<p>Gershwin composed <i>An American in Paris</i> on commission from the conductor <a href="http://www.wikipedia.org/wiki/Walter_Damrosch" title="Walter Damrosch">Walter Damrosch</a>. He scored the piece for the standard instruments of the <a href="http://www.wikipedia.org/wiki/Symphony_orchestra" title="Symphony orchestra" class="mw-redirect">symphony orchestra</a> plus <a href="http://www.wikipedia.org/wiki/Celesta" title="Celesta">celesta</a>, <a href="http://www.wikipedia.org/wiki/Saxophone" title="Saxophone">saxophones</a>, and automobile horns. He brought back some Parisian taxi horns for the <a href="http://www.wikipedia.org/wiki/New_York_City" title="New York City">New York</a> premiere of the composition, which took place on December&#160;13, 1928 in <a href="http://www.wikipedia.org/wiki/Carnegie_Hall" title="Carnegie Hall">Carnegie Hall</a>, with Damrosch conducting the <a href="http://www.wikipedia.org/wiki/New_York_Philharmonic" title="New York Philharmonic">New York Philharmonic</a>.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#cite_note-1"><span>[</span>1<span>]</span></a></sup> Gershwin completed the orchestration on November 18, less than four weeks before the work's premiere.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>Gershwin collaborated on the original program notes with the critic and composer <a href="http://www.wikipedia.org/wiki/Deems_Taylor" title="Deems Taylor">Deems Taylor</a>, noting that: "My purpose here is to portray the impression of an American visitor in Paris as he strolls about the city and listens to various street noises and absorbs the French atmosphere." When the tone poem moves into the <a href="http://www.wikipedia.org/wiki/Blues" title="Blues">blues</a>, "our American friend ... has succumbed to a spasm of <a href="http://www.wikipedia.org/wiki/Homesickness" title="Homesickness">homesickness</a>." But, "nostalgia is not a fatal disease." The American visitor "once again is an alert spectator of Parisian life" and "the street noises and French atmosphere are triumphant."</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#Background"><span class="tocnumber">1</span> <span class="toctext">Background</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#Composition"><span class="tocnumber">2</span> <span class="toctext">Composition</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#Instrumentation"><span class="tocnumber">3</span> <span class="toctext">Instrumentation</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#Response"><span class="tocnumber">4</span> <span class="toctext">Response</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#Preservation_status"><span class="tocnumber">5</span> <span class="toctext">Preservation status</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#Recordings"><span class="tocnumber">6</span> <span class="toctext">Recordings</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#Use_in_film"><span class="tocnumber">7</span> <span class="toctext">Use in film</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#Further_reading"><span class="tocnumber">9</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/An_American_in_Paris#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Background">Background</span></h3>
+<p>Gershwin was attracted by <a href="http://www.wikipedia.org/wiki/Maurice_Ravel" title="Maurice Ravel">Maurice Ravel</a>'s unusual chords. After transatlantic letters back and forth as to whether Ravel took students and how much he charged, Ravel looked at Gershwin's prior year earnings and sent a telegram to Gershwin jokingly saying he (Ravel) should study with Gershwin!...but he accepted him as a student. Gershwin went to Paris in 1926 ready to study and to enjoy his first trip to Paris. After his initial student audition with Ravel turned into a sharing of musical theories, Ravel said he couldn't teach him but he would send a letter referring him to <a href="http://www.wikipedia.org/wiki/Nadia_Boulanger" title="Nadia Boulanger">Nadia Boulanger</a>. While the studies were cut short, that 1926 trip resulted in the initial version of An American in Paris written as a 'thank you note' to Gershwin's hosts, Robert and Mabel Shirmer. Gershwin called it "a rapsodic ballet' written so freely and much more modern than his prior works.</p>
+<p>Gershwin strongly encouraged Ravel to come to the United States for a tour, something Ravel had been reluctant to do. To this end, upon his return to New York, Gershwin joined the efforts of Ravel's friend Robert Schmitz, a pianist Ravel had met during the War to urge Ravel to tour the U.S. Schmitz was the head of Pro Musica promoting Franco-American musical relations and was able to offer Ravel a $12,000 fee for the tour, an enticement Gershwin knew would be important to Ravel.</p>
+<p><a href="http://en.wikipedia.org/wiki/An_American_in_Paris">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Albert_Spalding.html'">Albert Spalding</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Akio_Morita.html'">Akio Morita</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amazing_Grace.html'">Amazing Grace</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/America_the_Beautiful.html'">America the Beautiful</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anton_Diabelli.html'">Anton Diabelli</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afro_Celt_Sound_System.html'">Afro Celt Sound System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aria_Giovanni.html'">Aria Giovanni</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allan_Dwan.html'">Allan Dwan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Articolo_31.html'">Articolo 31</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aztlan_Underground.html'">Aztlan Underground</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asterix.html'">Asterix</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Advanced_Chemistry.html'">Advanced Chemistry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alphabet_song.html'">Alphabet song</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_Cuarón.html'">Alfonso Cuarón</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alumni_Athletic_Club.html'">Alumni Athletic Club</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AZ_(football_club).html'">AZ (football club)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adobe_Systems.html'">Adobe Systems</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabian_Prince.html'">Arabian Prince</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_5200.html'">Atari 5200</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aron_Nimzowitsch.html'">Aron Nimzowitsch</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ardal_O_Hanlon.html'">Ardal O'Hanlon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adware.html'">Adware</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auguste_and_Louis_Lumière.html'">Auguste and Louis Lumière</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthem.html'">Anthem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apache_Software_Foundation.html'">Apache Software Foundation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AbiWord.html'">AbiWord</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analog_Brothers.html'">Analog Brothers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applesoft_BASIC.html'">Applesoft BASIC</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amateur.html'">Amateur</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfonso_Arau.html'">Alfonso Arau</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

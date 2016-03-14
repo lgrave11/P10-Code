@@ -1,0 +1,221 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[490.5637079612, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [29.6185468183, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [8.0865710429, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Academy Award</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Academy Award</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>The <b>Academy Awards</b>, or "<b>Oscars</b>", is an annual <a href="http://www.wikipedia.org/wiki/United_States" title="United States">American</a> awards ceremony hosted by the <a href="http://www.wikipedia.org/wiki/Academy_of_Motion_Picture_Arts_and_Sciences" title="Academy of Motion Picture Arts and Sciences">Academy of Motion Picture Arts and Sciences</a> (A.M.P.A.S.) to recognize excellence in cinematic achievements in the United States <a href="http://www.wikipedia.org/wiki/Film_industry" title="Film industry">film industry</a> as assessed by the Academy's voting membership. The various category winners are awarded a copy of a statuette, officially called the Academy Award of Merit, which has become commonly known by its nickname "Oscar". The awards, first presented in 1929 at the <a href="http://www.wikipedia.org/wiki/Hollywood_Roosevelt_Hotel" title="Hollywood Roosevelt Hotel">Hollywood Roosevelt Hotel</a>, are overseen by A.M.P.A.S.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Academy_Award#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Academy_Award#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>The awards ceremony was first broadcast to radio in 1930 and televised in 1953. It is now seen live in more than 200 countries and can be streamed live online.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Academy_Award#cite_note-3"><span>[</span>3<span>]</span></a></sup> The Oscars is the oldest entertainment awards ceremony; its equivalents, the <a href="http://www.wikipedia.org/wiki/Emmy_Award" title="Emmy Award">Emmy Awards</a> for television, the <a href="http://www.wikipedia.org/wiki/Tony_Award" title="Tony Award">Tony Awards</a> for theatre, and the <a href="http://www.wikipedia.org/wiki/Grammy_Award" title="Grammy Award">Grammy Awards</a> for music and recording, are modeled after the Academy Awards.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Academy_Award#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>The <a href="http://www.wikipedia.org/wiki/88th_Academy_Awards" title="88th Academy Awards">88th Academy Awards</a> ceremony was held at the <a href="http://www.wikipedia.org/wiki/Dolby_Theatre" title="Dolby Theatre">Dolby Theatre</a> on February 28, 2016 and hosted by <a href="http://www.wikipedia.org/wiki/Chris_Rock" title="Chris Rock">Chris Rock</a>. A total of 2,947 Oscars have been awarded since the inception of the award through the 87th.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Academy_Award#cite_note-5"><span>[</span>5<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Academy_Award#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Academy_Award#Institutions"><span class="tocnumber">1.1</span> <span class="toctext">Institutions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Academy_Award#Oscar_statuette"><span class="tocnumber">2</span> <span class="toctext">Oscar statuette</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Academy_Award#Naming"><span class="tocnumber">2.1</span> <span class="toctext">Naming</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Academy_Award#Engraving"><span class="tocnumber">2.2</span> <span class="toctext">Engraving</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Academy_Award#Ownership_of_Oscar_statuettes"><span class="tocnumber">2.3</span> <span class="toctext">Ownership of Oscar statuettes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Academy_Award#Nomination"><span class="tocnumber">3</span> <span class="toctext">Nomination</span></a>
+<ul>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Academy_Award#Voters"><span class="tocnumber">3.1</span> <span class="toctext">Voters</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Academy_Award#Rules"><span class="tocnumber">3.2</span> <span class="toctext">Rules</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Academy_Award#Awards_ceremonies"><span class="tocnumber">4</span> <span class="toctext">Awards ceremonies</span></a>
+<ul>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Academy_Award#Telecast"><span class="tocnumber">4.1</span> <span class="toctext">Telecast</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Academy_Award#TV_ratings"><span class="tocnumber">4.2</span> <span class="toctext">TV ratings</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Academy_Award#Venues"><span class="tocnumber">5</span> <span class="toctext">Venues</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Academy_Award#Awards_of_Merit_categories"><span class="tocnumber">6</span> <span class="toctext">Awards of Merit categories</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Academy_Award#Current_categories"><span class="tocnumber">6.1</span> <span class="toctext">Current categories</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Academy_Award#Discontinued_categories"><span class="tocnumber">6.2</span> <span class="toctext">Discontinued categories</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Academy_Award#Proposed_categories"><span class="tocnumber">6.3</span> <span class="toctext">Proposed categories</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Academy_Award#Special_categories"><span class="tocnumber">7</span> <span class="toctext">Special categories</span></a>
+<ul>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Academy_Award#Current_special_categories"><span class="tocnumber">7.1</span> <span class="toctext">Current special categories</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="http://en.wikipedia.org/wiki/Academy_Award#Discontinued_special_categories"><span class="tocnumber">7.2</span> <span class="toctext">Discontinued special categories</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-21"><a href="http://en.wikipedia.org/wiki/Academy_Award#Criticism"><span class="tocnumber">8</span> <span class="toctext">Criticism</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="http://en.wikipedia.org/wiki/Academy_Award#Accusations_of_commercialism"><span class="tocnumber">8.1</span> <span class="toctext">Accusations of commercialism</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="http://en.wikipedia.org/wiki/Academy_Award#Accusations_of_bias"><span class="tocnumber">8.2</span> <span class="toctext">Accusations of bias</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="http://en.wikipedia.org/wiki/Academy_Award#Symbolism_or_sentimentalization"><span class="tocnumber">8.3</span> <span class="toctext">Symbolism or sentimentalization</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="http://en.wikipedia.org/wiki/Academy_Award#Refusing_the_award"><span class="tocnumber">8.4</span> <span class="toctext">Refusing the award</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="http://en.wikipedia.org/wiki/Academy_Award#Associated_events"><span class="tocnumber">9</span> <span class="toctext">Associated events</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="http://en.wikipedia.org/wiki/Academy_Award#Presenter_and_performer_gifts"><span class="tocnumber">10</span> <span class="toctext">Presenter and performer gifts</span></a></li>
+<li class="toclevel-1 tocsection-28"><a href="http://en.wikipedia.org/wiki/Academy_Award#Television_ratings_and_advertisement_prices"><span class="tocnumber">11</span> <span class="toctext">Television ratings and advertisement prices</span></a></li>
+<li class="toclevel-1 tocsection-29"><a href="http://en.wikipedia.org/wiki/Academy_Award#Trademark"><span class="tocnumber">12</span> <span class="toctext">Trademark</span></a></li>
+<li class="toclevel-1 tocsection-30"><a href="http://en.wikipedia.org/wiki/Academy_Award#Comparable_awards_in_other_countries_and_regions"><span class="tocnumber">13</span> <span class="toctext">Comparable awards in other countries and regions</span></a></li>
+<li class="toclevel-1 tocsection-31"><a href="http://en.wikipedia.org/wiki/Academy_Award#Notes"><span class="tocnumber">14</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-32"><a href="http://en.wikipedia.org/wiki/Academy_Award#References"><span class="tocnumber">15</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-33"><a href="http://en.wikipedia.org/wiki/Academy_Award#External_links"><span class="tocnumber">16</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Academy_Award">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Anatoly_Karpov.html'">Anatoly Karpov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animaniacs.html'">Animaniacs</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Alan_Parsons_Project.html'">The Alan Parsons Project</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Amazing_Spider-Man_(comic_book).html'">The Amazing Spider-Man (comic book)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adam_Carolla.html'">Adam Carolla</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari.html'">Atari</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_cappella.html'">A cappella</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Ayckbourn.html'">Alan Ayckbourn</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Akira_Kurosawa.html'">Akira Kurosawa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aston_Martin.html'">Aston Martin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Quarter_Horse.html'">American Quarter Horse</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accordion.html'">Accordion</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amy_Grant.html'">Amy Grant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antonio_Vivaldi.html'">Antonio Vivaldi</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A.S._Roma.html'">A.S. Roma</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acquire.html'">Acquire</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthony_Hopkins.html'">Anthony Hopkins</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asteroids_(video_game).html'">Asteroids (video game)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ani_DiFranco.html'">Ani DiFranco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrei_Tarkovsky.html'">Andrei Tarkovsky</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlanta_Falcons.html'">Atlanta Falcons</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona_State_University.html'">Arizona State University</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acorn_Electron.html'">Acorn Electron</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aster_CT-80.html'">Aster CT-80</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Steel-string_acoustic_guitar.html'">Steel-string acoustic guitar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anna_Kournikova.html'">Anna Kournikova</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ASCII_art.html'">ASCII art</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_the_Giant.html'">André the Giant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_Lynx.html'">Atari Lynx</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amstrad_CPC.html'">Amstrad CPC</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

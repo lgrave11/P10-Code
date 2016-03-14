@@ -1,0 +1,163 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[787.2380427104, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [232.7432780041, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [162.8914873227, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [2.4856378302, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Allen Ginsberg</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Allen Ginsberg</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Irwin Allen Ginsberg</b> (<span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/ˈ/ primary stress follows">ˈ</span><span title="'g' in 'guy'">ɡ</span><span title="/ɪ/ short 'i' in 'bid'">ɪ</span><span title="'n' in 'no'">n</span><span title="'z' in 'Zion'">z</span><span title="'b' in 'buy'">b</span><span title="/ər/ 'er' in 'finger'">ər</span><span title="'g' in 'guy'">ɡ</span></span>/</a></span></span>; June 3, 1926 – April 5, 1997) was an American poet and one of the leading figures of both the <a href="http://www.wikipedia.org/wiki/Beat_Generation" title="Beat Generation">Beat Generation</a> of the 1950s and the <a href="http://www.wikipedia.org/wiki/Counterculture_of_the_1960s" title="Counterculture of the 1960s">counterculture that soon would follow</a>. He vigorously opposed <a href="http://www.wikipedia.org/wiki/Militarism" title="Militarism">militarism</a>, <a href="http://www.wikipedia.org/wiki/Economic_materialism" title="Economic materialism">economic materialism</a> and <a href="http://www.wikipedia.org/wiki/Sexual_repression" title="Sexual repression">sexual repression</a> and was known as embodying various aspects of this counterculture, such as his views on drugs, hostility to <a href="http://www.wikipedia.org/wiki/Bureaucracy" title="Bureaucracy">bureaucracy</a> and openness to <a href="http://www.wikipedia.org/wiki/Eastern_religions" title="Eastern religions">Eastern religions</a>.<sup id="cite_ref-glbtq.com_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-glbtq.com-1"><span>[</span>1<span>]</span></a></sup> He was one of many influential American writers of his time known as the Beat Generation, which included famous writers such as <a href="http://www.wikipedia.org/wiki/Jack_Kerouac" title="Jack Kerouac">Jack Kerouac</a> and <a href="http://www.wikipedia.org/wiki/William_S._Burroughs" title="William S. Burroughs">William S. Burroughs</a>.</p>
+<p>Ginsberg is best known for his epic poem "<a href="http://www.wikipedia.org/wiki/Howl" title="Howl">Howl</a>", in which he denounced what he saw as the destructive forces of <a href="http://www.wikipedia.org/wiki/Capitalism" title="Capitalism">capitalism</a> and <a href="http://www.wikipedia.org/wiki/Conformity" title="Conformity">conformity</a> in the United States.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-4"><span>[</span>4<span>]</span></a></sup> In 1956, "Howl" was seized by San Francisco police and US Customs.<sup id="cite_ref-glbtq.com_1-1" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-glbtq.com-1"><span>[</span>1<span>]</span></a></sup> In 1957, it attracted widespread publicity when it became the subject of an obscenity trial, as it described <a href="http://www.wikipedia.org/wiki/Heterosexual" title="Heterosexual" class="mw-redirect">heterosexual</a> and homosexual sex<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-5"><span>[</span>5<span>]</span></a></sup> at a time when <a href="http://www.wikipedia.org/wiki/Sodomy_laws_in_the_United_States" title="Sodomy laws in the United States">sodomy laws</a> made homosexual acts a crime in every U.S. state. "Howl" reflected Ginsberg's own homosexuality and his relationships with a number of men, including <a href="http://www.wikipedia.org/wiki/Peter_Orlovsky" title="Peter Orlovsky">Peter Orlovsky</a>, his <a href="http://www.wikipedia.org/wiki/Life_partner" title="Life partner">lifelong partner</a>.<sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-6"><span>[</span>6<span>]</span></a></sup> Judge Clayton W. Horn ruled that "Howl" was not obscene, adding, "Would there be any freedom of press or speech if one must reduce his vocabulary to vapid innocuous euphemisms?"<sup id="cite_ref-7" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>Ginsberg was a practicing <a href="http://www.wikipedia.org/wiki/Buddhist" title="Buddhist" class="mw-redirect">Buddhist</a> who studied Eastern religious disciplines extensively. He lived modestly, buying his clothing in second-hand stores and residing in downscale apartments in New York’s East Village.<sup id="cite_ref-8" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-8"><span>[</span>8<span>]</span></a></sup> One of his most influential teachers was the Tibetan Buddhist the Venerable <a href="http://www.wikipedia.org/wiki/Ch%C3%B6gyam_Trungpa" title="Chögyam Trungpa">Chögyam Trungpa</a>, the founder of the <a href="http://www.wikipedia.org/wiki/Naropa_University" title="Naropa University">Naropa Institute</a> in <a href="http://www.wikipedia.org/wiki/Boulder,_Colorado" title="Boulder, Colorado">Boulder, Colorado</a>.<sup id="cite_ref-9" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-9"><span>[</span>9<span>]</span></a></sup> At Trungpa's urging, Ginsberg and poet <a href="http://www.wikipedia.org/wiki/Anne_Waldman" title="Anne Waldman">Anne Waldman</a> started <a href="http://www.wikipedia.org/wiki/Jack_Kerouac_School" title="Jack Kerouac School">The Jack Kerouac School of Disembodied Poetics</a> there in 1974.<sup id="cite_ref-10" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-10"><span>[</span>10<span>]</span></a></sup></p>
+<p>Ginsberg took part in decades of non-violent political protest against everything from the <a href="http://www.wikipedia.org/wiki/Vietnam_War" title="Vietnam War">Vietnam War</a> to the <a href="http://www.wikipedia.org/wiki/War_on_Drugs" title="War on Drugs">War on Drugs</a>.<sup id="cite_ref-11" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-11"><span>[</span>11<span>]</span></a></sup> His poem "September on Jessore Road," calling attention to the plight of Bangladeshi refugees, exemplifies what the literary critic <a href="http://www.wikipedia.org/wiki/Helen_Vendler" title="Helen Vendler">Helen Vendler</a> described as Ginsberg's tireless persistence in protesting against "imperial politics, and persecution of the powerless."<sup id="cite_ref-12" class="reference"><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg#cite_note-12"><span>[</span>12<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Allen_Ginsberg">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/List_of_characters_in_Atlas_Shrugged.html'">List of characters in Atlas Shrugged</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthroposophy.html'">Anthroposophy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/An_Enquiry_concerning_Human_Understanding.html'">An Enquiry concerning Human Understanding</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afrikaans.html'">Afrikaans</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_and_British_English_differences.html'">American and British English differences</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Avicenna.html'">Avicenna</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Schweitzer.html'">Albert Schweitzer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afterlife.html'">Afterlife</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Altaic_languages.html'">Altaic languages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_alphabet.html'">Arabic alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arbitration_in_the_United_States_of_America.html'">Arbitration in the United States of America</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Hercule_Poirot.html'">Hercule Poirot</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arminianism.html'">Arminianism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aleksandr_Solzhenitsyn.html'">Aleksandr Solzhenitsyn</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Age_of_consent.html'">Age of consent</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abortion.html'">Abortion</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adam_Smith.html'">Adam Smith</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustine_of_Hippo.html'">Augustine of Hippo</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthropic_principle.html'">Anthropic principle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annales_School.html'">Annales School</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Appeal.html'">Appeal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alphabet.html'">Alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aikido.html'">Aikido</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anarchism.html'">Anarchism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_language.html'">Arabic language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Graham_Bell.html'">Alexander Graham Bell</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accountancy.html'">Accountancy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Sign_Language.html'">American Sign Language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aramaic_language.html'">Aramaic language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Stanley_Eddington.html'">Arthur Stanley Eddington</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[55.6919194813, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [28.0779185011, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [6.4989897718, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Mouthwash</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Mouthwash</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Mouthwash</b>, <b>mouth rinse</b>, <b>oral rinse</b> or <b>mouth bath</b>,<sup id="cite_ref-Matthews2003_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Mouthwash#cite_note-Matthews2003-1"><span>[</span>1<span>]</span></a></sup> is a liquid which is held in the mouth passively or swilled around the mouth by contraction of the perioral muscles and/or movement of the head, and may be <b>gargled</b>, where the head is tilted back and the liquid bubbled at the back of the mouth.</p>
+<p>Usually mouthwashes are an <a href="http://www.wikipedia.org/wiki/Antiseptic" title="Antiseptic">antiseptic</a> solution intended to reduce the microbial load in the oral cavity, although other mouthwashes might be given for other reasons such as for their <a href="http://www.wikipedia.org/wiki/Analgesic" title="Analgesic">analgesic</a>, <a href="http://www.wikipedia.org/wiki/Anti-inflammatory" title="Anti-inflammatory">anti-inflammatory</a> or <a href="http://www.wikipedia.org/wiki/Anti-fungal_medication" title="Anti-fungal medication" class="mw-redirect">anti-fungal</a> action. Additionally, some rinses act as saliva substitutes to neutralize acid and keep the mouth moist in <a href="http://www.wikipedia.org/wiki/Xerostomia" title="Xerostomia">xerostomia</a> (dry mouth).<sup id="cite_ref-wsj_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Mouthwash#cite_note-wsj-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-medX_3-0" class="reference"><a href="http://en.wikipedia.org/wiki/Mouthwash#cite_note-medX-3"><span>[</span>3<span>]</span></a></sup> Cosmetic mouthrinses temporarily control or reduce bad breath and leave the mouth with a pleasant taste.<sup id="cite_ref-ada_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Mouthwash#cite_note-ada-4"><span>[</span>4<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Mouthwash#Use"><span class="tocnumber">1</span> <span class="toctext">Use</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Mouthwash#Benefits"><span class="tocnumber">2</span> <span class="toctext">Benefits</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Mouthwash#Side_effects"><span class="tocnumber">3</span> <span class="toctext">Side effects</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Mouthwash#Typical_formulation_of_commercial_mouthwashes_by_active_ingredient"><span class="tocnumber">4</span> <span class="toctext">Typical formulation of commercial mouthwashes by active ingredient</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Mouthwash#Antiseptic"><span class="tocnumber">4.1</span> <span class="toctext">Antiseptic</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Mouthwash#Antimalodor"><span class="tocnumber">4.2</span> <span class="toctext">Antimalodor</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Mouthwash#Antiplaque.2Foxidizing"><span class="tocnumber">4.3</span> <span class="toctext">Antiplaque/oxidizing</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Mouthwash#Anticavity"><span class="tocnumber">4.4</span> <span class="toctext">Anticavity</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Mouthwash#Antiinflammatory"><span class="tocnumber">4.5</span> <span class="toctext">Antiinflammatory</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Mouthwash#Analgesics"><span class="tocnumber">4.6</span> <span class="toctext">Analgesics</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Mouthwash#Saliva_substitute"><span class="tocnumber">4.7</span> <span class="toctext">Saliva substitute</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Mouthwash#Topical_agents"><span class="tocnumber">4.8</span> <span class="toctext">Topical agents</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Mouthwash#Phenolic_compounds"><span class="tocnumber">4.9</span> <span class="toctext">Phenolic compounds</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Mouthwash#Inactive_ingredients"><span class="tocnumber">5</span> <span class="toctext">Inactive ingredients</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Mouthwash#Astringents"><span class="tocnumber">5.1</span> <span class="toctext">Astringents</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Mouthwash#Carriers"><span class="tocnumber">5.2</span> <span class="toctext">Carriers</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Mouthwash#Preservatives"><span class="tocnumber">5.3</span> <span class="toctext">Preservatives</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="http://en.wikipedia.org/wiki/Mouthwash#Flavoring_agents"><span class="tocnumber">5.4</span> <span class="toctext">Flavoring agents</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="http://en.wikipedia.org/wiki/Mouthwash#Others"><span class="tocnumber">5.5</span> <span class="toctext">Others</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Mouthwash#Custom_formulations"><span class="tocnumber">6</span> <span class="toctext">Custom formulations</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="http://en.wikipedia.org/wiki/Mouthwash#Specific_mouthwash_ingredients_-_Common_formulations"><span class="tocnumber">7</span> <span class="toctext">Specific mouthwash ingredients - Common formulations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="http://en.wikipedia.org/wiki/Mouthwash#Alcohol"><span class="tocnumber">7.1</span> <span class="toctext">Alcohol</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="http://en.wikipedia.org/wiki/Mouthwash#Chlorhexidine_digluconate"><span class="tocnumber">7.2</span> <span class="toctext">Chlorhexidine digluconate</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="http://en.wikipedia.org/wiki/Mouthwash#Essential_oils_and_phenols"><span class="tocnumber">7.3</span> <span class="toctext">Essential oils and phenols</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="http://en.wikipedia.org/wiki/Mouthwash#Fluoride"><span class="tocnumber">7.4</span> <span class="toctext">Fluoride</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="http://en.wikipedia.org/wiki/Mouthwash#Xylitol"><span class="tocnumber">7.5</span> <span class="toctext">Xylitol</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="http://en.wikipedia.org/wiki/Mouthwash#Sodium_lauryl_sulfate"><span class="tocnumber">7.6</span> <span class="toctext">Sodium lauryl sulfate</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="http://en.wikipedia.org/wiki/Mouthwash#Triclosan"><span class="tocnumber">7.7</span> <span class="toctext">Triclosan</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-29"><a href="http://en.wikipedia.org/wiki/Mouthwash#Specific_mouthwash_ingredients_-_Custom_formulations"><span class="tocnumber">8</span> <span class="toctext">Specific mouthwash ingredients - Custom formulations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-30"><a href="http://en.wikipedia.org/wiki/Mouthwash#Benzydamine_.28Difflam.29"><span class="tocnumber">8.1</span> <span class="toctext">Benzydamine (Difflam)</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="http://en.wikipedia.org/wiki/Mouthwash#Betamethasone"><span class="tocnumber">8.2</span> <span class="toctext">Betamethasone</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="http://en.wikipedia.org/wiki/Mouthwash#Cetylpyridinium_chloride"><span class="tocnumber">8.3</span> <span class="toctext">Cetylpyridinium chloride</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="http://en.wikipedia.org/wiki/Mouthwash#Edible_oils"><span class="tocnumber">8.4</span> <span class="toctext">Edible oils</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="http://en.wikipedia.org/wiki/Mouthwash#Hydrogen_peroxide"><span class="tocnumber">8.5</span> <span class="toctext">Hydrogen peroxide</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="http://en.wikipedia.org/wiki/Mouthwash#Lactoperoxidase"><span class="tocnumber">8.6</span> <span class="toctext">Lactoperoxidase</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="http://en.wikipedia.org/wiki/Mouthwash#Providone.2Fiodine"><span class="tocnumber">8.7</span> <span class="toctext">Providone/iodine</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="http://en.wikipedia.org/wiki/Mouthwash#Sanguinarine"><span class="tocnumber">8.8</span> <span class="toctext">Sanguinarine</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="http://en.wikipedia.org/wiki/Mouthwash#Sodium_bicarbonate_.28baking_soda.29"><span class="tocnumber">8.9</span> <span class="toctext">Sodium bicarbonate (baking soda)</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="http://en.wikipedia.org/wiki/Mouthwash#Sodium_chloride_.28salt.29"><span class="tocnumber">8.10</span> <span class="toctext">Sodium chloride (salt)</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="http://en.wikipedia.org/wiki/Mouthwash#Tetracycline"><span class="tocnumber">8.11</span> <span class="toctext">Tetracycline</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="http://en.wikipedia.org/wiki/Mouthwash#Tranexamic_acid"><span class="tocnumber">8.12</span> <span class="toctext">Tranexamic acid</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-42"><a href="http://en.wikipedia.org/wiki/Mouthwash#Example_brands_of_common_commercial_mouthwashes"><span class="tocnumber">9</span> <span class="toctext">Example brands of common commercial mouthwashes</span></a></li>
+<li class="toclevel-1 tocsection-43"><a href="http://en.wikipedia.org/wiki/Mouthwash#History"><span class="tocnumber">10</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-44"><a href="http://en.wikipedia.org/wiki/Mouthwash#Research"><span class="tocnumber">11</span> <span class="toctext">Research</span></a></li>
+<li class="toclevel-1 tocsection-45"><a href="http://en.wikipedia.org/wiki/Mouthwash#References"><span class="tocnumber">12</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-46"><a href="http://en.wikipedia.org/wiki/Mouthwash#External_links"><span class="tocnumber">13</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Mouthwash">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Aliphatic_compound.html'">Aliphatic compound</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acantharea.html'">Acantharea</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applet.html'">Applet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alligatoridae.html'">Alligatoridae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomical_year_numbering.html'">Astronomical year numbering</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analgesic.html'">Analgesic</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amazonite.html'">Amazonite</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antianginal.html'">Antianginal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abatis.html'">Abatis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aloe.html'">Aloe</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinopterygii.html'">Actinopterygii</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Tridgell.html'">Andrew Tridgell</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthemius_of_Tralles.html'">Anthemius of Tralles</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asparagales.html'">Asparagales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antiprism.html'">Antiprism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkali_metal.html'">Alkali metal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adrenal_gland.html'">Adrenal gland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AVL_tree.html'">AVL tree</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alpha_(letter).html'">Alpha (letter)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alismatales.html'">Alismatales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asterales.html'">Asterales</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allene.html'">Allene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apiaceae.html'">Apiaceae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ada_Byron_s_notes_on_the_analytical_engine.html'">Ada Byron's notes on the analytical engine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aries_(constellation).html'">Aries (constellation)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Almost_all.html'">Almost all</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agricultural_engineering.html'">Agricultural engineering</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adaptive_radiation.html'">Adaptive radiation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antlia.html'">Antlia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anus.html'">Anus</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

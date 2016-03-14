@@ -1,0 +1,198 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[163.8000076107, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [111.7853179146, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [57.6834998628, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>The Plague</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">The Plague</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><i><b>The Plague</b></i> (French: <i><b>La Peste</b></i>) is a novel by <a href="http://www.wikipedia.org/wiki/Albert_Camus" title="Albert Camus">Albert Camus</a>, published in 1947, that tells the story of a plague sweeping the Algerian city of <a href="http://www.wikipedia.org/wiki/Oran" title="Oran">Oran</a>. It asks a number of questions relating to the nature of destiny and the <a href="http://www.wikipedia.org/wiki/Human_condition" title="Human condition">human condition</a>. The characters in the book, ranging from doctors to vacationers to fugitives, all help to show the effects the plague has on a populace.</p>
+<p>The novel is believed to be based on the cholera epidemic that killed a large percentage of Oran's population in 1849 following French colonization, but the novel is placed in the 1940s.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/The_Plague#cite_note-1"><span>[</span>1<span>]</span></a></sup> Oran and its environs were struck by disease multiple times before Camus published this novel. According to a research report by the <a href="http://www.wikipedia.org/wiki/Centers_for_Disease_Control_and_Prevention" title="Centers for Disease Control and Prevention">Centers for Disease Control and Prevention</a>, Oran was decimated by the plague in 1556 and 1678, but all later outbreaks, in 1921 (185 cases), 1931 (76 cases), and 1944 (95 cases), were very far from the scale of the epidemic described in the novel.</p>
+<p><i>The Plague</i> is considered an <a href="http://www.wikipedia.org/wiki/Existentialist" title="Existentialist" class="mw-redirect">existentialist</a> classic despite Camus' objection to the label.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/The_Plague#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/The_Plague#cite_note-3"><span>[</span>3<span>]</span></a></sup> The narrative tone is similar to <a href="http://www.wikipedia.org/wiki/Franz_Kafka" title="Franz Kafka">Kafka's</a>, especially in <i><a href="http://www.wikipedia.org/wiki/The_Trial" title="The Trial">The Trial</a></i> whose individual sentences potentially have multiple meanings, the material often pointedly resonating as stark <a href="http://www.wikipedia.org/wiki/Allegory" title="Allegory">allegory</a> of phenomenal consciousness and the human condition.</p>
+<p>Camus included a dim-witted character misreading <i><a href="http://www.wikipedia.org/wiki/The_Trial" title="The Trial">The Trial</a></i> as a mystery novel as an oblique <a href="http://www.wikipedia.org/wiki/Homage_(arts)" title="Homage (arts)">homage</a>. The novel has been read as a <a href="http://www.wikipedia.org/wiki/Metaphor" title="Metaphor">metaphorical</a> treatment of the <a href="http://www.wikipedia.org/wiki/French_resistance" title="French resistance" class="mw-redirect">French resistance</a> to <a href="http://www.wikipedia.org/wiki/Nazism" title="Nazism">Nazi</a> occupation during World War II.</p>
+<p>Although Camus's approach in the book is severe, his narrator emphasizes the ideas that we ultimately have no control, and irrationality of life is inevitable.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">[<i><a href="http://www.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (October 2014)">citation needed</span></a></i>]</sup> Additionally, he further illustrates the human reaction towards the "absurd." <i>The Plague</i> represents how the world deals with the philosophical notion of the <a href="http://www.wikipedia.org/wiki/Absurdism" title="Absurdism">Absurd</a>, a theory that Camus himself helped to define.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/The_Plague#Plot_summary"><span class="tocnumber">1</span> <span class="toctext">Plot summary</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/The_Plague#Part_one"><span class="tocnumber">1.1</span> <span class="toctext">Part one</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/The_Plague#Part_two"><span class="tocnumber">1.2</span> <span class="toctext">Part two</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/The_Plague#Part_three"><span class="tocnumber">1.3</span> <span class="toctext">Part three</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/The_Plague#Part_four"><span class="tocnumber">1.4</span> <span class="toctext">Part four</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/The_Plague#Part_five"><span class="tocnumber">1.5</span> <span class="toctext">Part five</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/The_Plague#Characters"><span class="tocnumber">2</span> <span class="toctext">Characters</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/The_Plague#Themes"><span class="tocnumber">3</span> <span class="toctext">Themes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/The_Plague#Absurdism"><span class="tocnumber">3.1</span> <span class="toctext">Absurdism</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/The_Plague#Exile_and_separation"><span class="tocnumber">3.2</span> <span class="toctext">Exile and separation</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/The_Plague#Solidarity.2C_community.2C_and_resistance"><span class="tocnumber">3.3</span> <span class="toctext">Solidarity, community, and resistance</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/The_Plague#Religion"><span class="tocnumber">3.4</span> <span class="toctext">Religion</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/The_Plague#Style"><span class="tocnumber">4</span> <span class="toctext">Style</span></a>
+<ul>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/The_Plague#Point_of_view"><span class="tocnumber">4.1</span> <span class="toctext">Point of view</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/The_Plague#Allegory"><span class="tocnumber">4.2</span> <span class="toctext">Allegory</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/The_Plague#Symbolism"><span class="tocnumber">4.3</span> <span class="toctext">Symbolism</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-17"><a href="http://en.wikipedia.org/wiki/The_Plague#Adaptations"><span class="tocnumber">5</span> <span class="toctext">Adaptations</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/The_Plague#Notes"><span class="tocnumber">6</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="http://en.wikipedia.org/wiki/The_Plague#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/The_Plague#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/The_Plague">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Alcuin.html'">Alcuin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ada_Lovelace.html'">Ada Lovelace</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allah.html'">Allah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Gide.html'">André Gide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustin_Louis_Cauchy.html'">Augustin Louis Cauchy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antoni_Gaudí.html'">Antoni Gaudí</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abd-el-latif.html'">Abd-el-latif</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammonius_Saccas.html'">Ammonius Saccas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Nobel.html'">Alfred Nobel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affix.html'">Affix</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anagram.html'">Anagram</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applied_ethics.html'">Applied ethics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abugida.html'">Abugida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allocution.html'">Allocution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Book_of_Amos.html'">Book of Amos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._A._Milne.html'">A. A. Milne</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Appellate_court.html'">Appellate court</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Weil.html'">André Weil</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Jarry.html'">Alfred Jarry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allegory.html'">Allegory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angst.html'">Angst</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ancient_philosophy.html'">Ancient philosophy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ablative_case.html'">Ablative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anita_Hill.html'">Anita Hill</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbahu.html'">Abbahu</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/August_Derleth.html'">August Derleth</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberto_Giacometti.html'">Alberto Giacometti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Religious_denominations_in_Poland.html'">Religious denominations in Poland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adventism.html'">Adventism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abhidharma.html'">Abhidharma</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

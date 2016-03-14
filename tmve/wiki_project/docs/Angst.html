@@ -1,0 +1,174 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[144.6492993176, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [61.529904303, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Angst</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Angst</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Angst</b> means <a href="http://www.wikipedia.org/wiki/Fear" title="Fear">fear</a> or <a href="http://www.wikipedia.org/wiki/Anxiety" title="Anxiety">anxiety</a> (<i><a href="http://www.wikipedia.org/wiki/Anguish" title="Anguish">anguish</a></i> is its <a href="http://www.wikipedia.org/wiki/Romance_languages" title="Romance languages">Latinate</a> <a href="http://www.wikipedia.org/wiki/Cognate" title="Cognate">equivalent</a>, and <i>anxious,</i> <i>anxiety</i> are of similar origin). The word <i>angst</i> was introduced into English from the <a href="http://www.wikipedia.org/wiki/Danish_language" title="Danish language">Danish</a>, <a href="http://www.wikipedia.org/wiki/Norwegian_language" title="Norwegian language">Norwegian</a> and <a href="http://www.wikipedia.org/wiki/Dutch_language" title="Dutch language">Dutch</a> word <i>angst</i> and the <a href="http://www.wikipedia.org/wiki/German_language" title="German language">German</a> word <i>Angst</i>. It is attested since the 19th century in English translations of the works of <a href="http://www.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard" title="Søren Kierkegaard">Kierkegaard</a> and <a href="http://www.wikipedia.org/wiki/Sigmund_Freud" title="Sigmund Freud">Freud</a>.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Angst#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Angst#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Angst#cite_note-3"><span>[</span>3<span>]</span></a></sup> It is used in English to describe an intense feeling of apprehension, anxiety, or inner turmoil.</p>
+<p>In <a href="http://www.wikipedia.org/wiki/German_language" title="German language">German</a>, the technical terminology of psychology and philosophy distinguishes between <i>Angst</i> and <i>Furcht</i> in that <i>Furcht</i> is a negative anticipation regarding a concrete threat, while <i>Angst</i> is a non-directional and unmotivated emotion. In common language, however, <i>Angst</i> is the normal word for "fear", while <i>Furcht</i> is an elevated synonym.<sup id="cite_ref-Duden_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Angst#cite_note-Duden-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>In other languages having the meaning of the Latin word <i>pavor</i> for "fear", the derived words differ in meaning, e.g. as in the French <i>anxiété</i> and <i>peur</i>. The word <i>Angst</i> has existed since the 8th century, from the <a href="http://www.wikipedia.org/wiki/Proto-Indo-European_language" title="Proto-Indo-European language">Proto-Indo-European root</a> <i>*anghu-</i>, "restraint" from which <a href="http://www.wikipedia.org/wiki/Old_High_German" title="Old High German">Old High German</a> <i>angust</i> developed.<sup id="cite_ref-Collins_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Angst#cite_note-Collins-5"><span>[</span>5<span>]</span></a></sup> It is pre-cognate with the Latin <i>angustia</i>, "tensity, tightness" and <i>angor</i>, "choking, clogging"; compare to the Ancient Greek ἄγχω (<i>ankho</i>) "strangle".</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Angst#Existentialism"><span class="tocnumber">1</span> <span class="toctext">Existentialism</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Angst#Music"><span class="tocnumber">2</span> <span class="toctext">Music</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Angst#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Angst#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Angst#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Existentialism">Existentialism</span></h3>
+<p>In <a href="http://www.wikipedia.org/wiki/Existentialism" title="Existentialism">Existentialist</a> <a href="http://www.wikipedia.org/wiki/Philosophy" title="Philosophy">philosophy</a> the term <i>angst</i> carries a specific conceptual meaning. The use of the term was first attributed to <a href="http://www.wikipedia.org/wiki/Denmark" title="Denmark">Danish</a> <a href="http://www.wikipedia.org/wiki/Philosopher" title="Philosopher">philosopher</a> <a href="http://www.wikipedia.org/wiki/S%C3%B8ren_Kierkegaard" title="Søren Kierkegaard">Søren Kierkegaard</a> (1813–1855). In <i><a href="http://www.wikipedia.org/wiki/The_Concept_of_Anxiety" title="The Concept of Anxiety">The Concept of Anxiety</a></i> (also known as <i>The Concept of Dread</i>, depending on the translation), Kierkegaard used the word <i>Angest</i> (in common Danish, <i>angst</i>, meaning "dread" or "anxiety") to describe a profound and deep-seated condition. Where animals are guided solely by <a href="http://www.wikipedia.org/wiki/Instinct" title="Instinct">instinct</a>, said Kierkegaard, human beings enjoy a freedom of choice that we find both appealing and terrifying.<sup id="cite_ref-Collins_5-1" class="reference"><a href="http://en.wikipedia.org/wiki/Angst#cite_note-Collins-5"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Angst#cite_note-6"><span>[</span>6<span>]</span></a></sup> Kierkegaard's concept of angst reappeared in the works of existentialist <a href="http://www.wikipedia.org/wiki/Philosopher" title="Philosopher">philosophers</a> who followed, such as <a href="http://www.wikipedia.org/wiki/Friedrich_Nietzsche" title="Friedrich Nietzsche">Friedrich Nietzsche</a>, <a href="http://www.wikipedia.org/wiki/Jean-Paul_Sartre" title="Jean-Paul Sartre">Jean-Paul Sartre</a> and <a href="http://www.wikipedia.org/wiki/Martin_Heidegger" title="Martin Heidegger">Martin Heidegger</a>, each of whom developed the idea further in individual ways. While Kierkegaard's angst referred mainly to ambiguous feelings about moral freedom within a <a href="http://www.wikipedia.org/wiki/Religion" title="Religion">religious personal belief system</a>, later existentialists discussed conflicts of personal principles, cultural norms, and <a href="http://www.wikipedia.org/wiki/Existential_despair" title="Existential despair" class="mw-redirect">existential despair</a>.</p>
+<p><a href="http://en.wikipedia.org/wiki/Angst">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Allocution.html'">Allocution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ancient_philosophy.html'">Ancient philosophy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/August_Derleth.html'">August Derleth</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ablative_case.html'">Ablative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affix.html'">Affix</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammonius_Saccas.html'">Ammonius Saccas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affidavit.html'">Affidavit</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abd-el-latif.html'">Abd-el-latif</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Religious_denominations_in_Poland.html'">Religious denominations in Poland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abhidharma.html'">Abhidharma</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberto_Giacometti.html'">Alberto Giacometti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Gide.html'">André Gide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustin_Louis_Cauchy.html'">Augustin Louis Cauchy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A.html'">A</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acting.html'">Acting</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Answer.html'">Answer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ada_Lovelace.html'">Ada Lovelace</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrey_Markov.html'">Andrey Markov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._A._Milne.html'">A. A. Milne</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Nobel.html'">Alfred Nobel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Jarry.html'">Alfred Jarry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adventism.html'">Adventism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allah.html'">Allah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alvin_Toffler.html'">Alvin Toffler</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allomorph.html'">Allomorph</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Autism.html'">Autism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applied_ethics.html'">Applied ethics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abugida.html'">Abugida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anagram.html'">Anagram</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artistic_revolution.html'">Artistic revolution</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

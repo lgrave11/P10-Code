@@ -1,0 +1,161 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[485.1167432401, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [51.5846621566, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [10.5674195317, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Aarhus</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Aarhus</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Aarhus</b> (officially spelled <b>Århus</b> from 1948 until 31 December 2010) (<small>Danish pronunciation:&#160;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_Danish" title="Help:IPA for Danish">[ˈɒːhuːˀs]</a></span><small class="nowrap metadata">&#160;(<a href="http://www.wikipedia.org/wiki/File:%C3%85rhus.ogg" title="File:Århus.ogg"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/13px-Speaker_Icon.svg.png" width="13" height="13" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/20px-Speaker_Icon.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/2/21/Speaker_Icon.svg/26px-Speaker_Icon.svg.png 2x" data-file-width="500" data-file-height="500" /></a> <a href="//upload.wikimedia.org/wikipedia/commons/4/49/%C3%85rhus.ogg" class="internal" title="Århus.ogg">listen</a>)</small>) is the second-largest city in <a href="http://www.wikipedia.org/wiki/Denmark" title="Denmark">Denmark</a> and the seat of <a href="http://www.wikipedia.org/wiki/Aarhus_Municipality" title="Aarhus Municipality">Aarhus Municipality</a>. It is located on the east coast of the <a href="http://www.wikipedia.org/wiki/Jutland" title="Jutland">Jutland</a> peninsula, in the geographical centre of Denmark, 187 kilometres (116&#160;mi) northwest of <a href="http://www.wikipedia.org/wiki/Copenhagen" title="Copenhagen">Copenhagen</a> and 289 kilometres (180&#160;mi) north of <a href="http://www.wikipedia.org/wiki/Hamburg" title="Hamburg">Hamburg</a>, Germany. Aarhus' inner urban area contains 261,570 inhabitants (2014) and the municipal population is 330,639 (end of year, 2015). The <a href="http://www.wikipedia.org/wiki/Larger_urban_zone" title="Larger urban zone">Larger urban zone</a> population is 845,971 (2013).</p>
+<p>The history of Aarhus began as a fortified <a href="http://www.wikipedia.org/wiki/Viking" title="Viking" class="mw-redirect">Viking</a> settlement founded in the 8th&#160;century and with the first written records stemming from the <a href="http://www.wikipedia.org/wiki/Bishopric" title="Bishopric" class="mw-redirect">bishopric</a> seated here from at least 948. The city was founded on the northern shores of a <a href="http://www.wikipedia.org/wiki/F%C3%B6rden_and_East_Jutland_Fjorde" title="Förden and East Jutland Fjorde">fjord</a> at a natural coastal harbour and the primary driver of growth was for centuries seaborne trade in agricultural products. <a href="http://www.wikipedia.org/wiki/Market_town" title="Market town">Market town</a> privileges were granted in 1441, but growth stagnated in the 17th&#160;century as the city suffered blockades and bombardments during the <a href="http://www.wikipedia.org/wiki/Dano-Swedish_War_(1658%E2%80%9360)" title="Dano-Swedish War (1658–60)">Swedish Wars</a>. In the 19th&#160;century it was occupied twice by German troops during the <a href="http://www.wikipedia.org/wiki/First_Schleswig_War" title="First Schleswig War">Schleswig Wars</a> but avoided destruction. As the <a href="http://www.wikipedia.org/wiki/Industrial_revolution" title="Industrial revolution" class="mw-redirect">industrial revolution</a> took hold, the city grew to become the second-largest in the country by the 20th&#160;century.</p>
+<p>Today Aarhus is at the cultural and economic core of the region and the largest centre for trade, services and industry in Jutland. The city ranks as the 92nd largest city in the <a href="http://www.wikipedia.org/wiki/European_Union" title="European Union">European Union</a>, and as number 234 among <a href="http://www.wikipedia.org/wiki/World_cities" title="World cities" class="mw-redirect">world cities</a>.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Aarhus#cite_note-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Aarhus#cite_note-4"><span>[</span>4<span>]</span></a></sup> It is also a top 100 <a href="http://www.wikipedia.org/wiki/Meeting" title="Meeting">conference</a> city in the world.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Aarhus#cite_note-5"><span>[</span>5<span>]</span></a></sup> Aarhus is the principal industrial <a href="http://www.wikipedia.org/wiki/Port" title="Port">port</a> of the country in terms of container handling and an important trade hub in <a href="http://www.wikipedia.org/wiki/Kattegat" title="Kattegat">Kattegat</a>. Major Danish companies have based their headquarters here and people commute for work and leisure from a wide area in <a href="http://www.wikipedia.org/wiki/Region_Midtjylland" title="Region Midtjylland" class="mw-redirect">Region Midtjylland</a>. It is a centre for research and education in the <a href="http://www.wikipedia.org/wiki/Nordic_countries" title="Nordic countries">Nordic countries</a> and home to <a href="http://www.wikipedia.org/wiki/Aarhus_University" title="Aarhus University">Aarhus University</a>, <a href="http://www.wikipedia.org/wiki/Scandinavia" title="Scandinavia">Scandinavia</a>'s largest university, including <a href="http://www.wikipedia.org/wiki/Aarhus_University_Hospital" title="Aarhus University Hospital">Aarhus University Hospital</a> and <a href="http://www.wikipedia.org/wiki/INCUBA_Science_Park" title="INCUBA Science Park">INCUBA Science Park</a>. Being the youngest city in Denmark, with students (55,000) making up 13% of the population, Aarhus is also one of the fastest growing, with an average growth of 4,000 people per annum since 2010. The city is a central part of the <a href="http://www.wikipedia.org/wiki/East_Jutland_metropolitan_area" title="East Jutland metropolitan area">East Jutland metropolitan area</a>, the second largest area of population (1.26 million people) and economic growth in Denmark.</p>
+<p><a href="http://en.wikipedia.org/wiki/Aarhus">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Andes.html'">Andes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/African_National_Congress.html'">African National Congress</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aarau.html'">Aarau</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Azad_Kashmir.html'">Azad Kashmir</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Geography_of_Alabama.html'">Geography of Alabama</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Austria.html'">Austria</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alicante.html'">Alicante</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Azerbaijan.html'">Azerbaijan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Carnegie.html'">Andrew Carnegie</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auschwitz_concentration_camp.html'">Auschwitz concentration camp</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Area_51.html'">Area 51</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anguilla.html'">Anguilla</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aleutian_Islands.html'">Aleutian Islands</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arkansas.html'">Arkansas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Economy_of_Angola.html'">Economy of Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatolia.html'">Anatolia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andhra_Pradesh.html'">Andhra Pradesh</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Achill_Island.html'">Achill Island</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlantic_Ocean.html'">Atlantic Ocean</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Chinese_cuisine.html'">American Chinese cuisine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Articles_of_Confederation.html'">Articles of Confederation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acapulco.html'">Acapulco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Capital_Territory.html'">Australian Capital Territory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arab.html'">Arab</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Johnson.html'">Andrew Johnson</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abdul_Rashid_Dostum.html'">Abdul Rashid Dostum</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Civil_Liberties_Union.html'">American Civil Liberties Union</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arbor_Day.html'">Arbor Day</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andaman_Islands.html'">Andaman Islands</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abu_Sayyaf.html'">Abu Sayyaf</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

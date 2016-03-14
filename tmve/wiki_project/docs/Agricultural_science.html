@@ -1,0 +1,200 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[102.8545556706, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [99.1532288315, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [72.2610475314, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Agricultural science</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Agricultural science</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Agricultural science</b> is a broad multidisciplinary field of <a href="http://www.wikipedia.org/wiki/Biology" title="Biology">biology</a> that encompasses the parts of exact, natural, economic and <a href="http://www.wikipedia.org/wiki/Social_sciences" title="Social sciences" class="mw-redirect">social sciences</a> that are used in the practice and understanding of <a href="http://www.wikipedia.org/wiki/Agriculture" title="Agriculture">agriculture</a>. (<a href="http://www.wikipedia.org/wiki/Veterinary_medicine" title="Veterinary medicine">Veterinary science</a>, but not <a href="http://www.wikipedia.org/wiki/Animal_science" title="Animal science">animal science</a>, is often excluded from the definition.)</p>
+<p><br /></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Agricultural_science#Agriculture.2C_agricultural_science.2C_and_agronomy"><span class="tocnumber">1</span> <span class="toctext">Agriculture, agricultural science, and agronomy</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Agricultural_science#Agricultural_biotechnology"><span class="tocnumber">1.1</span> <span class="toctext">Agricultural biotechnology</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Agricultural_science#Fertilizer"><span class="tocnumber">2</span> <span class="toctext">Fertilizer</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Agricultural_science#A_local_science"><span class="tocnumber">3</span> <span class="toctext">A local science</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Agricultural_science#History_of_agricultural_science"><span class="tocnumber">4</span> <span class="toctext">History of agricultural science</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Agricultural_science#Prominent_agricultural_scientists"><span class="tocnumber">5</span> <span class="toctext">Prominent agricultural scientists</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Agricultural_science#Agricultural_science_and_agriculture_crisis"><span class="tocnumber">6</span> <span class="toctext">Agricultural science and agriculture crisis</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Agricultural_science#Fields_or_related_disciplines"><span class="tocnumber">7</span> <span class="toctext">Fields or related disciplines</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Agricultural_science#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Agricultural_science#Further_reading"><span class="tocnumber">9</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Agricultural_science#References"><span class="tocnumber">10</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Agricultural_science#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Agriculture.2C_agricultural_science.2C_and_agronomy">Agriculture, agricultural science, and agronomy</span></h3>
+<p>The three terms are often confused. However, they cover different concepts:</p>
+<ul>
+<li>Agriculture is the set of activities that transform the environment for the production of animals and plants for human use. Agriculture concerns techniques, including the application of agronomic research.</li>
+<li><a href="http://www.wikipedia.org/wiki/Agronomy" title="Agronomy">Agronomy</a> is <a href="http://www.wikipedia.org/wiki/Research_and_development" title="Research and development">research and development</a> related to studying and improving plant-based crops.</li>
+</ul>
+<p>Agricultural sciences include research and development on:</p>
+<ul>
+<li>Production techniques (e.g., <a href="http://www.wikipedia.org/wiki/Irrigation" title="Irrigation">irrigation</a> management, recommended <a href="http://www.wikipedia.org/wiki/Nitrogen" title="Nitrogen">nitrogen</a> inputs)</li>
+<li>Improving <a href="http://www.wikipedia.org/wiki/Agricultural_productivity" title="Agricultural productivity">agricultural productivity</a> in terms of quantity and quality (e.g., selection of <a href="http://www.wikipedia.org/wiki/Drought" title="Drought">drought</a>-resistant crops and animals, development of new <a href="http://www.wikipedia.org/wiki/Pesticide" title="Pesticide">pesticides</a>, yield-sensing technologies, simulation models of crop growth, in-vitro <a href="http://www.wikipedia.org/wiki/Cell_culture" title="Cell culture">cell culture</a> techniques)</li>
+<li>Minimizing the effects of pests (<a href="http://www.wikipedia.org/wiki/Weed" title="Weed">weeds</a>, <a href="http://www.wikipedia.org/wiki/Insect" title="Insect">insects</a>, <a href="http://www.wikipedia.org/wiki/Pathogen" title="Pathogen">pathogens</a>, <a href="http://www.wikipedia.org/wiki/Nematode" title="Nematode">nematodes</a>) on crop or animal production systems.</li>
+<li>Transformation of primary products into end-consumer products (e.g., production, preservation, and packaging of <a href="http://www.wikipedia.org/wiki/Dairy_product" title="Dairy product">dairy products</a>)</li>
+<li>Prevention and correction of adverse environmental effects (e.g., <a href="http://www.wikipedia.org/wiki/Soils_retrogression_and_degradation" title="Soils retrogression and degradation" class="mw-redirect">soil degradation</a>, <a href="http://www.wikipedia.org/wiki/Waste_management" title="Waste management">waste management</a>, <a href="http://www.wikipedia.org/wiki/Bioremediation" title="Bioremediation">bioremediation</a>)</li>
+<li><a href="http://www.wikipedia.org/wiki/Theoretical_production_ecology" title="Theoretical production ecology">Theoretical production ecology</a>, relating to crop production modeling</li>
+<li>Traditional agricultural systems, sometimes termed <a href="http://www.wikipedia.org/wiki/Subsistence_agriculture" title="Subsistence agriculture">subsistence agriculture</a>, which feed most of the poorest people in the world. These systems are of interest as they sometimes retain a level of integration with natural ecological systems greater than that of <a href="http://www.wikipedia.org/wiki/Industrial_agriculture" title="Industrial agriculture" class="mw-redirect">industrial agriculture</a>, which may be more sustainable than some modern agricultural systems.</li>
+<li>Food production and demand on a global basis, with special attention paid to the major producers, such as China, India, Brazil, the USA and the EU.</li>
+<li>Various sciences relating to agricultural resources and the environment (e.g. soil science, agroclimatology); biology of agricultural crops and animals (e.g. crop science, animal science and their included sciences, e.g. ruminant nutrition, farm animal welfare); such fields as agricultural economics and rural sociology; various disciplines encompassed in agricultural engineering.</li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Agricultural_science">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/American_National_Standards_Institute.html'">American National Standards Institute</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arcology.html'">Arcology</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ansible.html'">Ansible</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_Fire_Upon_the_Deep.html'">A Fire Upon the Deep</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Air_show.html'">Air show</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Unit_of_alcohol.html'">Unit of alcohol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ataxia.html'">Ataxia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adenylate_cyclase.html'">Adenylate cyclase</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinophryid.html'">Actinophryid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkyne.html'">Alkyne</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abzyme.html'">Abzyme</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Automorphism.html'">Automorphism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ames_test.html'">Ames test</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adolph_Wilhelm_Hermann_Kolbe.html'">Adolph Wilhelm Hermann Kolbe</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Addition_of_natural_numbers.html'">Addition of natural numbers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acceleration.html'">Acceleration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatomical_Therapeutic_Chemical_Classification_System.html'">Anatomical Therapeutic Chemical Classification System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbe_number.html'">Abbe number</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkaloid.html'">Alkaloid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Automatic_number_announcement_circuit.html'">Automatic number announcement circuit</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomer.html'">Astronomer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archimedean_solid.html'">Archimedean solid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Transport_in_Angola.html'">Transport in Angola</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Geography_of_Antarctica.html'">Geography of Antarctica</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Army.html'">Army</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Application_programming_interface.html'">Application programming interface</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aeronautics.html'">Aeronautics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apiaceae.html'">Apiaceae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Transport_in_Antarctica.html'">Transport in Antarctica</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ampicillin.html'">Ampicillin</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

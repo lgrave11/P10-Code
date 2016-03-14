@@ -1,0 +1,181 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[128.9734472488, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [38.0544157656, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [28.0697752846, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [10.2608105734, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Astronomer</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Astronomer</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>An <b>astronomer</b> is a scientist in the field of <a href="http://www.wikipedia.org/wiki/Astronomy" title="Astronomy">astronomy</a> who studies <a href="http://www.wikipedia.org/wiki/Star" title="Star">stars</a>, <a href="http://www.wikipedia.org/wiki/Planet" title="Planet">planets</a>, <a href="http://www.wikipedia.org/wiki/Moon" title="Moon">moons</a>, <a href="http://www.wikipedia.org/wiki/Comets" title="Comets" class="mw-redirect">comets</a> and <a href="http://www.wikipedia.org/wiki/Galaxies" title="Galaxies" class="mw-redirect">galaxies</a>, as well as many other <a href="http://www.wikipedia.org/wiki/Celestial_object" title="Celestial object" class="mw-redirect">celestial objects</a> — either in <a href="http://www.wikipedia.org/wiki/Observational_astronomy" title="Observational astronomy">Observational astronomy</a>, in analyzing the data or in <a href="http://www.wikipedia.org/wiki/Theoretical_astronomy" title="Theoretical astronomy">theoretical astronomy</a>. A related but distinct subject, <a href="http://www.wikipedia.org/wiki/Cosmology" title="Cosmology">cosmology</a>, is concerned with studying the <a href="http://www.wikipedia.org/wiki/Universe" title="Universe">Universe</a> as a whole. An astronomer researches the world beyond <a href="http://www.wikipedia.org/wiki/Earth" title="Earth">Earth</a>.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Astronomer#Academic"><span class="tocnumber">1</span> <span class="toctext">Academic</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Astronomer#Amateur_astronomers"><span class="tocnumber">2</span> <span class="toctext">Amateur astronomers</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Astronomer#See_also"><span class="tocnumber">3</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/Astronomer#References"><span class="tocnumber">4</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Astronomer#Specific"><span class="tocnumber">4.1</span> <span class="toctext">Specific</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Astronomer#General"><span class="tocnumber">4.2</span> <span class="toctext">General</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Astronomer#External_links"><span class="tocnumber">5</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Academic">Academic</span></h3>
+<p><a href="http://www.wikipedia.org/wiki/History_of_astronomy" title="History of astronomy">Historically</a>, astronomy was more concerned with the classification and description of <a href="http://www.wikipedia.org/wiki/Phenomena" title="Phenomena" class="mw-redirect">phenomena</a> in the sky, while <a href="http://www.wikipedia.org/wiki/Astrophysics" title="Astrophysics">astrophysics</a> attempted to explain these phenomena and the differences between them using physical laws. Today, that distinction has mostly disappeared and the terms "astronomer" and "astrophysicist" are interchangeable. Professional astronomers are highly educated individuals who typically have a <a href="http://www.wikipedia.org/wiki/Doctor_of_Philosophy" title="Doctor of Philosophy">PhD</a> in <a href="http://www.wikipedia.org/wiki/Physics" title="Physics">physics</a> or astronomy and are employed by research institutions or universities.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Astronomer#cite_note-1"><span>[</span>1<span>]</span></a></sup> They spend the majority of their time working on research, although they quite often have other duties such as teaching, building instruments, or aiding in the operation of an observatory.</p>
+<p>The number of professional astronomers in the United States is actually quite small. The <a href="http://www.wikipedia.org/wiki/American_Astronomical_Society" title="American Astronomical Society">American Astronomical Society</a>, which is the major organization of professional astronomers in North America, has approximately 7,000 members. This number includes scientists from other fields such as physics, <a href="http://www.wikipedia.org/wiki/Geology" title="Geology">geology</a>, and <a href="http://www.wikipedia.org/wiki/Engineering" title="Engineering">engineering</a>, whose research interests are closely related to astronomy.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Astronomer#cite_note-2"><span>[</span>2<span>]</span></a></sup> The <a href="http://www.wikipedia.org/wiki/International_Astronomical_Union" title="International Astronomical Union">International Astronomical Union</a> comprises almost 10,145 members from 70 different countries who are involved in astronomical research at the PhD level and beyond.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Astronomer#cite_note-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>Contrary to the classical image of an old astronomer peering through a <a href="http://www.wikipedia.org/wiki/Telescope" title="Telescope">telescope</a> through the dark hours of the night, it is far more common to use a <a href="http://www.wikipedia.org/wiki/Charge-coupled_device" title="Charge-coupled device">charge-coupled device</a> (CCD) camera to record a long, deep exposure, allowing a more sensitive image to be created because the <a href="http://www.wikipedia.org/wiki/Light" title="Light">light</a> is added over time. Before CCDs, <a href="http://www.wikipedia.org/wiki/Photographic_plates" title="Photographic plates" class="mw-redirect">photographic plates</a> were a common method of observation. Modern astronomers spend relatively little time at telescopes usually just a few weeks per year. Analysis of observed phenomena, along with making predictions as to the causes of what they observe, takes the majority of observational astronomers' time.</p>
+<p><a href="http://en.wikipedia.org/wiki/Astronomer">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Au_file_format.html'">Au file format</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algebraic_extension.html'">Algebraic extension</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amoeboid.html'">Amoeboid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ampicillin.html'">Ampicillin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archimedean_solid.html'">Archimedean solid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkaloid.html'">Alkaloid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbe_number.html'">Abbe number</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algebraic_number.html'">Algebraic number</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auger_effect.html'">Auger effect</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Addition_of_natural_numbers.html'">Addition of natural numbers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlas_Autocode.html'">Atlas Autocode</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ames_test.html'">Ames test</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antacid.html'">Antacid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ataxia.html'">Ataxia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Automorphism.html'">Automorphism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_7.html'">Apollo 7</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abzyme.html'">Abzyme</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinophryid.html'">Actinophryid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ampere.html'">Ampere</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adrastea_(moon).html'">Adrastea (moon)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinoid.html'">Actinoid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkyne.html'">Alkyne</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adenylate_cyclase.html'">Adenylate cyclase</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ansible.html'">Ansible</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_17.html'">Apollo 17</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatomical_Therapeutic_Chemical_Classification_System.html'">Anatomical Therapeutic Chemical Classification System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acceleration.html'">Acceleration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amethyst.html'">Amethyst</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Air_show.html'">Air show</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinium.html'">Actinium</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

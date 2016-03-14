@@ -1,0 +1,196 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[88.0895953621, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Affirming the consequent</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Affirming the consequent</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Affirming the consequent</b>, sometimes called <b>converse error</b>, <b>fallacy of the converse</b> or <b>confusion of necessity and sufficiency</b>, is a <a href="http://www.wikipedia.org/wiki/Formal_fallacy" title="Formal fallacy">formal fallacy</a> of inferring the <a href="http://www.wikipedia.org/wiki/Converse_(logic)" title="Converse (logic)">converse</a> from the original statement. The corresponding argument has the general <a href="http://www.wikipedia.org/wiki/Argument_form" title="Argument form" class="mw-redirect">form</a>:</p>
+<p>An argument of this form is <a href="http://www.wikipedia.org/wiki/Validity" title="Validity">invalid</a>, i.e., the conclusion can be false even when statements 1 and 2 are true. Since <i>P</i> was never asserted as the <i>only</i> sufficient condition for <i>Q</i>, other factors could account for <i>Q</i> (while <i>P</i> was false).<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Affirming_the_consequent#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Affirming_the_consequent#cite_note-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>To put it differently, if <i>P</i> implies <i>Q</i>, the <b>only</b> inference that can be made is <i>non-Q</i> implies <i>non-P</i>. (<i>Non-P</i> and <i>non-Q</i> designate the opposite propositions to <i>P</i> and <i>Q</i>.) This is known as logical <a href="http://www.wikipedia.org/wiki/Contraposition" title="Contraposition">contraposition</a>. Symbolically:</p>
+<p><img class="mwe-math-fallback-image-inline tex" alt="(P \to Q)\leftrightarrow (\neg Q \to \neg P)" src="//upload.wikimedia.org/math/a/b/d/abd80d82573ea15aed96a7db1c48d986.png" /></p>
+<p>The name <i>affirming the <a href="http://www.wikipedia.org/wiki/Consequent" title="Consequent">consequent</a></i> derives from the premise <i>Q</i>, which affirms the "then" clause of the <a href="http://www.wikipedia.org/wiki/Indicative_conditional" title="Indicative conditional">conditional</a> premise.</p>
+<h3><span class="mw-headline" id="Examples">Examples</span></h3>
+<p>One way to demonstrate the invalidity of this argument form is with a counterexample with true premises but an obviously false conclusion. For example:</p>
+<p>Owning Fort Knox is not the <i>only</i> way to be rich. Any number of other ways exist to be rich.</p>
+<p>However, one can affirm with certainty that "if Bill Gates is not rich" (<i>non-Q</i>) then "Bill Gates does not own Fort Knox" (<i>non-P</i>). This is the <a href="http://www.wikipedia.org/wiki/Contrapositive" title="Contrapositive" class="mw-redirect">contrapositive</a> of the first statement, and it must be true if the original statement is true.</p>
+<p>Arguments of the same form can sometimes seem superficially convincing, as in the following example:</p>
+<p>But having the flu is not the <i>only</i> cause of a sore throat since many illnesses cause sore throat, such as the <a href="http://www.wikipedia.org/wiki/Common_cold" title="Common cold">common cold</a> or <a href="http://www.wikipedia.org/wiki/Strep_throat" title="Strep throat" class="mw-redirect">strep throat</a>.</p>
+<h3><span class="mw-headline" id="See_also">See also</span></h3>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Confusion_of_the_inverse" title="Confusion of the inverse">Confusion of the inverse</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Denying_the_antecedent" title="Denying the antecedent">Denying the antecedent</a></li>
+<li><a href="http://www.wikipedia.org/wiki/ELIZA_effect" title="ELIZA effect">ELIZA effect</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Fallacy_of_the_single_cause" title="Fallacy of the single cause">Fallacy of the single cause</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Fallacy_of_the_undistributed_middle" title="Fallacy of the undistributed middle">Fallacy of the undistributed middle</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Inference_to_the_best_explanation" title="Inference to the best explanation" class="mw-redirect">Inference to the best explanation</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Modus_ponens" title="Modus ponens">Modus ponens</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Modus_tollens" title="Modus tollens">Modus tollens</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc" title="Post hoc ergo propter hoc">Post hoc ergo propter hoc</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Necessity_and_sufficiency" title="Necessity and sufficiency">Necessity and sufficiency</a></li>
+</ul>
+<h3><span class="mw-headline" id="References">References</span></h3>
+<ul>
+<li class="nv-view"><a href="http://www.wikipedia.org/wiki/Template:Formal_fallacy" title="Template:Formal fallacy"><abbr title="View this template" style=";;background:none transparent;border:none;">v</abbr></a></li>
+<li class="nv-talk"><a href="http://www.wikipedia.org/wiki/Template_talk:Formal_fallacy" title="Template talk:Formal fallacy"><abbr title="Discuss this template" style=";;background:none transparent;border:none;">t</abbr></a></li>
+<li class="nv-edit"><a class="external text" href="//en.wikipedia.org/w/index.php?title=Template:Formal_fallacy&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;">e</abbr></a></li>
+</ul>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Masked_man_fallacy" title="Masked man fallacy">Masked man fallacy</a></li>
+</ul>
+<ul>
+<li><a href="http://www.wikipedia.org/wiki/Affirming_a_disjunct" title="Affirming a disjunct">Affirming a disjunct</a></li>
+<li><strong class="selflink">Affirming the consequent</strong></li>
+<li><a href="http://www.wikipedia.org/wiki/Denying_the_antecedent" title="Denying the antecedent">Denying the antecedent</a></li>
+<li><a href="http://www.wikipedia.org/wiki/Argument_from_fallacy" title="Argument from fallacy">Argument from fallacy</a></li>
+<li><a href="http://www.wikipedia.org/wiki/False_dilemma" title="False dilemma">False dilemma</a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Affirming_the_consequent">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Argument_form.html'">Argument form</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André-Marie_Ampère.html'">André-Marie Ampère</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatomy.html'">Anatomy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adventure.html'">Adventure</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abstract_(law).html'">Abstract (law)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affray.html'">Affray</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annals_of_Mathematics.html'">Annals of Mathematics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Garner.html'">Alan Garner</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arraignment.html'">Arraignment</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andreas_Capellanus.html'">Andreas Capellanus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affection.html'">Affection</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abba_Mari.html'">Abba Mari</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Austro-Asiatic_languages.html'">Austro-Asiatic languages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldine_Press.html'">Aldine Press</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alford_plea.html'">Alford plea</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Athanasian_Creed.html'">Athanasian Creed</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexandrine.html'">Alexandrine</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analysis.html'">Analysis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alessandro_Allori.html'">Alessandro Allori</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antimony.html'">Antimony</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artistic_revolution.html'">Artistic revolution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Approximant_consonant.html'">Approximant consonant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abatement_of_debts_and_legacies.html'">Abatement of debts and legacies</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Autism.html'">Autism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrew_Wiles.html'">Andrew Wiles</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alvin_Toffler.html'">Alvin Toffler</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alvar_Aalto.html'">Alvar Aalto</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Augustin-Jean_Fresnel.html'">Augustin-Jean Fresnel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agrarianism.html'">Agrarianism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allomorph.html'">Allomorph</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

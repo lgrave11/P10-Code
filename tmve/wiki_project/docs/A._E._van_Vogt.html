@@ -1,0 +1,186 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[251.4445879464, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [60.0139897463, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [2.8102439405, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>A. E. van Vogt</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">A. E. van Vogt</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Alfred Elton van Vogt</b> (<span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="'v' in 'vie'">v</span><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'n' in 'no'">n</span></span> <span style="border-bottom:1px dotted"><span title="'v' in 'vie'">v</span><span title="/oʊ/ long 'o' in 'code'">oʊ</span><span title="'t' in 'tie'">t</span></span>/</a></span></span>; April 26, 1912&#160;– January 26, 2000) was a Canadian-born <a href="http://www.wikipedia.org/wiki/Science_fiction_author" title="Science fiction author" class="mw-redirect">science fiction author</a> regarded as one of the most popular, influential, and complex<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#cite_note-1"><span>[</span>1<span>]</span></a></sup> science fiction writers of the mid-twentieth century: the <a href="http://www.wikipedia.org/wiki/Golden_Age_of_Science_Fiction" title="Golden Age of Science Fiction">Golden Age</a> of the genre.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#Early_life_and_writings"><span class="tocnumber">1</span> <span class="toctext">Early life and writings</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#Post-war_philosophy"><span class="tocnumber">2</span> <span class="toctext">Post-war philosophy</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#Critical_reception"><span class="tocnumber">3</span> <span class="toctext">Critical reception</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#Recognition"><span class="tocnumber">4</span> <span class="toctext">Recognition</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#Quotes"><span class="tocnumber">5</span> <span class="toctext">Quotes</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#Works"><span class="tocnumber">6</span> <span class="toctext">Works</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#Novels"><span class="tocnumber">6.1</span> <span class="toctext">Novels</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#Collections"><span class="tocnumber">6.2</span> <span class="toctext">Collections</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#Nonfiction"><span class="tocnumber">6.3</span> <span class="toctext">Nonfiction</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#Notes"><span class="tocnumber">8</span> <span class="toctext">Notes</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Early_life_and_writings">Early life and writings</span></h3>
+<p>Van Vogt was born on a farm in Edenburg, a <a href="http://www.wikipedia.org/wiki/Russian_Mennonite" title="Russian Mennonite">Russian Mennonite</a> community east of <a href="http://www.wikipedia.org/wiki/Gretna,_Manitoba" title="Gretna, Manitoba">Gretna, Manitoba</a>, Canada. Until he was four years old, van Vogt and his family spoke only a <a href="http://www.wikipedia.org/wiki/Plautdietsch" title="Plautdietsch" class="mw-redirect">dialect of Low German</a> in the home.<sup id="cite_ref-panshin_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#cite_note-panshin-2"><span>[</span>2<span>]</span></a></sup> Van Vogt's father, a lawyer, moved his family several times and his son found these moves difficult, remarking in later life:</p>
+<p>Childhood was a terrible period for me. I was like a ship without anchor being swept along through darkness in a storm. Again and again I sought shelter, only to be forced out of it by something new.<sup id="cite_ref-panshin_2-1" class="reference"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#cite_note-panshin-2"><span>[</span>2<span>]</span></a></sup></p>
+<p>After starting his writing career by writing for true-confession style <a href="http://www.wikipedia.org/wiki/Pulp_magazines" title="Pulp magazines" class="mw-redirect">pulp magazines</a> such as <i><a href="http://www.wikipedia.org/wiki/True_Story_(magazine)" title="True Story (magazine)">True Story</a></i>, van Vogt decided to switch to writing something he enjoyed, science fiction.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt#cite_note-3"><span>[</span>3<span>]</span></a></sup> This happened after he casually picked up the August 1938 issue of <i>Astounding Science Fiction</i> from a newsstand and found the story "<a href="http://www.wikipedia.org/wiki/Who_Goes_There%3F" title="Who Goes There?">Who Goes There?</a>" The story inspired him to write "<a href="http://www.wikipedia.org/wiki/Vault_of_the_Beast" title="Vault of the Beast">Vault of the Beast</a>", which he sent to the same magazine. It was rejected, but the rejection letter encouraged him to try again. He then sent in a new story called "The Black Destroyer," which was accepted. A rewritten version of "Vault of the Beast" would be published in 1940.</p>
+<p><a href="http://en.wikipedia.org/wiki/A._E._van_Vogt">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Aramaic_alphabet.html'">Aramaic alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afro-Asiatic_languages.html'">Afro-Asiatic languages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artist.html'">Artist</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allophone.html'">Allophone</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anti-realism.html'">Anti-realism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adamic_language.html'">Adamic language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albertus_Magnus.html'">Albertus Magnus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahimsa.html'">Ahimsa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Ayer.html'">Alfred Ayer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_English.html'">Australian English</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aeon.html'">Aeon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anxiety.html'">Anxiety</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Austrian_German.html'">Austrian German</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Andrei_Sakharov.html'">Andrei Sakharov</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amos_Bronson_Alcott.html'">Amos Bronson Alcott</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adam_Weishaupt.html'">Adam Weishaupt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ásatrú.html'">Ásatrú</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alchemy.html'">Alchemy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Weil.html'">André Weil</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anita_Hill.html'">Anita Hill</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allegory.html'">Allegory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argument_from_morality.html'">Argument from morality</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Appellate_court.html'">Appellate court</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anagram.html'">Anagram</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applied_ethics.html'">Applied ethics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Turing.html'">Alan Turing</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adversarial_system.html'">Adversarial system</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agatha_Christie.html'">Agatha Christie</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Autobiography.html'">Autobiography</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammonius_Saccas.html'">Ammonius Saccas</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

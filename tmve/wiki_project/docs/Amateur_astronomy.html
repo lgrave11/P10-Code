@@ -1,0 +1,190 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[802.3780323156, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [117.3923415584, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [62.7976430749, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [2.7904322849, "../topics/{state,_states,_city}.html", "{state,_states,_city}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Amateur astronomy</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Amateur astronomy</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Amateur astronomy</b> is a <a href="http://www.wikipedia.org/wiki/Hobby" title="Hobby">hobby</a> whose participants enjoy watching the <a href="http://www.wikipedia.org/wiki/Sky" title="Sky">sky</a>, and the abundance of objects found in it with the <a href="http://www.wikipedia.org/wiki/Naked_eye" title="Naked eye">unaided eye</a>, <a href="http://www.wikipedia.org/wiki/Binoculars" title="Binoculars">binoculars</a>, or <a href="http://www.wikipedia.org/wiki/Telescope" title="Telescope">telescopes</a>. Even though scientific <a href="http://www.wikipedia.org/wiki/Research" title="Research">research</a> is not their main goal, many amateur astronomers make a contribution to astronomy by monitoring <a href="http://www.wikipedia.org/wiki/Variable_stars" title="Variable stars" class="mw-redirect">variable stars</a>, tracking <a href="http://www.wikipedia.org/wiki/Asteroid" title="Asteroid">asteroids</a> and discovering transient objects, such as <a href="http://www.wikipedia.org/wiki/Comet" title="Comet">comets</a> and <a href="http://www.wikipedia.org/wiki/Nova" title="Nova">novae</a>.</p>
+<p>The typical amateur astronomer is one who does not depend on the field of astronomy as a primary source of <a href="http://www.wikipedia.org/wiki/Income" title="Income">income</a> or support, and does not have a <a href="http://www.wikipedia.org/wiki/Professional_degree" title="Professional degree" class="mw-redirect">professional degree</a> or advanced academic training in the subject. Many amateurs are beginners or <a href="http://www.wikipedia.org/wiki/Hobby" title="Hobby">hobbyists</a>, while others have a high degree of experience in astronomy and often assist and work alongside professional astronomers.</p>
+<p>Amateur astronomy is usually associated with viewing the <a href="http://www.wikipedia.org/wiki/Night_sky" title="Night sky">night sky</a> when most celestial objects and events are visible, but sometimes amateur astronomers also operate during the day for events such as <a href="http://www.wikipedia.org/wiki/Sunspot" title="Sunspot">sunspots</a> and <a href="http://www.wikipedia.org/wiki/Solar_eclipse" title="Solar eclipse">solar eclipses</a>. Amateur astronomers often look at the sky using nothing more than their eyes, but common tools for amateur astronomy include portable <a href="http://www.wikipedia.org/wiki/Optical_telescope" title="Optical telescope">telescopes</a> and <a href="http://www.wikipedia.org/wiki/Binoculars" title="Binoculars">binoculars</a>.</p>
+<p>People have studied the sky throughout history in an amateur framework, without any formal method of funding. It is only within about the past century, however, that amateur astronomy has become an activity clearly distinguished from professional astronomy, and other related activities.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Amateur_astronomy_objectives"><span class="tocnumber">1</span> <span class="toctext">Amateur astronomy objectives</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Common_tools"><span class="tocnumber">2</span> <span class="toctext">Common tools</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Common_techniques"><span class="tocnumber">3</span> <span class="toctext">Common techniques</span></a>
+<ul>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Star_hopping"><span class="tocnumber">3.1</span> <span class="toctext">Star hopping</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Setting_circles"><span class="tocnumber">3.2</span> <span class="toctext">Setting circles</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#GoTo_telescopes"><span class="tocnumber">3.3</span> <span class="toctext">GoTo telescopes</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Remote_control_telescopes"><span class="tocnumber">3.4</span> <span class="toctext">Remote control telescopes</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Imaging_techniques"><span class="tocnumber">3.5</span> <span class="toctext">Imaging techniques</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Scientific_research"><span class="tocnumber">4</span> <span class="toctext">Scientific research</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Societies"><span class="tocnumber">5</span> <span class="toctext">Societies</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Notable_amateur_astronomers"><span class="tocnumber">6</span> <span class="toctext">Notable amateur astronomers</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Prizes_recognizing_amateur_astronomers"><span class="tocnumber">7</span> <span class="toctext">Prizes recognizing amateur astronomers</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#Further_reading"><span class="tocnumber">10</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="http://en.wikipedia.org/wiki/Amateur_astronomy#External_links"><span class="tocnumber">11</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Amateur_astronomy_objectives">Amateur astronomy objectives</span></h3>
+<p><a href="http://en.wikipedia.org/wiki/Amateur_astronomy">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Anti-ballistic_missile.html'">Anti-ballistic missile</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aluminium.html'">Aluminium</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asynchronous_Transfer_Mode.html'">Asynchronous Transfer Mode</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcohol.html'">Alcohol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antibiotic_resistance.html'">Antibiotic resistance</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom.html'">Axiom</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algebraic_geometry.html'">Algebraic geometry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aerodynamics.html'">Aerodynamics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Kolmogorov_complexity.html'">Kolmogorov complexity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aircraft.html'">Aircraft</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_program.html'">Apollo program</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apollo_15.html'">Apollo 15</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Axiom_of_choice.html'">Axiom of choice</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arsenic.html'">Arsenic</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asteroid.html'">Asteroid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archimedes.html'">Archimedes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anchor.html'">Anchor</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Active_Directory.html'">Active Directory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analytical_chemistry.html'">Analytical chemistry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Addiction.html'">Addiction</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthropod.html'">Arthropod</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkene.html'">Alkene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antimatter.html'">Antimatter</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alpha_Centauri.html'">Alpha Centauri</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amino_acid.html'">Amino acid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aspirin.html'">Aspirin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asbestos.html'">Asbestos</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adenosine_triphosphate.html'">Adenosine triphosphate</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberration_of_light.html'">Aberration of light</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Air_conditioner.html'">Air conditioner</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

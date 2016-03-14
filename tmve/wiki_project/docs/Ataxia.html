@@ -1,0 +1,193 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[108.6215441717, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [23.5576601247, "../topics/{language,_work,_write}.html", "{language,_work,_write}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Ataxia</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Ataxia</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Ataxia</b> (from <a href="http://www.wikipedia.org/wiki/Greek_(language)" title="Greek (language)" class="mw-redirect">Greek</a> <i>α-</i> [a negative prefix] + <i>-τάξις</i> [order] = "lack of order") is a <a href="http://www.wikipedia.org/wiki/Neurological_sign" title="Neurological sign" class="mw-redirect">neurological sign</a> consisting of lack of voluntary <a href="http://www.wikipedia.org/wiki/Motor_coordination" title="Motor coordination">coordination of muscle movements</a> that includes <a href="http://www.wikipedia.org/wiki/Gait_abnormality" title="Gait abnormality">gait abnormality</a>. Ataxia is a non-specific clinical manifestation implying dysfunction of the parts of the <a href="http://www.wikipedia.org/wiki/Nervous_system" title="Nervous system">nervous system</a> that coordinate movement, such as the <a href="http://www.wikipedia.org/wiki/Cerebellum" title="Cerebellum">cerebellum</a>. Ataxia can be limited to one side of the body, which is referred to as <a rel="nofollow" class="external text" href="http://medical-dictionary.thefreedictionary.com/hemiataxia">hemiataxia</a>. Several possible causes exist for these patterns of neurological dysfunction. Dystaxia is a mild degree of ataxia. <a href="http://www.wikipedia.org/wiki/Friedrich%27s_ataxia" title="Friedrich's ataxia" class="mw-redirect">Friedrich's ataxia</a> has gait abnormality as the most commonly presented symptom.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Ataxia#cite_note-1"><span>[</span>1<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Ataxia#Types"><span class="tocnumber">1</span> <span class="toctext">Types</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://en.wikipedia.org/wiki/Ataxia#Cerebellar"><span class="tocnumber">1.1</span> <span class="toctext">Cerebellar</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Ataxia#Sensory"><span class="tocnumber">1.2</span> <span class="toctext">Sensory</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Ataxia#Vestibular"><span class="tocnumber">1.3</span> <span class="toctext">Vestibular</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Ataxia#Causes"><span class="tocnumber">2</span> <span class="toctext">Causes</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Ataxia#Focal_lesions"><span class="tocnumber">2.1</span> <span class="toctext">Focal lesions</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Ataxia#Exogenous_substances_.28metabolic_ataxia.29"><span class="tocnumber">2.2</span> <span class="toctext">Exogenous substances (metabolic ataxia)</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Ataxia#Radiation_poisoning"><span class="tocnumber">2.3</span> <span class="toctext">Radiation poisoning</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Ataxia#Vitamin_B12_deficiency"><span class="tocnumber">2.4</span> <span class="toctext">Vitamin B<sub>12</sub> deficiency</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Ataxia#Hypothyroidism"><span class="tocnumber">2.5</span> <span class="toctext">Hypothyroidism</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Ataxia#Causes_of_isolated_sensory_ataxia"><span class="tocnumber">2.6</span> <span class="toctext">Causes of isolated sensory ataxia</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Ataxia#Non-hereditary_cerebellar_degeneration"><span class="tocnumber">2.7</span> <span class="toctext">Non-hereditary cerebellar degeneration</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Ataxia#Hereditary_ataxias"><span class="tocnumber">2.8</span> <span class="toctext">Hereditary ataxias</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Ataxia#Arnold-Chiari_malformation_.28congenital_ataxia.29"><span class="tocnumber">2.9</span> <span class="toctext">Arnold-Chiari malformation (congenital ataxia)</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Ataxia#Wilson.27s_disease"><span class="tocnumber">2.10</span> <span class="toctext">Wilson's disease</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Ataxia#Gluten_ataxia"><span class="tocnumber">2.11</span> <span class="toctext">Gluten ataxia</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Ataxia#Sodium-potassium_pump"><span class="tocnumber">2.12</span> <span class="toctext">Sodium-potassium pump</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Ataxia#Treatment"><span class="tocnumber">3</span> <span class="toctext">Treatment</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="http://en.wikipedia.org/wiki/Ataxia#Other_uses"><span class="tocnumber">4</span> <span class="toctext">Other uses</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Ataxia#See_also"><span class="tocnumber">5</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="http://en.wikipedia.org/wiki/Ataxia#References"><span class="tocnumber">6</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-22"><a href="http://en.wikipedia.org/wiki/Ataxia#Further_reading"><span class="tocnumber">7</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-23"><a href="http://en.wikipedia.org/wiki/Ataxia#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Ataxia">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Automorphism.html'">Automorphism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ames_test.html'">Ames test</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abzyme.html'">Abzyme</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Addition_of_natural_numbers.html'">Addition of natural numbers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Actinophryid.html'">Actinophryid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbe_number.html'">Abbe number</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkaloid.html'">Alkaloid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alkyne.html'">Alkyne</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Archimedean_solid.html'">Archimedean solid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adenylate_cyclase.html'">Adenylate cyclase</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ampicillin.html'">Ampicillin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anatomical_Therapeutic_Chemical_Classification_System.html'">Anatomical Therapeutic Chemical Classification System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ansible.html'">Ansible</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acceleration.html'">Acceleration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Application_programming_interface.html'">Application programming interface</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Au_file_format.html'">Au file format</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Automatic_number_announcement_circuit.html'">Automatic number announcement circuit</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomer.html'">Astronomer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aeronautics.html'">Aeronautics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AutoCAD_DXF.html'">AutoCAD DXF</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algebraic_extension.html'">Algebraic extension</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adaptive_radiation.html'">Adaptive radiation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Almost_all.html'">Almost all</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allene.html'">Allene</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/AVL_tree.html'">AVL tree</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amoeboid.html'">Amoeboid</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Unit_of_alcohol.html'">Unit of alcohol</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Analgesic.html'">Analgesic</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomical_year_numbering.html'">Astronomical year numbering</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Algebraic_number.html'">Algebraic number</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[495.0796200848, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Anatoly Karpov</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Anatoly Karpov</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Anatoly Yevgenyevich Karpov</b>, <a href="http://www.wikipedia.org/wiki/Doctor_of_Philosophy" title="Doctor of Philosophy">PhD</a> (<a href="http://www.wikipedia.org/wiki/Russian_language" title="Russian language">Russian</a>: <span lang="ru" xml:lang="ru">Анато́лий Евге́ньевич Ка́рпов</span>, <i>Anatolij Evgen'evič Karpov</i>; born May 23, 1951) is a Russian <a href="http://www.wikipedia.org/wiki/Chess" title="Chess">chess</a> <a href="http://www.wikipedia.org/wiki/International_Grandmaster" title="International Grandmaster" class="mw-redirect">grandmaster</a> and former <a href="http://www.wikipedia.org/wiki/World_Chess_Championship" title="World Chess Championship">World Champion</a>. He was the official world champion from 1975 to 1985 when he was defeated by <a href="http://www.wikipedia.org/wiki/Garry_Kasparov" title="Garry Kasparov">Garry Kasparov</a>. He played three matches against Kasparov for the title from 1986 to 1990, before becoming <a href="http://www.wikipedia.org/wiki/FIDE" title="FIDE">FIDE</a> World Champion once again after Kasparov broke away from FIDE in 1993. He held the title until 1999, when he resigned his title in protest against FIDE's new world championship rules. For his decades-long standing among the world's elite, Karpov is considered by many to be one of the <a href="http://www.wikipedia.org/wiki/Comparison_of_top_chess_players_throughout_history" title="Comparison of top chess players throughout history">greatest players</a> of all time.</p>
+<p>His tournament successes include over 160 first-place finishes.<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#cite_note-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#cite_note-2"><span>[</span>2<span>]</span></a></sup> He had a peak <a href="http://www.wikipedia.org/wiki/Elo_rating_system" title="Elo rating system">Elo rating</a> of 2780, and his 90 total months at world number one is <a href="http://www.wikipedia.org/wiki/List_of_FIDE_chess_world_number_ones" title="List of FIDE chess world number ones">second all-time</a> behind only <a href="http://www.wikipedia.org/wiki/Garry_Kasparov" title="Garry Kasparov">Garry Kasparov</a> since the inception of the FIDE ranking list in 1970.</p>
+<p>Since 2005, he has been a member of the <a href="http://www.wikipedia.org/wiki/Public_Chamber_of_Russia" title="Public Chamber of Russia" class="mw-redirect">Public Chamber of Russia</a>. He has recently involved himself in several humanitarian causes, such as advocating the use of <a href="http://www.wikipedia.org/wiki/Iodised_salt" title="Iodised salt">iodised salt</a>.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#cite_note-3"><span>[</span>3<span>]</span></a></sup> On December 17, 2012, Karpov supported<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#cite_note-4"><span>[</span>4<span>]</span></a></sup> the law in the Russian Parliament banning adoption of Russian orphans by citizens of the US.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Early_life"><span class="tocnumber">1</span> <span class="toctext">Early life</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#International_career"><span class="tocnumber">2</span> <span class="toctext">International career</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Young_master"><span class="tocnumber">2.1</span> <span class="toctext">Young master</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Top-Class_Grandmaster"><span class="tocnumber">2.2</span> <span class="toctext">Top-Class Grandmaster</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Candidate"><span class="tocnumber">2.3</span> <span class="toctext">Candidate</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Match_with_Fischer_in_1975"><span class="tocnumber">2.4</span> <span class="toctext">Match with Fischer in 1975</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#World_champion"><span class="tocnumber">2.5</span> <span class="toctext">World champion</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Rivalry_with_Kasparov"><span class="tocnumber">2.6</span> <span class="toctext">Rivalry with Kasparov</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#FIDE_champion_again_.281993.E2.80.9399.29"><span class="tocnumber">2.7</span> <span class="toctext">FIDE champion again (1993–99)</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Towards_retirement"><span class="tocnumber">2.8</span> <span class="toctext">Towards retirement</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Head-to-head_record_versus_selected_grandmasters"><span class="tocnumber">3</span> <span class="toctext">Head-to-head record versus selected grandmasters</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Candidate_for_FIDE_Presidency"><span class="tocnumber">4</span> <span class="toctext">Candidate for FIDE Presidency</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Style"><span class="tocnumber">5</span> <span class="toctext">Style</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Notable_games"><span class="tocnumber">6</span> <span class="toctext">Notable games</span></a></li>
+<li class="toclevel-1 tocsection-15"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Hobbies"><span class="tocnumber">7</span> <span class="toctext">Hobbies</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Honours_and_awards"><span class="tocnumber">8</span> <span class="toctext">Honours and awards</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Books"><span class="tocnumber">10</span> <span class="toctext">Books</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#Further_reading"><span class="tocnumber">11</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov#External_links"><span class="tocnumber">12</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Anatoly_Karpov">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Academy_Award.html'">Academy Award</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animaniacs.html'">Animaniacs</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Alan_Parsons_Project.html'">The Alan Parsons Project</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Amazing_Spider-Man_(comic_book).html'">The Amazing Spider-Man (comic book)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adam_Carolla.html'">Adam Carolla</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_cappella.html'">A cappella</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari.html'">Atari</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Akira_Kurosawa.html'">Akira Kurosawa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aston_Martin.html'">Aston Martin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alan_Ayckbourn.html'">Alan Ayckbourn</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Quarter_Horse.html'">American Quarter Horse</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accordion.html'">Accordion</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amy_Grant.html'">Amy Grant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antonio_Vivaldi.html'">Antonio Vivaldi</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A.S._Roma.html'">A.S. Roma</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acquire.html'">Acquire</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthony_Hopkins.html'">Anthony Hopkins</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asteroids_(video_game).html'">Asteroids (video game)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aster_CT-80.html'">Aster CT-80</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ani_DiFranco.html'">Ani DiFranco</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acorn_Electron.html'">Acorn Electron</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atlanta_Falcons.html'">Atlanta Falcons</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arizona_State_University.html'">Arizona State University</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Steel-string_acoustic_guitar.html'">Steel-string acoustic guitar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_the_Giant.html'">André the Giant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/ASCII_art.html'">ASCII art</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amstrad_CPC.html'">Amstrad CPC</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Atari_Lynx.html'">Atari Lynx</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Airbus_A300.html'">Airbus A300</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexis_Korner.html'">Alexis Korner</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[19.788750528, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [15.3904534469, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Arecales</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Arecales</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>The <b>Arecaceae</b> are a botanical <a href="http://www.wikipedia.org/wiki/Family_(biology)" title="Family (biology)">family</a> of perennial <a href="http://www.wikipedia.org/wiki/Liana" title="Liana">lianas</a>, shrubs, and trees commonly known as <b>palm trees</b>. (Owing to historical usage, the family is alternatively called <b>Palmae</b>.)<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Arecales#cite_note-3"><span>[</span>3<span>]</span></a></sup> They are <a href="http://www.wikipedia.org/wiki/Flowering_plant" title="Flowering plant">flowering plants</a>, the only family in the <a href="http://www.wikipedia.org/wiki/Monocotyledon" title="Monocotyledon">monocot</a> <a href="http://www.wikipedia.org/wiki/Order_(biology)" title="Order (biology)">order</a> <b>Arecales</b>. Roughly 200 <a href="http://www.wikipedia.org/wiki/Genus" title="Genus">genera</a> with around 2600 <a href="http://www.wikipedia.org/wiki/Species" title="Species">species</a> are currently known, most of them restricted to <a href="http://www.wikipedia.org/wiki/Tropics" title="Tropics">tropical</a>, <a href="http://www.wikipedia.org/wiki/Subtropics" title="Subtropics">subtropical</a>, and warm <a href="http://www.wikipedia.org/wiki/Temperate_climate" title="Temperate climate">temperate climates</a>. Most palms are distinguished by their large, compound, <a href="http://www.wikipedia.org/wiki/Evergreen" title="Evergreen">evergreen</a> leaves arranged at the top of an unbranched stem. However, palms exhibit an enormous diversity in physical characteristics and inhabit nearly every type of <a href="http://www.wikipedia.org/wiki/Habitat_(ecology)" title="Habitat (ecology)" class="mw-redirect">habitat</a> within their range, from <a href="http://www.wikipedia.org/wiki/Rainforest" title="Rainforest">rainforests</a> to <a href="http://www.wikipedia.org/wiki/Desert" title="Desert">deserts</a>.</p>
+<p>Palms are among the best known and most extensively cultivated plant families. They have been important to humans throughout much of history. Many common products and foods are derived from palms, and palms are also widely used in landscaping, making them one of the most economically important plants. In many historical cultures, palms were <a href="http://www.wikipedia.org/wiki/Palm_branch_(symbol)" title="Palm branch (symbol)">symbols</a> for such ideas as victory, peace, and fertility. For inhabitants of cooler climates today, palms symbolize the tropics and <a href="http://www.wikipedia.org/wiki/Tourism" title="Tourism">vacations</a>.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Arecales#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Arecales#Morphology"><span class="tocnumber">1</span> <span class="toctext">Morphology</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Arecales#Range_and_habitat"><span class="tocnumber">2</span> <span class="toctext">Range and habitat</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Arecales#Selected_genera"><span class="tocnumber">2.1</span> <span class="toctext">Selected genera</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Arecales#Evolution"><span class="tocnumber">2.2</span> <span class="toctext">Evolution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-5"><a href="http://en.wikipedia.org/wiki/Arecales#Uses"><span class="tocnumber">3</span> <span class="toctext">Uses</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="http://en.wikipedia.org/wiki/Arecales#Endangered_species"><span class="tocnumber">4</span> <span class="toctext">Endangered species</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Arecales#Pest_species"><span class="tocnumber">5</span> <span class="toctext">Pest species</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Arecales#Symbolism"><span class="tocnumber">6</span> <span class="toctext">Symbolism</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Arecales#Other_plants"><span class="tocnumber">7</span> <span class="toctext">Other plants</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Arecales#See_also"><span class="tocnumber">8</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Arecales#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Arecales#External_links"><span class="tocnumber">10</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p></p>
+<h3><span class="mw-headline" id="Morphology">Morphology</span></h3>
+<p>Whether as shrubs, trees, or vines, palms have two methods of growth: solitary or clustered. The common representation is that of a solitary shoot ending in a crown of leaves. This <a href="http://www.wikipedia.org/wiki/Monopodial" title="Monopodial">monopodial</a> character may be exhibited by prostrate, trunkless, and trunk-forming members. Some common palms restricted to solitary growth include <i><a href="http://www.wikipedia.org/wiki/Washingtonia" title="Washingtonia">Washingtonia</a></i> and <i><a href="http://www.wikipedia.org/wiki/Roystonea" title="Roystonea">Roystonea</a></i>. Palms may instead grow in sparse though dense clusters. The trunk develops an axillary bud at a leaf node, usually near the base, from which a new shoot emerges. The new shoot, in turn, produces an axillary bud and a clustering habit results. Exclusively <a href="http://www.wikipedia.org/wiki/Sympodial" title="Sympodial">sympodial</a> genera include many of the <a href="http://www.wikipedia.org/wiki/Rattan" title="Rattan">rattans</a>, <i><a href="http://www.wikipedia.org/wiki/Guihaia" title="Guihaia">Guihaia</a></i>, and <i><a href="http://www.wikipedia.org/wiki/Rhapis" title="Rhapis">Rhapis</a></i>. Several palm genera have both solitary and clustering members. Palms which are usually solitary may grow in clusters, and <i>vice versa</i>. These aberrations suggest the habit operates on a single gene.<sup id="cite_ref-uhl_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Arecales#cite_note-uhl-5"><span>[</span>5<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Arecales">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Adrian.html'">Adrian</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_of_Mainz.html'">Albert of Mainz</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alypius_of_Antioch.html'">Alypius of Antioch</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albrecht_Altdorfer.html'">Albrecht Altdorfer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anbar_(town).html'">Anbar (town)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astronomer_Royal.html'">Astronomer Royal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antisymmetric_relation.html'">Antisymmetric relation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apuleius.html'">Apuleius</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argo_Navis.html'">Argo Navis</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anaxarchus.html'">Anaxarchus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abjuration.html'">Abjuration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahmed_III.html'">Ahmed III</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aimoin.html'">Aimoin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abana_River.html'">Abana River</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Azincourt.html'">Azincourt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abhorrers.html'">Abhorrers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arctic_Circle.html'">Arctic Circle</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ababda.html'">Ababda</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Alcibiades,_Margrave_of_Brandenburg-Kulmbach.html'">Albert Alcibiades, Margrave of Brandenburg-Kulmbach</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abdülaziz.html'">Abdülaziz</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alessandro_Scarlatti.html'">Alessandro Scarlatti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abaddon.html'">Abaddon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antlia.html'">Antlia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnes_of_Merania.html'">Agnes of Merania</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcamenes.html'">Alcamenes</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Dodo_(Alice_s_Adventures_in_Wonderland).html'">Dodo (Alice's Adventures in Wonderland)</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alliaceae.html'">Alliaceae</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adrenal_gland.html'">Adrenal gland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aeclanum.html'">Aeclanum</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alger_of_Liège.html'">Alger of Liège</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

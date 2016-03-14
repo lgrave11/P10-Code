@@ -1,0 +1,185 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[318.8105385071, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [78.3526063231, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [31.6750113444, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [31.4051376073, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [9.2047756278, "../topics/{film,_game,_year}.html", "{film,_game,_year}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Alexis Carrel</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Alexis Carrel</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(4)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Alexis Carrel</b> (<small>French:&#160;</small><span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_French" title="Help:IPA for French">[alɛksi kaʁɛl]</a></span>; 28 June 1873 – 5 November 1944) was a <a href="http://www.wikipedia.org/wiki/French_people" title="French people">French</a> surgeon and biologist who was awarded the <a href="http://www.wikipedia.org/wiki/Nobel_Prize_in_Physiology_or_Medicine" title="Nobel Prize in Physiology or Medicine">Nobel Prize in Physiology or Medicine</a> in 1912 for pioneering vascular <a href="http://www.wikipedia.org/wiki/Suturing" title="Suturing" class="mw-redirect">suturing</a> techniques. He invented the first <a href="http://www.wikipedia.org/wiki/Perfusion_pump" title="Perfusion pump" class="mw-redirect">perfusion pump</a> with <a href="http://www.wikipedia.org/wiki/Charles_A._Lindbergh" title="Charles A. Lindbergh" class="mw-redirect">Charles A. Lindbergh</a> opening the way to <a href="http://www.wikipedia.org/wiki/Organ_transplantation" title="Organ transplantation">organ transplantation</a>. Like many intellectuals before <a href="http://www.wikipedia.org/wiki/World_War_II" title="World War II">World War II</a> he promoted <a href="http://www.wikipedia.org/wiki/Eugenics" title="Eugenics">eugenics</a>. He was a regent for the French Foundation for the Study of Human Problems during <a href="http://www.wikipedia.org/wiki/Vichy_France" title="Vichy France">Vichy France</a> which implemented the eugenics policies there; his association with the Foundation and with <a href="http://www.wikipedia.org/wiki/Jacques_Doriot" title="Jacques Doriot">Jacques Doriot</a>'s ultra-nationalist <a href="http://www.wikipedia.org/wiki/Parti_Populaire_Fran%C3%A7ais" title="Parti Populaire Français" class="mw-redirect">PPF</a> led to investigations of collaborating with the Nazis, but he died before any trial could be held.<sup id="cite_ref-Alexis_Carrel.2C_Pioneer_Surgeon_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#cite_note-Alexis_Carrel.2C_Pioneer_Surgeon-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#cite_note-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-Andr.C3.A9s_Horacio_Reggiani_p._107_4-0" class="reference"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#cite_note-Andr.C3.A9s_Horacio_Reggiani_p._107-4"><span>[</span>4<span>]</span></a></sup> He faced media attacks towards the end of his life over his alleged involvement with the Nazis.<sup id="cite_ref-Alexis_Carrel.2C_Pioneer_Surgeon_1-1" class="reference"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#cite_note-Alexis_Carrel.2C_Pioneer_Surgeon-1"><span>[</span>1<span>]</span></a></sup></p>
+<p>A prominent <a href="http://www.wikipedia.org/wiki/Nobel_Prize" title="Nobel Prize">Nobel Prize</a> laureate in 1912, Alexis Carrel was also elected twice, in 1924 and 1927, as an honorary member of the <a href="http://www.wikipedia.org/wiki/Academy_of_Sciences_of_the_USSR" title="Academy of Sciences of the USSR" class="mw-redirect">Academy of Sciences of the USSR</a>.<sup id="cite_ref-5" class="reference"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#cite_note-5"><span>[</span>5<span>]</span></a></sup><sup id="cite_ref-6" class="reference"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#cite_note-6"><span>[</span>6<span>]</span></a></sup></p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#Biography"><span class="tocnumber">1</span> <span class="toctext">Biography</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#Contributions_to_science"><span class="tocnumber">2</span> <span class="toctext">Contributions to science</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#Vascular_suture"><span class="tocnumber">2.1</span> <span class="toctext">Vascular suture</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#Wound_antisepsis"><span class="tocnumber">2.2</span> <span class="toctext">Wound antisepsis</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#Organ_transplants"><span class="tocnumber">2.3</span> <span class="toctext">Organ transplants</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#Cellular_senescence"><span class="tocnumber">2.4</span> <span class="toctext">Cellular senescence</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#Honors"><span class="tocnumber">2.5</span> <span class="toctext">Honors</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#Alexis_Carrel_and_Lourdes"><span class="tocnumber">3</span> <span class="toctext">Alexis Carrel and Lourdes</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#Man.2C_The_Unknown_.281935.29"><span class="tocnumber">4</span> <span class="toctext"><i>Man, The Unknown</i> (1935)</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#The_French_Foundation_for_the_Study_of_Human_Problems"><span class="tocnumber">5</span> <span class="toctext">The French Foundation for the Study of Human Problems</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-13"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#Sources"><span class="tocnumber">8</span> <span class="toctext">Sources</span></a></li>
+<li class="toclevel-1 tocsection-14"><a href="http://en.wikipedia.org/wiki/Alexis_Carrel#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Alexis_Carrel">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Autobiography.html'">Autobiography</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astrology.html'">Astrology</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adversarial_system.html'">Adversarial system</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animism.html'">Animism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Argument_from_morality.html'">Argument from morality</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_numerals.html'">Arabic numerals</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Technique.html'">Alexander Technique</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Grothendieck.html'">Alexander Grothendieck</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alchemy.html'">Alchemy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anglican_Communion.html'">Anglican Communion</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adam_Weishaupt.html'">Adam Weishaupt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abjad.html'">Abjad</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agatha_Christie.html'">Agatha Christie</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accusative_case.html'">Accusative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A_Modest_Proposal.html'">A Modest Proposal</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allophone.html'">Allophone</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Artist.html'">Artist</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ahimsa.html'">Ahimsa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Architect.html'">Architect</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aphasia.html'">Aphasia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aramaic_alphabet.html'">Aramaic alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anselm_of_Canterbury.html'">Anselm of Canterbury</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afro-Asiatic_languages.html'">Afro-Asiatic languages</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._E._van_Vogt.html'">A. E. van Vogt</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Animal_Farm.html'">Animal Farm</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_English.html'">Australian English</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anaximander.html'">Anaximander</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anti-realism.html'">Anti-realism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adamic_language.html'">Adamic language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albertus_Magnus.html'">Albertus Magnus</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[224.1454170903, "../topics/{state,_states,_city}.html", "{state,_states,_city}"], [25.323289927, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [22.8001211729, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Alps</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Alps</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{state,_states,_city}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{state,_states,_city}.html'">{state, states, city}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p>The <b>Alps</b> (<span class="nowrap"><span class="IPA nopopups"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_English" title="Help:IPA for English">/<span style="border-bottom:1px dotted"><span title="/æ/ short 'a' in 'bad'">æ</span><span title="'l' in 'lie'">l</span><span title="'p' in 'pie'">p</span><span title="'s' in 'sigh'">s</span></span>/</a></span></span>; <a href="http://www.wikipedia.org/wiki/Italian_language" title="Italian language">Italian</a>: <span lang="it" xml:lang="it"><i>Alpi</i></span> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_Italian" title="Help:IPA for Italian">[ˈalpi]</a></span>; <a href="http://www.wikipedia.org/wiki/French_language" title="French language">French</a>: <span lang="fr" xml:lang="fr"><i>Alpes</i></span> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_French" title="Help:IPA for French">[alp]</a></span>; <a href="http://www.wikipedia.org/wiki/German_language" title="German language">German</a>: <span lang="de" xml:lang="de"><i>Alpen</i></span> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_German" title="Help:IPA for German">[ˈʔalpm̩]</a></span>; <a href="http://www.wikipedia.org/wiki/Slovene_language" title="Slovene language">Slovene</a>: <span lang="sl" xml:lang="sl"><i>Alpe</i></span> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_Slovene" title="Help:IPA for Slovene">[ˈáːlpɛ]</a></span>) are the highest and most extensive <a href="http://www.wikipedia.org/wiki/Mountain_range" title="Mountain range">mountain range</a> system that lies entirely in <a href="http://www.wikipedia.org/wiki/Europe" title="Europe">Europe</a>,<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Alps#cite_note-1"><span>[</span>1<span>]</span></a></sup> stretching approximately 1,200 kilometres (750&#160;mi) across eight <a href="http://www.wikipedia.org/wiki/Alpine_countries" title="Alpine countries" class="mw-redirect">Alpine countries</a>: <a href="http://www.wikipedia.org/wiki/Austria" title="Austria">Austria</a>, <a href="http://www.wikipedia.org/wiki/France" title="France">France</a>, <a href="http://www.wikipedia.org/wiki/Germany" title="Germany">Germany</a>, <a href="http://www.wikipedia.org/wiki/Italy" title="Italy">Italy</a>, <a href="http://www.wikipedia.org/wiki/Liechtenstein" title="Liechtenstein">Liechtenstein</a>, <a href="http://www.wikipedia.org/wiki/Monaco" title="Monaco">Monaco</a>, <a href="http://www.wikipedia.org/wiki/Slovenia" title="Slovenia">Slovenia</a>, and <a href="http://www.wikipedia.org/wiki/Switzerland" title="Switzerland">Switzerland</a>.<sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Alps#cite_note-2"><span>[</span>2<span>]</span></a></sup> The <a href="http://www.wikipedia.org/wiki/Caucasus_Mountains" title="Caucasus Mountains">Caucasus Mountains</a> are higher, and the <a href="http://www.wikipedia.org/wiki/Urals" title="Urals" class="mw-redirect">Urals</a> longer, but both lie partly in Asia. The mountains were formed over tens of millions of years as the African and Eurasian <a href="http://www.wikipedia.org/wiki/Tectonic_plate" title="Tectonic plate" class="mw-redirect">tectonic plates</a> collided. Extreme shortening caused by the event resulted in marine <a href="http://www.wikipedia.org/wiki/Sedimentary_rock" title="Sedimentary rock">sedimentary rocks</a> rising by <a href="http://www.wikipedia.org/wiki/Thrust_fault" title="Thrust fault">thrusting</a> and <a href="http://www.wikipedia.org/wiki/Fold_(geology)" title="Fold (geology)">folding</a> into high mountain peaks such as <a href="http://www.wikipedia.org/wiki/Mont_Blanc" title="Mont Blanc">Mont Blanc</a> and the <a href="http://www.wikipedia.org/wiki/Matterhorn" title="Matterhorn">Matterhorn</a>. Mont Blanc spans the French–Italian border, and at 4,810&#160;m (15,781&#160;ft) is the highest mountain in the Alps. The Alpine region area contains about a hundred peaks higher than 4,000&#160;m (13,123&#160;ft), known as the "<a href="http://www.wikipedia.org/wiki/List_of_Alpine_four-thousanders" title="List of Alpine four-thousanders">four-thousanders</a>".</p>
+<p>The altitude and size of the range affects the climate in Europe; in the mountains precipitation levels vary greatly and climatic conditions consist of distinct zones. Wildlife such as <a href="http://www.wikipedia.org/wiki/Ibex" title="Ibex" class="mw-redirect">ibex</a> live in the higher peaks to elevations of 3,400&#160;m (11,155&#160;ft), and plants such as <a href="http://www.wikipedia.org/wiki/Edelweiss" title="Edelweiss" class="mw-redirect">Edelweiss</a> grow in rocky areas in lower elevations as well as in higher elevations. Evidence of human habitation in the Alps goes back to the <a href="http://www.wikipedia.org/wiki/Paleolithic" title="Paleolithic">Paleolithic</a> era.</p>
+<p>A <a href="http://www.wikipedia.org/wiki/%C3%96tzi_the_Iceman" title="Ötzi the Iceman" class="mw-redirect">mummified man</a>, determined to be 5,000 years old, was discovered on a glacier at the Austrian–Italian border in 1991. By the 6th century BC, the Celtic <a href="http://www.wikipedia.org/wiki/La_T%C3%A8ne_culture" title="La Tène culture">La Tène culture</a> was well established. <a href="http://www.wikipedia.org/wiki/Hannibal" title="Hannibal">Hannibal</a> famously crossed the Alps with a herd of elephants, and the <a href="http://www.wikipedia.org/wiki/Ancient_Rome" title="Ancient Rome">Romans</a> had settlements in the region. In 1800 <a href="http://www.wikipedia.org/wiki/Napoleon_Bonaparte" title="Napoleon Bonaparte" class="mw-redirect">Napoleon</a> crossed one of the mountain passes with an army of 40,000. The 18th and 19th centuries saw an influx of naturalists, writers, and artists, in particular the <a href="http://www.wikipedia.org/wiki/Romanticism" title="Romanticism">Romantics</a>, followed by the <a href="http://www.wikipedia.org/wiki/Golden_age_of_alpinism" title="Golden age of alpinism">golden age of alpinism</a> as mountaineers began to ascend the peaks. In World War II, <a href="http://www.wikipedia.org/wiki/Adolf_Hitler" title="Adolf Hitler">Adolf Hitler</a> kept a <a href="http://www.wikipedia.org/wiki/Berghof_(residence)" title="Berghof (residence)">base of operation</a> in the Bavarian Alps throughout the war.</p>
+<p><a href="http://en.wikipedia.org/wiki/Alps">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Abadan.html'">Abadan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/List_of_Governors_of_Alabama.html'">List of Governors of Alabama</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asia.html'">Asia</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdare.html'">Aberdare</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aargau.html'">Aargau</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albion,_Michigan.html'">Albion, Michigan</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Action_Against_Hunger.html'">Action Against Hunger</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Registry_for_Internet_Numbers.html'">American Registry for Internet Numbers</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ames,_Iowa.html'">Ames, Iowa</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Azawakh.html'">Azawakh</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aon_Corporation.html'">Aon Corporation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alexander_Kerensky.html'">Alexander Kerensky</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annual_plant.html'">Annual plant</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Asian_Development_Bank.html'">Asian Development Bank</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agent_Orange.html'">Agent Orange</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Antarctic_Treaty_System.html'">Antarctic Treaty System</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aachen.html'">Aachen</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aquaculture.html'">Aquaculture</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annapolis_Valley.html'">Annapolis Valley</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Astoria,_Oregon.html'">Astoria, Oregon</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aberdour.html'">Aberdour</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ajaccio.html'">Ajaccio</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afghan_Hound.html'">Afghan Hound</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Acadia_University.html'">Acadia University</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ajmer-Merwara.html'">Ajmer-Merwara</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ashmore_and_Cartier_Islands.html'">Ashmore and Cartier Islands</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afyonkarahisar.html'">Afyonkarahisar</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Australian_Army.html'">Australian Army</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Amaranth.html'">Amaranth</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabian_Sea.html'">Arabian Sea</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

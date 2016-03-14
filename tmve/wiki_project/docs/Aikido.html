@@ -1,0 +1,196 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[582.9840086865, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [69.0457811858, "../topics/{system,_number,_math}.html", "{system,_number,_math}"], [37.6675075564, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [26.6611489631, "../topics/{year,_time,_son}.html", "{year,_time,_son}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Aikido</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Aikido</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Aikido</b> <span style="font-weight: normal">(<a href="http://www.wikipedia.org/wiki/Japanese_language" title="Japanese language">Japanese</a>: <span class="t_nihongo_kanji" lang="ja" xml:lang="ja">合気道</span><span class="t_nihongo_comma" style="display:none">,</span> <a href="http://www.wikipedia.org/wiki/Hepburn_romanization" title="Hepburn romanization">Hepburn</a>: <i>Aikidō</i><sup class="t_nihongo_help noprint"><a href="http://www.wikipedia.org/wiki/Help:Installing_Japanese_character_sets" title="Help:Installing Japanese character sets"><span class="t_nihongo_icon" style="color: #00e; font: bold 80% sans-serif; text-decoration: none; padding: 0 .1em;">?</span></a></sup>)</span> <span title="Representation in the International Phonetic Alphabet (IPA)" class="IPA"><a href="http://www.wikipedia.org/wiki/Help:IPA_for_Japanese" title="Help:IPA for Japanese">[a.i.ki.doː]</a></span> is a <a href="http://www.wikipedia.org/wiki/Gendai_bud%C5%8D" title="Gendai budō">modern</a> <a href="http://www.wikipedia.org/wiki/Japanese_martial_art" title="Japanese martial art" class="mw-redirect">Japanese martial art</a> developed by <a href="http://www.wikipedia.org/wiki/Morihei_Ueshiba" title="Morihei Ueshiba">Morihei Ueshiba</a> as a synthesis of his martial studies, philosophy, and religious beliefs. Aikido is often translated as "the way of unifying (with) <a href="http://www.wikipedia.org/wiki/Qi" title="Qi">life energy</a>"<sup id="cite_ref-1" class="reference"><a href="http://en.wikipedia.org/wiki/Aikido#cite_note-1"><span>[</span>1<span>]</span></a></sup> or as "the way of harmonious spirit."<sup id="cite_ref-ADS_2-0" class="reference"><a href="http://en.wikipedia.org/wiki/Aikido#cite_note-ADS-2"><span>[</span>2<span>]</span></a></sup> Ueshiba's goal was to create an art that practitioners could use to defend themselves while also protecting their attacker from injury.<sup id="cite_ref-3" class="reference"><a href="http://en.wikipedia.org/wiki/Aikido#cite_note-3"><span>[</span>3<span>]</span></a></sup><sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Aikido#cite_note-4"><span>[</span>4<span>]</span></a></sup></p>
+<p>Aikido techniques consist of entering and turning movements that redirect the <a href="http://www.wikipedia.org/wiki/Momentum" title="Momentum">momentum</a> of an opponent's attack, and a <a href="http://www.wikipedia.org/wiki/Throw_(grappling)" title="Throw (grappling)">throw</a> or <a href="http://www.wikipedia.org/wiki/Joint_lock" title="Joint lock">joint lock</a> that terminates the technique.<sup id="cite_ref-Aikido_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Aikido#cite_note-Aikido-5"><span>[</span>5<span>]</span></a></sup></p>
+<p>Aikido derives mainly from the martial art of <a href="http://www.wikipedia.org/wiki/Dait%C5%8D-ry%C5%AB_Aiki-j%C5%ABjutsu" title="Daitō-ryū Aiki-jūjutsu">Daitō-ryū Aiki-jūjutsu</a>, but began to diverge from it in the late 1920s, partly due to Ueshiba's involvement with the <a href="http://www.wikipedia.org/wiki/Oomoto" title="Oomoto">Ōmoto-kyō</a> religion. Ueshiba's early students' documents bear the term <i>aiki-jūjutsu</i>.<sup id="cite_ref-Pranin-Aikijujutsu_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Aikido#cite_note-Pranin-Aikijujutsu-6"><span>[</span>6<span>]</span></a></sup></p>
+<p>Ueshiba's senior students have different approaches to aikido, depending partly on when they studied with him. Today aikido is found all over the world in a number of styles, with broad ranges of interpretation and emphasis. However, they all share techniques formulated by Ueshiba and most have concern for the well-being of the attacker.</p>
+<p></p>
+<div id="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://en.wikipedia.org/wiki/Aikido#Etymology_and_basic_philosophy"><span class="tocnumber">1</span> <span class="toctext">Etymology and basic philosophy</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="http://en.wikipedia.org/wiki/Aikido#History"><span class="tocnumber">2</span> <span class="toctext">History</span></a>
+<ul>
+<li class="toclevel-2 tocsection-3"><a href="http://en.wikipedia.org/wiki/Aikido#Initial_development"><span class="tocnumber">2.1</span> <span class="toctext">Initial development</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://en.wikipedia.org/wiki/Aikido#Religious_influences"><span class="tocnumber">2.2</span> <span class="toctext">Religious influences</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://en.wikipedia.org/wiki/Aikido#International_dissemination"><span class="tocnumber">2.3</span> <span class="toctext">International dissemination</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://en.wikipedia.org/wiki/Aikido#Proliferation_of_independent_organizations"><span class="tocnumber">2.4</span> <span class="toctext">Proliferation of independent organizations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-7"><a href="http://en.wikipedia.org/wiki/Aikido#Ki"><span class="tocnumber">3</span> <span class="toctext">Ki</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="http://en.wikipedia.org/wiki/Aikido#Training"><span class="tocnumber">4</span> <span class="toctext">Training</span></a>
+<ul>
+<li class="toclevel-2 tocsection-9"><a href="http://en.wikipedia.org/wiki/Aikido#Fitness"><span class="tocnumber">4.1</span> <span class="toctext">Fitness</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="http://en.wikipedia.org/wiki/Aikido#Roles_of_uke_and_tori"><span class="tocnumber">4.2</span> <span class="toctext">Roles of <i>uke</i> and <i>tori</i></span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="http://en.wikipedia.org/wiki/Aikido#Initial_attacks"><span class="tocnumber">4.3</span> <span class="toctext">Initial attacks</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="http://en.wikipedia.org/wiki/Aikido#Basic_techniques"><span class="tocnumber">4.4</span> <span class="toctext">Basic techniques</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="http://en.wikipedia.org/wiki/Aikido#Implementations"><span class="tocnumber">4.5</span> <span class="toctext">Implementations</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="http://en.wikipedia.org/wiki/Aikido#Weapons"><span class="tocnumber">4.6</span> <span class="toctext">Weapons</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="http://en.wikipedia.org/wiki/Aikido#Multiple_attackers_and_randori"><span class="tocnumber">4.7</span> <span class="toctext">Multiple attackers and <i>randori</i></span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="http://en.wikipedia.org/wiki/Aikido#Injuries"><span class="tocnumber">4.8</span> <span class="toctext">Injuries</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="http://en.wikipedia.org/wiki/Aikido#Mental_training"><span class="tocnumber">4.9</span> <span class="toctext">Mental training</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-18"><a href="http://en.wikipedia.org/wiki/Aikido#Uniforms_and_ranking"><span class="tocnumber">5</span> <span class="toctext">Uniforms and ranking</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="http://en.wikipedia.org/wiki/Aikido#Criticisms"><span class="tocnumber">6</span> <span class="toctext">Criticisms</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="http://en.wikipedia.org/wiki/Aikido#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="http://en.wikipedia.org/wiki/Aikido#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+<p><a href="http://en.wikipedia.org/wiki/Aikido">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Alphabet.html'">Alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Annales_School.html'">Annales School</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Altruism.html'">Altruism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Accountancy.html'">Accountancy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Camus.html'">Albert Camus</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/American_Sign_Language.html'">American Sign Language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Age_of_consent.html'">Age of consent</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arminianism.html'">Arminianism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Conservation-restoration.html'">Conservation-restoration</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ayahuasca.html'">Ayahuasca</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aldous_Huxley.html'">Aldous Huxley</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arthur_Stanley_Eddington.html'">Arthur Stanley Eddington</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albrecht_Dürer.html'">Albrecht Dürer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anal_sex.html'">Anal sex</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Assault.html'">Assault</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arbitration_in_the_United_States_of_America.html'">Arbitration in the United States of America</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Arabic_alphabet.html'">Arabic alphabet</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Albert_Schweitzer.html'">Albert Schweitzer</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afterlife.html'">Afterlife</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Author.html'">Author</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Apocrypha.html'">Apocrypha</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abbreviation.html'">Abbreviation</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Agnosticism.html'">Agnosticism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Aleksandr_Solzhenitsyn.html'">Aleksandr Solzhenitsyn</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ad_hominem.html'">Ad hominem</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Auguste_Rodin.html'">Auguste Rodin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Afrikaans.html'">Afrikaans</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ambiguity.html'">Ambiguity</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Armenian_language.html'">Armenian language</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anthropic_principle.html'">Anthropic principle</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>

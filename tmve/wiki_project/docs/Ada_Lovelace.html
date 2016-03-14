@@ -1,0 +1,163 @@
+<html>
+<head>
+    <script language="JavaScript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+    <script language="JavaScript" src="../js/pie.js"></script>
+    <script language="JavaScript" src="../js/browser_adjust.js"></script>
+    <script language="JavaScript" src="../js/search.js"></script>
+
+
+    <script type="text/JavaScript">
+    <!--
+
+    var array = [[159.0023790081, "../topics/{language,_work,_write}.html", "{language,_work,_write}"], [85.6058686873, "../topics/{year,_time,_son}.html", "{year,_time,_son}"], [54.0674840175, "../topics/{film,_game,_year}.html", "{film,_game,_year}"], [37.6827184022, "../topics/{system,_number,_math}.html", "{system,_number,_math}"]];
+    var elements = generate_pie_elements(array);
+    var piec = null;
+    function init() {
+        browser_adjust();
+        
+        // create pie chart
+        piec = new PieChart(elements);
+        piec.initialize();
+
+    }
+
+    function highlight(i) {
+        piec.highlight(i);
+    }
+    
+    function unhighlight() {
+        piec.unhighlight();
+    }
+    //-->
+    </script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <title>Ada Lovelace</title>
+
+    <link href="../styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="init()">
+<div id="navigation">
+<hr noshade>
+<table><tr>
+    <td class="navtext">Browse&nbsp;&#x25B8;</td> 
+    <td class="linked"><a>Topics</a>
+      <ul> 
+        <li><a href="../browse/topic-list.html">List of Terms</a></li> 
+        <li><a href="../browse/topic-graph.html">Term Distributions</a></li> 
+        <li><a href="../browse/topic-presence.html">Relative Presence</a></li>
+      </ul> 
+    </td> 
+    <td class="linked"><a>Documents</a>
+      <ul>
+        <li><a href="../browse/doc-graph.html">Topic Distributions</a></li>
+      </ul> 
+    </td>
+    <td class="linked"><a>Terms</a>
+      <ul> 
+        <li><a href="../browse/term-list.html">List by Frequency</a></li> 
+        <li><a href="../browse/term-graph.html">Topic Distributions</a></li> 
+       </ul> 
+    </td>
+    <td class="linked"><a>About</a>
+      <ul>
+        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+      </ul> 
+    </td>
+    
+    </td>
+    <td></td>
+    <td class="searchbar"> Search&nbsp;&#x25B8;</td>
+    <td class="searchbar"><input type="text" name="search" size="20" onkeypress="handleKeyPress(event)"><span onclick="doSearch()"></span>
+    </td>
+</tr></table>
+</div>
+
+    <div id="top"></div>
+
+    <h1 id="header">
+        <table><tr>
+            <td id="title">Ada Lovelace</td>
+        </tr></table>
+
+        <hr noshade>
+    </h1>
+
+    <div id="main">
+        <table><tr>
+            <td width="210px">
+                <table class="dark">
+                <tr><td><canvas id="canvas" width="200" height="200"></canvas></td></tr>
+                <tr class="title">
+                    <td>related topics</td>
+                </tr>
+                <tr class="list"><td id="{language,_work,_write}" onmouseover="highlight(0)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{language,_work,_write}.html'">{language, work, write}</td></tr>
+<tr class="list"><td id="{year,_time,_son}" onmouseover="highlight(1)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{year,_time,_son}.html'">{year, time, son}</td></tr>
+<tr class="list"><td id="{film,_game,_year}" onmouseover="highlight(2)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{film,_game,_year}.html'">{film, game, year}</td></tr>
+<tr class="list"><td id="{system,_number,_math}" onmouseover="highlight(3)" onmouseout="unhighlight()" onclick="window.location.href='../topics/{system,_number,_math}.html'">{system, number, math}</td></tr>
+
+                </table>
+            </td>
+
+            <td>
+                <table class="light">
+                <tr class="doc"><td>
+                    
+<p><b>Augusta Ada King, Countess of Lovelace</b> (<i>née</i> <b>Byron</b>; 10 December 1815&#160;– 27 November 1852) was an English <a href="http://www.wikipedia.org/wiki/Mathematician" title="Mathematician">mathematician</a> and writer, chiefly known for her work on <a href="http://www.wikipedia.org/wiki/Charles_Babbage" title="Charles Babbage">Charles Babbage</a>'s early mechanical general-purpose computer, the <a href="http://www.wikipedia.org/wiki/Analytical_Engine" title="Analytical Engine">Analytical Engine</a>. Her notes on the engine include what is recognised as the first <a href="http://www.wikipedia.org/wiki/Algorithm" title="Algorithm">algorithm</a> intended to be carried out by a machine. As a result, she is often regarded as the first computer <a href="http://www.wikipedia.org/wiki/Programmer" title="Programmer">programmer</a>.<sup id="cite_ref-Annals_of_the_History_of_Computing_1-0" class="reference"><a href="http://en.wikipedia.org/wiki/Ada_Lovelace#cite_note-Annals_of_the_History_of_Computing-1"><span>[</span>1<span>]</span></a></sup><sup id="cite_ref-2" class="reference"><a href="http://en.wikipedia.org/wiki/Ada_Lovelace#cite_note-2"><span>[</span>2<span>]</span></a></sup><sup id="cite_ref-Lovelace_Google_3-0" class="reference"><a href="http://en.wikipedia.org/wiki/Ada_Lovelace#cite_note-Lovelace_Google-3"><span>[</span>3<span>]</span></a></sup></p>
+<p>Ada Lovelace was the only legitimate child of the poet George Lord Byron and his wife <a href="http://www.wikipedia.org/wiki/Anne_Isabella_Byron,_Baroness_Byron" title="Anne Isabella Byron, Baroness Byron">Anne Isabella Milbanke</a> ("Annabella"), Lady Wentworth.<sup id="cite_ref-4" class="reference"><a href="http://en.wikipedia.org/wiki/Ada_Lovelace#cite_note-4"><span>[</span>4<span>]</span></a></sup> All <a href="http://www.wikipedia.org/wiki/Lord_Byron#Children" title="Lord Byron">Byron's other children</a> were born out of wedlock to other women.<sup id="cite_ref-ABCL_5-0" class="reference"><a href="http://en.wikipedia.org/wiki/Ada_Lovelace#cite_note-ABCL-5"><span>[</span>5<span>]</span></a></sup> Byron separated from his wife a month after Ada was born and left England forever four months later, eventually dying of disease in the <a href="http://www.wikipedia.org/wiki/Greek_War_of_Independence" title="Greek War of Independence">Greek War of Independence</a> when Ada was eight years old. Her mother remained bitter towards Lord Byron and promoted Ada's interest in mathematics and logic in an effort to prevent her from developing what she saw as the <a href="http://www.wikipedia.org/wiki/Insanity" title="Insanity">insanity</a> seen in her father, but Ada remained interested in him despite this (and was, upon her eventual death, buried next to him at her request). Often ill, she spent most of her childhood sick. Ada married <a href="http://www.wikipedia.org/wiki/William_King-Noel,_1st_Earl_of_Lovelace" title="William King-Noel, 1st Earl of Lovelace">William Lord King</a> in 1835. King was made Earl of Lovelace in 1838, and she became Lady Lovelace.</p>
+<p>Her educational and social exploits brought her into contact with scientists such as <a href="http://www.wikipedia.org/wiki/Andrew_Crosse" title="Andrew Crosse">Andrew Crosse</a>, <a href="http://www.wikipedia.org/wiki/David_Brewster" title="David Brewster">Sir David Brewster</a>, <a href="http://www.wikipedia.org/wiki/Charles_Wheatstone" title="Charles Wheatstone">Charles Wheatstone</a>, <a href="http://www.wikipedia.org/wiki/Michael_Faraday" title="Michael Faraday">Michael Faraday</a> and the author <a href="http://www.wikipedia.org/wiki/Charles_Dickens" title="Charles Dickens">Charles Dickens</a>, in which she used to further her education. Ada described her approach as "poetical science"<sup id="cite_ref-FOOTNOTEToole1998234.E2.80.93235_6-0" class="reference"><a href="http://en.wikipedia.org/wiki/Ada_Lovelace#cite_note-FOOTNOTEToole1998234.E2.80.93235-6"><span>[</span>6<span>]</span></a></sup> and herself as an "Analyst (&amp; Metaphysician)".<sup id="cite_ref-FOOTNOTEToole1998156.E2.80.93157_7-0" class="reference"><a href="http://en.wikipedia.org/wiki/Ada_Lovelace#cite_note-FOOTNOTEToole1998156.E2.80.93157-7"><span>[</span>7<span>]</span></a></sup></p>
+<p>As a teenager, her mathematical talents led her to an ongoing working relationship and friendship with fellow British mathematician Charles Babbage, also known as 'the father of computers', and in particular, Babbage's work on the Analytical Engine. Lovelace first met him in June 1833, through their mutual friend, and her private tutor, <a href="http://www.wikipedia.org/wiki/Mary_Somerville" title="Mary Somerville">Mary Somerville</a>. Between 1842 and 1843, Ada translated an article by Italian military engineer <a href="http://www.wikipedia.org/wiki/Luigi_Menabrea" title="Luigi Menabrea" class="mw-redirect">Luigi Menabrea</a> on the engine, which she supplemented with an elaborate set of notes, simply called <i>Notes</i>. These notes contain what many consider to be the first computer program—that is, an algorithm designed to be carried out by a machine. Lovelace's notes are important in the early <a href="http://www.wikipedia.org/wiki/History_of_computers" title="History of computers" class="mw-redirect">history of computers</a>. She also developed a vision of the capability of computers to go beyond mere calculating or number-crunching, while many others, including Babbage himself, focused only on those capabilities.<sup id="cite_ref-FOOTNOTEFuegiFrancis200319.2C_25_8-0" class="reference"><a href="http://en.wikipedia.org/wiki/Ada_Lovelace#cite_note-FOOTNOTEFuegiFrancis200319.2C_25-8"><span>[</span>8<span>]</span></a></sup> Her mind-set of "poetical science" led her to ask questions about the Analytical Engine (as shown in her notes) examining how individuals and society relate to technology as a collaborative tool.<sup id="cite_ref-ABCL_5-1" class="reference"><a href="http://en.wikipedia.org/wiki/Ada_Lovelace#cite_note-ABCL-5"><span>[</span>5<span>]</span></a></sup></p>
+<p><a href="http://en.wikipedia.org/wiki/Ada_Lovelace">Full article&nbsp;&#x25B8;</a></p>
+                </td></tr>
+                </table>
+            </td>
+
+            <td width="25%">
+                <table class="dark">
+                <tr class="title">
+                    <td>related documents</td>
+                </tr>
+                <tr class="list"><td onclick="window.location.href='../docs/Augustin_Louis_Cauchy.html'">Augustin Louis Cauchy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allah.html'">Allah</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Gide.html'">André Gide</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abd-el-latif.html'">Abd-el-latif</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/The_Plague.html'">The Plague</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ammonius_Saccas.html'">Ammonius Saccas</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alcuin.html'">Alcuin</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affix.html'">Affix</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Angst.html'">Angst</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A._A._Milne.html'">A. A. Milne</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allocution.html'">Allocution</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Nobel.html'">Alfred Nobel</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anagram.html'">Anagram</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Applied_ethics.html'">Applied ethics</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abugida.html'">Abugida</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ancient_philosophy.html'">Ancient philosophy</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Ablative_case.html'">Ablative case</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alfred_Jarry.html'">Alfred Jarry</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/August_Derleth.html'">August Derleth</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Appellate_court.html'">Appellate court</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Allegory.html'">Allegory</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Alberto_Giacometti.html'">Alberto Giacometti</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Anita_Hill.html'">Anita Hill</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Affidavit.html'">Affidavit</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/André_Weil.html'">André Weil</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Abhidharma.html'">Abhidharma</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Religious_denominations_in_Poland.html'">Religious denominations in Poland</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Adventism.html'">Adventism</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/A.html'">A</td></tr>
+<tr class="list"><td onclick="window.location.href='../docs/Book_of_Amos.html'">Book of Amos</td></tr>
+
+                </table>
+            </td>
+        </tr></table>
+    </div>
+
+    <div id="footer">
+        <br>
+        <hr noshade>
+    </div>
+</body>
+</html>
