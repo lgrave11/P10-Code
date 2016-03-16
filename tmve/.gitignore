@@ -22,6 +22,8 @@ bld/
 [Oo]bj/
 [Ll]og/
 wiki_project/
+test/
+src/__pycache__/
 
 # Visual Studio 2015 cache/options directory
 .vs/

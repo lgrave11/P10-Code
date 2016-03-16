@@ -448,7 +448,7 @@ def get_xml_term_terms_column(relations, term):
     terms = relations.get_related_terms(term)
     term_keys = list(terms.keys())
     
-    topic_keys.sort(key=lambda x: topics[x])
+    term_keys.sort(key=lambda x: terms[x])
     #term_keys.sort(lambda x, y: cmp(terms[x], terms[y])) 
     for t in term_keys[:20]:
         terms_column += '<tr class="list"><td onclick="window.location.href=\'../terms/' + t.get_safe_title() + '.html\'">' + t.title + '</a></td></tr>\n'

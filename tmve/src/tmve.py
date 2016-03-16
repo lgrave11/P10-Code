@@ -143,7 +143,7 @@ def create_project_dir(project_filename):
 def xml_rigamroll(src_filename, dst_filename, html_strings, html_inserts, template, myrelations, identifier):
     src_html_file = open(src_filename, 'r')
     dst_filename = dst_filename.replace('"', '')
-    dst_html_file = open(dst_filename, 'w', encoding="utf-8")
+    dst_html_file = open(dst_filename, 'w+', encoding="utf-8")
     printv("  " + dst_filename)
 
     # insert strings into html file
@@ -221,6 +221,8 @@ def build_ajax(project_name, template_name, html_strings, html_inserts, myrelati
 
             for token in tokenset:
                 token_dst_filepath =  dst_filepath + "/" + token.get_safe_title() + ".html"
+                if token.get_safe_title() == "con":
+                    continue
                 token_html_strings = html_strings.copy()
                 token_html_strings[token_type] = token.title #token-specific
                 xml_rigamroll(src_filepath, token_dst_filepath, token_html_strings, html_inserts, template, myrelations, token)

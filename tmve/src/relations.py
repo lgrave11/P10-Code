@@ -13,7 +13,7 @@ def import_template(template_name):
 class Document:
     def __init__(self, doc_id, title):
         self.id = doc_id
-        self.title = str(title.decode("utf-8"))
+        self.title = title
 
     def get_safe_title(self):
         safe_title = self.title.replace(" ", "_").replace("\'", "_").replace("/", "-")
@@ -26,7 +26,7 @@ class Topic:
     def __init__(self, rel, topic_id, title):
         self.rel = rel
         self.topic_id = topic_id
-        self.title = str(title.decode("utf-8"))
+        self.title = title
         self.terms = {}
         self.ranked_terms = []
         self.term_score_total = 0
@@ -72,7 +72,7 @@ class Term:
 
     def __init__(self, term_id, title):
         self.id = term_id
-        self.title = str(title.decode("utf-8"))
+        self.title = title
         Term.all_terms[term_id] = self
 
     def get_safe_title(self):
@@ -131,7 +131,7 @@ class relations:
             docs_info = self.mydb.get_docs_info()
             for doc_info in docs_info:
                 doc_id = doc_info[0] - 1
-                title = doc_info[1]
+                title = doc_info[1][:10]
                 self.docs.append(Document(doc_id, title))
 
         return self.docs
