@@ -16,10 +16,6 @@ from gensim.models.ldamodel import LdaModel
 def get_doc_score(doca, docb):
     score = 0
     total = 0
-    print("doca")
-    print(len(doca))
-    print("docb")
-    print(len(docb))
     for topic_id in range(len(doca)):
         thetaa = doca[topic_id][1]
         thetab = docb[topic_id][1]
@@ -146,7 +142,7 @@ def write_topic_topic(con, cur, lda, topic_count):
 
 def write_term_term(con, cur, lda, topic_count, dictionary):
     v = {}
-    cur.execute('DROP TABLE IF EXISTS IF EXISTS term_term ')
+    cur.execute('DROP TABLE IF EXISTS term_term ')
     cur.execute('CREATE TABLE term_term (id INTEGER PRIMARY KEY, term_a INTEGER, term_b INTEGER, score FLOAT)')
     cur.execute('CREATE INDEX term_term_idx1 ON term_term(term_a)')
     cur.execute('CREATE INDEX term_term_idx2 ON term_term(term_b)')
@@ -183,7 +179,7 @@ def write_term_term(con, cur, lda, topic_count, dictionary):
     con.commit()
     
 def write_doc_term(con, cur, corpus):
-    cur.execute('DROP TABLE IF EXISTS IF EXISTS doc_term')
+    cur.execute('DROP TABLE IF EXISTS doc_term')
     cur.execute('CREATE TABLE doc_term (id INTEGER PRIMARY KEY, doc INTEGER, term INTEGER, score FLOAT)')
     cur.execute('CREATE INDEX doc_term_idx1 ON doc_term(doc)')
     cur.execute('CREATE INDEX doc_term_idx2 ON doc_term(term)')
@@ -231,7 +227,8 @@ def create_dictionary():
             documents2.append(xml)
         except(Exception):
             continue
-    documents = [x.xpath('//TEXT/text()')[0].strip() for x in documents2]
+    documents = [x.xpath('//TEXT/text()')[0].strip() for x in documents2][:100]
+    titles = [x.xpath('//DOCNO/text()')[0].strip() for x in documents2][:100]
     texts = [tokenize(document)
               for document in preprocess_documents(documents)]
     
@@ -247,7 +244,7 @@ def create_dictionary():
     
     corpus = [dictionary.doc2bow(text) for text in texts]
     
-    return (documents, dictionary, corpus)
+    return (documents, dictionary, corpus, titles)
 
 ### main ###
 
@@ -265,23 +262,28 @@ if (__name__ == '__main__'):
     # doc_file = sys.argv[6]
 
     dictionary = corpora.dictionary.Dictionary();
-    documents, dictionary, corpus = create_dictionary();
+    documents, dictionary, corpus, titles = create_dictionary();
+    
     #dictionary.save('dict')
     #dictionary.load('dict')
     lda = LdaModel.load(sys.argv[1])
     lda.id2word = dictionary
     
     # connect to database, which is presumed to not already exist
-    con = sqlite3.connect('test_db')
+    con = sqlite3.connect('test_db2')
     cur = con.cursor()
 
-
+    topics = lda.get_document_topics(corpus[2]);
+    for topic in topics:
+        print(topic)
+    exit()
+    
     # write the relevant rlations to the database, see individual functions for details
     print("writing terms to db...")
     write_terms(con, cur, dictionary)
     
     print("writing docs to db...")
-    write_docs(con, cur, documents)
+    write_docs(con, cur, titles)
     
         
     print("writing doc_topic to db...")
@@ -297,7 +299,7 @@ if (__name__ == '__main__'):
     write_doc_term(con, cur, corpus)    
     
     print("writing term_term to db...")
-    # write_term_term(con, cur, lda, topics_count, dictionary)
+    write_term_term(con, cur, lda, topics_count, dictionary)
 
     print("writing topic_topic to db...")
     write_topic_topic(con, cur, lda, topics_count)

@@ -144,7 +144,7 @@ def xml_rigamroll(src_filename, dst_filename, html_strings, html_inserts, templa
     src_html_file = open(src_filename, 'r')
     dst_filename = dst_filename.replace('"', '')
     dst_html_file = open(dst_filename, 'w+', encoding="utf-8")
-    printv("  " + dst_filename)
+    # printv("  " + dst_filename)
 
     # insert strings into html file
     for line in src_html_file:
@@ -217,7 +217,7 @@ def build_ajax(project_name, template_name, html_strings, html_inserts, myrelati
                 src_filename = filenames[i] # find the one html file here
                 i += 1
             src_filepath += "/" + src_filename
-            printv(" source file: " + src_filepath)
+            # printv(" source file: " + src_filepath)
 
             for token in tokenset:
                 token_dst_filepath =  dst_filepath + "/" + token.get_safe_title() + ".html"
@@ -241,7 +241,7 @@ def main():
     # open sqlite relational database
     printv("Using database: " + database_filename)
     myrelations = relations(db(database_filename))
-
+    
     build_ajax(project_name, template_name, html_strings, html_inserts, myrelations)     
     
 if __name__ == "__main__":
