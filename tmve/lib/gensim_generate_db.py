@@ -216,6 +216,7 @@ def write_docs(con, cur, documents):
 def tokenize(document):
     return [word for word in document if word not in set(["says", "said"])]
     
+#temp incase these files are not available
 def create_dictionary():
     file = "ap.txt"
     read_file = open(file, "r", encoding="utf-8").read()
@@ -249,28 +250,24 @@ def create_dictionary():
 ### main ###
 
 if (__name__ == '__main__'):
-    # if (len(sys.argv) != 7):
-    #    print('usage: python generate_csvs.py <db-filename> <doc-wordcount-file> <beta-file> <gamma-file> <vocab-file> <doc-file>\n')
+    # if (len(sys.argv) != 4):
+    #    print('usage: python generate_csvs.py <lda> <dictionary> <corpus> <document_titles>\n')
     #    sys.exit(1)
-    topics_count = 20
-    #lda = sys.argv[1]
-    # filename = sys.argv[1]
-    # doc_wordcount_file = sys.argv[2]
-    # beta_file = sys.argv[3]
-    # gamma_file = sys.argv[4]
-    # vocab_file = sys.argv[5]
-    # doc_file = sys.argv[6]
 
+    # lda = sys.argv[1]
+    # dictionary = sys.argv[1]
+    # corpus = sys.argv[2]
+    # document_titles = sys.argv[3]
+
+    topics_count = 20
     dictionary = corpora.dictionary.Dictionary();
-    documents, dictionary, corpus, titles = create_dictionary();
+    documents, dictionary, corpus, document_titles = create_dictionary();
     
-    #dictionary.save('dict')
-    #dictionary.load('dict')
     lda = LdaModel.load(sys.argv[1])
     lda.id2word = dictionary
     
     # connect to database, which is presumed to not already exist
-    con = sqlite3.connect('test_db2')
+    con = sqlite3.connect('test_db')
     cur = con.cursor()
 
     topics = lda.get_document_topics(corpus[2]);
@@ -283,9 +280,8 @@ if (__name__ == '__main__'):
     write_terms(con, cur, dictionary)
     
     print("writing docs to db...")
-    write_docs(con, cur, titles)
+    write_docs(con, cur, document_titles)
     
-        
     print("writing doc_topic to db...")
     write_doc_topic(con, cur, lda, corpus)
 

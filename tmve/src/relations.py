@@ -183,7 +183,6 @@ class relations:
         if isinstance(token, Topic):
             token_topic_info = self.mydb.get_topic_topics(token.topic_id)
         elif isinstance(token, Document):
-            print("Correct elif")
             token_topic_info = self.mydb.get_doc_topics(token.id)
         elif isinstance(token, Term):
             token_topic_info = self.mydb.get_term_topics(token.id)
@@ -197,13 +196,10 @@ class relations:
                     if t != None:
                         topics[t] = score #TODO: topic init needs work
             else:
-                print("4")
                 t = self.get_topic(info[2])
                 if t != None:
-                    print("5")
                     topics[t] = score
 
-        print("Topic Count" + str(len(topics)))
         return topics
 
     def get_related_terms(self, term):
